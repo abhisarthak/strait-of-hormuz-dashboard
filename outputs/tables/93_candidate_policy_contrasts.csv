@@ -1,0 +1,5 @@
+Comparison_ID,Reference_Policy_ID,Alternative_Policy_ID,Comparison_Status,Interpretation
+BASE_vs_R76-01-FIXED-6H,R76-00-NONE,R76-01-FIXED-6H,STRUCTURALLY_SPECIFIABLE,Conditional model-rule contrast; not an observed operational effect.
+BASE_vs_R76-02-FIXED-12H,R76-00-NONE,R76-02-FIXED-12H,STRUCTURALLY_SPECIFIABLE,Conditional model-rule contrast; not an observed operational effect.
+BASE_vs_R76-03-PROP-25-CAP6,R76-00-NONE,R76-03-PROP-25-CAP6,STRUCTURALLY_SPECIFIABLE,Conditional model-rule contrast; not an observed operational effect.
+BASE_vs_R76-04-PROP-50-CAP12,R76-00-NONE,R76-04-PROP-50-CAP12,STRUCTURALLY_SPECIFIABLE,Conditional model-rule contrast; not an observed operational effect.

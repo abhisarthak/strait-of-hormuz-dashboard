@@ -1,0 +1,15 @@
+Check,Passed,Observed,Expected,Interpretation
+Four shock magnitudes are present,True,"[6.0, 12.0, 24.0, 48.0]","[6, 12, 24, 48]",Presence check only; does not establish calibration.
+Four transition shares are present,True,"[0.1, 0.25, 0.5, 1.0]","[0.1, 0.25, 0.5, 1.0]",Coverage levels are not exposure probabilities.
+Factorial scenario register contains 16 rows,True,16,16,Four magnitudes crossed with four shares.
+Each magnitude-share cell appears once,True,16,16,Checks full 4x4 factor grid.
+Four scope counts reconcile by rounding rule,True,4,4,Checks selected counts against 271-record universe.
+Five distinct recovery policies are present,True,5,5,Policy set is preserved from Script88.
+Recovery-policy maximum caps use the correct rule-specific field,True,"{'R76-00-NONE': 0.0, 'R76-01-FIXED-6H': 6.0, 'R76-02-FIXED-12H': 12.0, 'R76-03-PROP-25-CAP6': 6.0, 'R76-04-PROP-50-CAP12': 12.0}","{'R76-00-NONE': 0.0, 'R76-01-FIXED-6H': 6.0, 'R76-02-FIXED-12H': 12.0, 'R76-03-PROP-25-CAP6': 6.0, 'R76-04-PROP-50-CAP12': 12.0}",Fixed policies use fixed cap; proportional policies use per-link maximum cap.
+All 16 scenarios have five policies,True,16/16,16/16,Full scenario-policy coverage.
+Eighty unique experiment combinations,True,80,80,Combination IDs are unique.
+Nine response metrics retained,True,9 rows/9 IDs,9/9,Metric definitions are preserved.
+Replication design does not claim statistical inference,True,False for all options,False for all options,No power or precision claim is made.
+No actual Hormuz exposure is established,True,0,0,No AIS-confirmed exposure evidence.
+No physical routes are marked validated,True,0,0,Observed sequence links remain distinct from physical routes.
+No approval or execution gate has been silently granted,True,Approvals=0; execution=0,0; 0,This diagnostic script cannot approve the experiment.

@@ -1,0 +1,63 @@
+===========================================================================
+SCRIPT 15B: DUPLICATE-REPRESENTATION RESOLUTION REPORT
+===========================================================================
+
+1. INPUT DATA
+---------------------------------------------------------------------------
+Schedule records: 1894
+Source-verified candidate records: 14
+
+2. REPRESENTATION GROUPS
+---------------------------------------------------------------------------
+Reconstructed groups: 7
+Source records in groups: 14
+
+Representation_Group_ID       IMO      Vessel_Name LOCODE                 Port Source_Rows Service_Codes  Number_Of_Source_Records  Number_Of_Distinct_Service_Codes  Operational_Signature_Matches  Different_Service_Identity  Representative_Source_Row                                                  Classification
+          15B_GROUP_001 9235531.0  MAERSK VIRGINIA  OMSLL     Salalah Terminal   1239;1240       34A;E4X                         2                                 2                           True                        True                       1239 SOURCE_VERIFIED_DUPLICATE_REPRESENTATION_DIFFERENT_SERVICE_CODE
+          15B_GROUP_002 9263320.0        SLS Topaz  OMSLL     Salalah Terminal   1100;1101       308;M03                         2                                 2                           True                        True                       1100 SOURCE_VERIFIED_DUPLICATE_REPRESENTATION_DIFFERENT_SERVICE_CODE
+          15B_GROUP_003 9305300.0      MAERSK UTAH  OMSLL     Salalah Terminal   1314;1315       34A;409                         2                                 2                           True                        True                       1314 SOURCE_VERIFIED_DUPLICATE_REPRESENTATION_DIFFERENT_SERVICE_CODE
+          15B_GROUP_004 9313917.0 Maersk Baltimore  OMSLL     Salalah Terminal   1275;1277       34A;599                         2                                 2                           True                        True                       1275 SOURCE_VERIFIED_DUPLICATE_REPRESENTATION_DIFFERENT_SERVICE_CODE
+          15B_GROUP_005 9332975.0   MAERSK CHICAGO  AEKLF Khor Fakkan Terminal     950;951       599;600                         2                                 2                           True                        True                        950 SOURCE_VERIFIED_DUPLICATE_REPRESENTATION_DIFFERENT_SERVICE_CODE
+          15B_GROUP_006 9406960.0         GFS ROJA  AEJEA Jebel Ali Terminal 2       44;45       35Q;Y99                         2                                 2                           True                        True                         44 SOURCE_VERIFIED_DUPLICATE_REPRESENTATION_DIFFERENT_SERVICE_CODE
+          15B_GROUP_007 9565338.0        GSL ROSSI  OMSLL     Salalah Terminal   1107;1108       34B;M03                         2                                 2                           True                        True                       1107 SOURCE_VERIFIED_DUPLICATE_REPRESENTATION_DIFFERENT_SERVICE_CODE
+
+3. ANALYTICAL DATASET
+---------------------------------------------------------------------------
+Full annotated Schedule: 1894
+Sequence-ready Schedule: 1887
+Records excluded from sequence view: 7
+
+4. TRANSITION VALIDATION
+---------------------------------------------------------------------------
+                                          Metric  Value
+                       Original Schedule records   1894
+                 Sequence-ready Schedule records   1887
+                  Verified representation groups      7
+          Verified representation source records     14
+                     Negative transitions before      7
+                      Negative transitions after      0
+    Negative transitions matching verified pairs      7
+Negative transitions not matching verified pairs      0
+
+5. INTERPRETATION
+---------------------------------------------------------------------------
+Source-verified records with identical operational signatures and different service codes were grouped.
+One representative per group was retained in the sequence-ready analytical dataset.
+All original Schedule records remain available in the annotated full dataset.
+The selected representative is based on the lowest source-row number, not on service importance.
+No timestamps were changed and no original records were deleted.
+Inter-port elapsed time is not assumed to be sailing time.
+
+6. OUTPUT FILES
+---------------------------------------------------------------------------
+annotated_schedule: /Users/abhishekkumar/Strait_of_Hormuz_Research/data/processed/15B_annotated_schedule_all_records.csv
+sequence_ready_schedule: /Users/abhishekkumar/Strait_of_Hormuz_Research/data/processed/15B_schedule_sequence_ready.csv
+group_summary: /Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/15B_duplicate_representation_group_summary.csv
+source_mapping: /Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/15B_duplicate_representation_source_mapping.csv
+transitions_before: /Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/15B_transitions_before_resolution.csv
+transitions_after: /Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/15B_transitions_after_resolution.csv
+negative_before: /Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/15B_negative_transitions_before.csv
+negative_after: /Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/15B_negative_transitions_after.csv
+validation_summary: /Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/15B_validation_summary.csv
+
+Report: /Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/reports/15B_duplicate_representation_resolution_report.txt

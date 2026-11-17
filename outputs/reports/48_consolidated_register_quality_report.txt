@@ -1,0 +1,49 @@
+SCRIPT 48: CONSOLIDATED REGISTER QUALITY AUDIT
+========================================================================
+Audit timestamp: 2026-11-15T23:43:37
+Overall status: PASSED
+
+INPUTS
+Consolidated master: outputs/tables/41_manual_source_content_verification_register_consolidated.csv
+Original register: outputs/tables/41_manual_source_content_verification_register.csv
+Coordinate register: outputs/tables/39_port_coordinate_validation_register.csv
+
+STRUCTURAL SUMMARY
+Master records: 19 (expected 19)
+Master columns: 57 (expected 57)
+Unique master UN/LOCODEs: 19
+Coordinate records: 19
+Manual fields checked: 17
+Non-manual fields compared: 40
+Non-manual field mismatches: 0
+
+ISSUE SUMMARY
+Total issues: 0
+Critical: 0
+High: 0
+Medium: 0
+Low: 0
+
+ISSUES BY CATEGORY
+
+RECORD QA STATUS
+PASSED: 19
+
+BATCH CHECKPOINT STATUS
+MATCHED: 5
+
+COORDINATE SAFEGUARD
+Coordinate validation was checked against Script 39.
+No coordinate was approved by this audit.
+
+INTERPRETATION
+A PASSED result indicates structural consistency and preservation checks passed.
+It does not independently verify the factual correctness of source claims,
+port identity, facility mapping, coordinates, or operational relevance.
+Preliminary desk review is not equivalent to researcher sign-off.
+
+OUTPUTS
+outputs/tables/48_consolidated_register_quality_audit.csv
+outputs/tables/48_consolidated_register_record_summary.csv
+outputs/tables/48_batch_checkpoint_consistency.csv
+outputs/reports/48_consolidated_register_quality_report.txt

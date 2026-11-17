@@ -1,0 +1,25 @@
+========================================================================================
+SCRIPT 63: EMPIRICAL PARAMETER DISTRIBUTION AND UNCERTAINTY ASSESSMENT
+========================================================================================
+
+Directed edges assessed: 53
+Valid observed transition records: 271
+Edges with leave-one-vessel-out analysis: 24
+Leave-one-vessel-out rows: 108
+Edges with vessel-cluster bootstrap: 15
+Bootstrap replicates per eligible edge: 2000
+
+DISTRIBUTION REPRESENTATION CLASSES
+                   Distribution_Representation_Class_63  Directed_Edge_Count  Total_Valid_Transitions  Median_Vessel_Count  Automatic_Resampling_Approval  Parametric_Fit_Approved
+                     DESCRIPTIVE_EMPIRICAL_SUMMARY_ONLY                    9                       44                  2.0                          False                    False
+EMPIRICAL_DISTRIBUTION_CANDIDATE_WITH_VESSEL_CLUSTERING                    1                       10                  5.0                          False                    False
+      EMPIRICAL_OR_ROBUST_TAIL_REPRESENTATION_PREFERRED                    7                      107                  6.0                          False                    False
+           INSUFFICIENT_FOR_DISTRIBUTION_REPRESENTATION                   29                       58                  1.0                          False                    False
+               LIMITED_EMPIRICAL_DISTRIBUTION_CANDIDATE                    7                       52                  4.0                          False                    False
+
+METHODOLOGICAL LIMITATIONS
+No parametric distribution is fitted. The classification is a cautious screen based on sample size, vessel count, skewness and tail ratios. Leave-one-vessel-out results show sensitivity to the removal of each observed vessel, not external validity. The cluster bootstrap samples vessels as clusters but may be unstable when the number of vessels is small. It does not establish that observed vessels are representative of the target population. Elapsed time includes sailing, waiting and unobserved operations and is not pure sailing time. No resampling or operational approval is granted.
+
+SOURCE FILES MODIFIED: NO
+SIMULATION INPUTS MODIFIED: NO
+AUTOMATIC RESAMPLING APPROVALS: NONE

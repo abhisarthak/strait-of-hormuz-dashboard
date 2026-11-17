@@ -1,0 +1,38 @@
+SCRIPT 83 — FOCUSED QAQCH INTERMEDIATE-RECORD IDENTITY INVESTIGATION
+==============================================================================
+Target current call ID: SCH_815
+Previous call ID: SCH_340
+Vessel IMO: 9813840
+Port sequence: QADOH -> QAQCH
+Interval start: 2026-09-15 17:00:00+00:00
+Interval end: 2026-10-23 13:53:00+00:00
+Observed elapsed hours: 908.8833333333333
+Raw workbook rows for target vessel: 32
+Rows with actual arrival/departure within interval: 4
+Script82 candidate rows re-inspected: 2
+Potential voyage/event identifier columns: ['Call Sign', 'Import Voyage Number', 'Export Voyage Number']
+
+RESEARCH INTERPRETATION
+- The extract is a faithful copy of raw workbook rows selected by vessel and actual-time window.
+- Workbook row numbers are Excel row numbers including the header row.
+- Matching IMO, port and timestamps do not establish that a row is a distinct port call.
+- Voyage/reference/status fields require interpretation against the workbook's data dictionary and source-provider documentation.
+- Planned/estimated timestamps are displayed only as raw fields and are not used to replace actual timestamps.
+- No canonical schedule modification, causal classification, schedule-slack approval, or recovery approval is made.
+
+Validation checks passed: 5/5
+Validation checks failed: 0
+
+CHECK RESULTS
+C01 [PASS] Exactly one target interval investigated — observed=1, expected=1
+C02 [PASS] All Script82 candidate rows represented in comparison — observed=2, expected=2
+C03 [PASS] All Script82 candidate workbook row numbers resolve uniquely — observed=2, expected=2
+C04 [PASS] Extract contains only target vessel IMO — observed=4, expected=4
+C05 [PASS] No schedule modifications or approvals assigned — observed=0, expected=0
+
+OUTPUT FILES
+- outputs/tables/83_target_interval_investigation_register.csv
+- outputs/tables/83_raw_vessel_event_extract.csv
+- outputs/tables/83_candidate_record_comparison.csv
+- outputs/tables/83_validation_checks.csv
+- outputs/reports/83_focused_qachq_intermediate_record_identity_investigation.txt

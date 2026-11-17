@@ -1,0 +1,8 @@
+IMO,Vessel_Name,Total_Recorded_Calls,Gulf_Core_Calls,Strait_Approach_Calls,Unique_Recorded_Ports,First_Recorded_Actual_Arrival_UTC,Last_Recorded_Actual_Arrival_UTC,Regional_LOCODES,AIS_Verification_Required,Transit_Confirmed,Note
+9416006,AL RUMEILA,19,10,0,5,2026-08-23 00:52:00+00:00,2026-10-28 08:17:00+00:00,IQUQR; QAHMD,True,False,Gulf-region port call identifies a candidate vessel only; AIS trajectory is required to establish Strait transit.
+9525912,AL RIFFA,21,0,3,9,2026-07-26 07:17:00+00:00,2026-10-27 17:56:00+00:00,OMSLL,True,False,Gulf-region port call identifies a candidate vessel only; AIS trajectory is required to establish Strait transit.
+9708813,AL NEFUD,12,0,1,9,2026-06-27 14:53:00+00:00,2026-10-15 23:35:00+00:00,OMSLL,True,False,Gulf-region port call identifies a candidate vessel only; AIS trajectory is required to establish Strait transit.
+9708825,AL DAHNA EXPRESS,15,0,2,9,2026-07-26 05:07:00+00:00,2026-10-29 02:35:00+00:00,OMSLL,True,False,Gulf-region port call identifies a candidate vessel only; AIS trajectory is required to establish Strait transit.
+9708863,AL MURAYKH,16,0,2,9,2026-07-16 00:59:00+00:00,2026-10-26 08:16:00+00:00,OMSLL,True,False,Gulf-region port call identifies a candidate vessel only; AIS trajectory is required to establish Strait transit.
+9760598,AL SAADIYAT,6,4,0,5,2026-07-23 12:26:00+00:00,2026-10-07 01:45:00+00:00,AEFJR; AEJEA; AEKLF,True,False,Gulf-region port call identifies a candidate vessel only; AIS trajectory is required to establish Strait transit.
+9948803,A. P. Moller,36,0,1,14,2026-05-25 04:20:00+00:00,2026-10-28 21:16:00+00:00,OMSLL,True,False,Gulf-region port call identifies a candidate vessel only; AIS trajectory is required to establish Strait transit.

@@ -1,0 +1,49 @@
+========================================================================================
+SCRIPT 57: INDEPENDENT PORT/TERMINAL COORDINATE VALIDATION
+========================================================================================
+
+PURPOSE
+Triage Script 56 source evidence into independent researcher-validation pathways. This script does not independently verify URLs, geodetic coordinates, port identities, or operational eligibility.
+
+INPUT
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/56_coordinate_evidence_source_assessment.csv
+
+SUMMARY
+                                                    Metric  Value
+                                    Total records assessed     19
+               Records with valid primary coordinate pairs     13
+             Records with valid secondary coordinate pairs     18
+                        Records with both coordinate pairs     13
+Records requiring facility/reference-object reconciliation      7
+    Records requiring boundary/navigation reference review      1
+                      Records with no coordinate candidate      0
+         Records eligible for two-source comparison review      9
+              Records requiring primary-source-only review      0
+            Records with secondary-source-only coordinates      2
+   Records with potential organisational independence only     16
+          Records with same authority/operator source pair      3
+             Researcher validations completed by Script 57      0
+                    Coordinate approvals made by Script 57      0
+         Operational inclusion decisions made by Script 57      0
+
+VALIDATION PATHWAY COUNTS
+Validation_Pathway
+TWO_SOURCE_COORDINATE_COMPARISON                             9
+FACILITY_OR_REFERENCE_OBJECT_RECONCILIATION_REQUIRED         7
+SECONDARY_SOURCE_ONLY_COORDINATE_REVIEW                      2
+PORT_POINT_VERSUS_BOUNDARY_OR_NAVIGATION_REFERENCE_REVIEW    1
+
+ORGANISATIONAL INDEPENDENCE COUNTS
+Organizational_Independence_Class
+DIFFERENT_ORGANIZATIONS_POTENTIAL_INDEPENDENCE_ONLY    16
+SAME_AUTHORITY_OR_OPERATOR_NOT_INDEPENDENT              3
+
+RESEARCH LIMITATIONS
+- Different organisation names are not proof of independent underlying evidence.
+- Coordinate distance does not establish that two sources describe the same physical point.
+- Port, terminal, berth, plant, pilotage, anchorage, breakwater, buoy and boundary references are not interchangeable.
+- Missing datum or reference-point definitions remain unresolved.
+- Script 53 validation states are carried forward, not overridden.
+- Script 49 eligibility classifications are carried forward, not changed.
+- No coordinates are approved and no ports are operationally included by Script 57.
+- No AIS-confirmed Strait of Hormuz transit is established by this script.

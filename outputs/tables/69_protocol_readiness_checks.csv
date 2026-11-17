@@ -1,0 +1,17 @@
+Check,Passed,Observed,Expected,Interpretation
+Script65 has 53 unique directed edges,True,53,53,Parameter evidence coverage.
+Script68 edge register matches Script65,True,53,53,Exact directed-pair match.
+Script66 contains five experiment templates,True,5,5,Template completeness.
+Script68 scope IDs match Script66,True,5,5,Experiment-level lineage.
+Four mechanism decisions remain unapproved,True,0,0,No mechanism approvals imported.
+All 53 edge exposure decisions remain unapproved,True,0,0,No edge exposure approvals imported.
+All 19 port exposure decisions remain unapproved,True,0,0,No port exposure approvals imported.
+All five experiment scopes remain unapproved,True,0,0,No experiment scope approvals imported.
+No final Script65 parameter values selected,True,0,0,Observed quantiles remain descriptive references.
+No empirical resampling approvals,True,0,0,No resampling authorization.
+No parametric distribution approvals,True,0,0,No parametric fitting authorization.
+Network access restriction remains blocked,True,BLOCKED_PENDING_VALIDATED_ROUTE_GRAPH,BLOCKED_PENDING_VALIDATED_ROUTE_GRAPH,No physical route closure inferred.
+Compound experiment remains deferred,True,DEFERRED,DEFERRED,No compound mechanism before standalone definitions.
+Scenario numeric values remain unassigned,True,0,0,No disruption magnitude assigned.
+Replication choices remain unselected,True,0,0,Options only; Script66 left design to be selected.
+No experiment execution authorized,True,0,0,This script specifies protocol; it does not execute experiments.

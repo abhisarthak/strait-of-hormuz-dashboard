@@ -1,0 +1,10 @@
+Metric_ID,Metric,Aggregation_Level,Unit,Priority,Definition_or_Caveat,Review_Status,Potential_Overlap_Review,Censoring_Concern,Real_World_Impact_Claim
+M01,Mean call arrival delay,Call,Hours,Secondary,Across all 604 calls; state observation-window censoring,REQUIRES_RESEARCHER_REVIEW,,Define end-of-observation-window treatment; incomplete future sequence may appear unrecovered because it is right-censored.,False
+M02,Mean call departure delay,Call,Hours,Secondary,Across all 604 calls; state observation-window censoring,REQUIRES_RESEARCHER_REVIEW,,Define end-of-observation-window treatment; incomplete future sequence may appear unrecovered because it is right-censored.,False
+M03A,Maximum final vessel departure delay,Vessel,Hours,Primary candidate,Maximum across 155 vessels at their final represented call,REQUIRES_RESEARCHER_REVIEW,"Check distinction between maximum call-level delay, final vessel departure delay, and maximum accumulated delay per vessel.",,False
+M03B,Maximum accumulated departure delay per vessel,Vessel,Hours,Secondary,Keep distinct from maximum final vessel delay,REQUIRES_RESEARCHER_REVIEW,"Check distinction between maximum call-level delay, final vessel departure delay, and maximum accumulated delay per vessel.",,False
+M04,Mean final vessel departure delay,Vessel,Hours,Secondary,Across represented vessels,REQUIRES_RESEARCHER_REVIEW,,,False
+M05,P90 call departure delay,Call,Hours,Secondary,Report quantile definition and zero-delay calls,REQUIRES_RESEARCHER_REVIEW,,,False
+M06,Total recovery credit,Call/Vessel,Hours,Secondary,"Modelled credit, not observed operational recovery",REQUIRES_RESEARCHER_REVIEW,,,False
+M07A,Unrecovered call count,Call,Count,Secondary,Define threshold for unrecovered before final run,REQUIRES_RESEARCHER_REVIEW,,Define end-of-observation-window treatment; incomplete future sequence may appear unrecovered because it is right-censored.,False
+M07B,Unrecovered vessel count,Vessel,Count,Secondary,Define threshold and end-window censoring,REQUIRES_RESEARCHER_REVIEW,,Define end-of-observation-window treatment; incomplete future sequence may appear unrecovered because it is right-censored.,False

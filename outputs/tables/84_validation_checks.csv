@@ -1,0 +1,7 @@
+Check_ID,Description,Observed,Expected,Status
+C01,Target vessel raw record count equals Script83's reported 32,32,32,PASS
+C02,All extracted rows belong to target IMO,1,1,PASS
+C03,Every raw workbook row number is unique,32,32,PASS
+C04,Chronological record numbering is complete,32,32,PASS
+C05,Voyage identifier fields available,2,2,PASS
+C06,Raw workbook remains read-only; no approval fields assigned,0,0,PASS

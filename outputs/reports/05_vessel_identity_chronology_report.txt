@@ -1,0 +1,233 @@
+===========================================================================
+SCRIPT 05: VESSEL IDENTITY AND CHRONOLOGY INVESTIGATION
+===========================================================================
+
+Total records investigated: 222
+Source files successfully loaded: 6
+Distinct internal IMOs: 12
+
+
+1. IDENTITY MATCH SUMMARY
+---------------------------------------------------------------------------
+FILENAME_MATCH: 201
+SECONDARY_IMO: 21
+
+Records with IMO found in active vessel master: 222
+Records with IMO not found in active vessel master: 0
+
+
+2. IMO-LEVEL CHRONOLOGY SUMMARY
+---------------------------------------------------------------------------
+
+File: individual_vessels/9306079.csv
+IMO: 9301081
+Identity: SECONDARY_IMO
+Records: 1
+Vessel names: CHS ALPHA
+Ports: 1
+First arrival: 2026-08-29 04:45:00+00:00
+Last arrival: 2026-08-29 04:45:00+00:00
+Missing arrivals: 0
+Missing departures: 0
+Arrival after departure: 0
+
+File: individual_vessels/9306079.csv
+IMO: 9306079
+Identity: FILENAME_MATCH
+Records: 38
+Vessel names: ADELINA
+Ports: 4
+First arrival: 2026-07-27 21:43:00+00:00
+Last arrival: 2026-11-28 20:00:00+00:00
+Missing arrivals: 0
+Missing departures: 0
+Arrival after departure: 0
+
+File: individual_vessels/9307011.csv
+IMO: 9222974
+Identity: SECONDARY_IMO
+Records: 1
+Vessel names: GSL Dorothea
+Ports: 1
+First arrival: 2026-09-10 10:01:00+00:00
+Last arrival: 2026-09-10 10:01:00+00:00
+Missing arrivals: 0
+Missing departures: 0
+Arrival after departure: 0
+
+File: individual_vessels/9307011.csv
+IMO: 9307011
+Identity: FILENAME_MATCH
+Records: 30
+Vessel names: AKA BHUM
+Ports: 3
+First arrival: 2026-07-28 19:21:00+00:00
+Last arrival: 2026-12-01 15:00:00+00:00
+Missing arrivals: 0
+Missing departures: 0
+Arrival after departure: 0
+
+File: individual_vessels/9315020.csv
+IMO: 9315020
+Identity: FILENAME_MATCH
+Records: 78
+Vessel names: AKACIA
+Ports: 8
+First arrival: 2026-07-30 10:06:00+00:00
+Last arrival: 2026-11-29 03:00:00+00:00
+Missing arrivals: 0
+Missing departures: 0
+Arrival after departure: 0
+
+File: individual_vessels/9315020.csv
+IMO: 9491472
+Identity: SECONDARY_IMO
+Records: 5
+Vessel names: SOUTH
+Ports: 4
+First arrival: 2026-10-17 04:31:00+00:00
+Last arrival: 2026-10-23 18:13:00+00:00
+Missing arrivals: 0
+Missing departures: 0
+Arrival after departure: 0
+
+File: individual_vessels/9634672.csv
+IMO: 9539482
+Identity: SECONDARY_IMO
+Records: 5
+Vessel names: SAFEEN POWER
+Ports: 5
+First arrival: 2027-01-05 06:30:00+00:00
+Last arrival: 2027-01-23 10:00:00+00:00
+Missing arrivals: 0
+Missing departures: 0
+Arrival after departure: 0
+
+File: individual_vessels/9634672.csv
+IMO: 9634672
+Identity: FILENAME_MATCH
+Records: 3
+Vessel names: AL SEEF
+Ports: 3
+First arrival: 2026-09-14 13:12:00+00:00
+Last arrival: 2026-10-02 01:00:00+00:00
+Missing arrivals: 0
+Missing departures: 0
+Arrival after departure: 0
+
+File: individual_vessels/9732307.csv
+IMO: 9321483
+Identity: SECONDARY_IMO
+Records: 7
+Vessel names: EMMA MAERSK
+Ports: 6
+First arrival: 2026-06-17 15:37:00+00:00
+Last arrival: 2026-08-08 05:52:00+00:00
+Missing arrivals: 0
+Missing departures: 0
+Arrival after departure: 0
+
+File: individual_vessels/9732307.csv
+IMO: 9732307
+Identity: FILENAME_MATCH
+Records: 16
+Vessel names: AL DHAIL
+Ports: 10
+First arrival: 2026-08-16 14:13:00+00:00
+Last arrival: 2027-01-06 10:00:00+00:00
+Missing arrivals: 0
+Missing departures: 0
+Arrival after departure: 0
+
+File: individual_vessels/9948803.csv
+IMO: 9948803
+Identity: FILENAME_MATCH
+Records: 36
+Vessel names: A. P. Moller
+Ports: 14
+First arrival: 2026-05-25 04:20:00+00:00
+Last arrival: 2026-12-26 22:00:00+00:00
+Missing arrivals: 0
+Missing departures: 0
+Arrival after departure: 0
+
+File: individual_vessels/9948803.csv
+IMO: 9984572
+Identity: SECONDARY_IMO
+Records: 2
+Vessel names: Beijing Maersk
+Ports: 2
+First arrival: 2026-09-14 12:22:00+00:00
+Last arrival: 2026-09-20 14:09:00+00:00
+Missing arrivals: 0
+Missing departures: 0
+Arrival after departure: 0
+
+
+3. TIMESTAMP PARSING QUALITY
+---------------------------------------------------------------------------
+
+ARRI_ACT:
+Non-missing original: 154
+Successfully parsed: 154
+Failed parsing: 0
+Missing original: 68
+Sample values: 2026-09-10T18:01:00+08:00 | 2026-07-29T02:21:00+07:00 | 2026-08-02T07:19:00+08:00 | 2026-08-07T04:31:00+07:00 | 2026-08-15T01:22:00+08:00
+
+ARRI_EST:
+Non-missing original: 222
+Successfully parsed: 222
+Failed parsing: 0
+Missing original: 0
+Sample values: 2026-09-10T18:00:00+08:00 | 2026-07-29T02:00:00+07:00 | 2026-08-02T07:30:00+08:00 | 2026-08-07T04:00:00+07:00 | 2026-08-15T01:30:00+08:00
+
+ARRI_PLN:
+Non-missing original: 222
+Successfully parsed: 222
+Failed parsing: 0
+Missing original: 0
+Sample values: 2026-09-09T12:00:00+08:00 | 2026-07-28T22:00:00+07:00 | 2026-08-02T07:00:00+08:00 | 2026-08-07T04:00:00+07:00 | 2026-08-12T19:00:00+08:00
+
+DEPA_ACT:
+Non-missing original: 153
+Successfully parsed: 153
+Failed parsing: 0
+Missing original: 69
+Sample values: 2026-09-11T13:48:00+08:00 | 2026-07-30T16:51:00+07:00 | 2026-08-03T12:28:00+08:00 | 2026-08-08T15:37:00+07:00 | 2026-08-15T22:03:00+08:00
+
+DEPA_EST:
+Non-missing original: 222
+Successfully parsed: 222
+Failed parsing: 0
+Missing original: 0
+Sample values: 2026-09-11T15:30:00+08:00 | 2026-07-30T17:00:00+07:00 | 2026-08-03T12:00:00+08:00 | 2026-08-08T15:30:00+07:00 | 2026-08-15T21:45:00+08:00
+
+DEPA_PLN:
+Non-missing original: 222
+Successfully parsed: 222
+Failed parsing: 0
+Missing original: 0
+Sample values: 2026-09-10T12:00:00+08:00 | 2026-07-30T20:00:00+07:00 | 2026-08-03T18:00:00+08:00 | 2026-08-09T15:00:00+07:00 | 2026-08-13T22:00:00+08:00
+
+
+4. OVERLAPPING PORT-CALL INTERVALS
+---------------------------------------------------------------------------
+Potential overlaps between different IMOs: 4
+
+Note: Overlapping intervals are flags for investigation, not automatic proof of incorrect records.
+
+
+5. IMPORTANT TIMESTAMP ASSUMPTION
+---------------------------------------------------------------------------
+Analysis_Arrival and Analysis_Departure use actual timestamps first, then estimated, then planned timestamps.
+Pandas parsed timestamps with utc=True. Naive timestamps are treated as UTC for comparison. The original source timezone has not been independently verified.
+Do not interpret the resulting UTC values as confirmed UTC until the source timezone convention is established.
+
+
+6. OUTPUT FILES
+---------------------------------------------------------------------------
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/05_affected_vessel_row_level.csv
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/05_vessel_chronological_sequence.csv
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/05_vessel_imo_chronology_summary.csv
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/05_overlapping_port_call_intervals.csv
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/05_timestamp_parsing_quality.csv

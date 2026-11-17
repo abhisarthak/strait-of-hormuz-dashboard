@@ -1,0 +1,6 @@
+﻿Batch,Expected_Records,Records_Found,Records_Compared,Fields_Compared,Mismatched_Fields,Missing_Expected_Codes,Checkpoint_Status
+BATCH_1,4,19,4,68,0,,MATCHED
+BATCH_2,2,19,2,34,0,,MATCHED
+BATCH_3,3,19,3,51,0,,MATCHED
+BATCH_4,3,19,3,51,0,,MATCHED
+BATCH_5,7,19,7,119,0,,MATCHED

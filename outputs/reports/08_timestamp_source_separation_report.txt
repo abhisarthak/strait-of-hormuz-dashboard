@@ -1,0 +1,29 @@
+===========================================================================
+SCRIPT 08: TIMESTAMP SOURCE SEPARATION
+===========================================================================
+
+Actual, estimated and planned timestamps are analysed independently.
+
+No missing timestamp is substituted with another timestamp source.
+
+SOURCE-SPECIFIC QUALITY SUMMARY
+---------------------------------------------------------------------------
+
+      Dataset_Source  Total_Records  Records_With_Complete_Timestamps  Missing_Arrival  Missing_Departure  Negative_Port_Stay  Zero_Port_Stay  Valid_Nonnegative_Port_Stays  Mean_Port_Stay_Hours  Median_Port_Stay_Hours  Minimum_Port_Stay_Hours  Maximum_Port_Stay_Hours  Unique_Vessels  Unique_Ports
+   INDIVIDUAL_ACTUAL            617                               424              189                192                   0               0                           424                 29.62                   26.04                     0.02                   178.12              35            75
+INDIVIDUAL_ESTIMATED            617                               617                0                  0                   1               0                           616                 30.06                   27.00                     0.02                   178.50              35            75
+  INDIVIDUAL_PLANNED            617                               617                0                  0                   0               0                           617                 29.57                   27.02                     1.00                    88.00              35            75
+     SCHEDULE_ACTUAL           1894                               618             1263               1274                   0               0                           618                 30.58                   26.24                     0.02                   105.75             207            20
+  SCHEDULE_ESTIMATED           1894                              1894                0                  0                   2               0                          1892                 30.02                   24.50                     3.83                   185.00             207            20
+    SCHEDULE_PLANNED           1894                              1894                0                  0                   0               0                          1894                 28.49                   24.00                     3.00                   185.00             207            20
+
+INTERPRETATION NOTES
+---------------------------------------------------------------------------
+1. Actual stay requires actual arrival and actual departure.
+2. Estimated stay uses estimated timestamps only.
+3. Planned stay uses planned timestamps only.
+4. Negative stays are retained for investigation.
+5. Mean and median exclude negative durations.
+6. These calculations do not establish sailing time.
+
+Total negative records across six views: 3

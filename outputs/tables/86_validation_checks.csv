@@ -1,0 +1,7 @@
+Check_ID,Description,Observed,Expected,Status
+C01,Workbook row count matches previously audited workbook,1894,1894,PASS
+C02,Target vessel has 32 raw records,32,32,PASS
+C03,Composite voyage-key groups account for all complete-key rows,1777,1777,PASS
+C04,Target vessel has 21 distinct composite voyage keys,21,21,PASS
+C05,No target-vessel import/export voyage mismatch,0,0,PASS
+C06,No records or approvals changed,0,0,PASS

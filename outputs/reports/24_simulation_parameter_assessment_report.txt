@@ -1,0 +1,81 @@
+SIMULATION PARAMETER SUITABILITY ASSESSMENT
+=================================================================
+
+Directed port pairs assessed: 53
+Total observations represented: 271
+
+ESTIMATION METHOD SUMMARY
+                   Recommended_Method  Directed_Port_Pairs  Total_Observations  Mean_Of_Pair_Means  Median_Of_Pair_Medians  Average_Unique_Vessels
+                  ASSUMPTION_REQUIRED                   22                  30          260.417424              135.466667                1.227273
+            DESCRIPTIVE_EVIDENCE_ONLY                   14                  57           91.636488               45.800000                1.785714
+           LIMITED_EMPIRICAL_EVIDENCE                    9                  67          103.773031               37.800000                3.000000
+       EMPIRICAL_RESAMPLING_CANDIDATE                    3                  57          193.653299              138.058333               12.000000
+EMPIRICAL_RESAMPLING_WITH_SENSITIVITY                    3                  38          220.287285               11.458333                6.333333
+    EMPIRICAL_RESAMPLING_WITH_CAUTION                    2                  22           82.257576               18.425000                4.000000
+
+PORT-PAIR SUITABILITY REGISTER
+Previous_Port Next_Port  Sample_Size  Unique_Vessels                    Recommended_Method Variability_Category
+        SAKAC     AEJEA            2               2                   ASSUMPTION_REQUIRED             MODERATE
+        AEFJR     SAKAC            2               2                   ASSUMPTION_REQUIRED             MODERATE
+        QADOH     QAQCH            2               1                   ASSUMPTION_REQUIRED            VERY_HIGH
+        OMSLL     OMDQM            2               2                   ASSUMPTION_REQUIRED                 HIGH
+        SADMM     QADOH            2               2                   ASSUMPTION_REQUIRED             MODERATE
+        AESHJ     QADOH            2               1                   ASSUMPTION_REQUIRED                  LOW
+        QADOH     AEJEA            2               1                   ASSUMPTION_REQUIRED             MODERATE
+        QAQCH     QADOH            2               2                   ASSUMPTION_REQUIRED                 HIGH
+        AEJEA     SAKAC            1               1                   ASSUMPTION_REQUIRED         NOT_ASSESSED
+        OMSLL     AEJEA            1               1                   ASSUMPTION_REQUIRED         NOT_ASSESSED
+        AEFJR     AEJEA            1               1                   ASSUMPTION_REQUIRED         NOT_ASSESSED
+        AEAUH     SAJED            1               1                   ASSUMPTION_REQUIRED         NOT_ASSESSED
+        SAKAC     AEAUH            1               1                   ASSUMPTION_REQUIRED         NOT_ASSESSED
+        AEJEA     IQUQR            1               1                   ASSUMPTION_REQUIRED         NOT_ASSESSED
+        AEAUH     AESHJ            1               1                   ASSUMPTION_REQUIRED         NOT_ASSESSED
+        OMDQM     OMSLL            1               1                   ASSUMPTION_REQUIRED         NOT_ASSESSED
+        AEKLF     OMSOH            1               1                   ASSUMPTION_REQUIRED         NOT_ASSESSED
+        IQUQR     AEJEA            1               1                   ASSUMPTION_REQUIRED         NOT_ASSESSED
+        QADOH     KWSAA            1               1                   ASSUMPTION_REQUIRED         NOT_ASSESSED
+        KWSAA     KWSWK            1               1                   ASSUMPTION_REQUIRED         NOT_ASSESSED
+        AESHJ     SADMM            1               1                   ASSUMPTION_REQUIRED         NOT_ASSESSED
+        SADMM     AEAUH            1               1                   ASSUMPTION_REQUIRED         NOT_ASSESSED
+        SAKAC     SAJED            5               4             DESCRIPTIVE_EVIDENCE_ONLY            VERY_HIGH
+        KWSWK     AEJEA            5               1             DESCRIPTIVE_EVIDENCE_ONLY             MODERATE
+        BHKBS     QADOH            5               1             DESCRIPTIVE_EVIDENCE_ONLY                  LOW
+        SAJED     SAKAC            4               4             DESCRIPTIVE_EVIDENCE_ONLY                 HIGH
+        OMSLL     OMSOH            4               1             DESCRIPTIVE_EVIDENCE_ONLY             MODERATE
+        AEFJR     OMSLL            4               2             DESCRIPTIVE_EVIDENCE_ONLY             MODERATE
+        AEFJR     OMSOH            4               2             DESCRIPTIVE_EVIDENCE_ONLY             MODERATE
+        SAJUB     AEJEA            4               2             DESCRIPTIVE_EVIDENCE_ONLY             MODERATE
+        QADOH     KWSWK            4               1             DESCRIPTIVE_EVIDENCE_ONLY                  LOW
+        AEJEA     SAJUB            4               2             DESCRIPTIVE_EVIDENCE_ONLY                  LOW
+        AEJEA     QADOH            4               2             DESCRIPTIVE_EVIDENCE_ONLY             MODERATE
+        SADMM     BHKBS            4               1             DESCRIPTIVE_EVIDENCE_ONLY                  LOW
+        IQUQR     SADMM            3               1             DESCRIPTIVE_EVIDENCE_ONLY                  LOW
+        SADMM     IQUQR            3               1             DESCRIPTIVE_EVIDENCE_ONLY             MODERATE
+        SAJED     OMSLL           32              22        EMPIRICAL_RESAMPLING_CANDIDATE             MODERATE
+        OMSLL     AEKLF           15               9        EMPIRICAL_RESAMPLING_CANDIDATE                 HIGH
+        AEKLF     OMSLL           10               5        EMPIRICAL_RESAMPLING_CANDIDATE             MODERATE
+        AEJEA     AEAJM           11               4     EMPIRICAL_RESAMPLING_WITH_CAUTION            VERY_HIGH
+        AEAJM     AEAUH           11               4     EMPIRICAL_RESAMPLING_WITH_CAUTION                 HIGH
+        OMSLL     SAJED           17               8 EMPIRICAL_RESAMPLING_WITH_SENSITIVITY            VERY_HIGH
+        AEAUH     AEJEA           11               6 EMPIRICAL_RESAMPLING_WITH_SENSITIVITY            VERY_HIGH
+        AEJEA     AEAUH           10               5 EMPIRICAL_RESAMPLING_WITH_SENSITIVITY            VERY_HIGH
+        OMSLL     AEFJR            9               4            LIMITED_EMPIRICAL_EVIDENCE                 HIGH
+        OMSOH     OMSLL            9               3            LIMITED_EMPIRICAL_EVIDENCE                  LOW
+        AEAUH     AEAJM            8               4            LIMITED_EMPIRICAL_EVIDENCE            VERY_HIGH
+        AEJEA     SADMM            8               2            LIMITED_EMPIRICAL_EVIDENCE             MODERATE
+        AEAJM     AEJEA            8               4            LIMITED_EMPIRICAL_EVIDENCE                  LOW
+        QADOH     SADMM            7               3            LIMITED_EMPIRICAL_EVIDENCE            VERY_HIGH
+        AEJEA     AESHJ            6               2            LIMITED_EMPIRICAL_EVIDENCE                 HIGH
+        AESHJ     AEJEA            6               3            LIMITED_EMPIRICAL_EVIDENCE                 HIGH
+        SADMM     AEJEA            6               2            LIMITED_EMPIRICAL_EVIDENCE                  LOW
+
+METHODOLOGICAL LIMITATIONS
+1. Sample thresholds are project screening rules, not universal standards.
+2. Higher sample size does not guarantee representativeness.
+3. Repeated observations from the same vessel may be dependent.
+4. IQR flags are not automatic data errors.
+5. Sensitivity statistics excluding flags are diagnostic only.
+6. Inter-port elapsed times are not pure sailing times.
+7. Port-call transitions do not establish direct navigable routes.
+8. No port-call record independently confirms Hormuz transit.
+9. All parameter classifications are provisional.

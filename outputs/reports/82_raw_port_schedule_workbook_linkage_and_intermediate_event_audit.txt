@@ -1,0 +1,40 @@
+SCRIPT 82 — RAW PORT-SCHEDULE WORKBOOK LINKAGE AND INTERMEDIATE-EVENT AUDIT
+==============================================================================
+Workbook: data/raw/Combined_Port_Schedules.xlsx
+Sheets inspected: 1
+Total raw workbook rows scanned: 1894
+Detected fields: IMO=IMO Number; port=UN Location Code; actual arrival=Actual Arrival; actual departure=Actual Departure
+Long intervals assessed: 23
+Distinct long-interval vessels: 23
+Boundary timestamps sourced from Script79 canonical interval register and joined by Simulation_Record_ID.
+Previous departure exact boundary matches (<= 0.02h): 23
+Current arrival exact boundary matches (<= 0.02h): 23
+Both-boundary matches: 23
+Intervals with intermediate same-vessel raw row candidates: 1
+Intermediate row candidates: 2
+
+INTERPRETATION
+- Matching rows establish record-level overlap with the workbook, not source-provider authenticity.
+- The workbook is located under data/raw/, but its original provider, extraction date, and transformation history must still be documented.
+- Only actual arrival/departure columns are used; planned and estimated timestamps are not substituted.
+- Intermediate rows are candidate records for manual review; they do not automatically invalidate a long interval.
+- No causal classification, schedule slack, recovery, or empirical parameter approval is made.
+- No physical route or actual Strait of Hormuz transit is established.
+
+Validation checks passed: 5/5
+Validation checks failed: 0
+
+CHECK RESULTS
+C01 [PASS] All 23 Script80 long-interval records processed — observed=23, expected=23
+C02 [PASS] Every review vessel represented in boundary register — observed=23, expected=23
+C03 [PASS] Boundary match flags are boolean and non-null — observed=23, expected=23
+C04 [PASS] No source authenticity or operational approvals assigned — observed=0, expected=0
+C05 [PASS] Intermediate event rows are strictly inside interval bounds — observed=2, expected=2
+
+OUTPUT FILES
+- outputs/tables/82_raw_workbook_sheet_inventory.csv
+- outputs/tables/82_long_interval_raw_boundary_linkage.csv
+- outputs/tables/82_intermediate_event_candidates.csv
+- outputs/tables/82_raw_workbook_vessel_coverage.csv
+- outputs/tables/82_validation_checks.csv
+- outputs/reports/82_raw_port_schedule_workbook_linkage_and_intermediate_event_audit.txt

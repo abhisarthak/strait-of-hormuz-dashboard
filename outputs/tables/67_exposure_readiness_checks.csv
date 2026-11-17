@@ -1,0 +1,15 @@
+Check,Passed,Observed,Expected
+Script65 edge count,True,53,53
+Script61 edge count,True,53,53
+Script65 and Script61 edge sets match,True,53,53
+Observed transition rows,True,271,271
+Transition pairs contained in observed network,True,0,0
+Port evidence register has 19 nodes,True,19,19
+Script59 crosswalk coverage matches 12 known network nodes,True,12,12
+No actual Hormuz edge exposure asserted,True,0,0
+No hypothetical edge scope approved,True,0,0
+No actual Hormuz port exposure asserted,True,0,0
+No hypothetical port scope approved,True,0,0
+All researcher edge decisions pending,True,53,53
+All researcher port decisions pending,True,19,19
+No selected parameter values in Script65,True,0,0

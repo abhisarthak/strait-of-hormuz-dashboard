@@ -1,0 +1,7 @@
+Check_ID,Description,Observed,Expected,Status
+C01,Target vessel record count reconciles to Script84,32,32,PASS
+C02,Every target record has a unique workbook row number,32,32,PASS
+C03,Import and export voyage identifiers match on every target record,32,32,PASS
+C04,All paired voyage records are represented in paired register,32,32,PASS
+C05,Original target workbook rows are retained in full extract,32,32,PASS
+C06,No event identity or operational approvals assigned,0,0,PASS

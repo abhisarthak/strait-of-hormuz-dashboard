@@ -1,0 +1,100 @@
+Artifact_Key,Field_or_Field_Pair,Research_Role,Contract_Status,Observed_Column,Source_Rows
+historical_schedule,Simulation_Record_ID,Unique port-call record identifier,PRESENT,Simulation_Record_ID,604
+historical_schedule,IMO_Normalised,Vessel identity for sequencing calls,PRESENT,IMO_Normalised,604
+historical_schedule,UNLOCODE_Normalised,Port identifier for each observed call,PRESENT,UNLOCODE_Normalised,604
+historical_schedule,Actual_Arrival_UTC,Observed port-call arrival timestamp,PRESENT,Actual_Arrival_UTC,604
+historical_schedule,Actual_Departure_UTC,Observed port-call departure timestamp,PRESENT,Actual_Departure_UTC,604
+historical_schedule,Actual_Stay_Hours,Observed stay-duration field; reconcile to timestamps,PRESENT,Actual_Stay_Hours,604
+vessel_parameters,Vessel_ID,Vessel parameter identity; exact schema inspected from source,FIELD_NAME_REQUIRES_SCHEMA_REVIEW,,155
+port_parameters,UNLOCODE,Port parameter identity; exact schema inspected from source,FIELD_NAME_REQUIRES_SCHEMA_REVIEW,,19
+port_service_parameters,UNLOCODE,Port service parameter identity; exact schema inspected from source,FIELD_NAME_REQUIRES_SCHEMA_REVIEW,,19
+interport_parameters,Previous_Port / Next_Port,Directed pair parameter identity; exact schema inspected from source,SCHEMA_INSPECTED,Previous_Port | Next_Port,53
+observed_transitions,Previous_Port / Next_Port,Observed consecutive port-call transition,SCHEMA_INSPECTED,Previous_Port | Next_Port,271
+historical_schedule,Simulation_Record_ID,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Simulation_Record_ID,604
+historical_schedule,IMO_Normalised,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,IMO_Normalised,604
+historical_schedule,Vessel Name,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Vessel Name,604
+historical_schedule,UNLOCODE_Normalised,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,UNLOCODE_Normalised,604
+historical_schedule,Port,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Port,604
+historical_schedule,countryCode,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,countryCode,604
+historical_schedule,countryName,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,countryName,604
+historical_schedule,Carrier Code,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Carrier Code,604
+historical_schedule,Carrier Service Code,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Carrier Service Code,604
+historical_schedule,Import Voyage Number,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Import Voyage Number,604
+historical_schedule,Export Voyage Number,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Export Voyage Number,604
+historical_schedule,Actual_Arrival_UTC,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Actual_Arrival_UTC,604
+historical_schedule,Actual_Departure_UTC,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Actual_Departure_UTC,604
+historical_schedule,Actual_Stay_Hours,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Actual_Stay_Hours,604
+historical_schedule,Schedule_Source_Row,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Schedule_Source_Row,604
+historical_schedule,Source_Port,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Source_Port,604
+observed_transitions,Port,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Port,271
+observed_transitions,UN Location Code,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,UN Location Code,271
+observed_transitions,Facility SMDG Code,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Facility SMDG Code,271
+observed_transitions,Vessel Name,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Vessel Name,271
+observed_transitions,IMO Number,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,IMO Number,271
+observed_transitions,Call Sign,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Call Sign,271
+observed_transitions,Flag,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Flag,271
+observed_transitions,Dummy Vessel,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Dummy Vessel,271
+observed_transitions,Carrier Code,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Carrier Code,271
+observed_transitions,Carrier Service Name,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Carrier Service Name,271
+observed_transitions,Carrier Service Code,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Carrier Service Code,271
+observed_transitions,Import Voyage Number,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Import Voyage Number,271
+observed_transitions,Export Voyage Number,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Export Voyage Number,271
+observed_transitions,Planned Arrival,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Planned Arrival,271
+observed_transitions,Estimated Arrival,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Estimated Arrival,271
+observed_transitions,Actual Arrival,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Actual Arrival,271
+observed_transitions,Planned Departure,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Planned Departure,271
+observed_transitions,Estimated Departure,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Estimated Departure,271
+observed_transitions,Actual Departure,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Actual Departure,271
+observed_transitions,Source_Port,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Source_Port,271
+observed_transitions,Schedule_Source_Row,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Schedule_Source_Row,271
+observed_transitions,IMO_Normalised,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,IMO_Normalised,271
+observed_transitions,Next_Port,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Next_Port,271
+observed_transitions,Vessel_Master_Record_Count,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Vessel_Master_Record_Count,271
+observed_transitions,Master_carrierVesselCode,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Master_carrierVesselCode,271
+observed_transitions,Master_vesselName,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Master_vesselName,271
+observed_transitions,Master_vesselCallSign,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Master_vesselCallSign,271
+observed_transitions,Master_vesselFlagCode,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Master_vesselFlagCode,271
+observed_transitions,Master_Vessel_Name_Normalised,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Master_Vessel_Name_Normalised,271
+observed_transitions,Vessel_Match_Status,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Vessel_Match_Status,271
+observed_transitions,countryCode,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,countryCode,271
+observed_transitions,countryName,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,countryName,271
+observed_transitions,UNLocationCode,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,UNLocationCode,271
+observed_transitions,cityName,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,cityName,271
+observed_transitions,portName,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,portName,271
+observed_transitions,carrierCityGeoID,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,carrierCityGeoID,271
+observed_transitions,UNRegionCode,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,UNRegionCode,271
+observed_transitions,Port_Match_Status,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Port_Match_Status,271
+observed_transitions,IMO_Analysis,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,IMO_Analysis,271
+observed_transitions,LOCODE_Analysis,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,LOCODE_Analysis,271
+observed_transitions,Exact_Representation_Candidate,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Exact_Representation_Candidate,271
+observed_transitions,Planned_Arrival_UTC,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Planned_Arrival_UTC,271
+observed_transitions,Planned_Departure_UTC,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Planned_Departure_UTC,271
+observed_transitions,Planned_Complete,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Planned_Complete,271
+observed_transitions,Planned_Stay_Hours,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Planned_Stay_Hours,271
+observed_transitions,Planned_Negative_Stay,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Planned_Negative_Stay,271
+observed_transitions,Planned_Valid_Chronology,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Planned_Valid_Chronology,271
+observed_transitions,Estimated_Arrival_UTC,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Estimated_Arrival_UTC,271
+observed_transitions,Estimated_Departure_UTC,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Estimated_Departure_UTC,271
+observed_transitions,Estimated_Complete,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Estimated_Complete,271
+observed_transitions,Estimated_Stay_Hours,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Estimated_Stay_Hours,271
+observed_transitions,Estimated_Negative_Stay,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Estimated_Negative_Stay,271
+observed_transitions,Estimated_Valid_Chronology,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Estimated_Valid_Chronology,271
+observed_transitions,Actual_Arrival_UTC,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Actual_Arrival_UTC,271
+observed_transitions,Actual_Departure_UTC,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Actual_Departure_UTC,271
+observed_transitions,Actual_Complete,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Actual_Complete,271
+observed_transitions,Actual_Stay_Hours,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Actual_Stay_Hours,271
+observed_transitions,Actual_Negative_Stay,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Actual_Negative_Stay,271
+observed_transitions,Actual_Valid_Chronology,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Actual_Valid_Chronology,271
+observed_transitions,Missing_IMO,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Missing_IMO,271
+observed_transitions,Missing_LOCODE,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Missing_LOCODE,271
+observed_transitions,Missing_Actual_Arrival,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Missing_Actual_Arrival,271
+observed_transitions,Missing_Actual_Departure,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Missing_Actual_Departure,271
+observed_transitions,Missing_Actual_Pair,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Missing_Actual_Pair,271
+observed_transitions,Actual_Baseline_Eligible_Core,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Actual_Baseline_Eligible_Core,271
+observed_transitions,Actual_Baseline_Eligible_Conservative,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Actual_Baseline_Eligible_Conservative,271
+observed_transitions,Analytical_Record_Status,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Analytical_Record_Status,271
+observed_transitions,Simulation_Record_ID,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Simulation_Record_ID,271
+observed_transitions,Previous_Port,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Previous_Port,271
+observed_transitions,Previous_Departure_UTC,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Previous_Departure_UTC,271
+observed_transitions,Elapsed_Hours_Between_Calls,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Elapsed_Hours_Between_Calls,271
+observed_transitions,Time_Interpretation,Observed source field; interpretation must follow source definition,OBSERVED_SOURCE_FIELD,Time_Interpretation,271

@@ -1,0 +1,13 @@
+Source_File,Filename_IMO,Internal_IMO,Record_Count,Vessel_Names,Port_Codes,Unique_Call_References,Missing_IMO,In_Schedule_Master,In_Active_Vessel_Master
+individual_vessels/9307011.csv,9307011,9222974,1,GSL Dorothea,CNNSA,1,False,False,True
+individual_vessels/9307011.csv,9307011,9307011,30,AKA BHUM,MYTPP; SGSIN; THLCH,30,False,False,True
+individual_vessels/9315020.csv,9315020,9315020,78,AKACIA,DEBRV; DECKL; DEHAM; DEWVN; DKFRC; EETLL; PLGDN; SENRK,78,False,False,True
+individual_vessels/9315020.csv,9315020,9491472,5,SOUTH,DEBRV; DECKL; DEHAM; SENRK,5,False,False,True
+individual_vessels/9306079.csv,9306079,9301081,1,CHS ALPHA,EGPSD,1,False,False,True
+individual_vessels/9306079.csv,9306079,9306079,38,ADELINA,EGDAM; EGPSD; LBBEY; TRISK,38,False,False,True
+individual_vessels/9732307.csv,9732307,9321483,7,EMMA MAERSK,CNTAO; CNXMN; ESALG; GBLGP; NLRTM; SGSIN,7,False,False,True
+individual_vessels/9732307.csv,9732307,9732307,16,AL DHAIL,CNSHA; CNYTN; DKAAR; EGSCN; GBLGP; GBSOU; MYTPP; NLRTM; SEGOT; SGSIN,16,False,False,True
+individual_vessels/9948803.csv,9948803,9948803,36,A. P. Moller,CNNGB; CNNSA; CNSHA; CNTAO; CNTXG; EGPSD; EGSCN; KRPUS; KRUSN; MAPTM; MYTPP; OMSLL; SAJED; SGSIN,36,False,True,True
+individual_vessels/9948803.csv,9948803,9984572,2,Beijing Maersk,CNTAO; CNTXG,2,False,True,True
+individual_vessels/9634672.csv,9634672,9539482,5,SAFEEN POWER,EGSOK; INMUN; INNSA; SAJED; SAKAC,5,False,True,True
+individual_vessels/9634672.csv,9634672,9634672,3,AL SEEF,INMUN; INNSA; SAKAC,3,False,True,True

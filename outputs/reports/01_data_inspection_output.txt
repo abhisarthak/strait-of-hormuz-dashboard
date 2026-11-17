@@ -1,0 +1,438 @@
+===========================================================================
+STRAIT OF HORMUZ RESEARCH
+INITIAL DATA INSPECTION REPORT
+===========================================================================
+
+Generated: 2026-11-13 03:41:41.053402
+Project directory: /Users/abhishekkumar/Strait_of_Hormuz_Research
+Raw data directory: /Users/abhishekkumar/Strait_of_Hormuz_Research/data/raw
+
+###########################################################################
+MAIN DATASET INSPECTION
+###########################################################################
+
+Checking file: Combined_Port_Schedules.xlsx
+
+===========================================================================
+DATASET: Port Schedules
+===========================================================================
+
+1. DATASET DIMENSIONS
+Rows: 1894
+Columns: 20
+
+2. COLUMN NAMES
+- Port
+- UN Location Code
+- Facility SMDG Code
+- Vessel Name
+- IMO Number
+- Call Sign
+- Flag
+- Dummy Vessel
+- Carrier Code
+- Carrier Service Name
+- Carrier Service Code
+- Import Voyage Number
+- Export Voyage Number
+- Planned Arrival
+- Estimated Arrival
+- Actual Arrival
+- Planned Departure
+- Estimated Departure
+- Actual Departure
+- Source_Port
+
+3. DATA TYPES
+Port                        str
+UN Location Code            str
+Facility SMDG Code          str
+Vessel Name                 str
+IMO Number              float64
+Call Sign                   str
+Flag                        str
+Dummy Vessel               bool
+Carrier Code                str
+Carrier Service Name        str
+Carrier Service Code        str
+Import Voyage Number        str
+Export Voyage Number        str
+Planned Arrival             str
+Estimated Arrival           str
+Actual Arrival              str
+Planned Departure           str
+Estimated Departure         str
+Actual Departure            str
+Source_Port                 str
+
+4. MISSING VALUES
+                      Missing_Count  Missing_Percentage
+Port                              0            0.000000
+UN Location Code                  0            0.000000
+Facility SMDG Code                0            0.000000
+Vessel Name                       0            0.000000
+IMO Number                      117            6.177402
+Call Sign                         0            0.000000
+Flag                            117            6.177402
+Dummy Vessel                      0            0.000000
+Carrier Code                      0            0.000000
+Carrier Service Name              0            0.000000
+Carrier Service Code              0            0.000000
+Import Voyage Number              0            0.000000
+Export Voyage Number              0            0.000000
+Planned Arrival                   0            0.000000
+Estimated Arrival                 0            0.000000
+Actual Arrival                 1263           66.684266
+Planned Departure                 0            0.000000
+Estimated Departure               0            0.000000
+Actual Departure               1274           67.265048
+Source_Port                       0            0.000000
+
+5. DUPLICATE RECORDS
+Exact duplicate rows: 8
+
+6. UNIQUE VALUES
+Unique values in UN Location Code: 20
+Unique values in IMO Number: 207
+
+7. FIRST FIVE RECORDS
+                Port UN Location Code Facility SMDG Code        Vessel Name  IMO Number Call Sign Flag  Dummy Vessel Carrier Code                 Carrier Service Name Carrier Service Code Import Voyage Number Export Voyage Number           Planned Arrival         Estimated Arrival            Actual Arrival         Planned Departure       Estimated Departure          Actual Departure Source_Port
+Jebel Ali Terminal 2            AEJEA              DPWJ2           GFS JADE   9187863.0   J8B6169   VC         False         MAEU               GFS KFK PQ1 FJR FEEDER                  Y99                 0237                 0237 2026-07-30T19:00:00+04:00 2026-07-31T15:00:00+04:00 2026-07-31T15:00:00+04:00 2026-08-01T15:00:00+04:00 2026-08-01T05:00:00+04:00 2026-08-01T05:00:00+04:00   Jebel_Ali
+Jebel Ali Terminal 2            AEJEA              DPWJ2 JAL AMN RAK FEEDER         NaN     XYXXX  NaN         False         MAEU                JAL-RAK DUMMY SERVICE                  Y87                 630S                 631N 2026-07-31T20:00:00+04:00 2026-07-31T20:00:00+04:00                       NaN 2026-08-01T12:00:00+04:00 2026-08-01T12:00:00+04:00                       NaN   Jebel_Ali
+Jebel Ali Terminal 2            AEJEA              DPWJ2          GFS PRIDE   9349045.0    9V6902   SG         False         MAEU               GFS KFK PQ1 FJR FEEDER                  Y99                 043N                 043N 2026-08-07T01:00:00+04:00 2026-08-03T18:00:00+04:00 2026-08-03T18:00:00+04:00 2026-08-08T01:00:00+04:00 2026-08-04T10:00:00+04:00 2026-08-04T10:00:00+04:00   Jebel_Ali
+Jebel Ali Terminal 2            AEJEA              DPWJ2          TB LINHAI   9150406.0   V7A5382   MH         False         MAEU Y70 FDRTEC JEBEL ALI UMM QASR FEEDER                  Y70                 0011                 0011 2026-08-01T20:00:00+04:00 2026-08-04T23:00:00+04:00 2026-08-04T23:00:00+04:00 2026-08-02T15:00:00+04:00 2026-08-05T09:00:00+04:00 2026-08-05T09:00:00+04:00   Jebel_Ali
+Jebel Ali Terminal 2            AEJEA              DPWJ2        AL SAADIYAT   9760598.0     VRPP7   HK         False         MAEU   GFS JJS MUN JHT JED KAP SOK FEEDER                  Y85                 0002                 0002 2026-08-06T14:00:00+04:00 2026-08-05T16:00:00+04:00 2026-08-05T07:55:00+04:00 2026-08-07T14:00:00+04:00 2026-08-05T23:00:00+04:00 2026-08-06T18:09:00+04:00   Jebel_Ali
+
+8. SUMMARY
+                    Port UN Location Code Facility SMDG Code      Vessel Name    IMO Number Call Sign  Flag Dummy Vessel Carrier Code                Carrier Service Name Carrier Service Code Import Voyage Number Export Voyage Number            Planned Arrival          Estimated Arrival             Actual Arrival          Planned Departure        Estimated Departure           Actual Departure Source_Port
+count               1894             1894               1894             1894  1.777000e+03      1894  1777         1894         1894                                1894                 1894                 1894                 1894                       1894                       1894                        631                       1894                       1894                        620        1894
+unique                24               20                 24              215           NaN       212    18            1            1                                  55                   56                  398                  395                       1734                       1770                        624                       1774                       1800                        611          20
+top     Salalah Terminal            OMSLL               APMT  MAERSK YORKTOWN           NaN      WSNU    SG        False         MAEU  GFS JJS MUN JHT JED KAP SOK FEEDER                  Y85                 640E                 645W  2026-11-12T12:00:00+03:00  2026-11-09T08:00:00+04:00  2026-09-26T06:24:00+04:00  2026-09-18T08:00:00+04:00  2026-12-23T08:00:00+04:00  2026-09-27T10:54:00+04:00     Salalah
+freq                 804              804                804              126           NaN       126   285         1894         1894                                 134                  134                   19                   20                          4                          4                          2                          3                          3                          2         804
+mean                 NaN              NaN                NaN              NaN  9.214322e+06       NaN   NaN          NaN          NaN                                 NaN                  NaN                  NaN                  NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN         NaN
+std                  NaN              NaN                NaN              NaN  1.407027e+06       NaN   NaN          NaN          NaN                                 NaN                  NaN                  NaN                  NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN         NaN
+min                  NaN              NaN                NaN              NaN  1.029338e+06       NaN   NaN          NaN          NaN                                 NaN                  NaN                  NaN                  NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN         NaN
+25%                  NaN              NaN                NaN              NaN  9.289192e+06       NaN   NaN          NaN          NaN                                 NaN                  NaN                  NaN                  NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN         NaN
+50%                  NaN              NaN                NaN              NaN  9.385611e+06       NaN   NaN          NaN          NaN                                 NaN                  NaN                  NaN                  NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN         NaN
+75%                  NaN              NaN                NaN              NaN  9.603594e+06       NaN   NaN          NaN          NaN                                 NaN                  NaN                  NaN                  NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN         NaN
+max                  NaN              NaN                NaN              NaN  9.984596e+06       NaN   NaN          NaN          NaN                                 NaN                  NaN                  NaN                  NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN         NaN
+
+Checking file: active_ports.csv
+
+===========================================================================
+DATASET: Active Ports
+===========================================================================
+
+1. DATASET DIMENSIONS
+Rows: 467
+Columns: 7
+
+2. COLUMN NAMES
+- countryCode
+- countryName
+- UNLocationCode
+- cityName
+- portName
+- carrierCityGeoID
+- UNRegionCode
+
+3. DATA TYPES
+countryCode         str
+countryName         str
+UNLocationCode      str
+cityName            str
+portName            str
+carrierCityGeoID    str
+UNRegionCode        str
+
+4. MISSING VALUES
+                  Missing_Count  Missing_Percentage
+countryCode                   1            0.214133
+countryName                   0            0.000000
+UNLocationCode                0            0.000000
+cityName                      0            0.000000
+portName                      0            0.000000
+carrierCityGeoID              0            0.000000
+UNRegionCode                310           66.381156
+
+5. DUPLICATE RECORDS
+Exact duplicate rows: 0
+
+6. UNIQUE VALUES
+
+7. FIRST FIVE RECORDS
+countryCode countryName UNLocationCode     cityName     portName carrierCityGeoID UNRegionCode
+         AL     Albania          ALDRZ       Durres       Durres    365FKA3IH3WH6          NaN
+         DZ     Algeria          DZALG Algiers port Algiers port    3F717LSULMU0U          NaN
+         DZ     Algeria          DZAAE       Annaba       Annaba    3G07J4PW2IRNI          NaN
+         DZ     Algeria          DZBJA       Bejaia       Bejaia    2XYDEMXVN2IRI          NaN
+         DZ     Algeria          DZORN         Oran         Oran    1J10LMDK4XRPA          NaN
+
+8. SUMMARY
+       countryCode    countryName UNLocationCode  cityName  portName carrierCityGeoID UNRegionCode
+count          466            467            467       467       467              467          157
+unique         133            134            464       464       464              467          104
+top             US  United States          DKCPH  Freeport  Freeport    365FKA3IH3WH6           SC
+freq            27             27              2         2         2                1            5
+
+Checking file: active_vessels.csv
+
+===========================================================================
+DATASET: Active Vessels
+===========================================================================
+
+1. DATASET DIMENSIONS
+Rows: 1847
+Columns: 5
+
+2. COLUMN NAMES
+- carrierVesselCode
+- vesselName
+- vesselCallSign
+- vesselIMONumber
+- vesselFlagCode
+
+3. DATA TYPES
+carrierVesselCode        str
+vesselName               str
+vesselCallSign           str
+vesselIMONumber      float64
+vesselFlagCode           str
+
+4. MISSING VALUES
+                   Missing_Count  Missing_Percentage
+carrierVesselCode              0             0.00000
+vesselName                     0             0.00000
+vesselCallSign                 0             0.00000
+vesselIMONumber              108             5.84732
+vesselFlagCode                65             3.51922
+
+5. DUPLICATE RECORDS
+Exact duplicate rows: 0
+
+6. UNIQUE VALUES
+Unique values in vesselIMONumber: 1572
+
+7. FIRST FIVE RECORDS
+carrierVesselCode      vesselName vesselCallSign  vesselIMONumber vesselFlagCode
+              N3K 922 DUMMY VESEL           5VGA              NaN            NaN
+              GH4    A. P. Moller          OZTM2        9948803.0             DK
+              1UY    ABRAO COCHIN         3E4734        9233648.0             PA
+              KL9         ACASTOS        V7A6463        9973004.0             MH
+              T9P           ADAMS          D5DR5        9260914.0             LR
+
+8. SUMMARY
+       carrierVesselCode vesselName vesselCallSign  vesselIMONumber vesselFlagCode
+count               1847       1847           1847     1.739000e+03           1782
+unique              1700       1825           1589              NaN             53
+top                  ID7    SPICA J          99999              NaN             LR
+freq                   2          3             79              NaN            339
+mean                 NaN        NaN            NaN     9.176683e+06            NaN
+std                  NaN        NaN            NaN     1.638921e+06            NaN
+min                  NaN        NaN            NaN     1.013353e+06            NaN
+25%                  NaN        NaN            NaN     9.303528e+06            NaN
+50%                  NaN        NaN            NaN     9.434450e+06            NaN
+75%                  NaN        NaN            NaN     9.697416e+06            NaN
+max                  NaN        NaN            NaN     9.996769e+06            NaN
+
+###########################################################################
+INDIVIDUAL VESSEL DATA INSPECTION
+###########################################################################
+
+Total CSV files: 29
+
+CSV FILE INVENTORY
+- individual_vessels/9431692.csv
+- individual_vessels/9307011.csv
+- individual_vessels/9224506.csv
+- individual_vessels/9732321.csv
+- individual_vessels/9948798.csv
+- individual_vessels/9525912.csv
+- individual_vessels/9708813.csv
+- individual_vessels/9233648.csv
+- individual_vessels/9732357.csv
+- individual_vessels/9260914.csv
+- individual_vessels/9253002.csv
+- individual_vessels/9315020.csv
+- individual_vessels/9306079.csv
+- individual_vessels/9708863.csv
+- individual_vessels/9525924.csv
+- individual_vessels/9732319.csv
+- individual_vessels/9349497.csv
+- individual_vessels/9708825.csv
+- individual_vessels/9732307.csv
+- individual_vessels/9948803.csv
+- individual_vessels/9708875.csv
+- individual_vessels/9634672.csv
+- individual_vessels/9349538.csv
+- individual_vessels/9416006.csv
+- individual_vessels/9973004.csv
+- individual_vessels/9708837.csv
+- individual_vessels/9525869.csv
+- individual_vessels/9760598.csv
+- individual_vessels/9334167.csv
+
+VESSEL FILE SUMMARY
+                          File  Rows  Columns  Duplicates  Missing_Cells
+individual_vessels/9431692.csv     7       27           0             15
+individual_vessels/9307011.csv    31       26           0             92
+individual_vessels/9224506.csv     6       24           0             10
+individual_vessels/9732321.csv    19       27           0             44
+individual_vessels/9948798.csv    29       27           0             94
+individual_vessels/9525912.csv    21       27           0             33
+individual_vessels/9708813.csv    12       27           0              9
+individual_vessels/9233648.csv    20       26           0             16
+individual_vessels/9732357.csv    11       27           0             22
+individual_vessels/9260914.csv    36       27           0             58
+individual_vessels/9253002.csv    14       25           0             12
+individual_vessels/9315020.csv    83       27           0            408
+individual_vessels/9306079.csv    39       26           0             65
+individual_vessels/9708863.csv    16       27           0             19
+individual_vessels/9525924.csv    21       27           0             67
+individual_vessels/9732319.csv    15       27           0             31
+individual_vessels/9349497.csv    33       27           0             34
+individual_vessels/9708825.csv    15       27           0             19
+individual_vessels/9732307.csv    23       27           0             44
+individual_vessels/9948803.csv    38       27           0            117
+individual_vessels/9708875.csv     7       27           0              5
+individual_vessels/9634672.csv     8       26           0             39
+individual_vessels/9349538.csv    27       27           0             31
+individual_vessels/9416006.csv    19       23           0             50
+individual_vessels/9973004.csv    11       26           0             22
+individual_vessels/9708837.csv    16       27           0             29
+individual_vessels/9525869.csv    25       27           0             68
+individual_vessels/9760598.csv     6       27           0             37
+individual_vessels/9334167.csv     9       26           0              7
+
+Total vessel records: 617
+
+DETAILED INSPECTION OF FIRST VESSEL FILE
+Filename: individual_vessels/9431692.csv
+
+===========================================================================
+DATASET: Individual Vessel: individual_vessels/9431692.csv
+===========================================================================
+
+1. DATASET DIMENSIONS
+Rows: 7
+Columns: 27
+
+2. COLUMN NAMES
+- source_file
+- carrierServiceName
+- carrierServiceCode
+- vesselIMONumber
+- vesselName
+- vesselFlag
+- vesselCallSign
+- operatorCarrierCode
+- isDummyVessel
+- transportCallReference
+- carrierImportVoyageNumber
+- carrierExportVoyageNumber
+- portName
+- facilityName
+- UNLocationCode
+- facilitySMDGCode
+- ARRI_EST
+- ARRI_ACT
+- ARRI_PLN
+- DEPA_EST
+- DEPA_ACT
+- DEPA_PLN
+- cutoff_DCO
+- cutoff_VCO
+- cutoff_FCO
+- cutoff_ECP
+- cutoff_DGC
+
+3. DATA TYPES
+source_file                    str
+carrierServiceName             str
+carrierServiceCode           int64
+vesselIMONumber              int64
+vesselName                     str
+vesselFlag                     str
+vesselCallSign                 str
+operatorCarrierCode            str
+isDummyVessel                 bool
+transportCallReference       int64
+carrierImportVoyageNumber      str
+carrierExportVoyageNumber      str
+portName                       str
+facilityName                   str
+UNLocationCode                 str
+facilitySMDGCode               str
+ARRI_EST                       str
+ARRI_ACT                       str
+ARRI_PLN                       str
+DEPA_EST                       str
+DEPA_ACT                       str
+DEPA_PLN                       str
+cutoff_DCO                     str
+cutoff_VCO                     str
+cutoff_FCO                     str
+cutoff_ECP                     str
+cutoff_DGC                     str
+
+4. MISSING VALUES
+                           Missing_Count  Missing_Percentage
+source_file                            0            0.000000
+carrierServiceName                     0            0.000000
+carrierServiceCode                     0            0.000000
+vesselIMONumber                        0            0.000000
+vesselName                             0            0.000000
+vesselFlag                             0            0.000000
+vesselCallSign                         0            0.000000
+operatorCarrierCode                    0            0.000000
+isDummyVessel                          0            0.000000
+transportCallReference                 0            0.000000
+carrierImportVoyageNumber              0            0.000000
+carrierExportVoyageNumber              0            0.000000
+portName                               0            0.000000
+facilityName                           0            0.000000
+UNLocationCode                         0            0.000000
+facilitySMDGCode                       0            0.000000
+ARRI_EST                               0            0.000000
+ARRI_ACT                               0            0.000000
+ARRI_PLN                               0            0.000000
+DEPA_EST                               0            0.000000
+DEPA_ACT                               0            0.000000
+DEPA_PLN                               0            0.000000
+cutoff_DCO                             1           14.285714
+cutoff_VCO                             1           14.285714
+cutoff_FCO                             2           28.571429
+cutoff_ECP                             5           71.428571
+cutoff_DGC                             6           85.714286
+
+5. DUPLICATE RECORDS
+Exact duplicate rows: 0
+
+6. UNIQUE VALUES
+Unique values in vesselIMONumber: 1
+
+7. FIRST FIVE RECORDS
+ source_file carrierServiceName  carrierServiceCode  vesselIMONumber vesselName vesselFlag vesselCallSign operatorCarrierCode  isDummyVessel  transportCallReference carrierImportVoyageNumber carrierExportVoyageNumber                       portName                   facilityName UNLocationCode facilitySMDGCode                  ARRI_EST                  ARRI_ACT                  ARRI_PLN                  DEPA_EST                  DEPA_ACT                  DEPA_PLN                cutoff_DCO                cutoff_VCO                cutoff_FCO                cutoff_ECP                cutoff_DGC
+9431692.json                AC1                 690          9431692   ALBERT P         MH          V7ST5                 MSK          False                18034825                      630E                      630E        Ningbo Meishan Terminal        Ningbo Meishan Terminal          CNNGB            BLCT6 2026-07-29T14:00:00+08:00 2026-07-29T14:45:00+08:00 2026-07-25T08:00:00+08:00 2026-07-30T22:00:00+08:00 2026-07-30T22:27:00+08:00 2026-07-26T04:00:00+08:00 2026-07-28T14:00:00+08:00 2026-07-28T17:00:00+08:00 2026-07-28T22:00:00+08:00 2026-07-27T17:00:00+08:00                       NaN
+9431692.json                AC1                 690          9431692   ALBERT P         MH          V7ST5                 MSK          False                18034826                      630E                      630E Busan new port terminal Co.ltd Busan new port terminal Co.ltd          KRPUS              PNC 2026-08-02T23:00:00+09:00 2026-08-03T04:22:00+09:00 2026-07-30T22:00:00+09:00 2026-08-04T06:00:00+09:00 2026-08-04T03:05:00+09:00 2026-07-31T22:30:00+09:00                       NaN 2026-07-30T09:00:00+09:00 2026-08-01T07:00:00+09:00                       NaN                       NaN
+9431692.json                AC1                 690          9431692   ALBERT P         MH          V7ST5                 MSK          False                18034827                      630E                      634W  APM Terminals Lazaro Cardenas  APM Terminals Lazaro Cardenas          MXLZC             APMT 2026-08-19T06:00:00-06:00 2026-08-19T07:33:00-06:00 2026-08-17T00:01:00-06:00 2026-08-20T10:30:00-06:00 2026-08-20T13:18:00-06:00 2026-08-18T06:30:00-06:00 2026-08-12T12:00:00-06:00 2026-08-14T12:00:00-06:00 2026-08-14T12:00:00-06:00                       NaN 2026-08-09T12:00:00-06:00
+9431692.json                AC1                 690          9431692   ALBERT P         MH          V7ST5                 MSK          False                18034828                      630E                      634W                         TCBUEN                         TCBUEN          COBUN            TCBUN 2026-08-25T16:00:00-05:00 2026-08-25T20:01:00-05:00 2026-08-22T12:00:00-05:00 2026-08-26T20:00:00-05:00 2026-08-26T20:32:00-05:00 2026-08-23T08:30:00-05:00 2026-08-19T12:00:00-05:00                       NaN                       NaN                       NaN                       NaN
+9431692.json                AC1                 690          9431692   ALBERT P         MH          V7ST5                 MSK          False                18034829                      630E                      634W               DP World Posorja               DP World Posorja          ECPSJ           DPWPSJ 2026-08-28T07:30:00-05:00 2026-08-28T07:43:00-05:00 2026-08-25T19:00:00-05:00 2026-08-29T12:15:00-05:00 2026-08-29T12:15:00-05:00 2026-08-26T11:30:00-05:00 2026-08-24T09:00:00-05:00 2026-08-24T09:00:00-05:00                       NaN                       NaN                       NaN
+
+8. SUMMARY
+         source_file carrierServiceName  carrierServiceCode  vesselIMONumber vesselName vesselFlag vesselCallSign operatorCarrierCode isDummyVessel  transportCallReference carrierImportVoyageNumber carrierExportVoyageNumber                 portName             facilityName UNLocationCode facilitySMDGCode                   ARRI_EST                   ARRI_ACT                   ARRI_PLN                   DEPA_EST                   DEPA_ACT                   DEPA_PLN                 cutoff_DCO                 cutoff_VCO                 cutoff_FCO                 cutoff_ECP                 cutoff_DGC
+count              7                  7                 7.0              7.0          7          7              7                   7             7            7.000000e+00                         7                         7                        7                        7              7                7                          7                          7                          7                          7                          7                          7                          6                          6                          5                          2                          1
+unique             1                  1                 NaN              NaN          1          1              1                   1             1                     NaN                         2                         3                        7                        7              7                7                          7                          7                          7                          7                          7                          7                          6                          6                          5                          2                          1
+top     9431692.json                AC1                 NaN              NaN   ALBERT P         MH          V7ST5                 MSK         False                     NaN                      630E                      634W  Ningbo Meishan Terminal  Ningbo Meishan Terminal          CNNGB            BLCT6  2026-07-29T14:00:00+08:00  2026-07-29T14:45:00+08:00  2026-07-25T08:00:00+08:00  2026-07-30T22:00:00+08:00  2026-07-30T22:27:00+08:00  2026-07-26T04:00:00+08:00  2026-07-28T14:00:00+08:00  2026-07-28T17:00:00+08:00  2026-07-28T22:00:00+08:00  2026-07-27T17:00:00+08:00  2026-08-09T12:00:00-06:00
+freq               7                  7                 NaN              NaN          7          7              7                   7             7                     NaN                         5                         3                        1                        1              1                1                          1                          1                          1                          1                          1                          1                          1                          1                          1                          1                          1
+mean             NaN                NaN               690.0        9431692.0        NaN        NaN            NaN                 NaN           NaN            1.806714e+07                       NaN                       NaN                      NaN                      NaN            NaN              NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN
+std              NaN                NaN                 0.0              0.0        NaN        NaN            NaN                 NaN           NaN            6.099153e+04                       NaN                       NaN                      NaN                      NaN            NaN              NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN
+min              NaN                NaN               690.0        9431692.0        NaN        NaN            NaN                 NaN           NaN            1.803482e+07                       NaN                       NaN                      NaN                      NaN            NaN              NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN
+25%              NaN                NaN               690.0        9431692.0        NaN        NaN            NaN                 NaN           NaN            1.803483e+07                       NaN                       NaN                      NaN                      NaN            NaN              NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN
+50%              NaN                NaN               690.0        9431692.0        NaN        NaN            NaN                 NaN           NaN            1.803483e+07                       NaN                       NaN                      NaN                      NaN            NaN              NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN
+75%              NaN                NaN               690.0        9431692.0        NaN        NaN            NaN                 NaN           NaN            1.806890e+07                       NaN                       NaN                      NaN                      NaN            NaN              NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN
+max              NaN                NaN               690.0        9431692.0        NaN        NaN            NaN                 NaN           NaN            1.819290e+07                       NaN                       NaN                      NaN                      NaN            NaN              NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN                        NaN
+
+===========================================================================
+DATA INSPECTION COMPLETED
+===========================================================================

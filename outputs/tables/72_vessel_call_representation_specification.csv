@@ -1,0 +1,13 @@
+Canonical_Field,Source_or_Derivation,Definition_and_Constraint,Evidence_Class
+Call_ID,Simulation_Record_ID,Stable identity of one observed port call,SOURCE_OBSERVED
+Vessel_ID,IMO_Normalised,Vessel identity used to order that vessel's observed calls,SOURCE_OBSERVED
+Port_ID,UNLOCODE_Normalised,Port at which the call is recorded,SOURCE_OBSERVED
+Arrival_Time,Actual_Arrival_UTC,Observed arrival timestamp; UTC,SOURCE_OBSERVED
+Departure_Time,Actual_Departure_UTC,Observed departure timestamp; UTC,SOURCE_OBSERVED
+Observed_Port_Call_Interval,Departure_Time - Arrival_Time,"Observed interval; may include waiting, anchorage and port operations",DERIVED_FROM_OBSERVED
+Observed_Stay_Field,Actual_Stay_Hours,Retain original field and reconcile; do not silently replace,SOURCE_OBSERVED_IF_PRESENT
+Vessel_Call_Sequence,"Sort by Vessel_ID, Arrival_Time, Call_ID",Ordering rule for a vessel's observed port calls; ties require review,DERIVED_ORDER
+Next_Observed_Port,Next row in same Vessel_ID sequence,"Observed next port-call location, not a verified sailing route",DERIVED_FROM_SEQUENCE
+Inter_Port_Elapsed_Time,Next Arrival_Time - Current Departure_Time,Elapsed time between observed calls; not pure sailing time,DERIVED_FROM_OBSERVATIONS
+Disruption_Delay,Not present in historical baseline,Separate hypothetical model variable; must never overwrite observed timestamps,FUTURE_SIMULATED
+Recovery_Action,Not present in historical baseline,Future decision variable; requires explicit policy specification,FUTURE_DECISION

@@ -1,0 +1,11 @@
+Metric,Value
+Total_Ports,19.0
+Total_Directed_Connections,53.0
+Weakly_Connected_Components,1.0
+Strongly_Connected_Components,1.0
+Isolated_Ports,0.0
+Largest_Weak_Component_Size,19.0
+Largest_Strong_Component_Size,19.0
+Directed_Density,0.15497076023391812
+Average_In_Degree,2.789473684210526
+Average_Out_Degree,2.789473684210526

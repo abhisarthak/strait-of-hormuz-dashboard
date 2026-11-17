@@ -1,0 +1,27 @@
+SCRIPT 28: CONTROLLED DISRUPTION EXPERIMENT
+===========================================================================
+
+EXPERIMENT DESIGN
+---------------------------------------------------------------------------
+Historical schedule calls: 604
+Unique vessels: 155
+Unique ports: 19
+Random seeds: [21, 42, 63, 84, 105]
+Total replications: 20
+
+SCENARIO SUMMARY
+---------------------------------------------------------------------------
+   Scenario  Replications  Mean_Affected_Calls  Mean_Affected_Share_Percent  Mean_Total_Imposed_Delay_Hours  SD_Total_Imposed_Delay_Hours  Mean_Call_Delay_Hours  Mean_P90_Call_Delay_Hours  Mean_Max_Port_Peak_Concurrency  Change_Max_Peak_vs_Baseline  Mean_Port_Concurrency  Change_Mean_Port_Concurrency  All_Replays_Valid
+S0_BASELINE             5                  0.0                     0.000000                             0.0                           0.0               0.000000                        0.0                             6.0                          0.0               0.518870                      0.000000               True
+    S1_MILD             5                 60.0                     9.933775                          1440.0                           0.0               2.384106                        0.0                             7.0                          1.0               0.517809                     -0.001060               True
+S2_MODERATE             5                151.0                    25.000000                         10872.0                           0.0              18.000000                       72.0                             7.2                          1.2               0.513716                     -0.005154               True
+  S3_SEVERE             5                302.0                    50.000000                         50736.0                           0.0              84.000000                      168.0                             8.2                          2.2               0.499334                     -0.019535               True
+
+INTERPRETATION AND LIMITATIONS
+---------------------------------------------------------------------------
+Disruption percentages and delay durations are hypothetical experimental assumptions.
+Affected calls are selected randomly and are not confirmed Strait of Hormuz transits.
+Arrival and departure timestamps are shifted equally, preserving observed port-stay duration.
+Concurrency is calculated from port-call time intervals and does not establish berth occupancy or port capacity.
+This experiment does not simulate vessel rerouting, sailing-time changes, or queue formation.
+Results are conditional on the selected historical schedule and experimental assumptions.

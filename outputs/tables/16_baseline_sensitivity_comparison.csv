@@ -1,0 +1,4 @@
+Baseline,Valid_Actual_Calls,Unique_Vessels,Unique_Ports,Unique_Services,Transition_Count,Same_Port_Transitions,Different_Port_Transitions,Negative_Transitions,Mean_Port_Stay_Hours,Median_Port_Stay_Hours,P90_Port_Stay_Hours
+Schedule_Core,618,155,19,43,463,188,275,7,30.581445523193093,26.241666666666667,54.410000000000046
+Schedule_Sequence_Ready,611,155,19,43,456,181,275,0,30.56126568466994,26.183333333333334,54.9
+Schedule_Conservative,604,155,19,42,449,178,271,0,30.540618101545252,26.083333333333332,54.935

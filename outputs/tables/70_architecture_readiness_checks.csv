@@ -1,0 +1,13 @@
+Check,Passed,Observed,Expected,Interpretation
+Source directory contains Python files,True,104,>0,Inventory is limited to top-level src/*.py files.
+All discovered Python files parse,True,104,104,AST parse check; does not execute code.
+Historical schedule exists and row count matches,True,604,604,Row count check only.
+Vessel parameter input exists and row count matches,True,155,155,Row count check only.
+Port parameter input exists and row count matches,True,19,19,Row count check only.
+Port service input exists and row count matches,True,19,19,Row count check only.
+Inter-port parameter input exists and row count matches,True,53,53,Pair count and semantic suitability require separate audit.
+Observed transition input exists and row count matches,True,271,271,Transition records are not physical route validation.
+Architecture scan includes SimPy evidence column,True,STATIC_SOURCE_SIGNATURE,SimPy import signature,Detected signature is not proof of model correctness.
+Validation requirements remain unassessed,True,1,1,This script does not claim runtime validation.
+No simulation execution performed,True,NO,NO,Read-only static scan and input contract check.
+No source or simulation input modified,True,NO,NO,Outputs are written only to outputs/tables and outputs/reports.

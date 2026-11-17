@@ -1,0 +1,94 @@
+SCRIPT 09D: OVERLAP INVESTIGATION CLASSIFICATION
+===========================================================================
+Total source schedule records: 1894
+Original Script 09 overlap records: 12
+Underlying investigation cases: 5
+Source records flagged for review: 10
+
+CASE CLASSIFICATION SUMMARY
+Classification
+PROBABLE_DUPLICATE_REPRESENTATION           3
+PLANNED_ESTIMATED_SCHEDULE_INCONSISTENCY    1
+PLANNED_SCHEDULE_INCONSISTENCY              1
+
+SOURCE ROW VERIFICATION
+Verification_Status
+VERIFIED    10
+
+CASE DETAILS
+
+---------------------------------------------------------------------------
+Case: OVL_001
+IMO: 9235531
+Vessel: MAERSK VIRGINIA
+Classification: PROBABLE_DUPLICATE_REPRESENTATION
+Source rows: [1239, 1240]
+Actual: VALID
+Estimated: VALID
+Planned: VALID
+Reason: Identical port and all six timestamps, same import/export voyages, different service codes.
+Treatment: Retain both source records; investigate service-code meaning.
+Verification: ALL_VERIFIED
+
+---------------------------------------------------------------------------
+Case: OVL_002
+IMO: 9263320
+Vessel: SLS TOPAZ
+Classification: PROBABLE_DUPLICATE_REPRESENTATION
+Source rows: [1100, 1101]
+Actual: VALID
+Estimated: VALID
+Planned: VALID
+Reason: Identical port and all six timestamps, same import/export voyages, different service codes.
+Treatment: Retain both source records; investigate service-code meaning.
+Verification: ALL_VERIFIED
+
+---------------------------------------------------------------------------
+Case: OVL_003
+IMO: 9332975
+Vessel: MAERSK CHICAGO
+Classification: PROBABLE_DUPLICATE_REPRESENTATION
+Source rows: [950, 951]
+Actual: VALID
+Estimated: VALID
+Planned: VALID
+Reason: Identical port and all six timestamps, same import/export voyages, different service codes.
+Treatment: Retain both source records; investigate service-code meaning.
+Verification: ALL_VERIFIED
+
+---------------------------------------------------------------------------
+Case: OVL_004
+IMO: 9202259
+Vessel: DUBAI VENTURE
+Classification: PLANNED_ESTIMATED_SCHEDULE_INCONSISTENCY
+Source rows: [48, 169]
+Actual: VALID
+Estimated: OVERLAP_DETECTED
+Planned: OVERLAP_DETECTED
+Reason: Estimated and planned intervals overlap by three hours between different ports. Actual departure and subsequent arrival are chronologically consistent.
+Treatment: Retain both records; use actual timestamps for historical analysis and flag estimated/planned inconsistency.
+Verification: ALL_VERIFIED
+
+---------------------------------------------------------------------------
+Case: OVL_005
+IMO: 9235567
+Vessel: MAERSK GAIRLOCH
+Classification: PLANNED_SCHEDULE_INCONSISTENCY
+Source rows: [953, 1868]
+Actual: VALID
+Estimated: VALID
+Planned: OVERLAP_DETECTED
+Reason: Planned intervals overlap by 49 hours between different ports. Estimated and actual timestamps show chronological consistency.
+Treatment: Retain both records; use actual timestamps for historical analysis and flag planned schedule inconsistency.
+Verification: ALL_VERIFIED
+
+===========================================================================
+IMPORTANT DATA GOVERNANCE NOTES
+===========================================================================
+1. Original source records have not been deleted.
+2. Original source timestamps have not been modified.
+3. Probable duplicate representations are not confirmed duplicates.
+4. Actual, estimated and planned timestamps remain separate.
+5. All classifications are investigation flags.
+6. Source row verification must pass before further use.
+7. Final deduplication decisions require additional evidence.

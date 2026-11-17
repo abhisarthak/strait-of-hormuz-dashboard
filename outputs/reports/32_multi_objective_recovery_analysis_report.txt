@@ -1,0 +1,92 @@
+==============================================================================
+SCRIPT 32: MULTI-OBJECTIVE RECOVERY STRATEGY ANALYSIS
+==============================================================================
+
+1. PURPOSE
+------------------------------------------------------------------------------
+Evaluate recovery policies using two minimisation objectives:
+  a. Mean accumulated vessel schedule delay.
+  b. Mean maximum port-specific peak concurrency.
+
+2. INPUT
+------------------------------------------------------------------------------
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/31_recovery_policy_summary.csv
+Summary records: 12
+Scenarios: 4
+Policies: 3
+
+3. POLICY IMPROVEMENTS VS NO RECOVERY
+------------------------------------------------------------------------------
+   Scenario     Recovery_Policy  Delay_Saved_vs_No_Recovery_Hours  Delay_Reduction_Percent_vs_No_Recovery  Maximum_Port_Peak_Change_vs_No_Recovery  Average_Port_Peak_Change_vs_No_Recovery
+S0_BASELINE         NO_RECOVERY                             0.000                                     NaN                                      0.0                                    0.000
+S0_BASELINE PARTIAL_RECOVERY_25                             0.000                                     NaN                                      0.0                                    0.000
+S0_BASELINE  FIXED_RECOVERY_12H                             0.000                                     NaN                                      0.0                                    0.000
+    S1_MILD         NO_RECOVERY                             0.000                                   0.000                                      0.0                                    0.000
+    S1_MILD PARTIAL_RECOVERY_25                           222.049                                  25.700                                     -0.4                                   -0.021
+    S1_MILD  FIXED_RECOVERY_12H                           379.200                                  43.889                                     -0.4                                   -0.021
+S2_MODERATE         NO_RECOVERY                             0.000                                   0.000                                      0.0                                    0.000
+S2_MODERATE PARTIAL_RECOVERY_25                          2652.436                                  35.152                                     -0.2                                    0.011
+S2_MODERATE  FIXED_RECOVERY_12H                          2505.600                                  33.206                                      0.0                                    0.032
+  S3_SEVERE         NO_RECOVERY                             0.000                                   0.000                                      0.0                                    0.000
+  S3_SEVERE PARTIAL_RECOVERY_25                         10267.028                                  32.892                                      0.8                                    0.084
+  S3_SEVERE  FIXED_RECOVERY_12H                          5731.200                                  18.361                                      0.2                                   -0.011
+
+4. PARETO-EFFICIENT POLICIES
+------------------------------------------------------------------------------
+S0_BASELINE: NO_RECOVERY, PARTIAL_RECOVERY_25, FIXED_RECOVERY_12H
+S1_MILD: FIXED_RECOVERY_12H
+S2_MODERATE: PARTIAL_RECOVERY_25
+S3_SEVERE: NO_RECOVERY, PARTIAL_RECOVERY_25, FIXED_RECOVERY_12H
+
+5. TWO-OBJECTIVE RANKING
+------------------------------------------------------------------------------
+   Scenario     Recovery_Policy  Delay_Rank  Peak_Rank  Two_Objective_Rank_Sum  Pareto_Efficient
+S0_BASELINE  FIXED_RECOVERY_12H         1.0        1.0                     2.0              True
+S0_BASELINE         NO_RECOVERY         1.0        1.0                     2.0              True
+S0_BASELINE PARTIAL_RECOVERY_25         1.0        1.0                     2.0              True
+    S1_MILD  FIXED_RECOVERY_12H         1.0        1.0                     2.0              True
+    S1_MILD PARTIAL_RECOVERY_25         2.0        1.0                     3.0             False
+    S1_MILD         NO_RECOVERY         3.0        3.0                     6.0             False
+S2_MODERATE PARTIAL_RECOVERY_25         1.0        1.0                     2.0              True
+S2_MODERATE  FIXED_RECOVERY_12H         2.0        2.0                     4.0             False
+S2_MODERATE         NO_RECOVERY         3.0        2.0                     5.0             False
+  S3_SEVERE  FIXED_RECOVERY_12H         2.0        2.0                     4.0              True
+  S3_SEVERE         NO_RECOVERY         3.0        1.0                     4.0              True
+  S3_SEVERE PARTIAL_RECOVERY_25         1.0        3.0                     4.0              True
+
+6. TRADE-OFF CLASSIFICATION
+------------------------------------------------------------------------------
+   Scenario     Recovery_Policy          Tradeoff_Classification  Delay_Saved_Hours  Maximum_Port_Peak_Change
+S0_BASELINE         NO_RECOVERY                 REFERENCE_POLICY           0.000000                       0.0
+S0_BASELINE PARTIAL_RECOVERY_25             NO_CLEAR_IMPROVEMENT           0.000000                       0.0
+S0_BASELINE  FIXED_RECOVERY_12H             NO_CLEAR_IMPROVEMENT           0.000000                       0.0
+    S1_MILD         NO_RECOVERY                 REFERENCE_POLICY           0.000000                       0.0
+    S1_MILD PARTIAL_RECOVERY_25  DELAY_REDUCED_AND_PEAK_IMPROVED         222.049393                      -0.4
+    S1_MILD  FIXED_RECOVERY_12H  DELAY_REDUCED_AND_PEAK_IMPROVED         379.200000                      -0.4
+S2_MODERATE         NO_RECOVERY                 REFERENCE_POLICY           0.000000                       0.0
+S2_MODERATE PARTIAL_RECOVERY_25  DELAY_REDUCED_AND_PEAK_IMPROVED        2652.435681                      -0.2
+S2_MODERATE  FIXED_RECOVERY_12H     DELAY_REDUCED_PEAK_UNCHANGED        2505.600000                       0.0
+  S3_SEVERE         NO_RECOVERY                 REFERENCE_POLICY           0.000000                       0.0
+  S3_SEVERE PARTIAL_RECOVERY_25 DELAY_REDUCED_BUT_PEAK_INCREASED       10267.028276                       0.8
+  S3_SEVERE  FIXED_RECOVERY_12H DELAY_REDUCED_BUT_PEAK_INCREASED        5731.200000                       0.2
+
+7. METHODOLOGICAL INTERPRETATION
+------------------------------------------------------------------------------
+Pareto efficiency identifies policies for which no alternative policy is at least as good on both selected objectives and strictly better on one.
+A Pareto-efficient policy is not automatically the operationally best policy. Selection requires operational preferences, constraints, and validated cost or capacity information.
+The maximum port-specific peak is a temporal overlap indicator derived from port-call intervals. It is not verified berth occupancy or physical port capacity.
+The recovery rules are hypothetical assumptions. The observed inter-port elapsed times are not pure sailing times and do not establish actual recoverable schedule slack.
+The underlying call sequences do not independently confirm Strait of Hormuz transits. No actual route or AIS crossing is inferred by this analysis.
+
+8. LIMITATIONS
+------------------------------------------------------------------------------
+- Only three recovery policies are compared.
+- Only two objectives are used for Pareto analysis.
+- Port concurrency is a proxy, not a capacity measure.
+- No verified AIS trajectories or Strait crossings are used.
+- Recovery fractions and fixed recovery hours are hypothetical.
+- The equal-rank sum is descriptive and not a validated multi-objective optimisation function.
+
+==============================================================================
+END OF SCRIPT 32 REPORT
+==============================================================================

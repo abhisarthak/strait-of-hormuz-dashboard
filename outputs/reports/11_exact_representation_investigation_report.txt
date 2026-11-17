@@ -1,0 +1,33 @@
+=====================================================================================
+SCRIPT 11: EXACT REPRESENTATION INVESTIGATION
+=====================================================================================
+
+Input records: 1894
+Eligible records: 618
+Exact representation groups: 7
+Candidate records: 14
+
+GROUP CLASSIFICATION SUMMARY
+-------------------------------------------------------------------------------------
+Investigation_Classification
+PROBABLE_DUPLICATE_REPRESENTATION_DIFFERENT_SERVICE    7
+
+DETAILED GROUP SUMMARY
+-------------------------------------------------------------------------------------
+Candidate_Group_ID     IMO      Vessel_Name   Port_Name LOCODE  Group_Size  Unique_Service_Count  Services Import_Voyages Export_Voyages Source_Rows                        Investigation_Classification      Resolution_Status  Vessel_Reviewed_In_Script09D IMO_Normalized Previous_Case_ID           Previous_Classification  Previous_09D_Case_Found                                  Recommended_Action
+         EXACT_001 9235531  MAERSK VIRGINIA     SALALAH  OMSLL           2                     2 34A | E4X           639E           640N 1239 | 1240 PROBABLE_DUPLICATE_REPRESENTATION_DIFFERENT_SERVICE REQUIRES_MANUAL_REVIEW                          True        9235531          OVL_001 PROBABLE_DUPLICATE_REPRESENTATION                     True MANUAL_SOURCE_VERIFICATION_BEFORE_ANY_DEDUPLICATION
+         EXACT_002 9263320        SLS Topaz     SALALAH  OMSLL           2                     2 308 | M03           631E           634E 1100 | 1101 PROBABLE_DUPLICATE_REPRESENTATION_DIFFERENT_SERVICE REQUIRES_MANUAL_REVIEW                          True        9263320          OVL_002 PROBABLE_DUPLICATE_REPRESENTATION                     True MANUAL_SOURCE_VERIFICATION_BEFORE_ANY_DEDUPLICATION
+         EXACT_003 9305300      MAERSK UTAH     SALALAH  OMSLL           2                     2 34A | 409           642E           644N 1314 | 1315 PROBABLE_DUPLICATE_REPRESENTATION_DIFFERENT_SERVICE REQUIRES_MANUAL_REVIEW                         False           <NA>              NaN                               NaN                    False MANUAL_SOURCE_VERIFICATION_BEFORE_ANY_DEDUPLICATION
+         EXACT_004 9313917 Maersk Baltimore     SALALAH  OMSLL           2                     2 34A | 599           639S           642E 1275 | 1277 PROBABLE_DUPLICATE_REPRESENTATION_DIFFERENT_SERVICE REQUIRES_MANUAL_REVIEW                         False           <NA>              NaN                               NaN                    False MANUAL_SOURCE_VERIFICATION_BEFORE_ANY_DEDUPLICATION
+         EXACT_005 9332975   MAERSK CHICAGO KHOR FAKKAN  AEKLF           2                     2 599 | 600           624E           630E   950 | 951 PROBABLE_DUPLICATE_REPRESENTATION_DIFFERENT_SERVICE REQUIRES_MANUAL_REVIEW                          True        9332975          OVL_003 PROBABLE_DUPLICATE_REPRESENTATION                     True MANUAL_SOURCE_VERIFICATION_BEFORE_ANY_DEDUPLICATION
+         EXACT_006 9406960         GFS ROJA   JEBEL ALI  AEJEA           2                     2 35Q | Y99           0012           0013     44 | 45 PROBABLE_DUPLICATE_REPRESENTATION_DIFFERENT_SERVICE REQUIRES_MANUAL_REVIEW                         False           <NA>              NaN                               NaN                    False MANUAL_SOURCE_VERIFICATION_BEFORE_ANY_DEDUPLICATION
+         EXACT_007 9565338        GSL ROSSI     SALALAH  OMSLL           2                     2 34B | M03           633S           634N 1107 | 1108 PROBABLE_DUPLICATE_REPRESENTATION_DIFFERENT_SERVICE REQUIRES_MANUAL_REVIEW                         False           <NA>              NaN                               NaN                    False MANUAL_SOURCE_VERIFICATION_BEFORE_ANY_DEDUPLICATION
+
+METHODOLOGICAL NOTES
+-------------------------------------------------------------------------------------
+1. Exact groups are identified using IMO, port name, LOCODE, import/export voyage and all six timestamps.
+2. Service code is excluded from the group signature so that the same apparent call under different services can be identified.
+3. Timestamp comparisons are performed after conversion to UTC.
+4. Records with incomplete signature fields are excluded from exact-group detection, but are not deleted from the source dataset.
+5. A probable duplicate representation is not proof of an erroneous source record.
+6. No original records were deleted or modified.

@@ -1,0 +1,22 @@
+Check,Passed,Observed,Expected,Interpretation
+All six Script19 core input artifacts available,True,6,6,Core input availability; missing files are not inferred.
+Historical schedule contains 604 expected calls,True,604,604,Count check against the accepted Script19 schedule.
+Historical schedule record IDs unique,True,0,0,Identity check.
+All historical schedule rows have valid positive intervals,True,604,604,Timestamp integrity.
+Historical schedule contains 155 expected vessels,True,155,155,Vessel coverage.
+Historical schedule contains 19 expected ports,True,19,19,Port coverage.
+Script71 record audit contains 604 records,True,604,604,Cross-check of accepted baseline audit.
+Script71 record audit all VALID,True,604,604,All records must pass the record audit.
+Script71 record audit IDs unique,True,0,0,Cross-file record identity.
+Script71 port validation contains 19 ports,True,19,19,Port-level replay validation.
+Script71 port areas reconcile,True,19,19,Area under concurrency equals observed interval sum.
+Script71 port final states are zero,True,19,19,All ports close with no active calls.
+Script71 has no negative active-call states,True,19,19,Intermediate event states remain non-negative.
+"Script71 event timeline has 1,205 grouped timestamps",True,1205,1205,Corrected v2 timeline completeness.
+Script71 event timeline covers 19 ports,True,19,19,All port timelines must be exported.
+Script68 edge exposure decisions artifact available,True,AVAILABLE,Optional researcher register,Availability does not mean an exposure or scope is approved.
+Script68 port exposure decisions artifact available,True,AVAILABLE,Optional researcher register,Availability does not mean an exposure or scope is approved.
+Script68 experiment scope decisions artifact available,True,AVAILABLE,Optional researcher register,Availability does not mean an exposure or scope is approved.
+No experiment executed by Script72,True,NO,NO,Specification/readiness only.
+No source files or upstream registers modified,True,NO,NO,Read-only script.
+No disruption scope or magnitude automatically approved,True,NO,NO,All execution authorizations remain NO.

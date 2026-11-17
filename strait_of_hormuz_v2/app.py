@@ -59,6 +59,55 @@ def hero(kicker, title, subtitle):
 def card(label, value, help_text=""):
     st.markdown(f'<div class="card"><div class="klabel">{label}</div><div class="kvalue">{value}</div><div class="khelp">{help_text}</div></div>', unsafe_allow_html=True)
 
+
+def build_manager_pdf(lines, title="STRAIT OF HORMUZ | MANAGER DECISION BRIEF"):
+    """Create a small, dependency-free PDF report using standard PDF primitives."""
+    import textwrap
+    def clean(value):
+        value = str(value).encode("ascii", "replace").decode("ascii")
+        return value.replace("\\", "\\\\").replace("(", "\\(").replace(")", "\\)")
+    wrapped = []
+    for line in lines:
+        if not str(line).strip():
+            wrapped.append("")
+        else:
+            wrapped.extend(textwrap.wrap(str(line), width=88, subsequent_indent="  ") or [""])
+    chunks = [wrapped[i:i+43] for i in range(0, len(wrapped), 43)] or [[]]
+    objects = {}
+    objects[1] = b"<< /Type /Catalog /Pages 2 0 R >>"
+    page_ids = [4 + i*2 for i in range(len(chunks))]
+    kids = " ".join(f"{pid} 0 R" for pid in page_ids)
+    objects[2] = f"<< /Type /Pages /Kids [{kids}] /Count {len(chunks)} >>".encode()
+    objects[3] = b"<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>"
+    for i, chunk in enumerate(chunks):
+        page_id = 4 + i*2
+        content_id = page_id + 1
+        commands = ["0.035 0.11 0.16 rg 0 0 612 792 re f", "0.08 0.30 0.36 rg 36 710 540 48 re f",
+                    "BT /F1 16 Tf 1 1 1 rg 50 738 Td (" + clean(title) + ") Tj ET",
+                    "BT /F1 9 Tf 0.91 0.95 0.98 rg 50 680 Td 13 TL"]
+        for j, line in enumerate(chunk):
+            if j == 0 and line.strip():
+                commands.append("(" + clean(line) + ") Tj T*" )
+            else:
+                commands.append("(" + clean(line) + ") Tj T*")
+        commands.append("ET")
+        stream = "\n".join(commands).encode("latin-1", "replace")
+        objects[page_id] = f"<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents {content_id} 0 R >>".encode()
+        objects[content_id] = b"<< /Length " + str(len(stream)).encode() + b" >>\nstream\n" + stream + b"\nendstream"
+    pdf = bytearray(b"%PDF-1.4\n%\xe2\xe3\xcf\xd3\n")
+    offsets = [0]
+    for obj_id in range(1, max(objects)+1):
+        offsets.append(len(pdf))
+        pdf.extend(f"{obj_id} 0 obj\n".encode())
+        pdf.extend(objects[obj_id])
+        pdf.extend(b"\nendobj\n")
+    xref = len(pdf)
+    pdf.extend(f"xref\n0 {len(offsets)}\n0000000000 65535 f \n".encode())
+    for off in offsets[1:]:
+        pdf.extend(f"{off:010d} 00000 n \n".encode())
+    pdf.extend(f"trailer\n<< /Size {len(offsets)} /Root 1 0 R >>\nstartxref\n{xref}\n%%EOF".encode())
+    return bytes(pdf)
+
 def render_hormuz_map(height=720, ais_vessels=None):
     """Dark, interactive geographic reference map; markers are not live AIS."""
     ais_json = json.dumps(ais_vessels or [], ensure_ascii=False, default=str).replace("</", "<\\/")
@@ -179,7 +228,7 @@ with st.sidebar:
     st.markdown("🟡 External sources · refreshable")
     st.markdown("🟡 AIS-derived feed · public third-party provider")
     st.divider()
-    st.caption("MARITIME INTELLIGENCE · HYBRID BUILD 8")
+    st.caption("MARITIME INTELLIGENCE · HYBRID BUILD 10")
 
 status = load_status_record(ROOT)
 primary = load_primary(ROOT)
@@ -772,36 +821,398 @@ elif page == "5 · Research Simulation":
             unsafe_allow_html=True
         )
 
-        c1, c2, c3 = st.columns(3)
+        # Shared scenario options must be defined before either interface uses them.
         shock_values = sorted(primary["shock_hours"].dropna().unique().tolist())
         share_values = sorted(primary["share"].dropna().unique().tolist())
+        policies = primary["policy_name"].dropna().drop_duplicates().tolist()
+
+        # Management decision brief: plain language first; technical detail remains below.
+        st.markdown("## Management decision brief")
+        st.caption(
+            "Choose a tested disruption scenario and the outcome management cares about. "
+            "The recommendation compares the five recovery rules already evaluated in the research."
+        )
+
+        mc1, mc2, mc3 = st.columns([1, 1, 1.35])
+        manager_shock = mc1.selectbox(
+            "Disruption duration", shock_values,
+            index=min(1, len(shock_values)-1),
+            format_func=lambda x: f"{x:g} hours", key="manager_shock"
+        )
+        manager_share = mc2.selectbox(
+            "Share of vessel transitions affected", share_values,
+            index=min(2, len(share_values)-1),
+            format_func=lambda x: f"{x:.0%}", key="manager_share"
+        )
+        priority_labels = [
+            "Reduce average departure delay",
+            "Reduce the number of vessels still delayed",
+            "Balance delays and the number of affected vessels",
+        ]
+        manager_priority = mc3.selectbox(
+            "What matters most to management?", priority_labels,
+            key="manager_priority"
+        )
+        st.caption(
+            "Only the disruption durations and impact levels already tested are available. "
+            "Changing these inputs filters the completed experiment; it does not run a new forecast."
+        )
+        run_manager = st.button(
+            "Prepare management recommendation", type="primary",
+            key="manager_get_recommendation", use_container_width=True
+        )
+        if run_manager:
+            st.session_state["manager_decision_request"] = {
+                "shock": float(manager_shock),
+                "share": float(manager_share),
+                "priority": manager_priority,
+            }
+
+        request = st.session_state.get("manager_decision_request")
+        request_is_current = bool(
+            request
+            and request.get("shock") == float(manager_shock)
+            and request.get("share") == float(manager_share)
+            and request.get("priority") == manager_priority
+        )
+        if request and not request_is_current:
+            st.info("Your scenario has changed. Select **Prepare management recommendation** to update the decision brief.")
+        elif request_is_current:
+            decision_rows = scenario_filter(primary, manager_shock, manager_share).copy()
+            if decision_rows.empty:
+                st.error("No stored research result matches these inputs. No recommendation can be produced.")
+            else:
+                if "policy_id" in decision_rows.columns:
+                    no_recovery_mask = decision_rows["policy_id"].astype(str).eq("R76-00-NONE")
+                else:
+                    no_recovery_mask = decision_rows["policy_name"].astype(str).str.contains("no recovery", case=False)
+                baseline_rows = decision_rows[no_recovery_mask]
+                intervention_rows = decision_rows[~no_recovery_mask].copy()
+
+                objectives = {
+                    priority_labels[0]: [("mean_delay", True)],
+                    priority_labels[1]: [("unrecovered_vessels", True)],
+                    priority_labels[2]: [
+                        ("mean_delay", True), ("p90_delay", True),
+                        ("unrecovered_calls", True), ("unrecovered_vessels", True)
+                    ],
+                }
+                available = [(c, asc) for c, asc in objectives[manager_priority] if c in intervention_rows.columns]
+                if intervention_rows.empty or not available:
+                    st.error("The stored results do not contain the measures needed for this recommendation.")
+                else:
+                    if manager_priority == priority_labels[2]:
+                        rank_parts = [
+                            intervention_rows[c].rank(method="average", ascending=asc)
+                            for c, asc in available
+                        ]
+                        intervention_rows["manager_score"] = pd.concat(rank_parts, axis=1).sum(axis=1)
+                        best_score = intervention_rows["manager_score"].min()
+                        winners = intervention_rows[
+                            (intervention_rows["manager_score"] - best_score).abs() < 1e-9
+                        ].copy()
+                        rationale = (
+                            "This option has the strongest combined ranking across four equally weighted measures: "
+                            "average delay, high-end (P90) delay, delayed calls and delayed vessels."
+                        )
+                        comparison_metric = "manager_score"
+                        comparison_ascending = True
+                    else:
+                        decision_col, decision_ascending = available[0]
+                        intervention_rows = intervention_rows.sort_values(
+                            decision_col, ascending=decision_ascending, kind="mergesort"
+                        )
+                        best_value = pd.to_numeric(intervention_rows[decision_col], errors="coerce").iloc[0]
+                        winners = intervention_rows[
+                            (pd.to_numeric(intervention_rows[decision_col], errors="coerce") - float(best_value)).abs() < 1e-9
+                        ].copy()
+                        rationale = (
+                            "This option is recommended because it records the lowest average departure delay."
+                            if decision_col == "mean_delay"
+                            else "This option is recommended because it leaves the fewest vessels with unrecovered delay."
+                        )
+                        comparison_metric = decision_col
+                        comparison_ascending = decision_ascending
+
+                    # Do not manufacture a single winner when the stored objective is tied.
+                    winner = winners.sort_values("policy_name").iloc[0]  # used only for stable file naming
+                    winner_count = len(winners)
+                    baseline = baseline_rows.iloc[0] if not baseline_rows.empty else None
+
+                    friendly_policy = {
+                        "No recovery": "No recovery action",
+                        "Fixed recovery credit, 6h per link": "Fixed 6-hour recovery credit",
+                        "Fixed recovery credit, 12h per link": "Fixed 12-hour recovery credit",
+                        "Proportional recovery, 25%, capped at 6h per link": "Recover 25% of delay, up to 6 hours",
+                        "Proportional recovery, 50%, capped at 12h per link": "Recover 50% of delay, up to 12 hours",
+                    }
+                    winners = winners.copy()
+                    winners["Management-friendly option"] = winners["policy_name"].map(friendly_policy).fillna(winners["policy_name"])
+                    tied_names = winners["Management-friendly option"].tolist()
+                    manager_name = tied_names[0] if winner_count == 1 else None
+
+                    def outcome_range(column, digits=2, suffix=""):
+                        vals = pd.to_numeric(winners[column], errors="coerce").dropna()
+                        if vals.empty:
+                            return "Not available"
+                        lo, hi = float(vals.min()), float(vals.max())
+                        if abs(hi - lo) < 1e-9:
+                            return f"{lo:,.{digits}f}{suffix}"
+                        return f"{lo:,.{digits}f}–{hi:,.{digits}f}{suffix}"
+
+                    if winner_count == 1:
+                        decision_heading = manager_name
+                        decision_subheading = rationale
+                        decision_kicker = "BEST-PERFORMING TESTED OPTION"
+                    else:
+                        decision_heading = "No unique best option identified"
+                        decision_subheading = (
+                            f"{winner_count} tested options achieved the same best result for the selected priority. "
+                            "The research does not establish one as better. Compare the options below and confirm feasibility with operations."
+                        )
+                        decision_kicker = "TIE — MANAGEMENT REVIEW REQUIRED"
+
+                    st.divider()
+                    st.markdown("### Decision")
+                    st.markdown(
+                        f"""
+                        <div style="background:linear-gradient(110deg,#103b3b,#123044);border:1px solid #28766f;
+                                    border-left:5px solid #35c6a5;border-radius:12px;padding:22px 24px;margin:8px 0 14px 0;">
+                          <div style="font-size:11px;letter-spacing:1.5px;font-weight:800;color:#83e0c8;text-transform:uppercase;">
+                            {decision_kicker}
+                          </div>
+                          <div style="font-size:25px;line-height:1.25;font-weight:750;color:#f2fbff;margin:9px 0 10px 0;">
+                            {decision_heading}
+                          </div>
+                          <div style="font-size:15px;line-height:1.55;color:#d5e8ed;">
+                            {decision_subheading}
+                          </div>
+                        </div>
+                        """,
+                        unsafe_allow_html=True
+                    )
+                    if winner_count > 1:
+                        st.markdown("**Options tied for the best result**")
+                        st.dataframe(
+                            winners[["Management-friendly option"] + [c for c in ["mean_delay", "p90_delay", "unrecovered_calls", "unrecovered_vessels"] if c in winners.columns]].rename(columns={
+                                "mean_delay": "Mean delay (h)",
+                                "p90_delay": "P90 delay (h)",
+                                "unrecovered_calls": "Delayed calls",
+                                "unrecovered_vessels": "Delayed vessels",
+                            }), use_container_width=True, hide_index=True
+                        )
+
+                    st.markdown("### Scenario being assessed")
+                    s1, s2, s3 = st.columns(3)
+                    s1.metric("Disruption duration", f"{manager_shock:g} hours")
+                    s2.metric("Transitions affected", f"{manager_share:.0%}")
+                    s3.metric("Management priority", "Balanced outcomes" if manager_priority == priority_labels[2] else
+                              ("Average delay" if manager_priority == priority_labels[0] else "Delayed vessels"))
+
+                    st.markdown("### What the model says")
+                    o1, o2, o3 = st.columns(3)
+                    o1.metric(
+                        "Mean remaining delay",
+                        outcome_range("mean_delay", 2, " h"),
+                        help="Mean remaining incremental departure delay across represented calls."
+                    )
+                    o2.metric(
+                        "Delayed calls",
+                        outcome_range("unrecovered_calls", 0),
+                        help="Number of represented calls with unrecovered delay."
+                    )
+                    o3.metric(
+                        "Delayed vessels",
+                        outcome_range("unrecovered_vessels", 0),
+                        help="Number of represented vessels with unrecovered delay at the last represented call."
+                    )
+                    st.caption(
+                        f"P90 departure delay across the best option(s): {outcome_range('p90_delay', 2, ' hours')}. "
+                        "P90 means 90% of represented calls have a delay at or below this value. These are modelled results, not service guarantees."
+                    )
+
+                    if baseline is not None:
+                        delay_improvements = float(baseline["mean_delay"]) - pd.to_numeric(winners["mean_delay"], errors="coerce")
+                        vessel_improvements = float(baseline["unrecovered_vessels"]) - pd.to_numeric(winners["unrecovered_vessels"], errors="coerce")
+                        call_improvements = float(baseline["unrecovered_calls"]) - pd.to_numeric(winners["unrecovered_calls"], errors="coerce")
+                        delay_improvement = float(delay_improvements.iloc[0]) if winner_count == 1 else None
+                        vessel_improvement = float(vessel_improvements.iloc[0]) if winner_count == 1 else None
+                        call_improvement = float(call_improvements.iloc[0]) if winner_count == 1 else None
+                        st.markdown("### Compared with taking no recovery action")
+                        if winner_count == 1:
+                            b1, b2, b3 = st.columns(3)
+                            b1.metric("Average delay reduced", f"{delay_improvement:.2f} hours")
+                            b2.metric("Fewer delayed vessels", f"{vessel_improvement:,.0f}")
+                            b3.metric("Fewer delayed calls", f"{call_improvement:,.0f}")
+                        else:
+                            def range_text(series, suffix="", digits=2):
+                                values = pd.to_numeric(series, errors="coerce").dropna()
+                                if values.empty:
+                                    return "Not available"
+                                lo, hi = float(values.min()), float(values.max())
+                                fmt = f"{{:,.{digits}f}}"
+                                if abs(hi - lo) >= 1e-9:
+                                    return f"{fmt.format(lo)}–{fmt.format(hi)}{suffix}"
+                                return f"{fmt.format(lo)}{suffix}"
+                            b1, b2, b3 = st.columns(3)
+                            b1.metric("Average delay reduced", range_text(delay_improvements, " hours"))
+                            b2.metric("Fewer delayed vessels", range_text(vessel_improvements, digits=0))
+                            b3.metric("Fewer delayed calls", range_text(call_improvements, digits=0))
+                            st.caption("Ranges show the results across all tied options; differences between the tied options are not hidden.")
+                    else:
+                        delay_improvement = vessel_improvement = call_improvement = None
+                        st.warning("The no-recovery comparison is missing, so improvement over no action cannot be calculated.")
+
+                    st.markdown("### Management action")
+                    if winner_count == 1:
+                        action_text = (
+                            f"1. **Take {manager_name} forward for an operational feasibility check.**\n"
+                            "2. Ask port and operations teams whether the required recovery time is actually available.\n"
+                            "3. Check berth schedules, vessel commitments, safety and cost before approval.\n"
+                            "4. Reassess against current operational information before making a live decision."
+                        )
+                    else:
+                        action_text = (
+                            "1. **Do not treat one option as the winner.** The tested options are tied on the selected priority.\n"
+                            "2. Compare the tied options using the other outcomes shown above.\n"
+                            "3. Ask port and operations teams which option is feasible given berth schedules, vessel commitments, safety and cost.\n"
+                            "4. Reassess against current operational information before making a live decision."
+                        )
+                    st.markdown(action_text)
+                    st.markdown(
+                        '<div class="warn"><b>Important:</b> These are modelled results from a hypothetical research experiment, not a live operational forecast. '
+                        'A zero-hour result means zero delay in this stored model output only. The model does not confirm port capacity, berth availability, navigational feasibility, safety, cost or the ability to deliver the modelled recovery credit.</div>',
+                        unsafe_allow_html=True
+                    )
+
+                    with st.expander("See how the other tested options performed"):
+                        compare = intervention_rows.copy()
+                        compare["Management-friendly option"] = compare["policy_name"].map(friendly_policy).fillna(compare["policy_name"])
+                        compare = compare.sort_values(comparison_metric, ascending=comparison_ascending)
+                        if manager_priority == priority_labels[2]:
+                            compare["Combined rank (lower is better)"] = compare["manager_score"].round(2)
+                            show_cols = ["Management-friendly option", "Combined rank (lower is better)",
+                                         "mean_delay", "p90_delay", "unrecovered_calls", "unrecovered_vessels"]
+                        else:
+                            show_cols = ["Management-friendly option", "mean_delay", "p90_delay",
+                                         "unrecovered_calls", "unrecovered_vessels"]
+                        show_cols = [c for c in show_cols if c in compare.columns]
+                        compare_display = compare[show_cols].rename(columns={
+                            "mean_delay": "Average remaining departure delay (hours)",
+                            "p90_delay": "P90 delay (hours)",
+                            "unrecovered_calls": "Calls still delayed",
+                            "unrecovered_vessels": "Vessels still delayed",
+                        })
+                        st.dataframe(compare_display, use_container_width=True, hide_index=True)
+                        st.caption("All figures are outputs from the same selected hypothetical scenario.")
+
+                    report_lines = [
+                        "STRAIT OF HORMUZ — MANAGEMENT DECISION BRIEF", "",
+                        f"Scenario: {manager_shock:g}-hour disruption; {manager_share:.0%} of vessel transitions affected.",
+                        f"Management priority: {manager_priority}",
+                        f"Decision: {decision_heading}",
+                        f"Reason: {decision_subheading}",
+                    ]
+                    if winner_count > 1:
+                        report_lines += ["TIED OPTIONS:"] + [f"- {name}" for name in tied_names]
+                    else:
+                        report_lines += [f"Option to assess: {manager_name}"]
+                    report_lines += [
+                        "", "MODELLED OUTCOMES (BEST OPTION OR TIED OPTIONS)",
+                        f"Average remaining departure delay: {outcome_range('mean_delay', 2, ' hours')}",
+                        f"P90 departure delay: {outcome_range('p90_delay', 2, ' hours')}",
+                        f"Calls still delayed: {outcome_range('unrecovered_calls', 0)}",
+                        f"Vessels still delayed: {outcome_range('unrecovered_vessels', 0)}",
+                    ]
+                    if baseline is not None:
+                        report_lines += [
+                            "", "IMPROVEMENT COMPARED WITH NO RECOVERY",
+                            f"Average delay reduced: {range_text(delay_improvements, ' hours') if winner_count > 1 else f'{delay_improvement:.2f} hours'}",
+                            f"Fewer delayed calls: {range_text(call_improvements, digits=0) if winner_count > 1 else f'{call_improvement:.0f}'}",
+                            f"Fewer delayed vessels: {range_text(vessel_improvements, digits=0) if winner_count > 1 else f'{vessel_improvement:.0f}'}",
+                        ]
+                    report_lines += [
+                        "", "MANAGEMENT NEXT STEP",
+                        *[line.lstrip("0123456789. ") for line in action_text.splitlines()],
+                        "", "LIMITATION",
+                        "Hypothetical deterministic research experiment using precomputed Script 98 results. Not a live forecast or proof of operational recovery capacity. Zero modelled delay is not a real-world guarantee."
+                    ]
+                    pdf_bytes = build_manager_pdf(report_lines)
+                    safe_scenario = str(winner.get("scenario_id", "scenario")).replace("/", "-")
+                    d1, d2 = st.columns(2)
+                    d1.download_button(
+                        "Download management brief (PDF)", data=pdf_bytes,
+                        file_name=f"management_decision_{safe_scenario}.pdf",
+                        mime="application/pdf", key="manager_decision_pdf"
+                    )
+                    d2.download_button(
+                        "Download management brief (text)", data="\n".join(report_lines).encode("utf-8"),
+                        file_name=f"management_decision_{safe_scenario}.txt",
+                        mime="text/plain", key="manager_decision_txt"
+                    )
+
+        st.divider()
+        st.divider()
+        st.markdown("## Research & Analyst Centre")
+        st.caption("For analysts and researchers: technical scenario comparisons, metric definitions, call-level and vessel-level diagnostics, sensitivity analysis and numerical validation.")
+        st.markdown("### Configure a disruption scenario")
+        st.caption("Choose only from the shock magnitudes and affected-transition shares already evaluated in Script 98. These controls filter the frozen experiment; they do not rerun the simulation.")
+        c1, c2, c3 = st.columns(3)
         shock = c1.selectbox(
-            "Shock magnitude", shock_values,
+            "Additional elapsed-time shock", shock_values,
             index=min(2, len(shock_values)-1),
             format_func=lambda x: f"{x:g} hours"
         )
         share = c2.selectbox(
-            "Affected transition share", share_values,
+            "Affected distinct-port transitions", share_values,
             index=0, format_func=lambda x: f"{x:.0%}"
         )
-        policies = primary["policy_name"].dropna().drop_duplicates().tolist()
         default_policy = next((i for i, p in enumerate(policies) if p == "Fixed recovery credit, 6h per link"), 0)
-        policy = c3.selectbox("Selected recovery policy", policies, index=default_policy)
+        policy = c3.selectbox("Policy to inspect", policies, index=default_policy)
 
         rows = scenario_filter(primary, shock, share)
         if rows.empty:
             st.warning("No scenario-policy rows match the selected shock and affected share.")
         else:
+            metric_options = {
+                "Lowest mean departure delay (M02)": ("mean_delay", True, "hours"),
+                "Lowest P90 call departure delay (M05)": ("p90_delay", True, "hours"),
+                "Fewest unrecovered calls (M07A)": ("unrecovered_calls", True, "calls"),
+                "Fewest unrecovered vessels (M07B)": ("unrecovered_vessels", True, "vessels"),
+                "Highest paired recovery benefit (M06)": ("m06_total_paired_recovery_benefit_h", False, "hours"),
+            }
+            decision_metric = st.selectbox(
+                "Policy ranking criterion",
+                list(metric_options.keys()),
+                index=0,
+                help="This ranks the five stored policy outcomes for the selected scenario. It does not create a universal policy recommendation."
+            )
+            metric_col, ascending, metric_unit = metric_options[decision_metric]
+            rank_rows = rows.dropna(subset=[metric_col]).sort_values(metric_col, ascending=ascending).copy()
+            rank_rows["Decision rank"] = range(1, len(rank_rows) + 1)
+
             selected_rows = rows[rows["policy_name"] == policy]
             selected = selected_rows.iloc[0] if not selected_rows.empty else rows.iloc[0]
             no_recovery_rows = rows[rows["policy_id"] == "R76-00-NONE"]
             no_recovery = no_recovery_rows.iloc[0] if not no_recovery_rows.empty else None
+            winner = rank_rows.iloc[0] if not rank_rows.empty else None
+            selected_rank_rows = rank_rows[rank_rows["policy_id"] == selected["policy_id"]]
+            selected_rank = int(selected_rank_rows.iloc[0]["Decision rank"]) if not selected_rank_rows.empty else None
 
-            st.caption(
-                f"Scenario: {selected['scenario_id']} · "
-                f"{int(selected.get('call_count', 604))} calls · "
-                f"{int(selected.get('vessel_count', 155))} vessels · Script 76 primary model"
+            st.markdown(
+                f'<div class="note"><b>Scenario selected:</b> {selected["scenario_id"]} · '
+                f'{shock:g}-hour shock · {share:.0%} of distinct-port transitions affected · '
+                f'{int(selected.get("call_count", 604))} calls · {int(selected.get("vessel_count", 155))} vessels. '
+                f'<br><b>Decision criterion:</b> {decision_metric}. Rankings compare the five stored policies only.</div>',
+                unsafe_allow_html=True
             )
+            if winner is not None:
+                st.success(
+                    f"Best result under this criterion: {winner['policy_name']} "
+                    f"({winner[metric_col]:,.2f} {metric_unit}). "
+                    f"The selected policy, {selected['policy_name']}, ranks "
+                    f"{selected_rank if selected_rank is not None else '—'} of {len(rank_rows)}."
+                )
 
             k1, k2, k3, k4, k5 = st.columns(5)
             k1.metric("M02 · Mean incremental departure delay", f"{selected['mean_delay']:.2f} h")
@@ -822,7 +1233,46 @@ elif page == "5 · Research Simulation":
             ])
 
             with tabs[0]:
-                st.subheader("All five recovery policies for the selected scenario")
+                st.subheader("Decision ranking · all five recovery policies")
+                st.caption(f"Ranked by: {decision_metric}. The ranking is criterion-specific; trade-offs across delay, unrecovered counts and recovery benefit remain visible in the table.")
+                rank_display = rank_rows[["Decision rank", "policy_name", metric_col]].copy()
+                rank_display = rank_display.rename(columns={metric_col: f"Selected criterion ({metric_unit})"})
+                st.plotly_chart(
+                    px.bar(
+                        rank_rows.sort_values(metric_col, ascending=ascending),
+                        x="policy_name", y=metric_col,
+                        color="policy_name",
+                        labels={"policy_name": "Recovery policy", metric_col: f"{decision_metric} ({metric_unit})"},
+                        template="plotly_dark", text_auto=".2f"
+                    ).update_layout(showlegend=False, xaxis_tickangle=-20),
+                    use_container_width=True
+                )
+                st.dataframe(rank_display, use_container_width=True, hide_index=True)
+
+                if no_recovery is not None:
+                    st.subheader("Selected policy compared with no recovery")
+                    comparison_delta = []
+                    for label, col, unit, lower_is_better in [
+                        ("Mean departure delay (M02)", "mean_delay", "h", True),
+                        ("P90 departure delay (M05)", "p90_delay", "h", True),
+                        ("Unrecovered calls (M07A)", "unrecovered_calls", "calls", True),
+                        ("Unrecovered vessels (M07B)", "unrecovered_vessels", "vessels", True),
+                        ("Paired recovery benefit (M06)", "m06_total_paired_recovery_benefit_h", "h", False),
+                    ]:
+                        if col in selected.index and col in no_recovery.index:
+                            raw_delta = float(no_recovery[col]) - float(selected[col])
+                            comparison_delta.append({
+                                "Outcome": label,
+                                "No recovery": no_recovery[col],
+                                "Selected policy": selected[col],
+                                "Difference (no recovery − selected)": raw_delta,
+                                "Unit": unit,
+                            })
+                    if comparison_delta:
+                        st.dataframe(pd.DataFrame(comparison_delta), use_container_width=True, hide_index=True)
+                        st.caption("For delay and unrecovered counts, a positive difference means the selected policy has a lower value than no recovery. M06 is a paired benefit metric and is interpreted separately.")
+
+                st.subheader("Full outcome comparison")
                 display_cols = [
                     "policy_name", "mean_delay", "p90_delay",
                     "m06_total_paired_recovery_benefit_h",
@@ -834,16 +1284,6 @@ elif page == "5 · Research Simulation":
                 ]
                 display_cols = [c for c in display_cols if c in rows.columns]
                 comparison = rows[display_cols].copy()
-                st.plotly_chart(
-                    px.bar(
-                        rows.sort_values("mean_delay"), x="policy_name", y="mean_delay",
-                        color="policy_name",
-                        labels={"policy_name": "Recovery policy",
-                                "mean_delay": "M02 mean incremental departure delay (hours)"},
-                        template="plotly_dark", text_auto=".2f"
-                    ).update_layout(showlegend=False, xaxis_tickangle=-20),
-                    use_container_width=True
-                )
                 st.dataframe(comparison, use_container_width=True, hide_index=True)
                 st.download_button(
                     "Download selected scenario-policy table",

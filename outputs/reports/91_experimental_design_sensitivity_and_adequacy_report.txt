@@ -1,0 +1,80 @@
+SCRIPT 91 — EXPERIMENTAL DESIGN SENSITIVITY AND STATISTICAL ADEQUACY REVIEW
+==================================================================================
+
+PURPOSE
+Challenge the proposed design before execution. This is a diagnostic review,
+not a simulation, approval, statistical power analysis, or empirical validation.
+
+RESEARCH FRAMING
+Primary mechanism: TRANSIT_ELAPSED_TIME_SHOCK
+Study: general hypothetical inter-port elapsed-time shock experiment, motivated
+by potential geopolitical disruption associated with the Strait of Hormuz.
+Observed elapsed time is not pure sailing time. The transition shares are
+mathematical coverage levels, not actual Hormuz exposure probabilities.
+
+FACTOR RANGE
+Shock magnitudes (hours): [6.0, 12.0, 24.0, 48.0]
+Affected transition shares: [0.1, 0.25, 0.5, 1.0]
+Transition universe: 271
+Scenario grid rows: 16
+Shock maximum/minimum ratio: 8.000
+No empirical calibration or operational validity is established.
+
+RECOVERY POLICIES
+Distinct policies: 5
+Policy rules are hypothetical model rules. They are not measured operational
+capabilities or evidence of available schedule slack.
+
+SCENARIO COVERAGE
+Scenario-policy combinations: 80
+Scenarios with all five policies: 16/16
+Response metrics: 9
+
+REPLICATION
+Replication options: 3
+No statistical power, confidence interval, or precision claim is supported
+by deterministic reproducibility alone. A replication count requires a defined
+stochastic component/uncertainty target, estimand and precision criterion.
+
+KEY METHODOLOGICAL FINDINGS
+1. The 6/12/24/48-hour levels are ordered and span a 8-fold range, but are not
+   empirically calibrated. They are sensitivity settings, not forecasts.
+2. The 10/25/50/100% levels are coverage settings over 271 observed transition
+   records. They do not represent actual route or vessel exposure probabilities.
+3. Recovery policies differ by rule form and caps. Outcomes must be interpreted
+   as conditional comparisons under the specified mathematical rules.
+4. Metric definitions require attention to overlap between delay measures and
+   right-censoring of unfinished sequences at the observation-window boundary.
+5. Deterministic reproducibility is suitable for a deterministic first-stage
+   model audit, but does not quantify stochastic uncertainty.
+6. No actual Hormuz transit, validated physical route, pure sailing-time shock,
+   port capacity or operational recovery feasibility is established.
+
+READINESS CHECKS
+14/14 passed; 0 failed.
+
+APPROVAL STATUS
+No factors approved by Script91.
+No policies approved by Script91.
+No exposure approved by Script91.
+Simulation execution authorized: NO.
+Source inputs modified: NO.
+Simulation executed: NO.
+
+OUTPUTS
+- outputs/tables/91_factor_range_diagnostics.csv
+- outputs/tables/91_shock_range_summary.csv
+- outputs/tables/91_scope_count_diagnostics.csv
+- outputs/tables/91_recovery_policy_comparability.csv
+- outputs/tables/91_response_metric_review.csv
+- outputs/tables/91_replication_adequacy_review.csv
+- outputs/tables/91_scenario_policy_coverage.csv
+- outputs/tables/91_scientific_validity_boundaries.csv
+- outputs/tables/91_readiness_checks.csv
+
+DECISION
+Script91 provides a structured methodological challenge. It does not declare
+the experiment scientifically adequate or authorize execution. Researcher and
+supervisor decisions remain necessary, particularly on factor calibration,
+metric estimands/censoring, recovery-policy interpretation, and whether the
+deterministic first stage is sufficient for the intended research questions.

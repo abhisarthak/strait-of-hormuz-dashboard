@@ -1,0 +1,468 @@
+countryCode,countryName,UNLocationCode,cityName,portName,carrierCityGeoID,UNRegionCode
+AL,Albania,ALDRZ,Durres,Durres,365FKA3IH3WH6,
+DZ,Algeria,DZALG,Algiers port,Algiers port,3F717LSULMU0U,
+DZ,Algeria,DZAAE,Annaba,Annaba,3G07J4PW2IRNI,
+DZ,Algeria,DZBJA,Bejaia,Bejaia,2XYDEMXVN2IRI,
+DZ,Algeria,DZORN,Oran,Oran,1J10LMDK4XRPA,
+DZ,Algeria,DZSKI,Skikda,Skikda,10EUMLU2K56YM,
+AS,American Samoa,ASPPG,Pago Pago,Pago Pago,0DYOXOO2M1IXZ,
+AO,Angola,AOCAB,Cabinda,Cabinda,1SW3UWOH6HKZI,
+AO,Angola,AOLAD,Luanda,Luanda,1OID8PVUH0TJ2,
+AR,Argentina,ARBHI,Bahia Blanca,Bahia Blanca,0ZBTBIH502OVY,B
+AR,Argentina,ARBUE,Buenos Aires,Buenos Aires,148VU60D2NB89,B
+AR,Argentina,ARMDQ,Mar del Plata,Mar del Plata,18MZQU2ZFPKMD,B
+AR,Argentina,ARPUD,Puerto Deseado,Puerto Deseado,3NO6HXWMCJDM8,Z
+AR,Argentina,ARPMY,Puerto Madryn,Puerto Madryn,09BFMFH5T7MPC,U
+AR,Argentina,ARROS,Rosario,Rosario,3NO2PLYZAC2NY,S
+AR,Argentina,ARUSH,Ushuaia,Ushuaia,0BI8Y0LMUN1Q6,V
+AR,Argentina,ARZAE,ZARATE,ZARATE,2AXV79DTHZN95,B
+AW,Aruba,AWORJ,Oranjestad,Oranjestad,32LCGANMTEMIM,
+AU,Australia,AUADL,Adelaide,Adelaide,01NFES19SFSLA,SA
+AU,Australia,AUBNE,Brisbane,Brisbane,2ZV3ATKZ7ZM9Q,QLD
+AU,Australia,AUFRE,Fremantle,Fremantle,2BI6TCHT2ULJT,WA
+AU,Australia,AUMEL,Melbourne,Melbourne,3H3JRB0GZ9DA6,VIC
+AU,Australia,AUSYD,Sydney,Sydney,3EX6KZTUKSJNI,NSW
+AU,Australia,AUTIS,Torres Strait,Torres Strait,3BMCX3GOYTQPQ,NSW
+BS,Bahamas,BSFPO,Freeport,Freeport,28RMLL9EN20LA,
+BH,Bahrain,BHKBS,Bahrain,Bahrain,13ZH5V4LQ5G1Q,
+BD,Bangladesh,BDCGP,Chittagong,Chittagong,0AEH5K7QNXVUM,
+BD,Bangladesh,BDMGL,Mongla,Mongla,1PLCCLJEPKFWE,
+BE,Belgium,BEANR,Antwerp,Antwerp,0ZBIURQPE236H,VAN
+BZ,Belize,BZBGK,Port of Big Creek,Port of Big Creek,1P1ZKIWNJJ3P8,
+BJ,Benin,BJCOO,Cotonou,Cotonou,3EX4ICXJFTIM6,
+BR,Brazil,BRIBB,Imbituba,Imbituba,0TAGVNPP0ZM2M,SC
+BR,Brazil,BRITA,Itacoatiara,Itacoatiara,04OC5BLJ8IXJZ,AM
+BR,Brazil,BRIGI,Itaguai Sepetiba,Itaguai Sepetiba,118IL3FWVXQN1,RJ
+BR,Brazil,BRITJ,Itajai,Itajai,0TKNIVVB82OVY,SC
+BR,Brazil,BRIOA,Itapoa,Itapoa,0ODHB712UAZ82,SC
+BR,Brazil,BRMAO,Manaus,Manaus,2Q01XOB8933PA,AM
+BR,Brazil,BRNVT,Navegantes,Navegantes,2G58N8SSSYBPT,SC
+BR,Brazil,BRPNG,Paranagua,Paranagua,3R8LV7CQTY45A,PR
+BR,Brazil,BRPEC,Pecem,Pecem,395X0AB71OGIS,CE
+BR,Brazil,BRRIO,Rio de Janeiro,Rio de Janeiro,19GF6Q1SUBOGP,RJ
+BR,Brazil,BRRIG,Rio Grande,Rio Grande,1835DCIX1HYMX,RS
+BR,Brazil,BRSSA,Salvador,Salvador,0CLBAS6FZOUBI,BA
+BR,Brazil,BRSSZ,Santos,Santos,1BX66GARX9UAH,SP
+BR,Brazil,BRSUA,Suape,Suape,06UMEUNU4I9VI,PE
+BR,Brazil,BRVDC,Vila do Conde,Vila do Conde,33U3A4O73F9NQ,PA
+BR,Brazil,BRVIX,Vitoria,Vitoria,0MGC8M302NIBI,ES
+BN,Brunei,BNMUA,Muara,Muara,0X4F77WU3CEBI,
+BG,Bulgaria,BGBOJ,Burgas,Burgas,0BS3QBVSGNVCU,
+BG,Bulgaria,BGVAR,Varna,Varna,0O37X90RV7X4U,
+KH,Cambodia,KHPNH,Phnom Penh,Phnom Penh,0N9QH2TUIUNWF,
+KH,Cambodia,KHKOS,Sihanoukville,Sihanoukville,0FM45OKTOCAYN,
+CM,Cameroon,CMDLA,Douala,Douala,260QPOA65MKJI,
+CM,Cameroon,CMKBI,Kribi,Kribi,3BMBVJXDS2R73,
+CA,Canada,CAHAL,Halifax,Halifax,3NO0X05BSJ9FI,NS
+CA,Canada,CAMTR,Montreal,Montreal,16PATH76EEJ5Q,QC
+CA,Canada,CAPRR,Prince Rupert,Prince Rupert,06B16CKZFKH32,BC
+CA,Canada,CASJB,Saint John,Saint John,1ZQ1QMBVOYH09,NB
+CA,Canada,CAFSD,Surrey,Surrey,3DT98AYGIDBPA,BC
+CA,Canada,CAVAN,Vancouver,Vancouver,365AMOGYI98RD,BC
+CV,Cape Verde Island,CVMIN,Mindelo,Mindelo,3R3G9EZ1LLATP,
+CV,Cape Verde Island,CVRAI,Praia,Praia,2AOCETETHOA66,
+CL,Chile,CLANF,Antofagasta,Antofagasta,243I5DF7WRXJ2,
+CL,Chile,CLARI,Arica,Arica,2JZ511I09HRIX,
+CL,Chile,CLIQQ,Iquique,Iquique,0K99PM8D0WSYH,
+CL,Chile,CLMJS,Mejillones,Mejillones,1RSJXERFANB7I,
+CL,Chile,CLPUQ,Punta Arenas,Punta Arenas,3NOHW2INVI0LA,
+CL,Chile,CLSAI,San Antonio,San Antonio,19G1O62RYVFJY,
+CL,Chile,CLSVE,San Vicente,San Vicente,0HSNR4QIVFHQ6,
+CL,Chile,CLTAL,Talcahuano,Talcahuano,1YWEA72GHF9FI,
+CL,Chile,CLVAP,Valparaiso,Valparaiso,2CBOYMUSVJHJT,
+CN,China,CNDCB,Da Chan Bay,Da Chan Bay,0MBJWMXRK7H5S,GD
+CN,China,CNDLC,Dalian,Dalian,0G5RI2I2X2U8P,LN
+CN,China,CNFOC,Fuzhou,Fuzhou,0D56BH9WK13ZY,FJ
+CN,China,CNLYG,Lianyungang,Lianyungang,38W5JVTS0IIKE,JS
+CN,China,CNMAW,Mawei,Mawei,2613G05THZDLI,FJ
+CN,China,CNKHN,Nanchang,Nanchang,01NDCJ05JQDMM,JX
+CN,China,CNNSA,Nansha New Port,Nansha New Port,06AZ2N3T2FBMH,GD
+CN,China,CNNGB,Ningbo,Ningbo,104T898SJZ6GU,ZJ
+CN,China,CNZOS,Ningbo(zhoushan),Ningbo(zhoushan),3J0NCII3M61DQ,ZJ
+CN,China,CNTAO,Qingdao,Qingdao,1YCLYW8V7RZB2,SD
+CN,China,CNQZH,Qinzhou,Qinzhou,1MUWHM1ZFR2O6,GX
+CN,China,CNSHA,Shanghai,Shanghai,2IW9P6J7XAW72,SH
+CN,China,CNSHK,Shekou,Shekou,1PLJHUYRVY2ZD,GD
+CN,China,CNXMN,Xiamen,Xiamen,27EDDQ27KL27Y,FJ
+CN,China,CNTXG,Xingang,Xingang,02GYFH4R8RVY6,TJ
+CN,China,CNYTN,Yantian,Yantian,0L3DBFFJ3KZ9A,GD
+CN,China,CNZUH,Zhuhai,Zhuhai,0ZLPO5P9A3YBI,GD
+CO,Colombia,COBAQ,Barranquilla,Barranquilla,3PV913MCVEKJI,ATL
+CO,Colombia,COBUN,Buenaventura,Buenaventura,3AJ02ZTSTUTMM,VAC
+CO,Colombia,COCTG,Cartagena,Cartagena,2XE3C9TZTB6GU,BOL
+CO,Colombia,COTRB,Puerto Antioquia,Puerto Antioquia,YMNSKQV5ECBZB,ANT
+CO,Colombia,COSMR,Santa Marta-Magdalena,Santa Marta-Magdalena,1YCZFF3ODWKU6,MAG
+CG,Congo,CGPNR,Pointe Noire,Pointe Noire,0S7HEZ0KUZGXQ,
+CD,"Congo, Dem. Rep. of",CDBOA,Boma,Boma,03AIS5ZNZEQV3,
+CD,"Congo, Dem. Rep. of",CDMAT,Matadi,Matadi,2KIV9OFMI8W3J,
+CR,Costa Rica,CRPTC,Puerto Caldera,Puerto Caldera,0V7VTJR55MBUM,
+CR,Costa Rica,CRPMN,Puerto Moin,Puerto Moin,1YU6JFV07C5W0,
+HR,Croatia,HRPLE,Ploce,Ploce,0ZQINF0ZMHTVK,
+HR,Croatia,HRRJK,Rijeka,Rijeka,3RIJXP3USK909,
+CW,Curacao,CWWIL,Willemstad,Willemstad,90043MHJDEEFA,
+CY,Cyprus,CYLMS,Limassol,Limassol,074TJXXL2VTRY,
+DK,Denmark,DKAAR,Aarhus,Aarhus,2RX5LS7KU273Y,
+DK,Denmark,DKFRC,Fredericia,Fredericia,0ESNYKB93K58E,
+DK,Denmark,DKKAL,Kalundborg,Kalundborg,0ZBA0UNX50N7I,
+DK,Denmark,DKCPH,On Off Hire Port,On Off Hire Port,2AYARMOVSPKZI,
+DK,Denmark,DKCPH,Repair Yard,Repair Yard,XPNSCKYEX4RNQ,
+DK,Denmark,FOTHO,Torshavn,Torshavn,04DTLB2L5JYIM,
+DJ,Djibouti,DJJIB,Djibouti,Djibouti,3QOXY5YTJM5XA,
+DO,Dominican Republic,DOCAU,Caucedo,Caucedo,3GZ8R5SA66E3G,
+DO,Dominican Republic,DOHAI,Rio Haina,Rio Haina,2CLODO170SA6X,
+EC,Ecuador,ECGYE,Guayaquil,Guayaquil,2I2EIL8X0OZO9,
+EC,Ecuador,ECPSJ,Guayaquil-Posorja,Guayaquil-Posorja,0917226DM547T,
+EC,Ecuador,ECPBO,Puerto Bolivar - El Oro,Puerto Bolivar - El Oro,1NY34CA265ME1,
+EG,Egypt,EGALY,Alexandria,Alexandria,3LHF7RTKVRTRY,
+EG,Egypt,EGEDK,Alexandria Dekheila,Alexandria Dekheila,CIRBJKAFY3TJA,
+EG,Egypt,EGDAM,Damietta,Damietta,1JL1CVFUW9CCX,
+EG,Egypt,EGPSE,Port Said East,Port Said East,3I6W2NB2MQV7I,
+EG,Egypt,EGPSW,Port Said West,Port Said West,6MXS3BDWUH4LF,
+EG,Egypt,EGSOK,Sokhna,Sokhna,35H5EVFF3ANGG,
+EG,Egypt,EGSUZ,Suez Canal,Suez Canal,0DOPTVWPU73B2,
+SV,El Salvador,SVAQJ,Acajutla,Acajutla,2SQK1GGYKIPOF,
+GQ,Equatorial Guinea,GQBSG,Bata,Bata,1DYS2Y1LSXTCN,
+GQ,Equatorial Guinea,GQSSG,Malabo,Malabo,026VHRS8ZMJCV,
+EE,Estonia,EETLL,Tallinn,Tallinn,18MSZPDLCJ4OU,
+FJ,Fiji Islands,FJLTK,Lautoka,Lautoka,1SGYI97TWPPYN,
+FJ,Fiji Islands,FJSUV,Suva,Suva,0MGQ53P8H4ZNN,
+FI,Finland,FIHEL,Helsinki,Helsinki,2AEIAIVXPLLRY,
+FI,Finland,FIKTK,Kotka,Kotka,0O3QDS78YUJ6H,
+FI,Finland,FIRAU,Rauma,Rauma,38VSTZ0FAE3CU,
+FR,France,FRDKK,Dunkerque,Dunkerque,2XE7ON35DWTJ2,59
+FR,France,FRFOS,Fos sur Mer,Fos sur Mer,18CL185ZO5EVT,13
+FR,France,FRLEH,Le Havre,Le Havre,274LBR94PNZWE,76
+FR,France,FRMTX,Montoir de Bretagne,Montoir de Bretagne,352JYFGK217JY,44
+PF,French Polynesia,PFPPT,Papeete,Papeete,1744ASAZZ7XKJ,
+GA,Gabon,GALBV,Libreville,Libreville,0M6RRT5XQSZ27,
+GM,Gambia,GMBJL,Banjul,Banjul,0JGEJZUTEGEBJ,
+GE,Georgia,GEPTI,Poti,Poti,196M40Z279KT7,
+DE,Germany,DEBRV,Bremerhaven,Bremerhaven,3EX4F5S3MB4OU,HB
+DE,Germany,DEHAM,Hamburg,Hamburg,03KFCBH0IX2TA,HH
+DE,Germany,DEKEL,Kiel Kanal,Kiel Kanal,13PIDVUPRNYPQ,SH
+DE,Germany,DEWVN,Wilhelmshaven,Wilhelmshaven,1ZPUMHQGZ3KOU,NI
+GH,Ghana,GHTKD,Takoradi,Takoradi,0SQPJWQ22DDAX,
+GH,Ghana,GHTEM,Tema,Tema,12LVNL5YRODQ7,
+GR,Greece,GRPIR,Piraeus,Piraeus,2LMGCZBHF2P33,
+GR,Greece,GRSKG,Thessaloniki,Thessaloniki,3HNTR5OS5403J,
+GU,Guam,GUGUM,Guam,Guam,2RDOX2NUDHCR8,
+GT,Guatemala,GTPBR,Puerto Barrios,Puerto Barrios,3O891ORACL4LB,
+GT,Guatemala,GTPRQ,Puerto Quetzal,Puerto Quetzal,1E3PT92HVMD1B,
+GT,Guatemala,GTSTC,Santo Tomas de Castilla,Santo Tomas de Castilla,1J16C6VM51EVT,
+GN,Guinea,GNCKY,Conakry,Conakry,0ICB7LFJ81TA7,
+GY,Guyana,GYGEO,Georgetown,Georgetown,1A9GMC552FBLR,
+HT,Haiti,HTPAP,Port-au-Prince,Port-au-Prince,3AT80J93EHRBT,
+HN,Honduras,HNPCR,Puerto Cortes,Puerto Cortes,3NNY7GQ02YU0V,
+HK,Hong Kong China,HKHKG,Hong Kong,Hong Kong,09B2WXKA3I3R3,
+IS,Iceland,ISGRT,Grundartangi,Grundartangi,12C4IBHZEJ8UH,
+IS,Iceland,ISRFJ,Reydarfjordur,Reydarfjordur,1HSSEWK5QI5YC,
+IS,Iceland,ISREY,Reykjavik,Reykjavik,2XY3JOXWA86TB,
+IS,Iceland,ISVES,Vestmannaeyjar,Vestmannaeyjar,01Q2QM5HTRTGC,
+IN,India,INCOK,Cochin,Cochin,1PLWPN9WJW70F,KL
+IN,India,INENR,Ennore Chennai,Ennore Chennai,YLEOCZ8YSHLCX,TN
+IN,India,INHAL,Haldia Port,Haldia Port,3G0E0NGUY4OE7,WB
+IN,India,INHZA,Hazira,Hazira,0WLD906B7Z1ZG,GJ
+IN,India,INNSA,Jawaharlal Nehru,Jawaharlal Nehru,20JS07ETK8AE1,MH
+IN,India,INIXY,Kandla,Kandla,1W620RDHDIC1R,GJ
+IN,India,INKTP,Kattupalli,Kattupalli,NNLTRBSMHNGEM,TN
+IN,India,INCCU,Kolkata,Kolkata,38C3BXKY0R921,WB
+IN,India,INIXE,Mangalore,Mangalore,3NJB2O3KGOS60,KA
+IN,India,INMUN,Mundra,Mundra,09XXU0KYD95NO,GJ
+IN,India,INPPV,Pipavav,Pipavav,1QF1SC3MCQHUZ,GJ
+IN,India,INTUT,Tuticorin,Tuticorin,1VM1RGJFC1VO9,TN
+IN,India,INVTZ,Visakhapatnam,Visakhapatnam,2IBZJHEAWE2YN,AP
+ID,Indonesia,IDBPN,Balikpapan,Balikpapan,2C1GMLGA2M5BZ,
+ID,Indonesia,IDBTM,Batam Island,Batam Island,0I2Y4ORJD54EX,
+ID,Indonesia,IDBLW,Belawan,Belawan,2OWTE5JOEICNT,
+ID,Indonesia,IDBIT,Bitung,Bitung,317YBXL75U6PR,
+ID,Indonesia,IDJKT,Jakarta,Jakarta,1T5KH4LY00TQ7,
+ID,Indonesia,IDDJB,Jambi,Jambi,1ENR7UJIGU26X,
+ID,Indonesia,IDMAK,Makassar,Makassar,2ZVAHPRBEUR27,
+ID,Indonesia,IDTBG,Ogan Komering Ilir,Ogan Komering Ilir,AOAX22QSOFHIZ,
+ID,Indonesia,IDPDG,Padang,Padang,1GU2GO2A7YRGF,
+ID,Indonesia,IDPLM,Palembang,Palembang,3F6V7AXFRHLKV,
+ID,Indonesia,IDPNJ,Panjang Port,Panjang Port,0U427V754XEAH,
+ID,Indonesia,IDPWG,Perawang,Perawang,2XODFTX8DICU7,
+ID,Indonesia,IDPNK,Pontianak,Pontianak,01XCCNSGJS2HL,
+ID,Indonesia,IDSRG,Semarang,Semarang,3PVEF68U1870F,
+ID,Indonesia,IDSUB,Surabaya,Surabaya,1PLRAN8EYS7FD,
+ID,Indonesia,IDTRK,Tarakan,Tarakan,0FVTF7KERKP09,
+ID,Indonesia,IDTTI,Tebing Tinggi Jambi,Tebing Tinggi Jambi,0PQKKJ0V1RG7X,
+IQ,Iraq,IQUQR,Umm Qasr,Umm Qasr,2H91EDF5PN9UT,
+IE,Ireland,IEORK,Cork Co Cork,Cork Co Cork,3JTZIBUVGTOQN,
+IE,Ireland,IEDUB,Dublin,Dublin,1JKROT9381ABJ,
+IL,Israel,ILASH,Ashdod,Ashdod,2JZIXTBC98ZGF,
+IL,Israel,ILHFA,Haifa,Haifa,1JB23BPJCEYKF,
+IT,Italy,ITAOI,Ancona,Ancona,0ODI0KI8OOCQN,AN
+IT,Italy,ITCAG,Cagliari,Cagliari,27EHBMYXWF5OF,CA
+IT,Italy,ITCVV,Civitavecchia,Civitavecchia,1TYYUR7HRUDFJ,RM
+IT,Italy,ITGOA,Genoa,Genoa,0KSZPEKFXG8ZJ,GE
+IT,Italy,ITVDL,Genoa Vado Ligure,Genoa Vado Ligure,19UUBIUIHO0TG,SV
+IT,Italy,ITSPE,La Spezia,La Spezia,2743COUCZS8SF,SP
+IT,Italy,ITLIV,Leghorn,Leghorn,1RSOAHKLUQHSP,LI
+IT,Italy,ITMLZ,Milazzo,Milazzo,3TZ37KV2LV9FJ,ME
+IT,Italy,ITNAP,Naples,Naples,1AJQVL9NYVYIN,NA
+IT,Italy,ITRAN,Ravenna,Ravenna,32BZ859S4N24F,RA
+IT,Italy,ITSAL,Salerno,Salerno,2NJOHX80XA2YN,SA
+IT,Italy,ITTRS,Trieste,Trieste,1TZJYZX589BI7,TS
+IT,Italy,ITVCE,Venezia,Venezia,2U43ZLE94D11B,VE
+CI,Ivory Coast,CIABJ,Abidjan,Abidjan,10FAB8ODV8XHA,
+CI,Ivory Coast,CISPY,San-Pedro,San-Pedro,0ZBJPCDBIG5RX,
+JM,Jamaica,JMKIN,Kingston,Kingston,00AH7T69HDHFJ,
+JP,Japan,JPHKT,Hakata,Hakata,1FQMK0YIG6YZD,40
+JP,Japan,JPHBK,Hibikishinko,Hibikishinko,LGK05ZCIFJF6V,40
+JP,Japan,JPUKB,Kobe,Kobe,2TAKI2Y3EIQ2N,28
+JP,Japan,JPMOJ,Moji,Moji,13F0ZSVXZEVMH,40
+JP,Japan,JPNGO,Nagoya,Nagoya,15CKKF2T786M7,23
+JP,Japan,JPKIJ,Niigata,Niigata,0PGOL4P2DDKLB,15
+JP,Japan,JPOSA,Osaka,Osaka,3NYEIWGOA5N5R,27
+JP,Japan,JPTYO,Tokyo,Tokyo,25H6O3Q8FNIWV,13
+JP,Japan,JPTMK,Tomakomai,Tomakomai,1DU7HMX6SNES9,01
+JP,Japan,JPTOY,Toyama,Toyama,1E3QWNTO0T4ZJ,16
+JP,Japan,JPYOK,Yokohama,Yokohama,0IC9M2CRFNGJJ,14
+JO,Jordan,JOAQB,Aqaba,Aqaba,2Y7Q0YVJ8Z69R,
+KE,Kenya,KEMBA,Mombasa,Mombasa,1CGP5EJH2UOOV,
+KR,"Korea, South",KRPUS,Busan,Busan,2XOHKM8FX8VI7,
+KR,"Korea, South",KRKAN,Gwangyang,Gwangyang,2XE1KEFDLC8E7,
+KR,"Korea, South",KRINC,Inchon,Inchon,0QKCR2KO2A933,
+KR,"Korea, South",KRPTK,Pyeongtaek,Pyeongtaek,1I7DROQO39JLR,
+KR,"Korea, South",KRUSN,Ulsan,Ulsan,0M6D85F49ZHXB,
+KW,Kuwait,KWSAA,Shuaiba,Shuaiba,0TUD11LQ2CXHB,
+KW,Kuwait,KWSWK,Shuwaikh,Shuwaikh,0CBRNFCPMTYM7,
+LV,Latvia,LVRIX,Riga,Riga,0FVQS7VGDQ2YN,
+LB,Lebanon,LBBEY,Beirut,Beirut,1W6GV1ALLQW73,
+LR,Liberia,LRMLW,Monrovia,Monrovia,29BBZ9CR2FMNZ,
+LY,Libya,LYKHO,Al Khoms,Al Khoms,1HT3HKQDA25JP,
+LY,Libya,LYBEN,Benghazi,Benghazi,2Q04XHYQO7SZJ,
+LY,Libya,LYMRA,Misuratah,Misuratah,1L7JPJ7D4AQV3,
+LT,Lithuania,LTKLJ,Klaipeda,Klaipeda,16ZRSA0RB460V,
+MG,Madagascar,MGTOA,Toamasina,Toamasina,3KE7L2V0GH3ZZ,
+MY,Malaysia,MYBTU,Bintulu,Bintulu,2UXRZZQBKM0ZJ,13
+MY,Malaysia,MYBKI,Kota Kinabalu,Kota Kinabalu,1W6A78MLLC58F,12
+MY,Malaysia,MYKUA,Kuantan,Kuantan,09BBS1ZNMNF5R,06
+MY,Malaysia,MYKCH,Kuching,Kuching,12M470S10A8OV,13
+MY,Malaysia,MYPEN,Penang,Penang,1HNWHM6VML864,07
+MY,Malaysia,MYPKG,Port Klang,Port Klang,3EX2D23UHZ8GS,10
+MY,Malaysia,MYSDK,Sandakan,Sandakan,1TP3D4F19HH8F,12
+MY,Malaysia,MYTPP,Tanjung Pelepas,Tanjung Pelepas,2DTLIHUG9YN7S,01
+MY,Malaysia,MYTWU,Tawau,Tawau,057ZY914FD5Z3,12
+MV,Maldives,MVMLE,Male,Male,290ZCQHY6ZWQN,
+MT,Malta,MTMAR,Marsaxlokk,Marsaxlokk,0BRRD9L9WJZI7,
+MR,Mauritania,MRNDB,Nouadhibou,Nouadhibou,1PVBLSOUX1P4V,
+MR,Mauritania,MRNKC,Nouakchott,Nouakchott,2IM0OMQA2194V,
+MU,Mauritius,MUPLU,Port Louis,Port Louis,2UNE2GAU89K73,
+MX,Mexico,MXATM,Altamira,Altamira,2GYYQEFDK3A7Z,TAM
+MX,Mexico,MXLZC,Lazaro Cardenas,Lazaro Cardenas,3F6T89LHRCZNJ,MIC
+MX,Mexico,MXZLO,Manzanillo,Manzanillo,3AJMN274REBUN,COL
+MX,Mexico,MXPGO,Progreso,Progreso,1CGAI0UFX0MF3,YUC
+MX,Mexico,MXVER,Veracruz,Veracruz,1M1FHVXCTKZNJ,VER
+ME,Montenegro,MEBAR,Bar,Bar,3F6H7AF9MX7JZ,
+MA,Morocco,MAAGA,Agadir,Agadir,38CMBIXBBPI0V,
+MA,Morocco,MACAS,Casablanca,Casablanca,2JFCGTJYXQA2N,
+MA,Morocco,MAPTM,Port Tangier Mediterranee,Port Tangier Mediterranee,0C29F4LWXIITO,
+MZ,Mozambique,MZBEW,Beira,Beira,2H9892PCMO0IK,
+MZ,Mozambique,MZMPM,Maputo,Maputo,1MB3GKM3T4F4S,
+MM,Myanmar (Burma),MMRGN,Yangon,Yangon,1I2KJ5WF0P25I,
+MM,Myanmar (Burma),MMTLA,Yangon Thilawa,Yangon Thilawa,B7IWGDDLDAT8E,
+NA,Namibia,NAWVB,Walvis Bay,Walvis Bay,0UEACM7AUG42K,
+NL,Netherlands,NLMOE,Moerdijk,Moerdijk,00A715JD5OYNZ,NB
+NL,Netherlands,NLRTM,Rotterdam,Rotterdam,1JUKNJGWHQBNJ,ZH
+NL,Netherlands,NLVLI,Vlissingen,Vlissingen,0B8HFBDWHI5Q7,ZE
+NZ,New Zealand,NZAKL,Auckland,Auckland,091CPGUTEPVOC,
+NZ,New Zealand,NZLYT,Lyttelton,Lyttelton,3F6PV875TW13W,
+NZ,New Zealand,NZNPE,Napier,Napier,25HGMCPAEKXWC,
+NZ,New Zealand,NZNSN,Nelson,Nelson,230MQ0SCMYA9R,
+NZ,New Zealand,NZPOE,Port Chalmers,Port Chalmers,19ZPOOZ2QQHRZ,
+NZ,New Zealand,NZTRG,Tauranga,Tauranga,2QTWS44W1SINZ,
+NZ,New Zealand,NZTIU,Timaru,Timaru,29L38GUCDFDDR,
+NI,Nicaragua,NICIO,Corinto,Corinto,3GK3DYKKMO9Z3,
+NG,Nigeria,NGAPP,Apapa,Apapa,0CVIORYS4ODJ3,
+NG,Nigeria,NGLKK,Lekki,Lekki,URXHENJHTX1KN,
+NG,Nigeria,NGONN,Onne,Onne,0AOUVQIRKPJLF,
+NG,Nigeria,NGTIN,Tin Can Island Port,Tin Can Island Port,1FH123AQ5G7RI,
+NO,Norway,NOAES,Aalesund,Aalesund,3Q4T97BAE1G8V,
+NO,Norway,NOBGO,Bergen,Bergen,24XEF349JTG8V,
+NO,Norway,NOBVK,Brevik,Brevik,1RII0SR27SJ27,
+NO,Norway,NODRM,Drammen,Drammen,13YT427GWK6M7,
+NO,Norway,NOEGE,Egersund,Egersund,2V7J0I1Q96QV3,
+NO,Norway,NOFRO,Floroe,Floroe,2RDLC5VYMRX4V,
+NO,Norway,NOFRK,Fredrikstad,Fredrikstad,260L3177X6OHR,
+NO,Norway,NOFUS,Fusa,Fusa,009WB7DL5DDHB,
+NO,Norway,NOGJM,Gjemnes,Gjemnes,3CGO1FOIGUR4G,
+NO,Norway,NOHAU,Haugesund,Haugesund,0N2C6SR7YIISJ,
+NO,Norway,NOKRS,Kristiansand,Kristiansand,0AOSJ4197LPCS,
+NO,Norway,NOLAR,Larvik,Larvik,2A4S0VVFUN79B,
+NO,Norway,NOMAY,Maaloey,Maaloey,0HSPF4000Q8OV,
+NO,Norway,NOMQN,Mo i Rana,Mo i Rana,1KOESYYR0VYWV,
+NO,Norway,NOMSS,Moss,Moss,28HF4B57VORY7,
+NO,Norway,NOORK,Orkanger,Orkanger,0QUF98TSFZTDR,
+NO,Norway,NOOSL,Oslo,Oslo,1BWQQL3BHHKE7,
+NO,Norway,NOSVG,Stavanger,Stavanger,2PGMVGVTV55KV,
+NO,Norway,NOSAT,Straumen,Straumen,0ICFDWVNY0VPB,
+NO,Norway,NOSVE,Svelgen,Svelgen,2TKGPNZOVW4N3,
+OM,Oman,OMDQM,Duqm,Duqm,WI5EIAA15ALUC,
+OM,Oman,OMSLL,Salalah,Salalah,30ECXPXBQJMHO,
+OM,Oman,OMSOH,Sohar,Sohar,2CZU01UHJDO81,
+PK,Pakistan,PKKIA,Kiamari Karachi,Kiamari Karachi,HIIIZEQLKRDEH,
+PK,Pakistan,PKQCT,Port Qasim,Port Qasim,3FQ5D7WV73R3S,
+PA,Panama,PABLB,Balboa,Balboa,2OWO0UYFIZAN0,
+PA,Panama,PACSO,Coco Solo,Coco Solo,2FVHIK9337GKC,
+PA,Panama,PACTB,Cristobal,Cristobal,33F3OK4KWOKNW,
+PA,Panama,PAMIT,Manzanillo,Manzanillo,027907H94YJCV,
+PA,Panama,PAPCN,Panama Canal,Panama Canal,0LCOOE1EUR33Z,
+PG,Papua New Guinea,PGLAE,Lae,Lae,0TZ5A73VOW1IR,
+PG,Papua New Guinea,PGMAG,Madang,Madang,3CUZF4JXFI6CV,
+PG,Papua New Guinea,PGPOM,Port Moresby,Port Moresby,2QEYNYTMPHNSJ,
+PG,Papua New Guinea,PGWWK,Wewak,Wewak,0ZBO1I4UB3XBZ,
+PY,Paraguay,PYVLL,Asuncion Puerto Seguro Fluvial,Asuncion Puerto Seguro Fluvial,ZHV6WLDPFPEVI,
+PY,Paraguay,PYTER,Asuncion Terport Villeta,Asuncion Terport Villeta,1YA47TTNOM8GQ,
+PY,Paraguay,PYVLL,Asuncion Villeta ANNP,Asuncion Villeta ANNP,KKM0UYZ61YKUC,
+PE,Peru,PECLL,Callao,Callao,3RRY62CBL5VA4,
+PE,Peru,PEPAI,Paita,Paita,3AJI9CRN9EVZZ,
+PE,Peru,PEPIO,Pisco,Pisco,11UL9X6RC8SFH,
+PH,Philippines,PHBCD,Bacolod,Bacolod,1LHMUX3LQSPLO,
+PH,Philippines,PHBTG,Batangas,Batangas,03UIPCEMMI35R,
+PH,Philippines,PHCGY,Cagayan de Oro,Cagayan de Oro,2JZ4V4IG9Q6WV,
+PH,Philippines,PHCEB,Cebu City,Cebu City,3AT7JA74K6GT8,
+PH,Philippines,PHDVO,Davao City,Davao City,30OIE94AEW9KV,
+PH,Philippines,PHGES,General Santos City Dadiangas,General Santos City Dadiangas,12VB3WIDL1FNJ,
+PH,Philippines,PHILO,Iloilo,Iloilo,1TZ3IDZ11E0F0,
+PH,Philippines,PHMNL,Manila,Manila,21N60U14LPRWU,
+PH,Philippines,PHMNS,MANILA SOUTH,MANILA SOUTH,M0I1BQBIXXNJL,
+PH,Philippines,PHSFS,Subic,Subic,27E7I8DAUC2OS,
+PL,Poland,PLGDN,Gdansk,Gdansk,3RIGHAIZMGKN3,
+PL,Poland,PLSZZ,Szczecin,Szczecin,0EJ1MRGTQGUWV,
+PT,Portugal,PTLEI,Leixoes,Leixoes,39Z94B85ANSM4,
+PT,Portugal,PTLIS,Lisbon,Lisbon,2LCCS9JF4ZA8S,
+PT,Portugal,PTSIE,Sines,Sines,0ZBR5R623N0QN,
+PR,Puerto Rico,PRSJU,San Juan,San Juan,2OWH743N4LEVW,
+QA,Qatar,QADOH,Doha,Doha,05QYQ0TOFZ79B,
+QA,Qatar,QAQAP,Qapco,Qapco,2MB5HVS8VC4MY,
+QA,Qatar,QAUMS,Qatalum,Qatalum,05CJYHTYNSQJN,
+QA,Qatar,QAQCH,Qchem,Qchem,1UJKIGY7SDE9N,
+RE,Reunion,RELPT,Port Reunion,Port Reunion,2PQPHB9GF3S0A,
+RO,Romania,ROCND,Constanta,Constanta,3HXEUPPJWKGVZ,CT
+WS,Samoa,WSAPW,Apia,Apia,243W1OB2H1FNJ,
+SA,Saudi Arabia,SAJUB,Al Jubayl,Al Jubayl,2WAWCX8OHB1Q7,
+SA,Saudi Arabia,SADMM,Dammam,Dammam,1OIFQMS1FSLFJ,
+SA,Saudi Arabia,SAJED,Jeddah,Jeddah,0NJO1NEUBFC7W,
+SA,Saudi Arabia,SAKAC,King Abdullah Port,King Abdullah Port,ERPGFS5IMWXCQ,
+SN,Senegal,SNDKR,Dakar,Dakar,32LPNGHZM7J3Z,
+SC,Seychelles,SCPOV,Victoria,Victoria,0314E5E2AZ3I7,
+SL,Sierra Leone,SLFNA,Freetown,Freetown,3FGIS6EWRAZR3,
+SG,Singapore,SGSIN,Singapore,Singapore,0XOP5ISJZK0HR,
+SI,Slovenia,SIKOP,Koper,Koper,2XELE43QKIMIN,
+SB,Solomon Islands,SBNOR,Port Noro,Port Noro,1L7W1QWYWOEBY,
+SO,Somalia,SOBBO,Berbera,Berbera,0KTGT78567NUN,
+SO,Somalia,SOKMU,Kismayo,Kismayo,TNNEZ8G6BIFBI,
+SO,Somalia,SOMGQ,Mogadishu,Mogadishu,Q22DLYCH3ZUSY,
+ZA,South Africa,ZACPT,Cape Town,Cape Town,1YMUUYV0PBYWV,WC
+ZA,South Africa,ZADUR,Durban,Durban,21N0QN82ONYIN,NL
+ZA,South Africa,ZAPLZ,Port Elizabeth,Port Elizabeth,21XCIA31I5NY7,EC
+ES,Spain,ESALG,Algeciras,Algeciras,05R47F3DBN69Q,
+ES,Spain,ESALC,Alicante,Alicante,3EWV55TRBAEF2,
+ES,Spain,ESLEI,Almeria,Almeria,00ABXPVE71KSE,
+ES,Spain,ESBCN,Barcelona,Barcelona,1FQMCYMU9XLZ2,
+ES,Spain,ESBIO,Bilbao,Bilbao,2QU0FZR1WG4FY,
+ES,Spain,ESCAR,Cartagena,Cartagena,2SQP358EJ2TTQ,
+ES,Spain,ESCAS,Castellon,Castellon,382RJN7I7ONZY,
+ES,Spain,ESGIJ,Gijon,Gijon,2QTZQCWBI7GQM,
+ES,Spain,ESLPA,Las Palmas de Gran Canaria,Las Palmas de Gran Canaria,3OHYAFQ2G2R9A,
+ES,Spain,ESMPG,Marin,Marin,22QBB7UHY9J0E,
+ES,Spain,ESSCT,Tenerife,Tenerife,2HIRWE6R53BMH,
+ES,Spain,ESVLC,Valencia,Valencia,12LNX9VI6SCYH,
+ES,Spain,ESVGO,Vigo,Vigo,3TOTZGTTJ63JY,
+LK,Sri Lanka,LKCMB,Colombo,Colombo,00A29CXK4A8PL,
+LK,Sri Lanka,LKHBA,HAMBANTOTA,HAMBANTOTA,SFSVOSWTMNUBW,
+SD,Sudan,SDPZU,Port Sudan,Port Sudan,27E8J1IVY743J,
+SR,Suriname,SRPBM,Paramaribo,Paramaribo,074U5Z9XZV7GF,
+SE,Sweden,SEAHU,Aahus,Aahus,2ERT4RAYX130F,
+SE,Sweden,SEGVX,Gaevle,Gaevle,29UK28AFV5JSV,
+SE,Sweden,SEGOT,Gothenburg,Gothenburg,148LVMHYNW4N3,
+SE,Sweden,SEHAD,Halmstad,Halmstad,1QF1EH2TLES1R,
+SE,Sweden,SEHEL,Helsingborg,Helsingborg,3SVQGPQY77WCF,
+SE,Sweden,SENRK,Norrkoeping,Norrkoeping,18MEUUMZOY4CF,
+SE,Sweden,SESOE,Soedertaelje,Soedertaelje,3L78JPGT2Q4CF,
+TW,Taiwan China,TWKHH,Kaohsiung,Kaohsiung,2L2KVZCA70IV3,
+TW,Taiwan China,TWKEL,Keelung,Keelung,226II2M0QPX98,
+TW,Taiwan China,TWTXG,Taichung,Taichung,0VRAN06UZE5JW,
+TZ,Tanzania,TZDAR,Dar es Salaam,Dar es Salaam,1B33TM1QFZ5P8,
+TZ,Tanzania,TZTGT,Tanga,Tanga,2IC0QBP683I6T,
+TZ,Tanzania,TZZNZ,Zanzibar,Zanzibar,1LI5E2VJLQHZ3,
+TH,Thailand,THKRU,Bangkok PAT,Bangkok PAT,STDNKLEE7XP0F,
+TH,Thailand,THLCH,Laem Chabang,Laem Chabang,0NTCCB4ENSFX8,
+TH,Thailand,THSGK,Songkhla,Songkhla,1WPK2N8JEDA58,
+TL,Timor Leste,TLDIL,Dili,Dili,0Y5NL48H7UTFD,
+TG,Togo,TGLFW,Lome,Lome,1TP6DRC5RFG5B,
+TO,Tonga,TOTBU,Nukualofa,Nukualofa,3E7XWQP472CS9,
+TT,Trinidad and Tobago,TTPTS,Point Lisas,Point Lisas,0ESE7P17ONL33,
+TT,Trinidad and Tobago,TTPOS,Port of Spain-Trinidad,Port of Spain-Trinidad,1E3ZR711IW6FW,
+TN,Tunisia,TNSFA,Sfax,Sfax,0WB6RZQCH1AWV,
+TN,Tunisia,TNTUN,Tunis,Tunis,39FHOA05HLH1B,
+TR,Turkey,TRAMR,Ambarli Port Istanbul,Ambarli Port Istanbul,0FC4MM5Y0O0Z2,
+TR,Turkey,TRUSK,Bosporus,Bosporus,274B9LATUVERJ,
+TR,Turkey,TRCKZ,Canakkale,Canakkale,05ROFG0O696DB,
+TR,Turkey,TRDRC,Derince,Derince,2AENQYCQRF5VJ,
+TR,Turkey,TRGEB,Gebze,Gebze,2Q0LEFKOQTFNJ,
+TR,Turkey,TRGEM,Gemlik,Gemlik,1QYY0GDF0R1XB,
+TR,Turkey,TRISK,Iskenderun,Iskenderun,1YWKJRTWFV5VJ,
+TR,Turkey,TRIZM,Izmir,Izmir,3TZA3JGPJXNY7,
+TR,Turkey,TRIZT,Izmit Korfezi,Izmit Korfezi,02W224NQ4IGAE,
+TR,Turkey,TRMER,Mersin,Mersin,0J6BJPRUQMPVJ,
+UA,Ukraine,UAILK,Chornomorsk,Chornomorsk,3U8V1QW2IUB9B,
+AE,United Arab Emirates,AEAUH,Abu Dhabi,Abu Dhabi,3KDOVSRPU05MM,
+AE,United Arab Emirates,AEAJM,Ajman,Ajman,2QK9CUW2O85MM,
+AE,United Arab Emirates,AEFJR,Fujairah,Fujairah,0QJWHX72KIG72,
+AE,United Arab Emirates,AEJEA,Jebel Ali,Jebel Ali,31RTK5H2BLBS3,
+AE,United Arab Emirates,AEKLF,Khor Fakkan,Khor Fakkan,3EWY4XO4XLXMM,
+AE,United Arab Emirates,AERKT,Ras Al Khaimah,Ras Al Khaimah,2AY997H5QSJ9A,
+AE,United Arab Emirates,AESHJ,Sharjah,Sharjah,12VYK7HMWVTDQ,
+GB,United Kingdom,GBBEL,Belfast Northern Ireland,Belfast Northern Ireland,091LJHQ4410U7,
+GB,United Kingdom,GBFXT,Felixstowe,Felixstowe,23KBBVVUYELJT,
+GB,United Kingdom,GBGRG,Grangemouth,Grangemouth,0Y8GXQ3TBPZEN,
+GB,United Kingdom,GBGRK,Greenock,Greenock,2XE8B6SH75TA7,
+GB,United Kingdom,GBLIV,Liverpool,Liverpool,0G606PNUMUTFJ,
+GB,United Kingdom,GBLGP,London Gateway,London Gateway,T4HWDGEKCG3L1,
+GB,United Kingdom,GBSOU,Southampton,Southampton,1EWYA2CYBUIYN,
+GB,United Kingdom,GBSSH,South Shields,South Shields,0JPQPZDGVPT33,
+GB,United Kingdom,GBTEE,Teesport,Teesport,3NNZ1GNL1FOFZ,
+GB,United Kingdom,GBTIL,Tilbury,Tilbury,1RI81I4JA4VIX,
+US,United States,USANC,Anchorage,Anchorage,3EX8L8MGVHN5R,AK
+US,United States,USBAL,Baltimore,Baltimore,152O6QKMEBA8S,MD
+US,United States,USCHS,Charleston,Charleston,3RSB4DDP23AM7,SC
+US,United States,USDUT,Dutch Harbor,Dutch Harbor,37IVFIHBOP94V,AK
+US,United States,USFPO,Freeport,Freeport,02H9NCHNTVT6N,TX
+US,United States,USGLS,Galveston,Galveston,3B30W804CX3ZZ,TX
+US,United States,USHNL,Honolulu,Honolulu,0C26EZFZMGHI4,HI
+US,United States,USHOU,Houston,Houston,183AKT65YAHRZ,TX
+US,United States,USJAX,Jacksonville,Jacksonville,24432BLU3IZCV,FL
+US,United States,USADQ,Kodiak,Kodiak,0KT794ZQHZBLR,AK
+US,United States,USLGB,Long Beach,Long Beach,09BIUNPPZHC3Y,CA
+US,United States,USLAX,Los Angeles,Los Angeles,2LMUYHDQXMRNJ,CA
+US,United States,USMIA,Miami,Miami,0NJSNO7FIBOGS,FL
+US,United States,USMOB,Mobile,Mobile,2Q9ZPNXIMX0FZ,AL
+US,United States,USEWR,Newark,Newark,02R2IYUF20M7Z,NJ
+US,United States,USMSY,New Orleans,New Orleans,14IUKKE6N6BGF,LA
+US,United States,USORF,Norfolk,Norfolk,0IMPS1LNVP4M4,VA
+US,United States,USOAK,Oakland,Oakland,31S6UFGN9BZQ4,CA
+US,United States,USPHL,Philadelphia,Philadelphia,3KXVUDK78DKSF,PA
+US,United States,USCLM,Port Angeles,Port Angeles,21MW1DH27HTHB,WA
+US,United States,USPEF,Port Everglades,Port Everglades,1Q4ZXPC3529P8,FL
+US,United States,USNTD,Port Hueneme,Port Hueneme,3BHQIYY7PP7HV,CA
+US,United States,USSAV,Savannah,Savannah,0FW19NDUZ2NI7,GA
+US,United States,USSEA,Seattle,Seattle,11S2VUPFPPOQN,WA
+US,United States,USTIW,Tacoma,Tacoma,2FVX1JLKRYVFG,WA
+US,United States,USTPA,Tampa,Tampa,2PG7RMVQ5PWN3,FL
+US,United States,USILM,Wilmington,Wilmington,37IISIUB6OK8V,NC
+UY,Uruguay,UYMVD,Montevideo,Montevideo,01DK1HDY6L5SS,
+VE,Venezuela,VEGUT,Guanta,Guanta,1QF1YFA33PZEN,
+VE,Venezuela,VEGUA,Guaranao,Guaranao,229GLFHGOSVAF,
+VE,Venezuela,VELAG,La Guaira,La Guaira,0WL9GQAZ14XB0,
+VE,Venezuela,VEMAR,Maracaibo,Maracaibo,3EWWN51D11ZEN,
+VE,Venezuela,VEPBL,Puerto Cabello,Puerto Cabello,3AJN1IJ59ZAU4,
+VN,Vietnam,VNDAD,Da Nang,Da Nang,0DYUBRG1P6F0F,DN
+VN,Vietnam,VNHPH,Haiphong,Haiphong,2GZ03V8AX8T5O,HP
+VN,Vietnam,VNHPH,Haiphong - Lach Huyen,Haiphong - Lach Huyen,086LJZA1UAYWF,HP
+VN,Vietnam,VNSGN,Ho Chi Minh City,Ho Chi Minh City,27NYPRMI1Y9P8,SG
+VN,Vietnam,VNUIH,Qui Nhon,Qui Nhon,0ZBOT9VTMIDFJ,31
+VN,Vietnam,VNVUT,Vung Tau,Vung Tau,1UITQ9WIU8H33,43

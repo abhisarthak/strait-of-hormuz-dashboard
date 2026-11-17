@@ -1,0 +1,5 @@
+Scope_Scenario_ID,Affected_Transition_Share,Transition_Universe_Count,Selected_Transition_Count,Recomputed_Selected_Count,Count_Reconciles,Interpretation
+S89-S010,0.1,271,27,27,True,"Coverage fraction over observed transition records; not vessel, voyage, traffic, route, or Hormuz exposure fraction"
+S89-S025,0.25,271,68,68,True,"Coverage fraction over observed transition records; not vessel, voyage, traffic, route, or Hormuz exposure fraction"
+S89-S050,0.5,271,136,136,True,"Coverage fraction over observed transition records; not vessel, voyage, traffic, route, or Hormuz exposure fraction"
+S89-S100,1.0,271,271,271,True,"Coverage fraction over observed transition records; not vessel, voyage, traffic, route, or Hormuz exposure fraction"

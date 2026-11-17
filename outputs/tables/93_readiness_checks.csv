@@ -1,0 +1,15 @@
+Check,Passed,Observed,Expected,Note
+Scenario-policy matrix has 80 rows,True,80,80,Expected inventory from Script90; inspect if source register changes.
+Five distinct policies in policy register,True,5,5,Expected Script90 policy inventory.
+Sixteen distinct scenarios,True,16,16,Expected Script88/90 scenario grid.
+Scenario-policy pairs are unique,True,0,0,No duplicate scenario-policy combination.
+Every scenario has complete policy coverage,True,80 unique pairs; 16 scenarios; 5 policies,80,Structural coverage only; not proof of valid policy implementation.
+Policy IDs reconcile across registers,True,[],No differences,Scenario matrix policy IDs must match policy decision register.
+Nine response metrics retained,True,9,9,Preserves Script90 metric inventory.
+Nine metric decision rows retained,True,9,9,Preserves Script92 decision inventory.
+Metric IDs reconcile,True,[],No differences,Metric decision statuses must map to registered metrics.
+Policies remain pending,True,{'PENDING': 5},PENDING,No researcher policy selection inferred.
+Supervisor policy reviews remain pending,True,{'PENDING': 5},PENDING,No supervisor approval inferred.
+No policy approvals granted,True,0,0,Approval remains controlled by source register.
+No execution authorization granted,True,0,0,This audit cannot authorize execution.
+Script92 open decisions retained,True,12,12,All unresolved estimand/censoring decisions remain visible.

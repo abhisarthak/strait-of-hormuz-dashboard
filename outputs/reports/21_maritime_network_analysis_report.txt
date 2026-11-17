@@ -1,0 +1,29 @@
+MARITIME NETWORK ANALYSIS
+==================================================
+
+Total_Ports: 19
+Total_Directed_Connections: 53
+Weakly_Connected_Components: 1
+Strongly_Connected_Components: 1
+Isolated_Ports: 0
+Largest_Weak_Component_Size: 19
+Largest_Strong_Component_Size: 19
+Directed_Density: 0.15497076023391812
+Average_In_Degree: 2.789473684210526
+Average_Out_Degree: 2.789473684210526
+
+WEAKLY CONNECTED COMPONENTS
+
+Component 1: ['AEAJM', 'AEAUH', 'AEFJR', 'AEJEA', 'AEKLF', 'AESHJ', 'BHKBS', 'IQUQR', 'KWSAA', 'KWSWK', 'OMDQM', 'OMSLL', 'OMSOH', 'QADOH', 'QAQCH', 'SADMM', 'SAJED', 'SAJUB', 'SAKAC']
+
+STRONGLY CONNECTED COMPONENTS
+
+Component 1: ['AEAJM', 'AEAUH', 'AEFJR', 'AEJEA', 'AEKLF', 'AESHJ', 'BHKBS', 'IQUQR', 'KWSAA', 'KWSWK', 'OMDQM', 'OMSLL', 'OMSOH', 'QADOH', 'QAQCH', 'SADMM', 'SAJED', 'SAJUB', 'SAKAC']
+
+INTERPRETATION LIMITATIONS
+1. Network edges represent observed port-call transitions.
+2. They do not prove direct sailing routes.
+3. Centrality is a structural network indicator.
+4. High degree does not establish physical port capacity.
+5. Elapsed times are not pure sailing times.
+6. This network does not confirm Strait of Hormuz transit.

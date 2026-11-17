@@ -1,0 +1,50 @@
+SCRIPT 73 — VESSEL-LEVEL BASELINE PROPAGATION ENGINE
+==================================================================
+Project root: /Users/abhishekkumar/Strait_of_Hormuz_Research
+
+Schedule calls: 604
+Vessels: 155
+Ports: 19
+Vessel sequence links: 449
+Same-port links: 178
+Distinct-port transitions: 271
+Terminal calls: 155
+Negative inter-call elapsed links: 0
+Zero inter-call elapsed links: 0
+Stay-duration mismatches (> 0.02 h): 0
+
+NO-DISRUPTION INPUTS
+Initial delay = 0 h; transit elapsed-time shock = 0 h;
+port-call-duration shock = 0 h; recovery advance = 0 h.
+
+BASELINE RESULTS
+Arrival timestamp mismatches: 0
+Departure timestamp mismatches: 0
+Non-zero delay rows: 0
+Vessels passing: 155/155
+Reproducibility mismatches: 0
+
+Validation checks passed: 38/38
+Validation checks failed: 0
+
+RESEARCH LIMITATIONS
+- Inter-port elapsed time is not pure sailing time.
+- Observed port-call duration is not pure berth-processing time.
+- Port-call summaries do not establish berth occupancy or capacity.
+- No physical route, Hormuz transit, or actual disruption exposure is inferred.
+- No disruption, recovery policy, or optimization experiment is executed.
+- Historical timestamps are retained separately from simulated timestamps.
+
+FAILED CHECKS:
+None.
+
+OUTPUTS:
+- outputs/tables/73_call_level_baseline_propagation_register.csv
+- outputs/tables/73_vessel_level_baseline_summary.csv
+- outputs/tables/73_transition_level_baseline_register.csv
+- outputs/tables/73_port_level_historical_baseline_summary.csv
+- outputs/tables/73_source_schema_and_key_audit.csv
+- outputs/tables/73_parameter_key_coverage.csv
+- outputs/tables/73_baseline_validation_checks.csv
+- outputs/tables/73_reproducibility_comparison.csv
+- outputs/reports/73_vessel_level_baseline_propagation_report.txt

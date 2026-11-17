@@ -1,0 +1,105 @@
+Source_File,Bytes,Line_Count,Syntax_Status,Architecture_Category,Detected_Signatures,SimPy_Import_Detected,Environment_Detected,Resource_Detected,Random_Seed_Detected,NetworkX_Detected
+01_data_inspection.py,7399,282,PARSE_OK,OTHER,pandas,False,False,False,False,False
+02_data_quality_report.py,15660,625,PARSE_OK,OTHER,pandas,False,False,False,False,False
+03_identifier_and_schema_validation.py,14689,563,PARSE_OK,VALIDATION_OR_AUDIT,pandas; validation/assertions,False,False,False,False,False
+04_investigate_vessel_mismatches.py,13007,510,PARSE_OK,OTHER,pandas; port-level aggregation,False,False,False,False,False
+05_recheck_vessel_name_conflicts.py,2670,117,PARSE_OK,OTHER,pandas,False,False,False,False,False
+05_vessel_identity_chronology.py,20894,724,PARSE_OK,OTHER,pandas; port-level aggregation,False,False,False,False,False
+06_dataset_integration.py,18723,753,PARSE_OK,OTHER,pandas; validation/assertions,False,False,False,False,False
+06a_debug_imo_matching.py,3053,134,PARSE_OK,OTHER,pandas,False,False,False,False,False
+07_port_call_sequence_analysis.py,26559,1062,PARSE_OK,OTHER,pandas; validation/assertions,False,False,False,False,False
+08_timestamp_source_separation.py,11054,486,PARSE_OK,OTHER,pandas,False,False,False,False,False
+08a_check_timestamp_columns.py,813,30,PARSE_OK,OTHER,pandas,False,False,False,False,False
+08b_inspect_negative_estimated_stays.py,1294,62,PARSE_OK,OTHER,pandas,False,False,False,False,False
+08c_inspect_anomaly_source_records.py,3412,148,PARSE_OK,OTHER,pandas,False,False,False,False,False
+08d_finalize_timestamp_anomalies.py,1782,77,PARSE_OK,OTHER,pandas,False,False,False,False,False
+09_voyage_consistency_and_overlap_analysis.py,28725,1078,PARSE_OK,OTHER,pandas; port-level aggregation,False,False,False,False,False
+09b_inspect_vessel_overlaps.py,1360,62,PARSE_OK,OTHER,pandas,False,False,False,False,False
+09c_investigate_overlap_source_records.py,6352,302,PARSE_OK,OTHER,pandas,False,False,False,False,False
+09d_classify_overlap_investigations.py,14286,603,PARSE_OK,OTHER,pandas; validation/assertions,False,False,False,False,False
+10_repeated_port_call_investigation.py,20763,951,PARSE_OK,OTHER,pandas; validation/assertions; vessel-level aggregation; port-level aggregation,False,False,False,False,False
+11_exact_representation_investigation.py,19566,802,PARSE_OK,OTHER,pandas,False,False,False,False,False
+12_source_provenance_service_code_investigation.py,28135,1095,PARSE_OK,OTHER,pandas,False,False,False,False,False
+12a_diagnose_source_mismatches.py,955,55,PARSE_OK,OTHER,pandas,False,False,False,False,False
+12b_inspect_port_columns.py,753,39,PARSE_OK,OTHER,pandas,False,False,False,False,False
+13_final_dataset_consolidation.py,21030,904,PARSE_OK,OTHER,pandas,False,False,False,False,False
+14_baseline_maritime_network_analysis.py,24967,981,PARSE_OK,NETWORK_ANALYSIS,pandas; port-level aggregation,False,False,False,False,False
+15A_verify_negative_transition_source_rows.py,2028,74,PARSE_OK,OTHER,pandas,False,False,False,False,False
+15B_schedule_duplicate_representation_resolution.py,28811,1170,PARSE_OK,OTHER,pandas,False,False,False,False,False
+15_transition_and_hormuz_relevance_investigation.py,32148,1195,PARSE_OK,OTHER,pandas,False,False,False,False,False
+16_refined_maritime_network_analysis.py,37657,1475,PARSE_OK,NETWORK_ANALYSIS,pandas; port-level aggregation,False,False,False,False,False
+17_port_geography_and_ais_verification.py,27178,1164,PARSE_OK,NETWORK_ANALYSIS,pandas; validation/assertions,False,False,False,False,False
+18A_inspect_unlocode_archives.py,1856,71,PARSE_OK,OTHER,pandas,False,False,False,False,False
+18B_unlocode_extraction_and_matching.py,23374,1069,PARSE_OK,OTHER,pandas; validation/assertions,False,False,False,False,False
+18C_coordinate_validation_and_release_assessment.py,21727,879,PARSE_OK,VALIDATION_OR_AUDIT,pandas; validation/assertions,False,False,False,False,False
+18D_geographic_validation_and_hormuz_port_screening.py,26095,1030,PARSE_OK,NETWORK_ANALYSIS,pandas; validation/assertions,False,False,False,False,False
+18E_independent_port_facility_validation.py,23776,883,PARSE_OK,VALIDATION_OR_AUDIT,pandas; validation/assertions,False,False,False,False,False
+18F1_port_source_discovery.py,11579,347,PARSE_OK,OTHER,pandas; port-level aggregation,False,False,False,False,False
+18F2_source_quality_and_evidence_assessment.py,18833,486,PARSE_OK,OTHER,pandas; port-level aggregation,False,False,False,False,False
+18F3_manual_evidence_validation.py,12043,233,PARSE_OK,VALIDATION_OR_AUDIT,pandas; validation/assertions,False,False,False,False,False
+18F_manual_port_validation_audit.py,17978,486,PARSE_OK,VALIDATION_OR_AUDIT,pandas; validation/assertions,False,False,False,False,False
+18_coordinate_based_port_geography.py,27044,1196,PARSE_OK,NETWORK_ANALYSIS,pandas; validation/assertions,False,False,False,False,False
+19_simulation_input_preparation.py,18054,625,PARSE_OK,SIMULATION_OR_EXPERIMENT,pandas; validation/assertions; port-level aggregation,False,False,False,False,False
+20_simulation_environment_check.py,2916,110,PARSE_OK,SIMULATION_OR_EXPERIMENT,SimPy import; NetworkX; pandas,True,False,False,False,True
+21_maritime_network_analysis.py,10634,412,PARSE_OK,NETWORK_ANALYSIS,NetworkX; pandas,False,False,False,False,True
+22_interport_transition_evidence_audit.py,17974,740,PARSE_OK,VALIDATION_OR_AUDIT,pandas; port-level aggregation,False,False,False,False,False
+23_extreme_transition_investigation.py,16350,637,PARSE_OK,OTHER,pandas; port-level aggregation,False,False,False,False,False
+24_simulation_parameter_suitability.py,15539,593,PARSE_OK,SIMULATION_OR_EXPERIMENT,pandas; validation/assertions,False,False,False,False,False
+25_historical_arrival_baseline_simulation.py,14823,527,PARSE_OK,SIMULATION_OR_EXPERIMENT,SimPy import; Environment; Resource; process; timeout; resource request; yield event; pandas; validation/assertions; arrival/departure event,True,True,True,False,False
+26_historical_port_concurrency_audit.py,10718,407,PARSE_OK,VALIDATION_OR_AUDIT,pandas,False,False,False,False,False
+27_simpy_historical_schedule_replay.py,15721,603,PARSE_OK,SIMULATION_OR_EXPERIMENT,SimPy import; Environment; process; timeout; yield event; pandas; validation/assertions,True,True,False,False,False
+28_controlled_disruption_experiment.py,23240,911,PARSE_OK,SIMULATION_OR_EXPERIMENT,SimPy import; Environment; process; timeout; yield event; random seed; pandas; validation/assertions,True,True,False,True,False
+29_disruption_impact_analysis.py,22914,895,PARSE_OK,SIMULATION_OR_EXPERIMENT,pandas; validation/assertions,False,False,False,False,False
+30C_vessel_level_disruption_propagation_CORRECTED.py,40742,1539,PARSE_OK,SIMULATION_OR_EXPERIMENT,random seed; pandas; validation/assertions,False,False,False,True,False
+30_vessel_level_disruption_propagation.py,27443,1094,PARSE_OK,SIMULATION_OR_EXPERIMENT,random seed; pandas; validation/assertions,False,False,False,True,False
+31C_recovery_strategy_evaluation_CORRECTED.py,21222,836,PARSE_OK,SIMULATION_OR_EXPERIMENT,pandas; validation/assertions,False,False,False,False,False
+31_recovery_strategy_evaluation.py,21222,836,PARSE_OK,SIMULATION_OR_EXPERIMENT,pandas; validation/assertions,False,False,False,False,False
+32_multi_objective_recovery_analysis.py,23747,907,PARSE_OK,SIMULATION_OR_EXPERIMENT,pandas; validation/assertions,False,False,False,False,False
+33_recovery_parameter_sensitivity.py,18752,358,PARSE_OK,SIMULATION_OR_EXPERIMENT,random seed; pandas; validation/assertions,False,False,False,True,False
+34_recovery_sensitivity_robustness.py,26650,774,PARSE_OK,SIMULATION_OR_EXPERIMENT,pandas,False,False,False,False,False
+35_extended_replication_statistical_analysis.py,26768,520,PARSE_OK,OTHER,random seed; pandas; validation/assertions,False,False,False,True,False
+36_statistical_robustness_final_visualization_fixed.py,26437,651,PARSE_OK,VISUALIZATION,pandas; validation/assertions,False,False,False,False,False
+36_statistical_robustness_final_visualization_fixed_BACKUP.py,23537,570,PARSE_OK,VISUALIZATION,pandas; validation/assertions,False,False,False,False,False
+37_port_relevance_and_validation_audit.py,9500,188,PARSE_OK,VALIDATION_OR_AUDIT,pandas; validation/assertions,False,False,False,False,False
+38_evidence_based_port_validation_register.py,13058,366,PARSE_OK,VALIDATION_OR_AUDIT,pandas; validation/assertions,False,False,False,False,False
+39_port_coordinate_validation_register.py,15630,576,PARSE_OK,VALIDATION_OR_AUDIT,pandas; validation/assertions,False,False,False,False,False
+40_source_evidence_audit.py,22847,935,PARSE_OK,VALIDATION_OR_AUDIT,validation/assertions,False,False,False,False,False
+41_manual_source_content_verification.py,19177,817,PARSE_OK,OTHER,validation/assertions,False,False,False,False,False
+42_batch2_source_content_review.py,8747,217,PARSE_OK,OTHER,validation/assertions,False,False,False,False,False
+43_batch3_source_content_review.py,16562,545,PARSE_OK,OTHER,validation/assertions,False,False,False,False,False
+44_batch4_source_content_review.py,17929,566,PARSE_OK,OTHER,validation/assertions,False,False,False,False,False
+45_batch5_source_content_review.py,27596,766,PARSE_OK,OTHER,validation/assertions,False,False,False,False,False
+46_batch_reconciliation_audit.py,22675,945,PARSE_OK,VALIDATION_OR_AUDIT,,False,False,False,False,False
+47_consolidate_source_review_batches.py,18652,758,PARSE_OK,OTHER,validation/assertions,False,False,False,False,False
+48_consolidated_register_quality_audit.py,24688,715,PARSE_OK,VALIDATION_OR_AUDIT,validation/assertions,False,False,False,False,False
+49_port_eligibility_assessment.py,22479,658,PARSE_OK,OTHER,validation/assertions,False,False,False,False,False
+50_port_coordinate_research_workflow.py,19351,440,PARSE_OK,OTHER,validation/assertions,False,False,False,False,False
+51_primary_source_coordinate_evidence_research_REPAIRED.py,19928,381,PARSE_OK,OTHER,,False,False,False,False,False
+52_apply_coordinate_evidence_batch.py,8450,221,PARSE_OK,OTHER,pandas,False,False,False,False,False
+53_coordinate_evidence_quality_audit.py,15652,304,PARSE_OK,VALIDATION_OR_AUDIT,pandas; validation/assertions,False,False,False,False,False
+54_consolidated_port_identity_coordinate_reconciliation.py,20196,437,PARSE_OK,OTHER,pandas; validation/assertions,False,False,False,False,False
+54_consolidated_port_identity_coordinate_reconciliation_CORRECTED.py,23412,457,PARSE_OK,OTHER,pandas; validation/assertions,False,False,False,False,False
+55_coordinate_evidence_review.py,24544,899,PARSE_OK,OTHER,pandas; validation/assertions; port-level aggregation,False,False,False,False,False
+56_coordinate_evidence_source_assessment.py,27060,725,PARSE_OK,OTHER,pandas; validation/assertions,False,False,False,False,False
+56_coordinate_evidence_source_assessment_CORRECTED.py,21879,623,PARSE_OK,OTHER,pandas; validation/assertions,False,False,False,False,False
+56_coordinate_evidence_source_assessment_CORRECTED_v2.py,27060,725,PARSE_OK,OTHER,pandas; validation/assertions,False,False,False,False,False
+57_independent_port_terminal_coordinate_validation.py,17229,416,PARSE_OK,VALIDATION_OR_AUDIT,pandas; validation/assertions,False,False,False,False,False
+57_independent_port_terminal_coordinate_validation_v2.py,14265,287,PARSE_OK,VALIDATION_OR_AUDIT,pandas; validation/assertions,False,False,False,False,False
+57_independent_port_terminal_coordinate_validation_v2_1.py,14265,287,PARSE_OK,VALIDATION_OR_AUDIT,pandas; validation/assertions,False,False,False,False,False
+58_researcher_coordinate_approval_and_operational_eligibility_register.py,16585,342,PARSE_OK,OTHER,pandas; validation/assertions,False,False,False,False,False
+59_operational_network_eligibility_gate.py,13144,310,PARSE_OK,NETWORK_ANALYSIS,pandas,False,False,False,False,False
+59_operational_network_eligibility_gate_v2.py,11952,244,PARSE_OK,NETWORK_ANALYSIS,pandas,False,False,False,False,False
+59_operational_network_eligibility_gate_v2_1.py,12038,246,PARSE_OK,NETWORK_ANALYSIS,pandas,False,False,False,False,False
+60_network_integration_source_discovery.py,7823,213,PARSE_OK,NETWORK_ANALYSIS,pandas,False,False,False,False,False
+61_simulation_network_integration_readiness_audit.py,19549,374,PARSE_OK,SIMULATION_OR_EXPERIMENT,pandas; validation/assertions,False,False,False,False,False
+62_network_evidence_strength_parameter_reliability_audit.py,15993,357,PARSE_OK,NETWORK_ANALYSIS,pandas; validation/assertions,False,False,False,False,False
+63_empirical_parameter_distribution_uncertainty_assessment.py,16518,373,PARSE_OK,PARAMETER_OR_SCENARIO,random seed; pandas; port-level aggregation,False,False,False,True,False
+64_evidence_based_simulation_parameter_assignment.py,14952,332,PARSE_OK,SIMULATION_OR_EXPERIMENT,pandas; validation/assertions,False,False,False,False,False
+64_evidence_based_simulation_parameter_assignment_CORRECTED_v2.py,14847,331,PARSE_OK,SIMULATION_OR_EXPERIMENT,pandas; validation/assertions,False,False,False,False,False
+64_evidence_based_simulation_parameter_assignment_CORRECTED_v3.py,15028,335,PARSE_OK,SIMULATION_OR_EXPERIMENT,pandas; validation/assertions,False,False,False,False,False
+65_researcher_guided_parameter_scenario_design_CORRECTED_v2.py,20634,392,PARSE_OK,PARAMETER_OR_SCENARIO,pandas; validation/assertions,False,False,False,False,False
+66_disruption_experiment_design_register.py,25416,416,PARSE_OK,SIMULATION_OR_EXPERIMENT,pandas; validation/assertions,False,False,False,False,False
+67_disruption_mechanism_exposure_assessment_CORRECTED_v6.py,21743,401,PARSE_OK,SIMULATION_OR_EXPERIMENT,pandas; validation/assertions,False,False,False,False,False
+68_researcher_guided_exposure_decision_and_scenario_scope_register.py,21020,413,PARSE_OK,PARAMETER_OR_SCENARIO,pandas,False,False,False,False,False
+69_experiment_protocol_and_scenario_parameter_specification.py,25695,394,PARSE_OK,PARAMETER_OR_SCENARIO,pandas; validation/assertions,False,False,False,False,False
+70_simulation_architecture_and_validation_framework.py,20984,372,PARSE_OK,SIMULATION_OR_EXPERIMENT,yield event; shortest path; pandas; validation/assertions; event calendar; arrival/departure event; vessel-level aggregation; port-level aggregation,False,False,False,False,False

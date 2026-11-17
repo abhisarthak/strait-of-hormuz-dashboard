@@ -1,0 +1,29 @@
+========================================================================================
+SCRIPT 62: NETWORK EVIDENCE STRENGTH AND PARAMETER RELIABILITY AUDIT
+========================================================================================
+
+SOURCE COUNTS
+- Network directed edges: 53
+- Observed transition records: 271
+- Script 19 inter-port parameter rows: 53
+- Directed pairs audited: 53
+
+EVIDENCE TIERS (SCREENING ONLY)
+- SPARSE_EVIDENCE: 24 edges
+- SINGLE_OBSERVATION_ONLY: 14 edges
+- LIMITED_MULTI_VESSEL_EVIDENCE: 9 edges
+- RELATIVELY_STRONGER_EMPIRICAL_EVIDENCE: 6 edges
+
+VESSEL DIVERSITY AND CONCENTRATION
+- Edges with <=1 distinct vessel: 24
+- Edges where largest vessel contributes >50%: 30
+- Sparse or single-observation edges: 38
+
+PARAMETER RECONCILIATION
+- Rows passing sample/statistic reconciliation: 53
+- Rows requiring review: 0
+
+INTERPRETATION
+Evidence tiers are descriptive screens based on valid observation count, distinct vessel count and largest-vessel share. They do not reproduce or replace Script 24's parameter suitability decisions and do not authorize empirical resampling. IQR flags are investigation prompts, not grounds for automatic deletion. Repeated observations from the same vessel are not independent vessel replications. Elapsed time is departure-to-next-arrival time and includes sailing, waiting and unobserved operations; it is not pure sailing time. No route, port capacity, coordinate or Hormuz transit validation is performed.
+
+OVERALL PARAMETER RECONCILIATION: PASS

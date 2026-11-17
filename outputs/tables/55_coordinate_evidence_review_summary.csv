@@ -1,0 +1,16 @@
+Metric,Value
+Consolidated records,19
+Records with populated source fields,19
+Records with no populated source fields detected,0
+Records with populated coordinate evidence fields,19
+Records with no coordinate evidence fields detected,0
+Validated port coordinate pairs populated,0
+Records requiring P1 review,1
+Records requiring P2 review,18
+Records requiring P3 review,0
+QAUMS facility association unresolved,1
+Coordinate approvals made by Script 55,0
+Operational inclusion decisions made by Script 55,0
+AIS-confirmed Hormuz transits established by Script 55,0
+Records pending researcher review,19
+Upstream files modified,NO

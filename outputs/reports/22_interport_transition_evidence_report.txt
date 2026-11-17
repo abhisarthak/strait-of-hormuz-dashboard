@@ -1,0 +1,40 @@
+INTER-PORT TRANSITION AND ELAPSED-TIME EVIDENCE AUDIT
+=================================================================
+
+INPUT DATA
+Input records: 271
+Valid records: 271
+Invalid records: 0
+
+PAIR STATISTICS
+Directed port pairs: 53
+Undirected port pairs: 35
+
+DATA QUALITY SUMMARY
+Total transition records: 271
+Valid transition records: 271
+Invalid transition records: 0
+Unique directed port pairs: 53
+Unique undirected port pairs: 35
+Unique vessels in valid transitions: 58
+Potential IQR extreme observations: 20
+Pairs with fewer than 3 observations: 22
+Pairs with fewer than 6 observations: 36
+Pairs with at least 10 observations: 8
+Pairs with very high variability: 8
+Pairs with both directions observed: 18
+Pairs with only one direction observed: 17
+
+SCRIPT 21 CROSS-CHECK
+Sample count matches: 53; mean matches: 53
+
+METHODOLOGICAL LIMITATIONS
+1. Elapsed time is previous port departure to next port arrival.
+2. It may include sailing, waiting, anchorage and unobserved calls.
+3. An IQR flag identifies a statistical extreme, not a data error.
+4. Low sample size limits distribution estimation.
+5. Repeated vessel observations are not independent vessels.
+6. Directional differences are descriptive, not causal.
+7. Port-call transitions do not prove direct maritime routes.
+8. This audit does not confirm Strait of Hormuz transit.
+9. No observation is deleted by this script.

@@ -1,0 +1,20 @@
+SCRIPT 19 - SIMULATION INPUT PREPARATION
+=========================================
+
+Primary baseline: conservative schedule actual calls.
+Core schedule: sensitivity dataset; kept separate.
+Individual calls: comparison dataset; kept separate.
+
+Port service time is observed arrival-to-departure duration.
+It is not necessarily berth processing time.
+
+Inter-port elapsed time is previous departure to next arrival.
+It is not pure sailing time and may include waiting or unobserved calls.
+
+No vessel capacity, port capacity, berth capacity, or sailing speed has been invented.
+
+The 18F port validation register remains a pending review register. Its locations are not treated as independently verified ports.
+
+Disruption levels and duration are experimental assumptions, not historical measurements.
+
+AIS transit exposure through the Strait of Hormuz is not confirmed by these schedule records.

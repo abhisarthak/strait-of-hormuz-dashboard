@@ -1,0 +1,98 @@
+SCRIPT 84 — FULL VESSEL VOYAGE AND PORT-CALL HISTORY AUDIT
+==============================================================================
+Workbook: /Users/abhishekkumar/Strait_of_Hormuz_Research/data/raw/Combined_Port_Schedules.xlsx
+Sheet: Sheet1
+Target IMO: 9813840
+Raw records for target vessel: 32
+Chronological port sequence: QADOH -> QADOH -> QADOH -> QADOH -> QADOH -> QADOH -> QADOH -> QADOH -> QADOH -> QAQCH -> QAQCH -> QAQCH -> QAQCH -> QADOH -> QAQCH -> QAQCH -> QADOH -> QADOH -> QADOH -> QADOH -> QADOH -> QADOH -> QADOH -> QADOH -> QADOH -> QADOH -> QADOH -> QAQCH -> QAQCH -> QAQCH -> QAQCH -> QAQCH
+
+IDENTITY FIELDS
+Vessel name column: Vessel Name; values: SPIRIT OF CHENNAI
+Call sign column: Call Sign; values: 9V3539
+Import voyage column: Import Voyage Number
+Export voyage column: Export Voyage Number
+
+SUMMARY
+                                  Metric             Value
+                              Target_IMO           9813840
+                      Vessel_Name_Values SPIRIT OF CHENNAI
+                        Call_Sign_Values            9V3539
+               Raw_Workbook_Record_Count                32
+                     Distinct_Port_Count                 2
+            Distinct_Import_Voyage_Count                21
+            Distinct_Export_Voyage_Count                21
+            Missing_Actual_Arrival_Count                17
+          Missing_Actual_Departure_Count                18
+    Invalid_Actual_Timestamp_Order_Count                 0
+         Negative_Inter_Record_Gap_Count                 0
+             Zero_Inter_Record_Gap_Count                 0
+  Repeated_Consecutive_Port_Record_Count                26
+Workbook_Row_Order_Chronology_Inversions                 2
+     Import_Export_Voyage_Mismatch_Count                 0
+
+VOYAGE IDENTIFIER INVENTORY
+Identifier_Type        Source_Column Voyage_Identifier  Record_Count  Distinct_Port_Count Ports_In_Chronological_Record_Order Workbook_Rows  First_Actual_Arrival_UTC   Last_Actual_Arrival_UTC  Missing_Actual_Arrival_Count  Missing_Actual_Departure_Count
+         IMPORT Import Voyage Number              652W             2                    2                      QAQCH -> QADOH       810;353 2026-10-13 03:42:00+00:00 2026-10-13 03:42:00+00:00                             1                               2
+         IMPORT Import Voyage Number              653W             2                    2                      QAQCH -> QADOH       813;356 2026-10-16 15:54:00+00:00 2026-10-16 15:54:00+00:00                             1                               2
+         IMPORT Import Voyage Number              655W             2                    2                      QAQCH -> QADOH       816;361 2026-10-23 13:53:00+00:00 2026-10-23 13:53:00+00:00                             1                               1
+         IMPORT Import Voyage Number              656W             2                    2                      QAQCH -> QADOH       818;364 2026-10-27 02:18:00+00:00 2026-10-28 14:19:00+00:00                             0                               0
+         IMPORT Import Voyage Number              657W             2                    2                      QAQCH -> QADOH       820;369 2026-10-30 04:12:00+00:00 2026-10-30 04:12:00+00:00                             1                               1
+         IMPORT Import Voyage Number              658W             2                    2                      QAQCH -> QADOH       822;372                       NaT                       NaT                             2                               1
+         IMPORT Import Voyage Number              650W             2                    2                      QADOH -> QAQCH       349;809                       NaT                       NaT                             2                               2
+         IMPORT Import Voyage Number              659W             2                    2                      QADOH -> QAQCH       374;823                       NaT                       NaT                             2                               2
+         IMPORT Import Voyage Number              660W             2                    2                      QADOH -> QAQCH       375;824                       NaT                       NaT                             2                               2
+         IMPORT Import Voyage Number              661W             2                    2                      QADOH -> QAQCH       378;825                       NaT                       NaT                             2                               2
+         IMPORT Import Voyage Number              662W             2                    2                      QADOH -> QAQCH       380;826                       NaT                       NaT                             2                               2
+         IMPORT Import Voyage Number              639W             1                    1                               QADOH           323 2026-07-31 14:30:00+00:00 2026-07-31 14:30:00+00:00                             0                               0
+         IMPORT Import Voyage Number              642W             1                    1                               QADOH           329 2026-08-19 13:43:00+00:00 2026-08-19 13:43:00+00:00                             0                               0
+         IMPORT Import Voyage Number              643W             1                    1                               QADOH           331 2026-08-23 07:07:00+00:00 2026-08-23 07:07:00+00:00                             0                               0
+         IMPORT Import Voyage Number              644W             1                    1                               QADOH           334 2026-08-31 05:00:00+00:00 2026-08-31 05:00:00+00:00                             0                               0
+         IMPORT Import Voyage Number              645W             1                    1                               QADOH           335 2026-09-03 05:00:00+00:00 2026-09-03 05:00:00+00:00                             0                               0
+         IMPORT Import Voyage Number              646W             1                    1                               QADOH           338 2026-09-06 19:06:00+00:00 2026-09-06 19:06:00+00:00                             0                               0
+         IMPORT Import Voyage Number              647W             1                    1                               QADOH           339 2026-09-09 14:00:00+00:00 2026-09-09 14:00:00+00:00                             0                               0
+         IMPORT Import Voyage Number              648W             1                    1                               QADOH           340 2026-09-12 05:00:00+00:00 2026-09-12 05:00:00+00:00                             0                               0
+         IMPORT Import Voyage Number              649W             1                    1                               QADOH           341 2026-09-15 05:00:00+00:00 2026-09-15 05:00:00+00:00                             0                               0
+         IMPORT Import Voyage Number              651W             1                    1                               QADOH           350                       NaT                       NaT                             1                               1
+         EXPORT Export Voyage Number              652W             2                    2                      QAQCH -> QADOH       810;353 2026-10-13 03:42:00+00:00 2026-10-13 03:42:00+00:00                             1                               2
+         EXPORT Export Voyage Number              653W             2                    2                      QAQCH -> QADOH       813;356 2026-10-16 15:54:00+00:00 2026-10-16 15:54:00+00:00                             1                               2
+         EXPORT Export Voyage Number              655W             2                    2                      QAQCH -> QADOH       816;361 2026-10-23 13:53:00+00:00 2026-10-23 13:53:00+00:00                             1                               1
+         EXPORT Export Voyage Number              656W             2                    2                      QAQCH -> QADOH       818;364 2026-10-27 02:18:00+00:00 2026-10-28 14:19:00+00:00                             0                               0
+         EXPORT Export Voyage Number              657W             2                    2                      QAQCH -> QADOH       820;369 2026-10-30 04:12:00+00:00 2026-10-30 04:12:00+00:00                             1                               1
+         EXPORT Export Voyage Number              658W             2                    2                      QAQCH -> QADOH       822;372                       NaT                       NaT                             2                               1
+         EXPORT Export Voyage Number              650W             2                    2                      QADOH -> QAQCH       349;809                       NaT                       NaT                             2                               2
+         EXPORT Export Voyage Number              659W             2                    2                      QADOH -> QAQCH       374;823                       NaT                       NaT                             2                               2
+         EXPORT Export Voyage Number              660W             2                    2                      QADOH -> QAQCH       375;824                       NaT                       NaT                             2                               2
+         EXPORT Export Voyage Number              661W             2                    2                      QADOH -> QAQCH       378;825                       NaT                       NaT                             2                               2
+         EXPORT Export Voyage Number              662W             2                    2                      QADOH -> QAQCH       380;826                       NaT                       NaT                             2                               2
+         EXPORT Export Voyage Number              639W             1                    1                               QADOH           323 2026-07-31 14:30:00+00:00 2026-07-31 14:30:00+00:00                             0                               0
+         EXPORT Export Voyage Number              642W             1                    1                               QADOH           329 2026-08-19 13:43:00+00:00 2026-08-19 13:43:00+00:00                             0                               0
+         EXPORT Export Voyage Number              643W             1                    1                               QADOH           331 2026-08-23 07:07:00+00:00 2026-08-23 07:07:00+00:00                             0                               0
+         EXPORT Export Voyage Number              644W             1                    1                               QADOH           334 2026-08-31 05:00:00+00:00 2026-08-31 05:00:00+00:00                             0                               0
+         EXPORT Export Voyage Number              645W             1                    1                               QADOH           335 2026-09-03 05:00:00+00:00 2026-09-03 05:00:00+00:00                             0                               0
+         EXPORT Export Voyage Number              646W             1                    1                               QADOH           338 2026-09-06 19:06:00+00:00 2026-09-06 19:06:00+00:00                             0                               0
+         EXPORT Export Voyage Number              647W             1                    1                               QADOH           339 2026-09-09 14:00:00+00:00 2026-09-09 14:00:00+00:00                             0                               0
+         EXPORT Export Voyage Number              648W             1                    1                               QADOH           340 2026-09-12 05:00:00+00:00 2026-09-12 05:00:00+00:00                             0                               0
+         EXPORT Export Voyage Number              649W             1                    1                               QADOH           341 2026-09-15 05:00:00+00:00 2026-09-15 05:00:00+00:00                             0                               0
+         EXPORT Export Voyage Number              651W             1                    1                               QADOH           350                       NaT                       NaT                             1                               1
+
+PORT SEQUENCE SUMMARY
+Port_UNLOCODE  Raw_Record_Count  Distinct_Import_Voyages  Distinct_Export_Voyages  Missing_Actual_Arrival_Count  Missing_Actual_Departure_Count  First_Actual_Arrival_UTC   Last_Actual_Arrival_UTC                                                                       Workbook_Rows
+        QADOH                21                       21                       21                            11                              11 2026-07-31 14:30:00+00:00 2026-10-28 14:19:00+00:00 323;329;331;334;335;338;339;340;341;364;349;350;353;356;361;369;372;374;375;378;380
+        QAQCH                11                       11                       11                             6                               7 2026-10-13 03:42:00+00:00 2026-10-30 04:12:00+00:00                                         810;813;816;818;820;822;809;823;824;825;826
+
+VALIDATION CHECKS
+Check_ID                                                  Description  Observed  Expected Status
+     C01 Target vessel raw record count equals Script83's reported 32        32        32   PASS
+     C02                      All extracted rows belong to target IMO         1         1   PASS
+     C03                      Every raw workbook row number is unique        32        32   PASS
+     C04                   Chronological record numbering is complete        32        32   PASS
+     C05                           Voyage identifier fields available         2         2   PASS
+     C06  Raw workbook remains read-only; no approval fields assigned         0         0   PASS
+
+INTERPRETATION LIMITATIONS
+- This is a raw-workbook chronology, not a verified port-call or voyage reconstruction.
+- Import/Export Voyage Number semantics are not established by this workbook alone.
+- Missing actual departure timestamps prevent complete interval reconstruction for affected rows.
+- Consecutive same-port rows and distinct voyage identifiers are descriptive evidence only.
+- Inter-record elapsed time is not pure sailing time or verified schedule slack.
+- No canonical schedule changes, event classifications, or operational approvals are made.

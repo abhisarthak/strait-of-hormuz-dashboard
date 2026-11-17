@@ -1,0 +1,46 @@
+HISTORICAL PORT CONCURRENCY AUDIT
+======================================================================
+
+Valid intervals: 604
+Ports: 19
+
+PORT CONCURRENCY SUMMARY
+----------------------------------------------------------------------
+UNLOCODE                           Port_Name  Port_Calls  Unique_Vessels  Peak_Concurrent_Calls  Mean_Concurrent_Calls  Observed_Concurrency_Area_Hours  Observation_Horizon_Hours Concurrency_Category
+   OMSLL                    Salalah Terminal         261             105                      6               3.406303                      7485.066667                2197.416667         PEAK_ABOVE_5
+   SAJED                        DPA TERMINAL          88              51                      4               1.571484                      3506.033333                2231.033333          PEAK_4_TO_5
+   AEJEA                Jebel Ali Terminal 2          60              17                      3               0.557029                      1200.583333                2155.333333               PEAK_3
+   QADOH  HAMAD PORT - CONTAINER TERMINAL 01          30               6                      2               0.246781                       535.700000                2170.750000               PEAK_2
+   AEAUH   CSP Abu Dhabi Port Container Trml          24              10                      2               0.164566                       331.783333                2016.116667               PEAK_2
+   AEKLF                Khor Fakkan Terminal          20              12                      2               0.649143                      1291.566667                1989.650000               PEAK_2
+   SADMM                     Dammam Terminal          20               4                      2               0.295194                       541.150000                1833.200000               PEAK_2
+   AEFJR                   Fujairah Terminal          19               9                      2               0.489281                      1060.100000                2166.650000               PEAK_2
+   SAKAC    King Abdullah Economic City Port          13               7                      2               0.280510                       541.033333                1928.750000               PEAK_2
+   AESHJ                    Sharjah Terminal          10               3                      2               0.278072                       550.883333                1981.083333               PEAK_2
+   AEAJM                 Ajman Port Terminal          22               4                      1               0.159880                       326.650000                2043.100000               PEAK_1
+   OMSOH   Oman International Cont. Terminal          10               4                      1               0.347340                       597.633333                1720.600000               PEAK_1
+   BHKBS                    Bahrain Terminal           5               1                      1               0.020116                        35.333333                1756.500000               PEAK_1
+   IQUQR          Umm Qasr Port BGT Terminal           5               2                      1               0.075407                        79.383333                1052.733333               PEAK_1
+   KWSWK                   Shuwaikh Terminal           5               1                      1               0.035516                        60.783333                1711.416667               PEAK_1
+   QAQCH                         Qchem Berth           4               2                      1               0.063463                       105.616667                1664.233333               PEAK_1
+   SAJUB                     Jubail Terminal           4               2                      1               0.127713                        77.666667                 608.133333               PEAK_1
+   OMDQM Early Operations Container Terminal           3               3                      1               0.090725                       106.566667                1174.616667               PEAK_1
+   KWSAA               Shuaiba Port Terminal           1               1                      1               1.000000                        13.000000                  13.000000               PEAK_1
+
+GLOBAL CAPACITY COMPARISON
+----------------------------------------------------------------------
+ Assumed_Capacity  Ports_Accommodating_Peak  Total_Ports  Ports_Exceeding_Peak_Capacity  Total_Arrivals_Exceeding_Capacity  Total_Concurrency_Overload_Hours
+                1                         9           19                             10                                372                       3951.483333
+                2                        16           19                              3                                281                       2192.883333
+                3                        17           19                              2                                195                       1125.850000
+                4                        18           19                              1                                 69                        186.350000
+                5                        18           19                              1                                  6                          8.600000
+               10                        19           19                              0                                  0                          0.000000
+
+METHODOLOGICAL LIMITATIONS
+1. Overlapping port-call intervals are a concurrency proxy.
+2. They do not establish actual berth occupancy.
+3. Port stays may include anchorage and waiting.
+4. Peak concurrency is not verified berth capacity.
+5. Capacity comparisons are screening experiments only.
+6. Historical records do not establish confirmed Hormuz transit.

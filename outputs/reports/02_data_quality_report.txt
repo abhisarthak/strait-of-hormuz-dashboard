@@ -1,0 +1,335 @@
+
+================================================================================
+STRAIT OF HORMUZ - DATA QUALITY ANALYSIS
+================================================================================
+
+================================================================================
+LOADING MAIN DATASETS
+================================================================================
+Port schedules: (1894, 20)
+Active ports: (467, 7)
+Active vessels: (1847, 5)
+
+================================================================================
+MISSING VALUE ANALYSIS
+================================================================================
+
+Inspecting: Port Schedules
+
+Port Schedules
+Exact duplicate rows: 8
+
+Inspecting: Active Ports
+
+Active Ports
+Exact duplicate rows: 0
+
+Inspecting: Active Vessels
+
+Active Vessels
+Exact duplicate rows: 0
+
+Missing-value report saved.
+Duplicate report saved.
+
+================================================================================
+IDENTIFIER QUALITY ANALYSIS
+================================================================================
+
+Port Schedules - IMO Number
+Total records: 1894
+Missing identifiers: 117
+Unique identifiers: 207
+Repeated identifier records: 1875
+Examples of repeated identifiers:
+IMO Number
+9289192    126
+9461623     67
+9397585     52
+9243198     45
+9539482     33
+9813840     32
+9164017     31
+9565338     27
+9235567     27
+9603611     26
+
+Port Schedules - UN Location Code
+Total records: 1894
+Missing identifiers: 0
+Unique identifiers: 20
+Repeated identifier records: 1894
+Examples of repeated identifiers:
+UN Location Code
+OMSLL    804
+SAJED    335
+AEJEA    117
+AEKLF    108
+QADOH     83
+SAKAC     67
+SADMM     67
+AEFJR     52
+AEAUH     37
+AESHJ     34
+
+Active Ports - UNLocationCode
+Total records: 467
+Missing identifiers: 0
+Unique identifiers: 464
+Repeated identifier records: 6
+Examples of repeated identifiers:
+UNLocationCode
+DKCPH    2
+PYVLL    2
+VNHPH    2
+
+Active Vessels - vesselIMONumber
+Total records: 1847
+Missing identifiers: 108
+Unique identifiers: 1572
+Repeated identifier records: 441
+Examples of repeated identifiers:
+vesselIMONumber
+9355460    3
+9525869    2
+9732357    2
+9708813    2
+9708875    2
+9431692    2
+9938303    2
+9938315    2
+9334167    2
+9612997    2
+
+Active Vessels - carrierVesselCode
+Total records: 1847
+Missing identifiers: 0
+Unique identifiers: 1700
+Repeated identifier records: 294
+Examples of repeated identifiers:
+carrierVesselCode
+ID7    2
+R9F    2
+IA0    2
+IA4    2
+E5J    2
+EE1    2
+EM0    2
+H2V    2
+ID4    2
+NQ0    2
+
+================================================================================
+CROSS-DATASET VESSEL MATCHING
+================================================================================
+Unique schedule IMO values: 207
+Unique active vessel IMO values: 1572
+Matching IMO values: 207
+Schedule IMO values not in active vessel master: 0
+
+Unique schedule port codes: 20
+Unique active port codes: 464
+Matching port codes: 20
+Schedule port codes not in active port master: 0
+
+================================================================================
+PORT SCHEDULE TIMESTAMP ANALYSIS
+================================================================================
+
+Planned Arrival
+Missing: 0
+Invalid timestamps: 0
+Valid timestamps: 1894
+
+Estimated Arrival
+Missing: 0
+Invalid timestamps: 0
+Valid timestamps: 1894
+
+Actual Arrival
+Missing: 1263
+Invalid timestamps: 0
+Valid timestamps: 631
+
+Planned Departure
+Missing: 0
+Invalid timestamps: 0
+Valid timestamps: 1894
+
+Estimated Departure
+Missing: 0
+Invalid timestamps: 0
+Valid timestamps: 1894
+
+Actual Departure
+Missing: 1274
+Invalid timestamps: 0
+Valid timestamps: 620
+
+ACTUAL ARRIVAL-DEPARTURE CHRONOLOGY
+Records with both timestamps: 618
+Departure before arrival: 0
+
+PLANNED ARRIVAL-DEPARTURE CHRONOLOGY
+Records with both timestamps: 1894
+Departure before arrival: 0
+
+================================================================================
+INDIVIDUAL VESSEL FILE ANALYSIS
+================================================================================
+Total vessel files: 29
+
+INDIVIDUAL FILE SUMMARY
+                          File  Rows  Columns  Missing_Cells  Exact_Duplicates
+individual_vessels/9431692.csv     7       29             15                 0
+individual_vessels/9307011.csv    31       28             92                 0
+individual_vessels/9224506.csv     6       26             10                 0
+individual_vessels/9732321.csv    19       29             44                 0
+individual_vessels/9948798.csv    29       29             94                 0
+individual_vessels/9525912.csv    21       29             33                 0
+individual_vessels/9708813.csv    12       29              9                 0
+individual_vessels/9233648.csv    20       28             16                 0
+individual_vessels/9732357.csv    11       29             22                 0
+individual_vessels/9260914.csv    36       29             58                 0
+individual_vessels/9253002.csv    14       27             12                 0
+individual_vessels/9315020.csv    83       29            408                 0
+individual_vessels/9306079.csv    39       28             65                 0
+individual_vessels/9708863.csv    16       29             19                 0
+individual_vessels/9525924.csv    21       29             67                 0
+individual_vessels/9732319.csv    15       29             31                 0
+individual_vessels/9349497.csv    33       29             34                 0
+individual_vessels/9708825.csv    15       29             19                 0
+individual_vessels/9732307.csv    23       29             44                 0
+individual_vessels/9948803.csv    38       29            117                 0
+individual_vessels/9708875.csv     7       29              5                 0
+individual_vessels/9634672.csv     8       28             39                 0
+individual_vessels/9349538.csv    27       29             31                 0
+individual_vessels/9416006.csv    19       25             50                 0
+individual_vessels/9973004.csv    11       28             22                 0
+individual_vessels/9708837.csv    16       29             29                 0
+individual_vessels/9525869.csv    25       29             68                 0
+individual_vessels/9760598.csv     6       29             37                 0
+individual_vessels/9334167.csv     9       28              7                 0
+
+Total individual vessel records: 617
+
+================================================================================
+VESSEL FILE SCHEMA CONSISTENCY
+================================================================================
+individual_vessels/9431692.csv | Columns: 27 | Missing schema columns: 0
+individual_vessels/9307011.csv | Columns: 26 | Missing schema columns: 1
+individual_vessels/9224506.csv | Columns: 24 | Missing schema columns: 3
+individual_vessels/9732321.csv | Columns: 27 | Missing schema columns: 0
+individual_vessels/9948798.csv | Columns: 27 | Missing schema columns: 0
+individual_vessels/9525912.csv | Columns: 27 | Missing schema columns: 0
+individual_vessels/9708813.csv | Columns: 27 | Missing schema columns: 0
+individual_vessels/9233648.csv | Columns: 26 | Missing schema columns: 1
+individual_vessels/9732357.csv | Columns: 27 | Missing schema columns: 0
+individual_vessels/9260914.csv | Columns: 27 | Missing schema columns: 0
+individual_vessels/9253002.csv | Columns: 25 | Missing schema columns: 2
+individual_vessels/9315020.csv | Columns: 27 | Missing schema columns: 0
+individual_vessels/9306079.csv | Columns: 26 | Missing schema columns: 1
+individual_vessels/9708863.csv | Columns: 27 | Missing schema columns: 0
+individual_vessels/9525924.csv | Columns: 27 | Missing schema columns: 0
+individual_vessels/9732319.csv | Columns: 27 | Missing schema columns: 0
+individual_vessels/9349497.csv | Columns: 27 | Missing schema columns: 0
+individual_vessels/9708825.csv | Columns: 27 | Missing schema columns: 0
+individual_vessels/9732307.csv | Columns: 27 | Missing schema columns: 0
+individual_vessels/9948803.csv | Columns: 27 | Missing schema columns: 0
+individual_vessels/9708875.csv | Columns: 27 | Missing schema columns: 0
+individual_vessels/9634672.csv | Columns: 26 | Missing schema columns: 1
+individual_vessels/9349538.csv | Columns: 27 | Missing schema columns: 0
+individual_vessels/9416006.csv | Columns: 23 | Missing schema columns: 4
+individual_vessels/9973004.csv | Columns: 26 | Missing schema columns: 1
+individual_vessels/9708837.csv | Columns: 27 | Missing schema columns: 0
+individual_vessels/9525869.csv | Columns: 27 | Missing schema columns: 0
+individual_vessels/9760598.csv | Columns: 27 | Missing schema columns: 0
+individual_vessels/9334167.csv | Columns: 26 | Missing schema columns: 1
+
+Total distinct columns across files: 27
+
+================================================================================
+COMBINED INDIVIDUAL VESSEL RECORD ANALYSIS
+================================================================================
+Combined rows: 617
+Combined columns: 29
+
+Individual Vessel Records - vesselIMONumber
+Total records: 617
+Missing identifiers: 0
+Unique identifiers: 35
+Repeated identifier records: 615
+Examples of repeated identifiers:
+vesselIMONumber
+9315020    78
+9306079    38
+9260914    36
+9948803    36
+9349497    33
+9307011    30
+9948798    29
+9349538    27
+9525869    25
+9525912    21
+
+Individual Vessel Records - UNLocationCode
+Total records: 617
+Missing identifiers: 1
+Unique identifiers: 75
+Repeated identifier records: 602
+Examples of repeated identifiers:
+UNLocationCode
+MYTPP    38
+DEBRV    30
+EGPSD    29
+SGSIN    28
+DEHAM    28
+NLRTM    26
+MAPTM    24
+DECKL    23
+CNNGB    21
+CNSHA    18
+
+Individual Vessel Records - transportCallReference
+Total records: 617
+Missing identifiers: 0
+Unique identifiers: 617
+Repeated identifier records: 0
+
+ARRI_EST
+Missing: 0
+Invalid timestamps: 0
+Valid timestamps: 617
+
+ARRI_ACT
+Missing: 189
+Invalid timestamps: 0
+Valid timestamps: 428
+
+ARRI_PLN
+Missing: 0
+Invalid timestamps: 0
+Valid timestamps: 617
+
+DEPA_EST
+Missing: 0
+Invalid timestamps: 0
+Valid timestamps: 617
+
+DEPA_ACT
+Missing: 192
+Invalid timestamps: 0
+Valid timestamps: 425
+
+DEPA_PLN
+Missing: 0
+Invalid timestamps: 0
+Valid timestamps: 617
+
+Analysis-only combined vessel file saved.
+
+================================================================================
+DATA QUALITY ANALYSIS COMPLETED
+================================================================================
+Text report: /Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/reports/02_data_quality_report.txt
+CSV tables: /Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables

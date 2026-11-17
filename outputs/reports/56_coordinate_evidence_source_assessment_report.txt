@@ -1,0 +1,228 @@
+================================================================================
+SCRIPT 56: COORDINATE EVIDENCE SOURCE ASSESSMENT
+================================================================================
+
+PURPOSE
+--------------------------------------------------------------------------------
+This script assesses reviewed source metadata, source independence, numerical coordinate differences and reference scope. It does not validate or approve coordinates.
+
+INPUTS
+--------------------------------------------------------------------------------
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/55_coordinate_evidence_inventory.csv
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/55_coordinate_evidence_review_register.csv
+
+SUMMARY
+--------------------------------------------------------------------------------
+                                                              Metric Value
+                                              Total records assessed    19
+                     Records with port names restored from Script 54    19
+          Records with Script 49 eligibility restored from Script 54    19
+      Records with Script 49 recommended use restored from Script 54    19
+Records with Script 54 regional sensitivity recommendation populated    19
+                         Records with valid primary coordinate pairs    13
+                       Records with valid secondary coordinate pairs    18
+                                  Records with both coordinate pairs    13
+            Records with computable coordinate differences over 1 km     8
+          Records with same named primary and secondary organization     1
+                  Records with potential organizational independence    18
+                Records where source independence cannot be assessed     0
+                                      Records requiring scope review    18
+                Records with existing coordinate review descriptions    19
+                  Records with Script 53 validation status extracted    19
+                    Records with Script 53 validation status pending    19
+                              Coordinate approvals made by Script 56     0
+                   Operational inclusion decisions made by Script 56     0
+              AIS-confirmed Hormuz transits established by Script 56     0
+                                             Upstream files modified    NO
+
+RECORD-LEVEL REVIEW
+--------------------------------------------------------------------------------
+
+AEAUH | Abu Dhabi
+Primary source: United Nations Economic Commission for Europe (UNECE)
+Secondary source: Wilhelmsen Ships Service
+Coordinate distance (km): 7.9946
+Independence: DIFFERENT_NAMED_ORGANIZATIONS_POTENTIAL_INDEPENDENCE
+Scope: DIFFERENT_OR_UNRECONCILED_SCOPE
+Script 53 validation: PENDING
+Review flags: INDEPENDENCE_NOT_YET_PROVEN | REFERENCE_SCOPE_REQUIRES_REVIEW | NUMERICAL_COORDINATE_DIFFERENCE_OVER_1KM | EXISTING_COORDINATE_REVIEW_DESCRIPTION_PRESENT | SCRIPT53_VALIDATION_PENDING
+
+AEFJR | Fujairah
+Primary source: Fujairah Ports Authority — Marine Department
+Secondary source: Fujairah Ports Authority
+Coordinate distance (km): 1.138
+Independence: DIFFERENT_NAMED_ORGANIZATIONS_POTENTIAL_INDEPENDENCE
+Scope: DIFFERENT_OR_UNRECONCILED_SCOPE
+Script 53 validation: PENDING_RECONCILIATION
+Review flags: INDEPENDENCE_NOT_YET_PROVEN | REFERENCE_SCOPE_REQUIRES_REVIEW | NUMERICAL_COORDINATE_DIFFERENCE_OVER_1KM | EXISTING_COORDINATE_REVIEW_DESCRIPTION_PRESENT | SCRIPT53_VALIDATION_PENDING
+
+AEKLF | Khor Fakkan
+Primary source: National Geospatial-Intelligence Agency (NGA)
+Secondary source: Wilhelmsen Ships Service
+Coordinate distance (km): 1.9979
+Independence: DIFFERENT_NAMED_ORGANIZATIONS_POTENTIAL_INDEPENDENCE
+Scope: DIFFERENT_OR_UNRECONCILED_SCOPE
+Script 53 validation: PENDING
+Review flags: INDEPENDENCE_NOT_YET_PROVEN | REFERENCE_SCOPE_REQUIRES_REVIEW | NUMERICAL_COORDINATE_DIFFERENCE_OVER_1KM | EXISTING_COORDINATE_REVIEW_DESCRIPTION_PRESENT | SCRIPT53_VALIDATION_PENDING
+
+AERKT | Ras Al Khaimah
+Primary source: Government of Ras Al Khaimah; RAK Ports
+Secondary source: Wilhelmsen Ships Service
+Coordinate distance (km): 21.0222
+Independence: DIFFERENT_NAMED_ORGANIZATIONS_POTENTIAL_INDEPENDENCE
+Scope: DIFFERENT_OR_UNRECONCILED_SCOPE
+Script 53 validation: PENDING
+Review flags: INDEPENDENCE_NOT_YET_PROVEN | REFERENCE_SCOPE_REQUIRES_REVIEW | NUMERICAL_COORDINATE_DIFFERENCE_OVER_1KM | EXISTING_COORDINATE_REVIEW_DESCRIPTION_PRESENT | SCRIPT53_VALIDATION_PENDING
+
+AESHJ | Sharjah
+Primary source: Sharjah Ports, Customs & Free Zones Authority
+Secondary source: Cogoport
+Coordinate distance (km): 4.0543
+Independence: DIFFERENT_NAMED_ORGANIZATIONS_POTENTIAL_INDEPENDENCE
+Scope: DIFFERENT_OR_UNRECONCILED_SCOPE
+Script 53 validation: PENDING
+Review flags: INDEPENDENCE_NOT_YET_PROVEN | REFERENCE_SCOPE_REQUIRES_REVIEW | NUMERICAL_COORDINATE_DIFFERENCE_OVER_1KM | EXISTING_COORDINATE_REVIEW_DESCRIPTION_PRESENT | SCRIPT53_VALIDATION_PENDING
+
+BHKBS | Khalifa Bin Salman Port
+Primary source: APM Terminals Bahrain
+Secondary source: Bahrain Open Data Portal
+Coordinate distance (km): 0.7549
+Independence: DIFFERENT_NAMED_ORGANIZATIONS_POTENTIAL_INDEPENDENCE
+Scope: DIFFERENT_OR_UNRECONCILED_SCOPE
+Script 53 validation: PENDING
+Review flags: INDEPENDENCE_NOT_YET_PROVEN | REFERENCE_SCOPE_REQUIRES_REVIEW | EXISTING_COORDINATE_REVIEW_DESCRIPTION_PRESENT | SCRIPT53_VALIDATION_PENDING
+
+INHZA | Hazira
+Primary source: Adani Hazira Port Ltd
+Secondary source: Gujarat Maritime Board
+Coordinate distance (km): 0.0
+Independence: DIFFERENT_NAMED_ORGANIZATIONS_POTENTIAL_INDEPENDENCE
+Scope: DIFFERENT_OR_UNRECONCILED_SCOPE
+Script 53 validation: PENDING
+Review flags: INDEPENDENCE_NOT_YET_PROVEN | REFERENCE_SCOPE_REQUIRES_REVIEW | EXISTING_COORDINATE_REVIEW_DESCRIPTION_PRESENT | SCRIPT53_VALIDATION_PENDING
+
+INIXY | Deendayal Port (Kandla)
+Primary source: Deendayal Port Authority
+Secondary source: Deendayal Port Authority
+Coordinate distance (km): 3.2255
+Independence: SAME_NAMED_ORGANIZATION_NOT_INDEPENDENT
+Scope: SCOPE_DESCRIPTIONS_MATCH
+Script 53 validation: PENDING
+Review flags: NO_INDEPENDENT_SOURCE_CORROBORATION | NUMERICAL_COORDINATE_DIFFERENCE_OVER_1KM | EXISTING_COORDINATE_REVIEW_DESCRIPTION_PRESENT | SCRIPT53_VALIDATION_PENDING
+
+INPPV | Pipavav
+Primary source: APM Terminals Pipavav / Gujarat Pipavav Port Ltd.
+Secondary source: APM Terminals
+Coordinate distance (km): 0.0
+Independence: DIFFERENT_NAMED_ORGANIZATIONS_POTENTIAL_INDEPENDENCE
+Scope: DIFFERENT_OR_UNRECONCILED_SCOPE
+Script 53 validation: PENDING
+Review flags: INDEPENDENCE_NOT_YET_PROVEN | REFERENCE_SCOPE_REQUIRES_REVIEW | EXISTING_COORDINATE_REVIEW_DESCRIPTION_PRESENT | SCRIPT53_VALIDATION_PENDING
+
+IQUQR | Umm Qasr
+Primary source: International Container Terminal Services, Inc. (ICTSI)
+Secondary source: Basra Multi-Purpose Terminal (BMTIQ)
+Coordinate distance (km): 3.4357
+Independence: DIFFERENT_NAMED_ORGANIZATIONS_POTENTIAL_INDEPENDENCE
+Scope: DIFFERENT_OR_UNRECONCILED_SCOPE
+Script 53 validation: PENDING
+Review flags: INDEPENDENCE_NOT_YET_PROVEN | REFERENCE_SCOPE_REQUIRES_REVIEW | NUMERICAL_COORDINATE_DIFFERENCE_OVER_1KM | EXISTING_COORDINATE_REVIEW_DESCRIPTION_PRESENT | SCRIPT53_VALIDATION_PENDING
+
+KWSAA | Shuaiba Port
+Primary source: Kuwait Ports Authority
+Secondary source: Wilhelmsen Ships Service
+Coordinate distance (km): nan
+Independence: DIFFERENT_NAMED_ORGANIZATIONS_POTENTIAL_INDEPENDENCE
+Scope: DIFFERENT_OR_UNRECONCILED_SCOPE
+Script 53 validation: PENDING
+Review flags: PRIMARY_COORDINATE_PAIR_NOT_VALID | INDEPENDENCE_NOT_YET_PROVEN | REFERENCE_SCOPE_REQUIRES_REVIEW | EXISTING_COORDINATE_REVIEW_DESCRIPTION_PRESENT | SCRIPT53_VALIDATION_PENDING
+
+KWSWK | Shuwaikh Port
+Primary source: National Geospatial-Intelligence Agency (NGA)
+Secondary source: Permanent Committee on Geographical Names (PCGN), UK
+Coordinate distance (km): 0.4902
+Independence: DIFFERENT_NAMED_ORGANIZATIONS_POTENTIAL_INDEPENDENCE
+Scope: DIFFERENT_OR_UNRECONCILED_SCOPE
+Script 53 validation: PENDING
+Review flags: INDEPENDENCE_NOT_YET_PROVEN | REFERENCE_SCOPE_REQUIRES_REVIEW | EXISTING_COORDINATE_REVIEW_DESCRIPTION_PRESENT | SCRIPT53_VALIDATION_PENDING
+
+OMDQM | Duqm
+Primary source: Port of Duqm / Port of Duqm Company
+Secondary source: Wilhelmsen Ships Service
+Coordinate distance (km): nan
+Independence: DIFFERENT_NAMED_ORGANIZATIONS_POTENTIAL_INDEPENDENCE
+Scope: DIFFERENT_OR_UNRECONCILED_SCOPE
+Script 53 validation: PENDING
+Review flags: PRIMARY_COORDINATE_PAIR_NOT_VALID | INDEPENDENCE_NOT_YET_PROVEN | REFERENCE_SCOPE_REQUIRES_REVIEW | EXISTING_COORDINATE_REVIEW_DESCRIPTION_PRESENT | SCRIPT53_VALIDATION_PENDING
+
+PKKIA | Kiamari / Karachi Harbour
+Primary source: Karachi Port Trust
+Secondary source: SeaLagom
+Coordinate distance (km): 1.7045
+Independence: DIFFERENT_NAMED_ORGANIZATIONS_POTENTIAL_INDEPENDENCE
+Scope: DIFFERENT_OR_UNRECONCILED_SCOPE
+Script 53 validation: PENDING
+Review flags: INDEPENDENCE_NOT_YET_PROVEN | REFERENCE_SCOPE_REQUIRES_REVIEW | NUMERICAL_COORDINATE_DIFFERENCE_OVER_1KM | EXISTING_COORDINATE_REVIEW_DESCRIPTION_PRESENT | SCRIPT53_VALIDATION_PENDING
+
+QAQAP | QAPCO
+Primary source: Mesaieed Port Management / QatarEnergy
+Secondary source: Global Energy Monitor
+Coordinate distance (km): nan
+Independence: DIFFERENT_NAMED_ORGANIZATIONS_POTENTIAL_INDEPENDENCE
+Scope: DIFFERENT_OR_UNRECONCILED_SCOPE
+Script 53 validation: PENDING
+Review flags: PRIMARY_COORDINATE_PAIR_NOT_VALID | INDEPENDENCE_NOT_YET_PROVEN | REFERENCE_SCOPE_REQUIRES_REVIEW | EXISTING_COORDINATE_REVIEW_DESCRIPTION_PRESENT | SCRIPT53_VALIDATION_PENDING
+
+QAQCH | Q-Chem
+Primary source: Mesaieed Port Management / QatarEnergy
+Secondary source: National Geospatial-Intelligence Agency (NGA)
+Coordinate distance (km): nan
+Independence: DIFFERENT_NAMED_ORGANIZATIONS_POTENTIAL_INDEPENDENCE
+Scope: DIFFERENT_OR_UNRECONCILED_SCOPE
+Script 53 validation: PENDING
+Review flags: PRIMARY_COORDINATE_PAIR_NOT_VALID | SECONDARY_COORDINATE_PAIR_NOT_VALID | INDEPENDENCE_NOT_YET_PROVEN | REFERENCE_SCOPE_REQUIRES_REVIEW | EXISTING_COORDINATE_REVIEW_DESCRIPTION_PRESENT | SCRIPT53_VALIDATION_PENDING
+
+QAUMS | Umm Sa'id (Mesaieed)
+Primary source: Mesaieed Port Authority / QatarEnergy
+Secondary source: Wilhelmsen Ships Service
+Coordinate distance (km): nan
+Independence: DIFFERENT_NAMED_ORGANIZATIONS_POTENTIAL_INDEPENDENCE
+Scope: DIFFERENT_OR_UNRECONCILED_SCOPE
+Script 53 validation: PENDING
+Review flags: PRIMARY_COORDINATE_PAIR_NOT_VALID | INDEPENDENCE_NOT_YET_PROVEN | REFERENCE_SCOPE_REQUIRES_REVIEW | EXISTING_COORDINATE_REVIEW_DESCRIPTION_PRESENT | SCRIPT53_VALIDATION_PENDING
+
+SADMM | King Abdulaziz Port (Dammam)
+Primary source: National Geospatial-Intelligence Agency (NGA)
+Secondary source: AtoBviaC / maritime port-list publisher
+Coordinate distance (km): 0.8928
+Independence: DIFFERENT_NAMED_ORGANIZATIONS_POTENTIAL_INDEPENDENCE
+Scope: DIFFERENT_OR_UNRECONCILED_SCOPE
+Script 53 validation: PENDING
+Review flags: INDEPENDENCE_NOT_YET_PROVEN | REFERENCE_SCOPE_REQUIRES_REVIEW | EXISTING_COORDINATE_REVIEW_DESCRIPTION_PRESENT | SCRIPT53_VALIDATION_PENDING
+
+SAJUB | Jubail Commercial Port
+Primary source: Saudi Ports Authority (Mawani) — port identity cross-check; no coordinate-bearing primary authority page reviewed
+Secondary source: AtoBviaC / maritime port-list publisher
+Coordinate distance (km): nan
+Independence: DIFFERENT_NAMED_ORGANIZATIONS_POTENTIAL_INDEPENDENCE
+Scope: DIFFERENT_OR_UNRECONCILED_SCOPE
+Script 53 validation: PENDING
+Review flags: PRIMARY_COORDINATE_PAIR_NOT_VALID | INDEPENDENCE_NOT_YET_PROVEN | REFERENCE_SCOPE_REQUIRES_REVIEW | EXISTING_COORDINATE_REVIEW_DESCRIPTION_PRESENT | SCRIPT53_VALIDATION_PENDING
+
+
+RESEARCH LIMITATIONS
+--------------------------------------------------------------------------------
+1. A populated coordinate pair is not automatically a validated coordinate.
+2. Different coordinate values may represent different physical reference points.
+3. Sources from the same organization are not independent organizational corroboration.
+4. Different organization names indicate potential organizational independence only; they do not prove independent underlying evidence or coordinate corroboration.
+5. Port names and Script 49 eligibility fields are restored from Script 54 by exact UN/LOCODE matching; missing or unmatched keys cause the script to stop.
+6. Coordinate distance alone cannot establish whether two sources refer to the same facility.
+7. A port reference point, port limit, terminal, berth and anchorage are distinct geographic objects.
+8. Missing datum or CRS information remains a limitation.
+9. Script 56 makes no coordinate approvals or operational inclusion decisions.
+10. No AIS-confirmed Strait of Hormuz transit is inferred.
+
+UPSTREAM FILES MODIFIED: NO
+COORDINATE APPROVALS MADE: 0
+OPERATIONAL INCLUSION DECISIONS MADE: 0

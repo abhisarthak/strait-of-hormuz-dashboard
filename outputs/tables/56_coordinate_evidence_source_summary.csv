@@ -1,0 +1,21 @@
+Metric,Value
+Total records assessed,19
+Records with port names restored from Script 54,19
+Records with Script 49 eligibility restored from Script 54,19
+Records with Script 49 recommended use restored from Script 54,19
+Records with Script 54 regional sensitivity recommendation populated,19
+Records with valid primary coordinate pairs,13
+Records with valid secondary coordinate pairs,18
+Records with both coordinate pairs,13
+Records with computable coordinate differences over 1 km,8
+Records with same named primary and secondary organization,1
+Records with potential organizational independence,18
+Records where source independence cannot be assessed,0
+Records requiring scope review,18
+Records with existing coordinate review descriptions,19
+Records with Script 53 validation status extracted,19
+Records with Script 53 validation status pending,19
+Coordinate approvals made by Script 56,0
+Operational inclusion decisions made by Script 56,0
+AIS-confirmed Hormuz transits established by Script 56,0
+Upstream files modified,NO

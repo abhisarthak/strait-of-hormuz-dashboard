@@ -1,0 +1,73 @@
+SCRIPT 09: VOYAGE CONSISTENCY AND VESSEL OVERLAP ANALYSIS
+===========================================================================
+
+DATASET: INDIVIDUAL
+TIMESTAMP SOURCE: ACTUAL
+Total records: 617
+Unique vessels: 35
+Eligible sequence records: 424
+Overlapping port-stay pairs: 0
+Repeated consecutive port calls: 41
+Port transitions: 166
+
+DATASET: INDIVIDUAL
+TIMESTAMP SOURCE: ESTIMATED
+Total records: 617
+Unique vessels: 35
+Eligible sequence records: 616
+Overlapping port-stay pairs: 0
+Repeated consecutive port calls: 39
+Port transitions: 198
+
+DATASET: INDIVIDUAL
+TIMESTAMP SOURCE: PLANNED
+Total records: 617
+Unique vessels: 35
+Eligible sequence records: 617
+Overlapping port-stay pairs: 0
+Repeated consecutive port calls: 38
+Port transitions: 207
+
+DATASET: SCHEDULE
+TIMESTAMP SOURCE: ACTUAL
+Total records: 1,894
+Unique vessels: 207
+Eligible sequence records: 618
+Overlapping port-stay pairs: 3
+Repeated consecutive port calls: 1,177
+Port transitions: 65
+
+DATASET: SCHEDULE
+TIMESTAMP SOURCE: ESTIMATED
+Total records: 1,894
+Unique vessels: 207
+Eligible sequence records: 1,775
+Overlapping port-stay pairs: 4
+Repeated consecutive port calls: 796
+Port transitions: 72
+
+DATASET: SCHEDULE
+TIMESTAMP SOURCE: PLANNED
+Total records: 1,894
+Unique vessels: 207
+Eligible sequence records: 1,777
+Overlapping port-stay pairs: 5
+Repeated consecutive port calls: 799
+Port transitions: 82
+
+===========================================================================
+FINAL OUTPUT SUMMARY
+===========================================================================
+Overlap records: 12
+Voyage summary records: 672
+Repeated port-call records: 2,890
+Port transition records: 790
+
+IMPORTANT INTERPRETATION NOTES:
+1. Actual, estimated and planned timestamps are analysed separately.
+2. Overlaps are flags for investigation, not automatic data errors.
+3. Repeated port calls are not automatically duplicates.
+4. Time gaps between port calls are not assumed to be sailing time.
+5. Port-call sequences do not establish actual vessel routes.
+6. No source records have been deleted or corrected.
+7. AIS or equivalent trajectory data is required to verify Hormuz transit.

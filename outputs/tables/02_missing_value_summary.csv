@@ -1,0 +1,33 @@
+Dataset,Column,Missing_Count,Missing_Percentage
+Port Schedules,Port,0,0.0
+Port Schedules,UN Location Code,0,0.0
+Port Schedules,Facility SMDG Code,0,0.0
+Port Schedules,Vessel Name,0,0.0
+Port Schedules,IMO Number,117,6.17740232312566
+Port Schedules,Call Sign,0,0.0
+Port Schedules,Flag,117,6.17740232312566
+Port Schedules,Dummy Vessel,0,0.0
+Port Schedules,Carrier Code,0,0.0
+Port Schedules,Carrier Service Name,0,0.0
+Port Schedules,Carrier Service Code,0,0.0
+Port Schedules,Import Voyage Number,0,0.0
+Port Schedules,Export Voyage Number,0,0.0
+Port Schedules,Planned Arrival,0,0.0
+Port Schedules,Estimated Arrival,0,0.0
+Port Schedules,Actual Arrival,1263,66.68426610348469
+Port Schedules,Planned Departure,0,0.0
+Port Schedules,Estimated Departure,0,0.0
+Port Schedules,Actual Departure,1274,67.2650475184794
+Port Schedules,Source_Port,0,0.0
+Active Ports,countryCode,1,0.21413276231263384
+Active Ports,countryName,0,0.0
+Active Ports,UNLocationCode,0,0.0
+Active Ports,cityName,0,0.0
+Active Ports,portName,0,0.0
+Active Ports,carrierCityGeoID,0,0.0
+Active Ports,UNRegionCode,310,66.38115631691649
+Active Vessels,carrierVesselCode,0,0.0
+Active Vessels,vesselName,0,0.0
+Active Vessels,vesselCallSign,0,0.0
+Active Vessels,vesselIMONumber,108,5.8473199783432595
+Active Vessels,vesselFlagCode,65,3.519220357336221

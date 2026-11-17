@@ -1,0 +1,7 @@
+Assumed_Capacity,Ports_Accommodating_Peak,Total_Ports,Ports_Exceeding_Peak_Capacity,Total_Arrivals_Exceeding_Capacity,Total_Concurrency_Overload_Hours
+1,9,19,10,372,3951.4833333333345
+2,16,19,3,281,2192.883333333335
+3,17,19,2,195,1125.85
+4,18,19,1,69,186.35
+5,18,19,1,6,8.6
+10,19,19,0,0,0.0

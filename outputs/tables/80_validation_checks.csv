@@ -1,0 +1,12 @@
+Check_ID,Description,Observed,Expected,Status,Severity
+C01,All Script78 canonical intervals represented,449,449,PASS,ERROR
+C02,Current call IDs unique in provenance register,449,449,PASS,ERROR
+C03,Every current interval call found in Script19 schedule,449,449,PASS,ERROR
+C04,Every previous call found in Script19 schedule,449,449,PASS,ERROR
+C05,Current and previous IMO identities match interval register,449,449,PASS,ERROR
+C06,Current and previous port identities match interval register,449,449,PASS,ERROR
+C07,Arrival and previous-departure timestamps reconcile,449,449,PASS,ERROR
+C08,Reconstructed elapsed intervals reconcile,449,449,PASS,ERROR
+C09,No duplicate current call IDs in transition source,0,0,PASS,ERROR
+C10,No approvals or causal attribution introduced,0,0,PASS,ERROR
+C11,All source provenance outputs retain original-vendor verification boundary,449,449,PASS,RESEARCH_BOUNDARY

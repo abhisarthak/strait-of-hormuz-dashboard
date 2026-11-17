@@ -1,0 +1,34 @@
+SCRIPT 30: VESSEL-LEVEL DISRUPTION PROPAGATION
+=====================================================================================
+
+COMMON OBSERVATION WINDOW
+-------------------------------------------------------------------------------------
+Start: 2026-07-29 23:36:00+00:00
+End: 2026-11-09 08:24:00+00:00
+
+SCENARIO AND RECOVERY POLICY SUMMARY
+-------------------------------------------------------------------------------------
+   Scenario     Recovery_Policy  Replications  Mean_Selected_Vessels  Mean_Disrupted_Vessels  Mean_Disrupted_Calls  Mean_Disrupted_Call_Share_Percent  Mean_Total_Accumulated_Delay_Hours  Mean_Delay_Per_Disrupted_Call  Mean_Maximum_Accumulated_Delay_Hours  Mean_Total_Recovered_Hours  Mean_Maximum_Port_Peak  Mean_Average_Port_Peak  Mean_Port_Concurrency
+S0_BASELINE  FIXED_RECOVERY_12H             5                    0.0                     0.0                   0.0                           0.000000                            0.000000                       0.000000                                   0.0                    0.000000                     6.0                1.894737               0.395177
+S0_BASELINE         NO_RECOVERY             5                    0.0                     0.0                   0.0                           0.000000                            0.000000                       0.000000                                   0.0                    0.000000                     6.0                1.894737               0.395177
+S0_BASELINE PARTIAL_RECOVERY_25             5                    0.0                     0.0                   0.0                           0.000000                            0.000000                       0.000000                                   0.0                    0.000000                     6.0                1.894737               0.395177
+    S1_MILD  FIXED_RECOVERY_12H             5                   16.0                    16.0                  36.0                           5.960265                          484.800000                      13.736575                                  24.0                  156.000000                     6.4                1.926316               0.395177
+    S1_MILD         NO_RECOVERY             5                   16.0                    16.0                  36.0                           5.960265                          864.000000                      24.000000                                  24.0                    0.000000                     6.8                1.947368               0.395177
+    S1_MILD PARTIAL_RECOVERY_25             5                   16.0                    16.0                  36.0                           5.960265                          641.950607                      18.037834                                  24.0                   85.983536                     6.4                1.926316               0.395177
+S2_MODERATE  FIXED_RECOVERY_12H             5                   39.0                    39.0                 104.8                          17.350993                         5040.000000                      48.985172                                  72.0                  612.000000                     7.8                2.115789               0.395177
+S2_MODERATE         NO_RECOVERY             5                   39.0                    39.0                 104.8                          17.350993                         7545.600000                      72.000000                                  72.0                    0.000000                     7.8                2.084211               0.395177
+S2_MODERATE PARTIAL_RECOVERY_25             5                   39.0                    39.0                 104.8                          17.350993                         4893.164319                      47.541041                                  72.0                  695.054773                     7.6                2.094737               0.395177
+  S3_SEVERE  FIXED_RECOVERY_12H             5                   78.0                    78.0                 185.8                          30.761589                        25483.200000                     138.205635                                 168.0                 1178.400000                     8.2                2.189474               0.395177
+  S3_SEVERE         NO_RECOVERY             5                   78.0                    78.0                 185.8                          30.761589                        31214.400000                     168.000000                                 168.0                    0.000000                     8.0                2.200000               0.395177
+  S3_SEVERE PARTIAL_RECOVERY_25             5                   78.0                    78.0                 185.8                          30.761589                        20947.371724                     113.800794                                 168.0                 2614.457241                     8.8                2.284211               0.395177
+
+METHODOLOGICAL ASSUMPTIONS
+-------------------------------------------------------------------------------------
+Disruptions are hypothetical schedule delays.
+Affected units are vessels, not independent port calls.
+One disruption-onset call is selected per affected vessel.
+The delay propagates through subsequent calls.
+Recovery policies are hypothetical sensitivity assumptions.
+Inter-port elapsed time is not treated as pure sailing time.
+No confirmed Strait of Hormuz transit is assumed.
+Port concurrency is not equivalent to berth occupancy or verified port capacity.

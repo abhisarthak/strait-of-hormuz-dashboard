@@ -1,0 +1,39 @@
+SCRIPT 31: RECOVERY STRATEGY EVALUATION
+=====================================================================================
+
+RECOVERY POLICY SUMMARY
+-------------------------------------------------------------------------------------
+   Scenario     Recovery_Policy  Replications  Mean_Accumulated_Delay_Hours  Mean_Delay_Reduction_Hours  Mean_Delay_Reduction_Percent  SD_Delay_Reduction_Percent  Mean_Total_Recovered_Hours  Mean_Maximum_Port_Peak  Mean_Average_Port_Peak  Mean_Port_Concurrency  Mean_Ports_With_Increased_Peak  Mean_Ports_With_Decreased_Peak  Mean_Ports_With_Unchanged_Peak  Mean_Port_Peak_Change_vs_No_Recovery
+S0_BASELINE         NO_RECOVERY             5                      0.000000                    0.000000                      0.000000                    0.000000                    0.000000                     6.0                1.894737               0.395177                             0.0                             0.0                            19.0                              0.000000
+S0_BASELINE PARTIAL_RECOVERY_25             5                      0.000000                    0.000000                      0.000000                    0.000000                    0.000000                     6.0                1.894737               0.395177                             0.0                             0.0                            19.0                              0.000000
+S0_BASELINE  FIXED_RECOVERY_12H             5                      0.000000                    0.000000                      0.000000                    0.000000                    0.000000                     6.0                1.894737               0.395177                             0.0                             0.0                            19.0                              0.000000
+    S1_MILD         NO_RECOVERY             5                    864.000000                    0.000000                      0.000000                    0.000000                    0.000000                     6.8                1.947368               0.395177                             0.0                             0.0                            19.0                              0.000000
+    S1_MILD PARTIAL_RECOVERY_25             5                    641.950607                  222.049393                     24.842360                    6.398353                   85.983536                     6.4                1.926316               0.395177                             0.0                             0.4                            18.6                             -0.021053
+    S1_MILD  FIXED_RECOVERY_12H             5                    484.800000                  379.200000                     42.764270                    7.998962                  156.000000                     6.4                1.926316               0.395177                             0.2                             0.6                            18.2                             -0.021053
+S2_MODERATE         NO_RECOVERY             5                   7545.600000                    0.000000                      0.000000                    0.000000                    0.000000                     7.8                2.084211               0.395177                             0.0                             0.0                            19.0                              0.000000
+S2_MODERATE PARTIAL_RECOVERY_25             5                   4893.164319                 2652.435681                     33.970777                    6.764782                  695.054773                     7.6                2.094737               0.395177                             0.8                             0.6                            17.6                              0.010526
+S2_MODERATE  FIXED_RECOVERY_12H             5                   5040.000000                 2505.600000                     31.965038                    7.140678                  612.000000                     7.8                2.115789               0.395177                             0.8                             0.2                            18.0                              0.031579
+  S3_SEVERE         NO_RECOVERY             5                  31214.400000                    0.000000                      0.000000                    0.000000                    0.000000                     8.0                2.200000               0.395177                             0.0                             0.0                            19.0                              0.000000
+  S3_SEVERE PARTIAL_RECOVERY_25             5                  20947.371724                10267.028276                     32.261432                    5.689858                 2614.457241                     8.8                2.284211               0.395177                             2.2                             1.0                            15.8                              0.084211
+  S3_SEVERE  FIXED_RECOVERY_12H             5                  25483.200000                 5731.200000                     17.734741                    6.088725                 1178.400000                     8.2                2.189474               0.395177                             0.8                             1.0                            17.2                             -0.010526
+
+POLICY RANKINGS BY SEPARATE OBJECTIVES
+-------------------------------------------------------------------------------------
+   Scenario     Recovery_Policy  Delay_Rank  Maximum_Port_Peak_Rank  Ports_Increased_Peak_Rank                                            Interpretation
+S0_BASELINE PARTIAL_RECOVERY_25         1.0                     1.0                        1.0 Separate objective rankings; no combined winner assigned.
+S0_BASELINE  FIXED_RECOVERY_12H         1.0                     1.0                        1.0 Separate objective rankings; no combined winner assigned.
+    S1_MILD PARTIAL_RECOVERY_25         2.0                     1.0                        1.0 Separate objective rankings; no combined winner assigned.
+    S1_MILD  FIXED_RECOVERY_12H         1.0                     1.0                        2.0 Separate objective rankings; no combined winner assigned.
+S2_MODERATE PARTIAL_RECOVERY_25         1.0                     1.0                        1.0 Separate objective rankings; no combined winner assigned.
+S2_MODERATE  FIXED_RECOVERY_12H         2.0                     2.0                        1.0 Separate objective rankings; no combined winner assigned.
+  S3_SEVERE PARTIAL_RECOVERY_25         1.0                     2.0                        2.0 Separate objective rankings; no combined winner assigned.
+  S3_SEVERE  FIXED_RECOVERY_12H         2.0                     1.0                        1.0 Separate objective rankings; no combined winner assigned.
+
+METHODOLOGICAL LIMITATIONS
+-------------------------------------------------------------------------------------
+Recovery policies are hypothetical sensitivity assumptions.
+Delay reduction is compared against NO_RECOVERY for the same scenario and random seed.
+Port peak comparisons use the same scenario, seed and port as the NO_RECOVERY reference.
+Port concurrency is based on recorded port-call intervals, not verified berth occupancy.
+No confirmed Strait of Hormuz transit is assumed.
+Separate rankings do not establish a universally optimal recovery policy.

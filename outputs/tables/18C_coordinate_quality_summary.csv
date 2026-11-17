@@ -1,0 +1,13 @@
+Metric,Value
+Total port master records,467
+Unique LOCODEs,464
+Ambiguous LOCODE master records,6
+Production valid coordinates,273
+Pre-release valid coordinates,275
+Production missing coordinates,194
+Pre-release missing coordinates,192
+Hemisphere conflicts,1
+Possible latitude-longitude swaps,0
+Manual review records,200
+Records with at least one valid release,275
+Coordinates automatically selected,0

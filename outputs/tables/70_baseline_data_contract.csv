@@ -1,0 +1,7 @@
+Dataset_Key,File_Name,Exists,Observed_Rows,Expected_Rows_From_Established_Pipeline,Row_Count_Matches,Required_Columns,Missing_Required_Columns,Resolved_Columns,Read_Status,Interpretation
+historical_schedule,19_historical_arrival_schedule.csv,True,604,604,True,IMO_Normalised; UNLOCODE_Normalised; Actual_Arrival_UTC; Actual_Departure_UTC,,IMO_Normalised=IMO_Normalised; UNLOCODE_Normalised=UNLOCODE_Normalised; Actual_Arrival_UTC=Actual_Arrival_UTC; Actual_Departure_UTC=Actual_Departure_UTC,READ_OK,Input contract check only; not proof of semantic validity.
+vessel_parameters,19_vessel_parameters.csv,True,155,155,True,IMO_Normalised,,IMO_Normalised=IMO_Normalised,READ_OK,Input contract check only; not proof of semantic validity.
+port_parameters,19_port_parameters.csv,True,19,19,True,UNLOCODE_Normalised,,UNLOCODE_Normalised=UNLOCODE_Normalised,READ_OK,Input contract check only; not proof of semantic validity.
+port_service_parameters,19_port_service_parameters.csv,True,19,19,True,UNLOCODE_Normalised,,UNLOCODE_Normalised=UNLOCODE_Normalised,READ_OK,Input contract check only; not proof of semantic validity.
+interport_time_parameters,19_interport_time_parameters.csv,True,53,53,True,Previous_Port; Next_Port,,Previous_Port=Previous_Port; Next_Port=Next_Port,READ_OK,Input contract check only; not proof of semantic validity.
+observed_interport_transitions,19_observed_interport_transitions.csv,True,271,271,True,Previous_Port; Next_Port,,Previous_Port=Previous_Port; Next_Port=Next_Port,READ_OK,Input contract check only; not proof of semantic validity.

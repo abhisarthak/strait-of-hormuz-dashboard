@@ -1,0 +1,111 @@
+SCRIPT 87 — INTEGRATED SIMULATION READINESS AUDIT
+=================================================================
+
+Execution timestamp: 2026-11-16T21:00:15.070475
+
+CORE INPUT COUNTS
+-----------------------------------------------------------------
+baseline: 604 rows
+vessels: 155 rows
+ports: 19 rows
+service: 19 rows
+interport: 53 rows
+transitions: 271 rows
+
+BASELINE SUMMARY
+-----------------------------------------------------------------
+Historical calls: 604
+Unique IDs: 604
+Vessels: 155
+Ports: 19
+Negative port-call intervals: 0
+
+TRANSITION RECONCILIATION
+-----------------------------------------------------------------
+Input transition rows: 271
+Reconstructed rows: 271
+Exact reconciliation: True
+
+INTER-PORT RECONCILIATION
+-----------------------------------------------------------------
+Input directed pairs: 53
+Recomputed directed pairs: 53
+Parameter reconciliation: True
+
+EXPERIMENT DESIGN REGISTER INVENTORY
+-----------------------------------------------------------------
+ Script       Directory                                                  Filename  Exists  Size_Bytes
+     65  outputs/tables                          65_parameter_option_register.csv    True       88590
+     65  outputs/tables               65_parameter_selection_readiness_checks.csv    True         434
+     65  outputs/tables                  65_researcher_parameter_decision_log.csv    True        9376
+     65  outputs/tables                          65_scenario_design_framework.csv    True        2366
+     66  outputs/tables                            66_design_readiness_checks.csv    True         642
+     66  outputs/tables                         66_disruption_factor_register.csv    True        2708
+     66  outputs/tables                           66_experiment_design_matrix.csv    True        1607
+     66  outputs/tables                               66_replication_protocol.csv    True        1347
+     66  outputs/tables                      66_response_metric_specification.csv    True        2023
+     67  outputs/tables                    67_edge_exposure_evidence_register.csv    True      120602
+     67  outputs/tables                          67_exposure_readiness_checks.csv    True         689
+     67  outputs/tables                         67_mechanism_variable_mapping.csv    True        1182
+     67  outputs/tables                    67_port_exposure_evidence_register.csv    True       14987
+     67  outputs/tables                     67_researcher_exposure_review_log.csv    True        9284
+     67  outputs/tables                67_researcher_port_exposure_review_log.csv    True        3181
+     68  outputs/tables                          68_decision_readiness_checks.csv    True        1229
+     68  outputs/tables                    68_edge_exposure_decision_register.csv    True      126396
+     68  outputs/tables                   68_experiment_scope_decision_matrix.csv    True        2076
+     68  outputs/tables                        68_mechanism_decision_register.csv    True        1668
+     68  outputs/tables                    68_port_exposure_decision_register.csv    True       17141
+     69  outputs/tables                       69_experiment_protocol_register.csv    True        2167
+     69  outputs/tables                         69_parameter_evidence_summary.csv    True        1265
+     69  outputs/tables                          69_protocol_readiness_checks.csv    True        1539
+     69  outputs/tables                       69_replication_protocol_options.csv    True        1013
+     69  outputs/tables                           69_response_metric_protocol.csv    True        2993
+     69  outputs/tables                   69_scenario_parameter_specification.csv    True        7199
+     65 outputs/reports 65_researcher_guided_parameter_scenario_design_report.txt    True        2168
+     66 outputs/reports                66_disruption_experiment_design_report.txt    True        2439
+     67 outputs/reports    67_disruption_mechanism_exposure_assessment_report.txt    True        4404
+     68 outputs/reports         68_researcher_guided_exposure_decision_report.txt    True        2058
+     69 outputs/reports           69_experiment_protocol_specification_report.txt    True        2083
+
+READINESS CHECKS
+-----------------------------------------------------------------
+                                     Check Observed          Expected  Passed                                                                                  Note
+                     Baseline record count      604               604    True                                                                                      
+              Unique simulation record IDs      604               604    True                                                                                      
+                       Unique vessel count      155               155    True                                                                                      
+                         Unique port count       19                19    True                                                                                      
+                Actual timestamps complete        0                 0    True                                                                                      
+ Non-negative observed port-call intervals        0                 0    True                                                                                      
+                Vessel parameter row count      155               155    True                                                                                      
+              Unique vessel parameter keys      155               155    True                                                                                      
+          All baseline vessels represented        0                 0    True                                                                                      
+                  Port parameter row count       19                19    True                                                                                      
+                Unique port parameter keys       19                19    True                                                                                      
+            All baseline ports represented        0                 0    True                                                                                      
+          Port service parameter row count       19                19    True                                                                                      
+All baseline ports have service parameters        0                 0    True                                                                                      
+         Port service statistics reconcile        1                 1    True                         Recomputed from baseline actual arrival/departure timestamps.
+             Observed transition row count      271               271    True                                                                                      
+        Reconstructed transition row count      271               271    True                                                                                      
+Transition register reconciles to baseline     True              True    True Compared current call, previous port, next port, previous departure and elapsed time.
+            Directed inter-port pair count       53                53    True                                                                                      
+ Inter-port parameter statistics reconcile        1                 1    True                                                                                      
+       Design-register inventory generated       31 Inventory created    True                               File presence is not equivalent to researcher approval.
+
+FINAL STATUS
+-----------------------------------------------------------------
+Checks passed: 21/21
+Checks failed: 0/21
+Baseline structural readiness: True
+Input reconciliation readiness: True
+
+RESEARCH LIMITATIONS
+-----------------------------------------------------------------
+- Inter-port elapsed time is not pure sailing time.
+- Port stay is not necessarily berth processing time.
+- Port parameters do not establish physical port capacity.
+- Historical port-call links do not establish verified routes.
+- No AIS-confirmed Hormuz transit is established.
+- Design-register presence does not imply researcher approval.
+- No disruption or recovery experiment is executed by Script87.
+- No source files or simulation inputs are modified.

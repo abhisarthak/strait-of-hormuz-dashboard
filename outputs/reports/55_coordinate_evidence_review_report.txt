@@ -1,0 +1,140 @@
+SCRIPT 55 — COORDINATE EVIDENCE REVIEW AND RESEARCHER PRIORITISATION
+========================================================================================
+
+Generated: 2026-11-16T02:50:09
+
+INPUT REGISTERS
+----------------------------------------------------------------------------------------
+consolidated: /Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/54_consolidated_port_identity_coordinate_reconciliation.csv
+coordinate_evidence: /Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/51_primary_source_coordinate_evidence_register.csv
+quality_audit: /Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/53_coordinate_evidence_quality_audit.csv
+
+DETECTED EVIDENCE FIELD COUNTS
+----------------------------------------------------------------------------------------
+Source-related fields: 68
+Coordinate-related fields: 55
+Quality-related fields: 12
+
+SUMMARY
+----------------------------------------------------------------------------------------
+                                                Metric Value
+                                  Consolidated records    19
+                  Records with populated source fields    19
+      Records with no populated source fields detected     0
+     Records with populated coordinate evidence fields    19
+   Records with no coordinate evidence fields detected     0
+             Validated port coordinate pairs populated     0
+                           Records requiring P1 review     1
+                           Records requiring P2 review    18
+                           Records requiring P3 review     0
+                 QAUMS facility association unresolved     1
+                Coordinate approvals made by Script 55     0
+     Operational inclusion decisions made by Script 55     0
+AIS-confirmed Hormuz transits established by Script 55     0
+                     Records pending researcher review    19
+                               Upstream files modified    NO
+
+RESEARCHER REVIEW PRIORITIES
+----------------------------------------------------------------------------------------
+
+P1_FACILITY_RESOLUTION
+QAUMS | <NA> | Identity=NOT_AVAILABLE | Coordinate=NOT_AVAILABLE | Sources=55 | Coordinate fields=27
+  Flags: INDEPENDENCE_REVIEW_FLAG_PRESENT | REFERENCE_SCOPE_REVIEW_FLAG_PRESENT | BOUNDARY_OR_POLYGON_REFERENCE_REVIEW | QAUMS_FACILITY_ASSOCIATION_UNRESOLVED | VALIDATED_PORT_COORDINATE_PAIR_NOT_POPULATED | SCRIPT39_COORDINATE_STATUS_NOT_APPROVED
+  Script 49 eligibility: NOT_AVAILABLE
+  Recommended use: NOT_AVAILABLE
+
+P2_SOURCE_AND_SCOPE_REVIEW
+AEAUH | <NA> | Identity=NOT_AVAILABLE | Coordinate=NOT_AVAILABLE | Sources=58 | Coordinate fields=31
+  Flags: INDEPENDENCE_REVIEW_FLAG_PRESENT | REFERENCE_SCOPE_REVIEW_FLAG_PRESENT | VALIDATED_PORT_COORDINATE_PAIR_NOT_POPULATED | SCRIPT39_COORDINATE_STATUS_NOT_APPROVED
+  Script 49 eligibility: NOT_AVAILABLE
+  Recommended use: NOT_AVAILABLE
+AEFJR | <NA> | Identity=NOT_AVAILABLE | Coordinate=NOT_AVAILABLE | Sources=58 | Coordinate fields=34
+  Flags: INDEPENDENCE_REVIEW_FLAG_PRESENT | REFERENCE_SCOPE_REVIEW_FLAG_PRESENT | VALIDATED_PORT_COORDINATE_PAIR_NOT_POPULATED | SCRIPT39_COORDINATE_STATUS_NOT_APPROVED
+  Script 49 eligibility: NOT_AVAILABLE
+  Recommended use: NOT_AVAILABLE
+AEKLF | <NA> | Identity=NOT_AVAILABLE | Coordinate=NOT_AVAILABLE | Sources=58 | Coordinate fields=30
+  Flags: INDEPENDENCE_REVIEW_FLAG_PRESENT | REFERENCE_SCOPE_REVIEW_FLAG_PRESENT | VALIDATED_PORT_COORDINATE_PAIR_NOT_POPULATED | SCRIPT39_COORDINATE_STATUS_NOT_APPROVED
+  Script 49 eligibility: NOT_AVAILABLE
+  Recommended use: NOT_AVAILABLE
+AERKT | <NA> | Identity=NOT_AVAILABLE | Coordinate=NOT_AVAILABLE | Sources=58 | Coordinate fields=29
+  Flags: INDEPENDENCE_REVIEW_FLAG_PRESENT | REFERENCE_SCOPE_REVIEW_FLAG_PRESENT | BOUNDARY_OR_POLYGON_REFERENCE_REVIEW | POSSIBLE_DIFFERENT_PORT_REFERENCE | VALIDATED_PORT_COORDINATE_PAIR_NOT_POPULATED | SCRIPT39_COORDINATE_STATUS_NOT_APPROVED
+  Script 49 eligibility: NOT_AVAILABLE
+  Recommended use: NOT_AVAILABLE
+AESHJ | <NA> | Identity=NOT_AVAILABLE | Coordinate=NOT_AVAILABLE | Sources=58 | Coordinate fields=31
+  Flags: INDEPENDENCE_REVIEW_FLAG_PRESENT | REFERENCE_SCOPE_REVIEW_FLAG_PRESENT | BOUNDARY_OR_POLYGON_REFERENCE_REVIEW | VALIDATED_PORT_COORDINATE_PAIR_NOT_POPULATED | SCRIPT39_COORDINATE_STATUS_NOT_APPROVED
+  Script 49 eligibility: NOT_AVAILABLE
+  Recommended use: NOT_AVAILABLE
+BHKBS | <NA> | Identity=NOT_AVAILABLE | Coordinate=NOT_AVAILABLE | Sources=58 | Coordinate fields=31
+  Flags: INDEPENDENCE_REVIEW_FLAG_PRESENT | REFERENCE_SCOPE_REVIEW_FLAG_PRESENT | VALIDATED_PORT_COORDINATE_PAIR_NOT_POPULATED | SCRIPT39_COORDINATE_STATUS_NOT_APPROVED
+  Script 49 eligibility: NOT_AVAILABLE
+  Recommended use: NOT_AVAILABLE
+INHZA | <NA> | Identity=NOT_AVAILABLE | Coordinate=NOT_AVAILABLE | Sources=58 | Coordinate fields=32
+  Flags: INDEPENDENCE_REVIEW_FLAG_PRESENT | REFERENCE_SCOPE_REVIEW_FLAG_PRESENT | VALIDATED_PORT_COORDINATE_PAIR_NOT_POPULATED | SCRIPT39_COORDINATE_STATUS_NOT_APPROVED
+  Script 49 eligibility: NOT_AVAILABLE
+  Recommended use: NOT_AVAILABLE
+INIXY | <NA> | Identity=NOT_AVAILABLE | Coordinate=NOT_AVAILABLE | Sources=58 | Coordinate fields=32
+  Flags: INDEPENDENCE_REVIEW_FLAG_PRESENT | REFERENCE_SCOPE_REVIEW_FLAG_PRESENT | VALIDATED_PORT_COORDINATE_PAIR_NOT_POPULATED | SCRIPT39_COORDINATE_STATUS_NOT_APPROVED
+  Script 49 eligibility: NOT_AVAILABLE
+  Recommended use: NOT_AVAILABLE
+INPPV | <NA> | Identity=NOT_AVAILABLE | Coordinate=NOT_AVAILABLE | Sources=58 | Coordinate fields=30
+  Flags: INDEPENDENCE_REVIEW_FLAG_PRESENT | REFERENCE_SCOPE_REVIEW_FLAG_PRESENT | VALIDATED_PORT_COORDINATE_PAIR_NOT_POPULATED | SCRIPT39_COORDINATE_STATUS_NOT_APPROVED
+  Script 49 eligibility: NOT_AVAILABLE
+  Recommended use: NOT_AVAILABLE
+IQUQR | <NA> | Identity=NOT_AVAILABLE | Coordinate=NOT_AVAILABLE | Sources=57 | Coordinate fields=29
+  Flags: INDEPENDENCE_REVIEW_FLAG_PRESENT | REFERENCE_SCOPE_REVIEW_FLAG_PRESENT | VALIDATED_PORT_COORDINATE_PAIR_NOT_POPULATED | SCRIPT39_COORDINATE_STATUS_NOT_APPROVED
+  Script 49 eligibility: NOT_AVAILABLE
+  Recommended use: NOT_AVAILABLE
+KWSAA | <NA> | Identity=NOT_AVAILABLE | Coordinate=NOT_AVAILABLE | Sources=56 | Coordinate fields=27
+  Flags: INDEPENDENCE_REVIEW_FLAG_PRESENT | REFERENCE_SCOPE_REVIEW_FLAG_PRESENT | VALIDATED_PORT_COORDINATE_PAIR_NOT_POPULATED | SCRIPT39_COORDINATE_STATUS_NOT_APPROVED
+  Script 49 eligibility: NOT_AVAILABLE
+  Recommended use: NOT_AVAILABLE
+KWSWK | <NA> | Identity=NOT_AVAILABLE | Coordinate=NOT_AVAILABLE | Sources=58 | Coordinate fields=29
+  Flags: INDEPENDENCE_REVIEW_FLAG_PRESENT | REFERENCE_SCOPE_REVIEW_FLAG_PRESENT | VALIDATED_PORT_COORDINATE_PAIR_NOT_POPULATED | SCRIPT39_COORDINATE_STATUS_NOT_APPROVED
+  Script 49 eligibility: NOT_AVAILABLE
+  Recommended use: NOT_AVAILABLE
+OMDQM | <NA> | Identity=NOT_AVAILABLE | Coordinate=NOT_AVAILABLE | Sources=56 | Coordinate fields=28
+  Flags: INDEPENDENCE_REVIEW_FLAG_PRESENT | REFERENCE_SCOPE_REVIEW_FLAG_PRESENT | BOUNDARY_OR_POLYGON_REFERENCE_REVIEW | VALIDATED_PORT_COORDINATE_PAIR_NOT_POPULATED | SCRIPT39_COORDINATE_STATUS_NOT_APPROVED
+  Script 49 eligibility: NOT_AVAILABLE
+  Recommended use: NOT_AVAILABLE
+PKKIA | <NA> | Identity=NOT_AVAILABLE | Coordinate=NOT_AVAILABLE | Sources=58 | Coordinate fields=30
+  Flags: INDEPENDENCE_REVIEW_FLAG_PRESENT | REFERENCE_SCOPE_REVIEW_FLAG_PRESENT | VALIDATED_PORT_COORDINATE_PAIR_NOT_POPULATED | SCRIPT39_COORDINATE_STATUS_NOT_APPROVED
+  Script 49 eligibility: NOT_AVAILABLE
+  Recommended use: NOT_AVAILABLE
+QAQAP | <NA> | Identity=NOT_AVAILABLE | Coordinate=NOT_AVAILABLE | Sources=55 | Coordinate fields=27
+  Flags: INDEPENDENCE_REVIEW_FLAG_PRESENT | REFERENCE_SCOPE_REVIEW_FLAG_PRESENT | VALIDATED_PORT_COORDINATE_PAIR_NOT_POPULATED | SCRIPT39_COORDINATE_STATUS_NOT_APPROVED
+  Script 49 eligibility: NOT_AVAILABLE
+  Recommended use: NOT_AVAILABLE
+QAQCH | <NA> | Identity=NOT_AVAILABLE | Coordinate=NOT_AVAILABLE | Sources=53 | Coordinate fields=25
+  Flags: INDEPENDENCE_REVIEW_FLAG_PRESENT | REFERENCE_SCOPE_REVIEW_FLAG_PRESENT | VALIDATED_PORT_COORDINATE_PAIR_NOT_POPULATED | SCRIPT39_COORDINATE_STATUS_NOT_APPROVED
+  Script 49 eligibility: NOT_AVAILABLE
+  Recommended use: NOT_AVAILABLE
+SADMM | <NA> | Identity=NOT_AVAILABLE | Coordinate=NOT_AVAILABLE | Sources=57 | Coordinate fields=29
+  Flags: INDEPENDENCE_REVIEW_FLAG_PRESENT | REFERENCE_SCOPE_REVIEW_FLAG_PRESENT | VALIDATED_PORT_COORDINATE_PAIR_NOT_POPULATED | SCRIPT39_COORDINATE_STATUS_NOT_APPROVED
+  Script 49 eligibility: NOT_AVAILABLE
+  Recommended use: NOT_AVAILABLE
+SAJUB | <NA> | Identity=NOT_AVAILABLE | Coordinate=NOT_AVAILABLE | Sources=55 | Coordinate fields=27
+  Flags: INDEPENDENCE_REVIEW_FLAG_PRESENT | REFERENCE_SCOPE_REVIEW_FLAG_PRESENT | VALIDATED_PORT_COORDINATE_PAIR_NOT_POPULATED | SCRIPT39_COORDINATE_STATUS_NOT_APPROVED
+  Script 49 eligibility: NOT_AVAILABLE
+  Recommended use: NOT_AVAILABLE
+
+METHODOLOGICAL LIMITATIONS
+----------------------------------------------------------------------------------------
+1. Populated fields indicate recorded evidence, not verified evidence.
+2. Source-field counts do not establish source independence.
+3. Coordinate-field counts do not establish coordinate accuracy.
+4. Port, terminal, berth, buoy, pilot station and boundary references are distinct objects.
+5. Script 39 remains the authority for coordinate-validation status.
+6. Script 49 eligibility classifications and recommended uses are carried forward without modification.
+7. AIS transit confirmation is separate from regional/sensitivity eligibility.
+8. QAUMS facility association remains unresolved.
+9. No coordinate or operational inclusion decision is approved by Script 55.
+10. All 19 records remain pending researcher review.
+
+OUTPUTS
+----------------------------------------------------------------------------------------
+review: outputs/tables/55_coordinate_evidence_review_register.csv
+evidence: outputs/tables/55_coordinate_evidence_inventory.csv
+summary: outputs/tables/55_coordinate_evidence_review_summary.csv
+report: outputs/reports/55_coordinate_evidence_review_report.txt
+
+UPSTREAM REGISTER MODIFICATION: NO

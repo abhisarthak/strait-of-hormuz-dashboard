@@ -1,0 +1,14 @@
+Check,Passed,Observed,Expected,Note
+Script88 contains nine metric rows,True,9,9,Preserves the original register inventory.
+Script90 contains nine metric rows,True,9,9,Preserves the decision-register inventory.
+Metric IDs are unique in Script88,True,9,9,No duplicate metric identifiers.
+Metric IDs are unique in Script90,True,9,9,No duplicate metric identifiers.
+Metric ID sets reconcile,True,[],No differences,Both registers must contain the same metric IDs.
+All registered base fields match,True,9,9,Script90 must preserve Script88 definitions and caveats.
+All metric decisions remain pending,True,{'PENDING': 9},PENDING for all,No researcher metric decision is inferred.
+All supervisor reviews remain pending,True,{'PENDING': 9},PENDING for all,No supervisor approval is inferred.
+No metric approval is granted,True,0,0,"Approval state is read, not changed."
+No execution authorization is granted,True,0,0,Script92 does not authorize simulation.
+Metric-definition approvals remain pending,True,{'PENDING': 9},PENDING for all,No metric definition is approved.
+Censoring approvals remain pending,True,{'PENDING': 9},PENDING for all,No censoring rule is approved.
+No real-world impact claims are enabled,True,0,0,Model outputs remain conditional and hypothetical.

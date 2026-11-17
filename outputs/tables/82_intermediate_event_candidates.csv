@@ -1,0 +1,3 @@
+Current_Interval_Record_ID,Previous_Interval_Record_ID,IMO_Normalised,Interval_Start_Previous_Departure_UTC,Interval_End_Current_Arrival_UTC,Candidate_Intermediate_Port,Candidate_Intermediate_Actual_Arrival_UTC,Candidate_Intermediate_Actual_Departure_UTC,Candidate_Workbook_Sheet,Candidate_Workbook_Excel_Row,Candidate_Row_Inside_Elapsed_Interval,Interpretation
+SCH_815,SCH_340,9813840,2026-09-15 17:00:00+00:00,2026-10-23 13:53:00+00:00,QAQCH,2026-10-13 03:42:00+00:00,,Sheet1,810,True,RAW_WORKBOOK_EVENT_CANDIDATE_REQUIRES_RECORD_LEVEL_REVIEW
+SCH_815,SCH_340,9813840,2026-09-15 17:00:00+00:00,2026-10-23 13:53:00+00:00,QAQCH,2026-10-16 15:54:00+00:00,,Sheet1,813,True,RAW_WORKBOOK_EVENT_CANDIDATE_REQUIRES_RECORD_LEVEL_REVIEW

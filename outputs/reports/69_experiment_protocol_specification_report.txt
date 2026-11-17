@@ -1,0 +1,43 @@
+================================================================================
+SCRIPT 69: EXPERIMENT PROTOCOL AND SCENARIO PARAMETER SPECIFICATION
+================================================================================
+
+INPUTS
+Script65 directed-edge parameter records: 53
+Script66 experiment templates: 5
+Script68 mechanism decisions: 4
+Script68 edge decisions: 53
+Script68 port decisions: 19
+Script68 experiment scope decisions: 5
+
+OUTPUTS
+Experiment protocol rows: 5
+Scenario factor specification rows: 22
+Parameter evidence summary rows: 5
+Response metric specifications: 12
+Replication protocol options: 4
+Readiness checks passed: 16/16
+
+KEY DESIGN CONSTRAINTS
+- No disruption magnitudes, duration values, onset values or affected scopes selected.
+- No Script65 final parameter values selected.
+- No empirical resampling or parametric distributions approved.
+- Network access restriction remains blocked pending validated geographic routes and feasible alternatives.
+- Port service disruption remains constrained by the absence of berth processing/capacity evidence.
+- Compound disruption remains deferred until single mechanisms are separately defined.
+- Replication count, seed policy, common random numbers and statistical estimands remain researcher decisions.
+- M03 split into maximum final vessel delay and maximum accumulated delay per vessel.
+- M07 split into unrecovered calls and unrecovered vessels; end-window censoring must be defined.
+
+INTERPRETATION
+This is a protocol specification and decision-support artifact only. It does not run simulation,
+select parameter values, approve experiment scope, or modify Script19 inputs.
+Observed inter-port elapsed time includes sailing, waiting and unobserved operations; it is not pure sailing time.
+Observed port stay is not berth processing time. Historical port-call relationships are not validated physical routes.
+
+MECHANISM / SCOPE APPROVALS: NONE
+EDGE / PORT EXPOSURE APPROVALS: NONE
+EXPERIMENT EXECUTION AUTHORIZATION: NONE
+SIMULATION EXECUTED: NO
+SOURCE FILES MODIFIED: NO
+SIMULATION INPUTS MODIFIED: NO

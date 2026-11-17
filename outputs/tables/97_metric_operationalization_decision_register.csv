@@ -1,0 +1,10 @@
+Metric_ID,Metric,Aggregation_Level,Existing_Definition_or_Caveat,Operational_Definition_Selected,Denominator_and_Eligibility_Rule,Observation_Timepoint,Censoring_Rule,Researcher_Decision,Supervisor_Review_Status,Approval_Granted,Execution_Authorized
+M01,Mean call arrival delay,Call,Across all 604 calls; state observation-window censoring,,,,,PENDING,PENDING,False,False
+M02,Mean call departure delay,Call,Across all 604 calls; state observation-window censoring,,,,,PENDING,PENDING,False,False
+M03A,Maximum final vessel departure delay,Vessel,Maximum across 155 vessels at their final represented call,,,,,PENDING,PENDING,False,False
+M03B,Maximum accumulated departure delay per vessel,Vessel,Keep distinct from maximum final vessel delay,,,,,PENDING,PENDING,False,False
+M04,Mean final vessel departure delay,Vessel,Across represented vessels,,,,,PENDING,PENDING,False,False
+M05,P90 call departure delay,Call,Report quantile definition and zero-delay calls,,,,,PENDING,PENDING,False,False
+M06,Total recovery credit,Call/Vessel,"Modelled credit, not observed operational recovery",,,,,PENDING,PENDING,False,False
+M07A,Unrecovered call count,Call,Define threshold for unrecovered before final run,,,,,PENDING,PENDING,False,False
+M07B,Unrecovered vessel count,Vessel,Define threshold and end-window censoring,,,,,PENDING,PENDING,False,False

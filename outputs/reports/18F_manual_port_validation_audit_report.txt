@@ -1,0 +1,55 @@
+===========================================================================
+SCRIPT 18F: MANUAL PORT / FACILITY VALIDATION AUDIT REPORT
+===========================================================================
+
+PURPOSE
+This report audits manually entered independent evidence.
+It does not independently verify sources or port identities.
+
+INPUT
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/18E_port_facility_validation_register.csv
+
+DATASET SUMMARY
+Input records: 19
+Unique LOCODEs: 19
+
+VALIDATION STATUS
+PENDING_REVIEW: 19 (100.0%)
+
+EVIDENCE COMPLETENESS
+Total records: 19
+Two source records documented: 0
+Identity verified: 0
+Geographic location verified: 0
+Valid verified coordinate pairs: 0
+Evidence review confirmed: 0
+Verified ports/facilities: 0
+Partially verified: 0
+Pending review: 19
+Rejected: 0
+
+COORDINATE COMPARISON
+REFERENCE_OR_VERIFIED_COORDINATES_MISSING: 19
+
+METHODOLOGICAL LIMITATIONS
+1. Source URLs are checked for basic syntax only.
+2. Source independence requires explicit reviewer confirmation.
+3. Source credibility and content must be checked manually.
+4. Coordinate differences are flags, not automatic errors.
+5. Port/facility identity verification does not prove vessel transit.
+6. This register does not establish AIS-confirmed Hormuz crossings.
+
+OUTPUT FILES
+data/processed/18F_final_port_validation_register.csv
+outputs/tables/18F_record_level_evidence_audit.csv
+outputs/tables/18F_verified_port_shortlist.csv
+outputs/tables/18F_partially_verified_ports.csv
+outputs/tables/18F_pending_manual_review.csv
+outputs/tables/18F_rejected_port_records.csv
+outputs/tables/18F_validation_status_summary.csv
+outputs/tables/18F_coordinate_comparison_summary.csv
+outputs/tables/18F_evidence_completeness_summary.csv
+
+===========================================================================
+END OF REPORT
+===========================================================================

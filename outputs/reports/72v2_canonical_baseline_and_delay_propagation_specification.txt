@@ -1,0 +1,232 @@
+================================================================================
+SCRIPT 72 v2: CORRECTED BASELINE CONTRACT AND EXPLICIT DELAY-PROPAGATION SPECIFICATION
+================================================================================
+
+SOURCE DATA
+{
+  "schedule_rows": 604,
+  "vessels": 155,
+  "ports": 19,
+  "sequence_links": 449,
+  "negative_elapsed_links": 0,
+  "same_port_links": 178,
+  "same_arrival_timestamp_ties": 0,
+  "zero_elapsed_links": 0,
+  "distinct_port_nonnegative_links": 271,
+  "derived_transition_rows": 271,
+  "source_transition_rows": 271,
+  "transition_reconciliation": {
+    "derived_rows": 271,
+    "observed_rows": 271,
+    "matched_record_rows": 271,
+    "outer_join_only_rows": 0,
+    "pair_mismatches_among_matches": 0,
+    "elapsed_time_mismatches_among_matches": 0,
+    "ok": true
+  },
+  "key_audits": {
+    "vessel_parameters": {
+      "ok": true,
+      "keys": [
+        "IMO_Normalised"
+      ],
+      "rows": 155,
+      "null_rows": 0,
+      "duplicate_rows": 0,
+      "unique_keys": 155,
+      "expected_coverage": 155,
+      "matched": 155,
+      "unmatched": 0,
+      "unexpected": 0
+    },
+    "port_parameters": {
+      "ok": true,
+      "keys": [
+        "UNLOCODE_Normalised"
+      ],
+      "rows": 19,
+      "null_rows": 0,
+      "duplicate_rows": 0,
+      "unique_keys": 19,
+      "expected_coverage": 19,
+      "matched": 19,
+      "unmatched": 0,
+      "unexpected": 0
+    },
+    "port_service_parameters": {
+      "ok": true,
+      "keys": [
+        "UNLOCODE_Normalised"
+      ],
+      "rows": 19,
+      "null_rows": 0,
+      "duplicate_rows": 0,
+      "unique_keys": 19,
+      "expected_coverage": 19,
+      "matched": 19,
+      "unmatched": 0,
+      "unexpected": 0
+    },
+    "interport_parameters": {
+      "ok": true,
+      "keys": [
+        "Previous_Port",
+        "Next_Port"
+      ],
+      "rows": 53,
+      "null_rows": 0,
+      "duplicate_rows": 0,
+      "unique_keys": 53,
+      "expected_coverage": NaN,
+      "matched": NaN,
+      "unmatched": NaN,
+      "unexpected": NaN
+    },
+    "observed_transitions": {
+      "ok": true,
+      "keys": [
+        "IMO_Normalised",
+        "Simulation_Record_ID"
+      ],
+      "rows": 271,
+      "null_rows": 0,
+      "duplicate_rows": 0,
+      "unique_keys": 271,
+      "expected_coverage": NaN,
+      "matched": NaN,
+      "unmatched": NaN,
+      "unexpected": NaN
+    },
+    "edge_pair_coverage": {
+      "ok": true,
+      "parameter_pairs": 53,
+      "observed_pairs": 53,
+      "uncovered_observed_pairs": 0,
+      "unused_parameter_pairs": 0,
+      "parameter_pair_null_rows": 0,
+      "observed_pair_null_rows": 0
+    }
+  },
+  "checks_passed": 24,
+  "checks_total": 24,
+  "unit_tests_passed": 12,
+  "unit_tests_total": 12
+}
+
+ACTUAL SCRIPT19 JOIN KEYS
+- Vessel parameters: IMO_Normalised
+- Port parameters: UNLOCODE_Normalised
+- Port service parameters: UNLOCODE_Normalised
+- Inter-port parameters: Previous_Port + Next_Port
+- Observed transitions: IMO_Normalised + Simulation_Record_ID + Previous_Port + Next_Port
+
+DELAY PROPAGATION MODEL
+For vessel calls k and k+1, define:
+  A0_k, D0_k : observed baseline arrival and departure timestamps
+  S0_k       : observed baseline port-call duration = D0_k - A0_k
+  G_k        : observed inter-call elapsed time = A0_(k+1) - D0_k
+  dA_k       : simulated arrival delay at call k
+  s_k        : added port-call duration shock at call k (hours, >= 0)
+  dD_k       : simulated departure delay at call k = dA_k + s_k
+  x_k        : added transition elapsed-time shock after call k (hours, >= 0)
+  q_k        : delay available before recovery = dD_k + x_k
+  r_k        : abstract recovery credit (hours), 0 <= r_k <= min(q_k, G_k + x_k)
+
+Then:
+  A_sim_k       = A0_k + dA_k
+  D_sim_k       = D0_k + dD_k
+  dD_k          = dA_k + s_k
+  q_k           = dD_k + x_k
+  dA_(k+1)      = q_k - r_k
+  A_sim_(k+1)   = A0_(k+1) + dA_(k+1)
+
+For a valid non-negative observed gap G_k, the equivalent transition relation is:
+  A_sim_(k+1) = D_sim_k + G_k + x_k - r_k
+
+IMPORTANT HANDLING
+- If G_k < 0, block that vessel-sequence link and require review. Do not clip it to zero.
+- A same-port consecutive call is not an inter-port network edge; no edge shock is assigned.
+- No direct-arrival shock is included in this specification. New shocks enter through
+  a separately specified port-service duration or observed-transition elapsed-time term.
+- Recovery is an abstract schedule-recovery credit. It is bounded by both accumulated
+  delay and available elapsed-time opportunity, but this does not prove feasible speed-up,
+  rerouting, or operational recovery.
+- Historical timestamps remain immutable; simulated timestamps are separate fields.
+- If a vessel sequence link is invalid, downstream propagation across that link remains
+  unresolved until the source sequence is reviewed; do not silently reset delay.
+
+UNIT TESTS
+Passed: 12/12
+                                      Test_ID  Passed                                                                        Purpose
+                            T01_BASELINE_ZERO    True                                                        All delays remain zero.
+                     T02_TRANSITION_SHOCK_24H    True                                  A 24h transition shock reaches the next call.
+                          T03_INHERITED_DELAY    True                                           Existing delay carries forward once.
+             T04_CUMULATIVE_TRANSITION_SHOCKS    True                               A further 12h shock adds to inherited 24h delay.
+                       T05_PORT_SERVICE_SHOCK    True                              A 6h port-service extension delays the next call.
+                         T06_PARTIAL_RECOVERY    True                              8h recovery reduces 24h accumulated delay to 16h.
+                            T07_FULL_RECOVERY    True Full recovery is allowed only when the elapsed-time opportunity is sufficient.
+         T08_RECOVERY_EXCEEDS_AVAILABLE_DELAY    True              Invalid input must be rejected, not clipped or silently repaired.
+                   T09_NEGATIVE_INTERCALL_GAP    True              Invalid input must be rejected, not clipped or silently repaired.
+                T10_NEGATIVE_TRANSITION_SHOCK    True              Invalid input must be rejected, not clipped or silently repaired.
+                   T11_NEGATIVE_SERVICE_SHOCK    True              Invalid input must be rejected, not clipped or silently repaired.
+T12_RECOVERY_EXCEEDS_ELAPSED_TIME_OPPORTUNITY    True              Invalid input must be rejected, not clipped or silently repaired.
+
+JOIN-KEY AUDIT
+                                                Artifact                       Actual_Join_Key  Rows  Key_Null_Rows  Duplicate_Key_Rows  Unique_Keys  Expected_Coverage  Matched_Expected  Unmatched_Expected  Unexpected_Keys Status
+                                       vessel_parameters                        IMO_Normalised   155            0.0                 0.0          155              155.0             155.0                 0.0              0.0   PASS
+                                         port_parameters                   UNLOCODE_Normalised    19            0.0                 0.0           19               19.0              19.0                 0.0              0.0   PASS
+                                 port_service_parameters                   UNLOCODE_Normalised    19            0.0                 0.0           19               19.0              19.0                 0.0              0.0   PASS
+                                    interport_parameters             Previous_Port | Next_Port    53            0.0                 0.0           53                NaN               NaN                 NaN              NaN   PASS
+                                    observed_transitions IMO_Normalised | Simulation_Record_ID   271            0.0                 0.0          271                NaN               NaN                 NaN              NaN   PASS
+interport_parameter_vs_observed_transition_pair_coverage             Previous_Port | Next_Port   271            NaN                 NaN           53               53.0              53.0                 0.0              0.0   PASS
+
+IMPLEMENTATION CHECKS
+Passed: 24/24
+                                                                       Check  Passed Observed                              Expected
+                                            Historical schedule has 604 rows    True      604                                   604
+                                                 Simulation_Record_ID unique    True        0                                     0
+                                                All call identities complete    True        0                                     0
+                                            All port-call intervals positive    True        0                                     0
+                                   Actual_Stay_Hours reconciles within 0.02h    True        0                                     0
+                                                          155 unique vessels    True      155                                   155
+                                                             19 unique ports    True       19                                    19
+                           vessel_parameters has expected Script19 row count    True      155                                   155
+                             port_parameters has expected Script19 row count    True       19                                    19
+                     port_service_parameters has expected Script19 row count    True       19                                    19
+                        interport_parameters has expected Script19 row count    True       53                                    53
+                        observed_transitions has expected Script19 row count    True      271                                   271
+                      vessel_parameters actual join key and uniqueness valid    True      155                  Unique non-null keys
+                        port_parameters actual join key and uniqueness valid    True       19                  Unique non-null keys
+                port_service_parameters actual join key and uniqueness valid    True       19                  Unique non-null keys
+                   interport_parameters actual join key and uniqueness valid    True       53                  Unique non-null keys
+                   observed_transitions actual join key and uniqueness valid    True      271                  Unique non-null keys
+         Inter-port parameter pairs reconcile with observed transition pairs    True       53                                    53
+          Derived vessel transitions match Script19 observed transition rows    True      271                                   271
+                                           Delay propagation unit tests pass    True       12                                    12
+Negative inter-call gaps are blocked and not treated as eligible transitions    True        0 All negative links explicitly blocked
+                                                      No experiment executed    True       NO                                    NO
+                                                  No upstream files modified    True       NO                                    NO
+                                      No disruption/recovery policy approved    True       NO                                    NO
+
+MECHANISM READINESS
+                 Mechanism          Readiness_Class                                                                                                                  Requirements                                                                            Evidence_Limitation Execution_Authorized
+TRANSIT_ELAPSED_TIME_SHOCK CONCEPTUALLY_SPECIFIABLE Can be represented as a hypothetical elapsed-time shock on an observed consecutive-call transition after researcher approval.        Elapsed time is not pure sailing time; edge evidence is sparse and vessel-concentrated.                   NO
+NETWORK_ACCESS_RESTRICTION                  BLOCKED                  Requires validated geographic route graph, route alternatives, and physical/regulatory feasibility evidence.                        Observed port-call transitions are not verified physical sailing edges.                   NO
+   PORT_SERVICE_DISRUPTION    PARTIALLY_SPECIFIABLE                         A separate added port-call duration may be represented for sensitivity analysis after scope approval. Actual_Stay_Hours is not necessarily berth processing time; waiting/anchorage may be included.                   NO
+       COMPOUND_DISRUPTION                 DEFERRED                                                        Only after individual mechanisms are separately defined and validated.                                                      No compound scope or magnitudes approved.                   NO
+
+RESEARCH BOUNDARIES
+- Inter-port elapsed time is not pure sailing time.
+- Port-call stay is not pure berth processing time; s_k is therefore named an added
+  port-call duration shock, not a berth-service-time shock.
+- Port-call concurrency is not verified berth occupancy.
+- Consecutive observed port calls are not verified physical routes.
+- No actual AIS-confirmed Hormuz transit is established.
+- Network access restriction remains blocked pending validated route geography
+  and feasible alternatives.
+- Compound disruption remains deferred.
+- No disruption magnitudes, affected scope, or recovery policy are approved.
+
+EXPERIMENTS EXECUTED: NO
+UPSTREAM FILES MODIFIED: NO
+RESEARCHER APPROVALS CREATED: NO

@@ -1,0 +1,5 @@
+Scope_Scenario_ID,Affected_Transition_Share,Transition_Universe_Count,Selected_Transition_Count,Unselected_Transition_Count,Selection_Seed,Selection_Method,Selection_Is_Nested,Exposure_Approval,Execution_Authorized,Interpretation
+S89-S010,0.1,271,27,244,8801,Seeded random permutation; nested prefixes,True,False,False,Mathematical coverage level for a general hypothetical elapsed-time shock; not measured Hormuz exposure probability
+S89-S025,0.25,271,68,203,8801,Seeded random permutation; nested prefixes,True,False,False,Mathematical coverage level for a general hypothetical elapsed-time shock; not measured Hormuz exposure probability
+S89-S050,0.5,271,136,135,8801,Seeded random permutation; nested prefixes,True,False,False,Mathematical coverage level for a general hypothetical elapsed-time shock; not measured Hormuz exposure probability
+S89-S100,1.0,271,271,0,8801,Seeded random permutation; nested prefixes,True,False,False,Mathematical coverage level for a general hypothetical elapsed-time shock; not measured Hormuz exposure probability

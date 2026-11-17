@@ -1,0 +1,16 @@
+Metric,Value
+Target_IMO,9813840
+Vessel_Name_Values,SPIRIT OF CHENNAI
+Call_Sign_Values,9V3539
+Raw_Workbook_Record_Count,32
+Distinct_Port_Count,2
+Distinct_Import_Voyage_Count,21
+Distinct_Export_Voyage_Count,21
+Missing_Actual_Arrival_Count,17
+Missing_Actual_Departure_Count,18
+Invalid_Actual_Timestamp_Order_Count,0
+Negative_Inter_Record_Gap_Count,0
+Zero_Inter_Record_Gap_Count,0
+Repeated_Consecutive_Port_Record_Count,26
+Workbook_Row_Order_Chronology_Inversions,2
+Import_Export_Voyage_Mismatch_Count,0

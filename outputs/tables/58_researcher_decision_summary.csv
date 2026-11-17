@@ -1,0 +1,12 @@
+Metric,Value
+Total records in researcher register,19
+Coordinate decisions pending,19
+Operational decisions pending,19
+Records with valid primary coordinate pairs,13
+Records with valid secondary coordinate pairs,18
+Records with both coordinate pairs,13
+Records with hold/reconciliation guidance,15
+Records with source-verification candidate guidance,4
+Coordinate approvals made automatically,0
+Operational inclusion decisions made automatically,0
+AIS-confirmed Hormuz transits established automatically,0

@@ -1,0 +1,10 @@
+Metric_ID,Metric,Aggregation_Level,Unit,Priority,Definition_or_Caveat
+M01,Mean call arrival delay,Call,Hours,Secondary,Across all 604 calls; state observation-window censoring
+M02,Mean call departure delay,Call,Hours,Secondary,Across all 604 calls; state observation-window censoring
+M03A,Maximum final vessel departure delay,Vessel,Hours,Primary candidate,Maximum across 155 vessels at their final represented call
+M03B,Maximum accumulated departure delay per vessel,Vessel,Hours,Secondary,Keep distinct from maximum final vessel delay
+M04,Mean final vessel departure delay,Vessel,Hours,Secondary,Across represented vessels
+M05,P90 call departure delay,Call,Hours,Secondary,Report quantile definition and zero-delay calls
+M06,Total recovery credit,Call/Vessel,Hours,Secondary,"Modelled credit, not observed operational recovery"
+M07A,Unrecovered call count,Call,Count,Secondary,Define threshold for unrecovered before final run
+M07B,Unrecovered vessel count,Vessel,Count,Secondary,Define threshold and end-window censoring

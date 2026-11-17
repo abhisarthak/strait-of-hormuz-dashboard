@@ -1,0 +1,44 @@
+SCRIPT 77 — OBSERVED INTER-CALL ELAPSED-TIME-BOUNDED RECOVERY ASSESSMENT
+==================================================================================
+Project root: /Users/abhishekkumar/Strait_of_Hormuz_Research
+Source: outputs/tables/76_call_level_recovery_results.csv
+Scenarios: 17
+Policies: 5
+Scenario-policy combinations: 85
+Call-level records: 51340
+Vessel-level records: 13175
+
+METHOD
+- Reuses Script76's requested recovery credits.
+- Caps recovery at the non-negative observed interval from previous departure to current arrival.
+- Also caps recovery at delay available before recovery.
+- No recovery is applied to a vessel's first call.
+- Delay is propagated through the ordered vessel sequence.
+
+CRITICAL INTERPRETATION
+- Observed inter-call elapsed time is NOT established schedule slack.
+- It may contain sailing, anchorage, waiting, operational time, and data gaps.
+- The cap is a mathematical upper-bound sensitivity test, not proof of physical recovery feasibility.
+- No route, AIS-confirmed Strait of Hormuz transit, berth capacity, safety, fuel, emissions, or cost is inferred.
+
+Records with positive requested recovery: 11924
+Records where the elapsed-time cap binds: 892
+Share of requested-positive records capped: 7.48%
+Total requested recovery: 83598.086049 hours
+Total bounded recovery: 80681.601283 hours
+Total recovery constrained by cap: 2916.484766 hours
+
+Validation checks passed: 15/15
+Validation checks failed: 0
+
+FAILED CHECKS
+None.
+
+OUTPUT FILES
+- outputs/tables/77_call_level_bounded_recovery_results.csv
+- outputs/tables/77_vessel_level_bounded_recovery_results.csv
+- outputs/tables/77_scenario_bounded_recovery_summary.csv
+- outputs/tables/77_recovery_policy_comparison.csv
+- outputs/tables/77_recovery_cap_binding_records.csv
+- outputs/tables/77_validation_checks.csv
+- outputs/reports/77_observed_intercall_bounded_recovery_assessment_report.txt

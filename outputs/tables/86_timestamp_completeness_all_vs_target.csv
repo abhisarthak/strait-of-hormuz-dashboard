@@ -1,0 +1,13 @@
+Scope,Timestamp_Field,Record_Count,NonNull_Count,Null_Count,Completeness_Rate
+ALL_WORKBOOK,Planned_Arrival,1894,1894,0,1.0
+ALL_WORKBOOK,Estimated_Arrival,1894,1894,0,1.0
+ALL_WORKBOOK,Actual_Arrival,1894,631,1263,0.3331573389651531
+ALL_WORKBOOK,Planned_Departure,1894,1894,0,1.0
+ALL_WORKBOOK,Estimated_Departure,1894,1894,0,1.0
+ALL_WORKBOOK,Actual_Departure,1894,620,1274,0.3273495248152059
+TARGET_VESSEL,Planned_Arrival,32,32,0,1.0
+TARGET_VESSEL,Estimated_Arrival,32,32,0,1.0
+TARGET_VESSEL,Actual_Arrival,32,15,17,0.46875
+TARGET_VESSEL,Planned_Departure,32,32,0,1.0
+TARGET_VESSEL,Estimated_Departure,32,32,0,1.0
+TARGET_VESSEL,Actual_Departure,32,14,18,0.4375

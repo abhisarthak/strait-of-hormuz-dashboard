@@ -1,0 +1,9 @@
+﻿Summary_Type,Category,Port_Count,Interpretation
+ELIGIBILITY_CLASSIFICATION,DESCRIPTIVE_REFERENCE_ONLY_NOT_IN_OBSERVED_NETWORK,3,Rule-based recommendation only; researcher approval required.
+ELIGIBILITY_CLASSIFICATION,DESCRIPTIVE_REFERENCE_ONLY_PENDING_IDENTITY_REVIEW,6,Rule-based recommendation only; researcher approval required.
+ELIGIBILITY_CLASSIFICATION,REGIONAL_OR_SENSITIVITY_CANDIDATE_PENDING_APPROVAL,10,Rule-based recommendation only; researcher approval required.
+RECOMMENDED_USE,CONTEXT_ONLY_UNLESS_NEW_MOVEMENT_EVIDENCE,3,Proposed use based on current evidence and safeguards.
+RECOMMENDED_USE,DESCRIPTIVE_NETWORK_CONTEXT_ONLY,6,Proposed use based on current evidence and safeguards.
+RECOMMENDED_USE,REGIONAL_OR_SENSITIVITY_ANALYSIS_ONLY,10,Proposed use based on current evidence and safeguards.
+GEOGRAPHIC_CLASS,PERSIAN_GULF_SCREENING_CANDIDATE,12,Screening classification; not proof of vessel transit.
+GEOGRAPHIC_CLASS,REGIONAL_OR_APPROACH_AREA,7,Screening classification; not proof of vessel transit.

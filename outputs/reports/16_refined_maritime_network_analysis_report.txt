@@ -1,0 +1,71 @@
+================================================================================
+SCRIPT 16: REFINED MARITIME NETWORK ANALYSIS
+================================================================================
+
+1. INPUT DATASETS
+--------------------------------------------------------------------------------
+Schedule_Sequence_Ready: 1887 records
+Individual: 617 records
+Schedule_Core: 618 records
+Schedule_Conservative: 604 records
+
+2. OVERALL DATASET SUMMARY
+--------------------------------------------------------------------------------
+                Dataset  Total_Records  Valid_Actual_Calls  Excluded_From_Actual_Analysis  Unique_Vessels  Unique_Ports  Unique_Services  Negative_Port_Stays  Same_Port_Transitions  Different_Port_Transitions  Negative_Inter_Port_Transitions  Zero_Inter_Port_Transitions  Positive_Inter_Port_Transitions  Mean_Port_Stay_Hours  Median_Port_Stay_Hours  P90_Port_Stay_Hours
+Schedule_Sequence_Ready           1887                 611                           1276             155            19               43                    0                    181                         275                                0                            0                              456             30.561266               26.183333               54.900
+             Individual            617                 424                            193              33            68               20                    0                     32                         359                                0                            0                              391             29.623153               26.041667               51.905
+          Schedule_Core            618                 618                              0             155            19               43                    0                    188                         275                                7                            0                              456             30.581446               26.241667               54.410
+  Schedule_Conservative            604                 604                              0             155            19               42                    0                    178                         271                                0                            0                              449             30.540618               26.083333               54.935
+
+3. BASELINE SENSITIVITY COMPARISON
+--------------------------------------------------------------------------------
+               Baseline  Valid_Actual_Calls  Unique_Vessels  Unique_Ports  Unique_Services  Transition_Count  Same_Port_Transitions  Different_Port_Transitions  Negative_Transitions  Mean_Port_Stay_Hours  Median_Port_Stay_Hours  P90_Port_Stay_Hours
+          Schedule_Core                 618             155            19               43               463                    188                         275                     7             30.581446               26.241667               54.410
+Schedule_Sequence_Ready                 611             155            19               43               456                    181                         275                     0             30.561266               26.183333               54.900
+  Schedule_Conservative                 604             155            19               42               449                    178                         271                     0             30.540618               26.083333               54.935
+
+4. SEQUENCE-READY SCHEDULE DIAGNOSTICS
+--------------------------------------------------------------------------------
+                           Diagnostic  Value
+Sequence-ready Schedule input records   1887
+              Valid actual port calls    611
+                       Unique vessels    155
+                         Unique ports     19
+                Same-port transitions    181
+           Different-port transitions    275
+       Negative same-port transitions      0
+  Negative different-port transitions      0
+      Zero different-port transitions      0
+  Positive different-port transitions    275
+                  Negative port stays      0
+
+5. SAME-PORT TRANSITION SUMMARY
+--------------------------------------------------------------------------------
+Same_Port_Interpretation
+LONG_GAP_REQUIRES_REVIEW    177
+MODERATE_GAP                  3
+SHORT_GAP                     1
+
+6. DIFFERENT-PORT TRANSITION SUMMARY
+--------------------------------------------------------------------------------
+Movement_Interpretation
+POSITIVE_INTER_PORT_ELAPSED_TIME    275
+
+7. METHODOLOGICAL LIMITATIONS
+--------------------------------------------------------------------------------
+- Schedule and Individual datasets are analyzed separately.
+- The sequence-ready Schedule excludes one representative record from each of seven source-verified duplicate-representation pairs.
+- The annotated full Schedule remains preserved.
+- Inter-port elapsed time is not necessarily pure sailing time.
+- Elapsed time may include anchorage, waiting, intermediate stops, data gaps and operational delays.
+- Same-LOCODE transitions are retained and classified.
+- Small transition samples should not be treated as reliable travel-time distributions.
+- Port calls do not establish whether a vessel crossed the Strait of Hormuz.
+- AIS trajectory data is required to verify Strait transit.
+- The histogram visualization excludes its upper five percent only for display; analytical tables retain all observations.
+
+8. OUTPUT LOCATIONS
+--------------------------------------------------------------------------------
+Tables: /Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables
+Figures: /Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/figures
+Report: /Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/reports/16_refined_maritime_network_analysis_report.txt

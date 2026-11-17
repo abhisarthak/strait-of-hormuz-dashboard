@@ -1,0 +1,17 @@
+Metric,Value
+Consolidated records,19
+Expected UN/LOCODE coverage,19/19
+Verified port identities,8
+Verified code identities,2
+Total verified identities (port + code),10
+Partial identities,9
+Not verified / other identity statuses,0
+Validated port coordinate pairs populated,0
+Validated terminal coordinate pairs populated,0
+Coordinate validation approved,0
+Operational inclusion approved,0
+Regional/sensitivity recommendations preserved,10
+AIS-confirmed Hormuz transits established,0
+Records pending reconciliation/researcher review,19
+QAUMS facility association unresolved,1
+Upstream files modified,NO

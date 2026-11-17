@@ -1,0 +1,128 @@
+
+=====================================================================================
+STRAIT OF HORMUZ - IDENTIFIER VALIDATION
+=====================================================================================
+
+=====================================================================================
+LOADING DATASETS
+=====================================================================================
+Schedules: (1894, 20)
+Ports: (467, 7)
+Vessels: (1847, 5)
+
+=====================================================================================
+VESSEL FILENAME VS INTERNAL IMO VALIDATION
+=====================================================================================
+
+FILENAME VALIDATION SUMMARY
+Validation_Status
+MATCH                             23
+MULTIPLE_IMOS_FILENAME_PRESENT     6
+
+Detailed results:
+                          File Filename_IMO    Internal_IMOs  Unique_Internal_IMOs  Rows  Filename_Matches_Internal              Validation_Status
+individual_vessels/9431692.csv      9431692          9431692                     1     7                       True                          MATCH
+individual_vessels/9307011.csv      9307011 9222974; 9307011                     2    31                       True MULTIPLE_IMOS_FILENAME_PRESENT
+individual_vessels/9224506.csv      9224506          9224506                     1     6                       True                          MATCH
+individual_vessels/9732321.csv      9732321          9732321                     1    19                       True                          MATCH
+individual_vessels/9948798.csv      9948798          9948798                     1    29                       True                          MATCH
+individual_vessels/9525912.csv      9525912          9525912                     1    21                       True                          MATCH
+individual_vessels/9708813.csv      9708813          9708813                     1    12                       True                          MATCH
+individual_vessels/9233648.csv      9233648          9233648                     1    20                       True                          MATCH
+individual_vessels/9732357.csv      9732357          9732357                     1    11                       True                          MATCH
+individual_vessels/9260914.csv      9260914          9260914                     1    36                       True                          MATCH
+individual_vessels/9253002.csv      9253002          9253002                     1    14                       True                          MATCH
+individual_vessels/9315020.csv      9315020 9315020; 9491472                     2    83                       True MULTIPLE_IMOS_FILENAME_PRESENT
+individual_vessels/9306079.csv      9306079 9301081; 9306079                     2    39                       True MULTIPLE_IMOS_FILENAME_PRESENT
+individual_vessels/9708863.csv      9708863          9708863                     1    16                       True                          MATCH
+individual_vessels/9525924.csv      9525924          9525924                     1    21                       True                          MATCH
+individual_vessels/9732319.csv      9732319          9732319                     1    15                       True                          MATCH
+individual_vessels/9349497.csv      9349497          9349497                     1    33                       True                          MATCH
+individual_vessels/9708825.csv      9708825          9708825                     1    15                       True                          MATCH
+individual_vessels/9732307.csv      9732307 9321483; 9732307                     2    23                       True MULTIPLE_IMOS_FILENAME_PRESENT
+individual_vessels/9948803.csv      9948803 9948803; 9984572                     2    38                       True MULTIPLE_IMOS_FILENAME_PRESENT
+individual_vessels/9708875.csv      9708875          9708875                     1     7                       True                          MATCH
+individual_vessels/9634672.csv      9634672 9539482; 9634672                     2     8                       True MULTIPLE_IMOS_FILENAME_PRESENT
+individual_vessels/9349538.csv      9349538          9349538                     1    27                       True                          MATCH
+individual_vessels/9416006.csv      9416006          9416006                     1    19                       True                          MATCH
+individual_vessels/9973004.csv      9973004          9973004                     1    11                       True                          MATCH
+individual_vessels/9708837.csv      9708837          9708837                     1    16                       True                          MATCH
+individual_vessels/9525869.csv      9525869          9525869                     1    25                       True                          MATCH
+individual_vessels/9760598.csv      9760598          9760598                     1     6                       True                          MATCH
+individual_vessels/9334167.csv      9334167          9334167                     1     9                       True                          MATCH
+Saved: 03_vessel_filename_validation.csv
+
+=====================================================================================
+ACTIVE VESSEL MASTER VALIDATION
+=====================================================================================
+Duplicate IMO groups: 166
+Carrier codes mapped to multiple IMOs: 0
+IMOs with multiple vessel names: 146
+Saved: 03_duplicate_vessel_imos.csv
+Saved: 03_carrier_code_multiple_imo.csv
+Saved: 03_vessel_name_conflicts.csv
+
+=====================================================================================
+ACTIVE PORT MASTER VALIDATION
+=====================================================================================
+Duplicate UN/LOCODE groups: 3
+Saved: 03_duplicate_port_locodes.csv
+
+=====================================================================================
+TRANSPORT CALL REFERENCE VALIDATION
+=====================================================================================
+Total records: 617
+Missing references: 0
+Unique references: 617
+Rows with repeated references: 0
+Saved: 03_duplicate_transport_call_references.csv
+
+=====================================================================================
+VESSEL FILE SCHEMA VALIDATION
+=====================================================================================
+Total distinct columns: 27
+                          File  Column_Count  Missing_Columns                           Missing_Column_Names
+individual_vessels/9431692.csv            27                0                                               
+individual_vessels/9307011.csv            26                1                                     cutoff_DGC
+individual_vessels/9224506.csv            24                3                 ARRI_ACT; DEPA_ACT; cutoff_DGC
+individual_vessels/9732321.csv            27                0                                               
+individual_vessels/9948798.csv            27                0                                               
+individual_vessels/9525912.csv            27                0                                               
+individual_vessels/9708813.csv            27                0                                               
+individual_vessels/9233648.csv            26                1                                     cutoff_DGC
+individual_vessels/9732357.csv            27                0                                               
+individual_vessels/9260914.csv            27                0                                               
+individual_vessels/9253002.csv            25                2                         cutoff_DGC; cutoff_ECP
+individual_vessels/9315020.csv            27                0                                               
+individual_vessels/9306079.csv            26                1                                     cutoff_DGC
+individual_vessels/9708863.csv            27                0                                               
+individual_vessels/9525924.csv            27                0                                               
+individual_vessels/9732319.csv            27                0                                               
+individual_vessels/9349497.csv            27                0                                               
+individual_vessels/9708825.csv            27                0                                               
+individual_vessels/9732307.csv            27                0                                               
+individual_vessels/9948803.csv            27                0                                               
+individual_vessels/9708875.csv            27                0                                               
+individual_vessels/9634672.csv            26                1                                     cutoff_DGC
+individual_vessels/9349538.csv            27                0                                               
+individual_vessels/9416006.csv            23                4 cutoff_DGC; cutoff_ECP; cutoff_FCO; cutoff_VCO
+individual_vessels/9973004.csv            26                1                                     cutoff_ECP
+individual_vessels/9708837.csv            27                0                                               
+individual_vessels/9525869.csv            27                0                                               
+individual_vessels/9760598.csv            27                0                                               
+individual_vessels/9334167.csv            26                1                                     cutoff_DGC
+Saved: 03_schema_validation.csv
+
+=====================================================================================
+CROSS-DATASET VESSEL MATCHING
+=====================================================================================
+                              Comparison  Matching_IMOs  Left_Only  Right_Only
+        Schedule vs Active Vessel Master            207          0        1365
+     Schedule vs Individual Vessel Files             12        195          23
+Active Master vs Individual Vessel Files             35       1537           0
+Saved: 03_vessel_cross_dataset_matching.csv
+
+=====================================================================================
+VALIDATION COMPLETED
+=====================================================================================
+All validation tables saved in: /Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables

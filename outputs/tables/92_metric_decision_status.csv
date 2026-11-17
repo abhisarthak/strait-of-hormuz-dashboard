@@ -1,0 +1,10 @@
+Metric_ID,Researcher_Decision,Researcher_Selected_Value,Supervisor_Review_Status,Approval_Granted,Approval_Date,Execution_Authorized,Metric_Definition_Approval,Censoring_Rule_Approval,Real_World_Impact_Claim
+M01,PENDING,,PENDING,False,,False,PENDING,PENDING,False
+M02,PENDING,,PENDING,False,,False,PENDING,PENDING,False
+M03A,PENDING,,PENDING,False,,False,PENDING,PENDING,False
+M03B,PENDING,,PENDING,False,,False,PENDING,PENDING,False
+M04,PENDING,,PENDING,False,,False,PENDING,PENDING,False
+M05,PENDING,,PENDING,False,,False,PENDING,PENDING,False
+M06,PENDING,,PENDING,False,,False,PENDING,PENDING,False
+M07A,PENDING,,PENDING,False,,False,PENDING,PENDING,False
+M07B,PENDING,,PENDING,False,,False,PENDING,PENDING,False

@@ -1,0 +1,73 @@
+SCRIPT 57 v2 — CORRECTED COORDINATE VALIDATION PATHWAY CLASSIFICATION
+==============================================================================
+
+This is a rule-based reclassification of the existing Script 57 evidence.
+It does not verify source URLs, validate coordinates, or approve locations.
+
+SUMMARY
+                                                     Metric  Value
+                                              Total records     19
+                             Valid primary coordinate pairs     13
+                           Valid secondary coordinate pairs     18
+                            Both coordinate pairs available     13
+                  Numerical coordinate comparisons possible     13
+Potential corroboration requiring source-level verification      4
+                                       Coordinate approvals      0
+                            Operational inclusion decisions      0
+   AIS-confirmed Hormuz transits established by this script      0
+
+VALIDATION PATHWAYS
+                                 Validation_Pathway_v2  Record_Count
+        APPROXIMATE_PORT_LOCATION_CORROBORATION_REVIEW             1
+           BERTH_IDENTITY_VERSUS_PLANT_LOCATION_REVIEW             1
+           BERTH_IDENTITY_WITHOUT_GEODETIC_COORDINATES             1
+               DIFFERENT_PORT_REFERENCE_RECONCILIATION             1
+           DISTINCT_TERMINAL_COORDINATE_RECONCILIATION             1
+                FACILITY_SCOPE_RECONCILIATION_REQUIRED             1
+           INDEPENDENT_NEARBY_PORT_LOCATION_COMPARISON             2
+            NAVIGATIONAL_BUOY_VERSUS_PORT_POINT_REVIEW             1
+           NEAR_IDENTICAL_PORT_LEVEL_COORDINATE_REVIEW             1
+            PARTIAL_PORT_LOCATION_CORROBORATION_REVIEW             1
+            PORT_BOUNDARY_PILOTAGE_VERSUS_POINT_REVIEW             1
+     PORT_LIMIT_POLYGON_VERSUS_COMMERCIAL_POINT_REVIEW             1
+              SAME_AUTHORITY_COORDINATE_RECONCILIATION             1
+      SAME_AUTHORITY_DIFFERING_POSITION_RECONCILIATION             1
+               SAME_OPERATOR_IDENTICAL_POSITION_REVIEW             1
+        SECONDARY_COORDINATE_CANDIDATE_PRIMARY_MISSING             1
+SECONDARY_REFERENCES_DIFFER_PRIMARY_COORDINATE_MISSING             1
+          UPPER_HARBOUR_VERSUS_KIAMARI_LOCALITY_REVIEW             1
+
+ORGANISATIONAL INDEPENDENCE
+                          Organizational_Independence_Class_v2  Record_Count
+POTENTIALLY_DIFFERENT_ORGANIZATIONS_NOT_YET_PROVEN_INDEPENDENT            16
+                                SAME_AUTHORITY_NOT_INDEPENDENT             2
+                                 SAME_OPERATOR_NOT_INDEPENDENT             1
+
+RECORD-LEVEL INTERPRETATION
+AEAUH | Abu Dhabi | FACILITY_SCOPE_RECONCILIATION_REQUIRED | UN/LOCODE multimodal location point and commercial port-location point are not yet shown to represent the same port facility.
+AEFJR | Fujairah | SAME_AUTHORITY_COORDINATE_RECONCILIATION | Both source records are associated with Fujairah Ports Authority; compare positions, but do not count them as independent corroboration.
+AEKLF | Khor Fakkan | PARTIAL_PORT_LOCATION_CORROBORATION_REVIEW | Evidence indicates partial location corroboration with differing coordinates; exact reference-point scope remains unresolved.
+AERKT | Ras Al Khaimah | DIFFERENT_PORT_REFERENCE_RECONCILIATION | The primary record refers to Ras Al Khaimah port limits/main breakwater while the secondary point refers to Mina Saqr; these are not corroborating points for one facility.
+AESHJ | Sharjah | NAVIGATIONAL_BUOY_VERSUS_PORT_POINT_REVIEW | The primary coordinate is a fairway buoy position, not a port or terminal coordinate; keep it separate from the secondary port-location candidate.
+BHKBS | Khalifa Bin Salman Port | APPROXIMATE_PORT_LOCATION_CORROBORATION_REVIEW | Government and operator coordinates are close enough to warrant port-level comparison; retain the noted operator-source outlier for review.
+INHZA | Hazira | NEAR_IDENTICAL_PORT_LEVEL_COORDINATE_REVIEW | Government maritime-board and port-source coordinates are near-identical at the stated port-level scope; independently verify source provenance and point definitions.
+INIXY | Deendayal Port (Kandla) | SAME_AUTHORITY_DIFFERING_POSITION_RECONCILIATION | Both records are from Deendayal Port Authority and describe port-level location, but publish differing positions; this is not independent corroboration.
+INPPV | Pipavav | SAME_OPERATOR_IDENTICAL_POSITION_REVIEW | The two coordinate records agree, but both are associated with the APM operator; agreement is not independent corroboration.
+IQUQR | Umm Qasr | DISTINCT_TERMINAL_COORDINATE_RECONCILIATION | The two coordinates refer to distinct terminals within Umm Qasr; retain terminal identity and do not treat the distance as a conflict between duplicate port points.
+KWSAA | Shuaiba Port | SECONDARY_COORDINATE_CANDIDATE_PRIMARY_MISSING | The primary authority evidence provides port identity/function but no coordinate; secondary point remains a candidate only.
+KWSWK | Shuwaikh Port | INDEPENDENT_NEARBY_PORT_LOCATION_COMPARISON | NGA nautical port position and independent gazetteer location are close; compare source definitions, datum and reference points.
+OMDQM | Duqm | PORT_BOUNDARY_PILOTAGE_VERSUS_POINT_REVIEW | Primary evidence concerns port limits and pilot stations, while the secondary evidence is a commercial port-location point; do not derive a port point from a boundary polygon.
+PKKIA | Kiamari / Karachi Harbour | UPPER_HARBOUR_VERSUS_KIAMARI_LOCALITY_REVIEW | The primary navigational reference for Karachi Upper Harbour and the secondary Kiamari locality point are different reference objects.
+QAQAP | QAPCO | BERTH_IDENTITY_VERSUS_PLANT_LOCATION_REVIEW | Primary evidence identifies terminal berths while the secondary coordinate is an industrial plant location; the plant point cannot validate berth coordinates.
+QAQCH | Q-Chem | BERTH_IDENTITY_WITHOUT_GEODETIC_COORDINATES | Berth identity/relative-location evidence is present, but geodetic coordinate pairs are not established; berth numbering also requires reconciliation.
+QAUMS | Umm Sa'id (Mesaieed) | PORT_LIMIT_POLYGON_VERSUS_COMMERCIAL_POINT_REVIEW | The primary evidence is a port-limit polygon, not a point coordinate; do not substitute a polygon centroid for a validated port location.
+SADMM | King Abdulaziz Port (Dammam) | INDEPENDENT_NEARBY_PORT_LOCATION_COMPARISON | NGA nautical port position and an independent port-list position are close; compare reference-point definitions and source provenance.
+SAJUB | Jubail Commercial Port | SECONDARY_REFERENCES_DIFFER_PRIMARY_COORDINATE_MISSING | No coordinate-bearing Mawani primary point is available in the register, and the secondary location references differ; retain as unresolved.
+
+LIMITATIONS
+- Organisational independence is not the same as independent coordinate corroboration.
+- Numerical coordinate comparison is not proof of same-facility identity.
+- Distinct terminals within one port must remain terminal-specific.
+- Port boundaries, pilot stations, buoys, berths and plant points are not interchangeable.
+- Script 49 eligibility and Script 53 evidence status are preserved, not overridden.
+- Researcher validation, coordinate approval and operational inclusion remain pending.

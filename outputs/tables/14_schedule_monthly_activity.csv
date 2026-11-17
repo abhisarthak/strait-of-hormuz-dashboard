@@ -1,0 +1,6 @@
+Dataset,Arrival_Month,Port_Call_Count,Unique_Vessels,Unique_Ports,Mean_Port_Stay_Hours
+Schedule,2026-07,3,3,3,24.472222222222225
+Schedule,2026-08,195,91,17,31.567264957264957
+Schedule,2026-09,210,99,17,29.703888888888887
+Schedule,2026-10,209,101,17,30.63572567783094
+Schedule,2026-11,1,1,1,29.616666666666667

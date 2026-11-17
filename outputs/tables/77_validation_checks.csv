@@ -1,0 +1,16 @@
+Check_ID,Description,Passed,Observed,Expected,Overall_Status
+SOURCE_SCENARIOS,Expected 17 disruption scenarios,True,17,17,PASS
+SOURCE_POLICIES,Expected five recovery policies,True,5,5,PASS
+SOURCE_CALLS_AND_VESSELS,Each scenario-policy group contains 604 calls and 155 vessels,True,calls=604..604; vessels=155..155,604 calls; 155 vessels per group,PASS
+UNIQUE_SOURCE_KEYS,Scenario-policy-call keys are unique,True,0,0,PASS
+RECURRENCE,Delay recurrence reconciles for every vessel call,True,0,0,PASS
+ELAPSED_INTERVAL_CAP,Recovery never exceeds observed inter-call elapsed cap,True,0,0,PASS
+AVAILABLE_DELAY_CAP,Recovery never exceeds delay available before recovery,True,0,0,PASS
+NONNEGATIVE,Recovery and resulting delays are non-negative,True,0,0,PASS
+FIRST_CALL,No recovery is applied to a vessel's first call,True,0,0,PASS
+NO_RECOVERY_IDENTITY,No-recovery policy remains unchanged,True,0,0,PASS
+SOURCE_KEY_RECONCILIATION,Script77 records reconcile one-to-one with Script76,True,0,0,PASS
+NO_DELAY_DECREASE_VS_76,Restricting recovery cannot produce less delay than Script76,True,0,0,PASS
+OUTPUT_CALL_ROWS,"Call-level output has 51,340 records",True,51340,51340,PASS
+OUTPUT_VESSEL_ROWS,"Vessel-level output has 13,175 records",True,13175,13175,PASS
+SUMMARY_ROWS,Summary has 85 scenario-policy combinations,True,85,85,PASS

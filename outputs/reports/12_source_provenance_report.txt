@@ -1,0 +1,59 @@
+==========================================================================================
+SCRIPT 12: SOURCE PROVENANCE AND SERVICE-CODE INVESTIGATION
+==========================================================================================
+
+INPUT DATA DIMENSIONS
+------------------------------------------------------------------------------------------
+Original Excel: (1894, 20)
+Integrated CSV: (1894, 39)
+Candidate records: 14
+Candidate groups: 7
+
+SOURCE ROW VERIFICATION
+------------------------------------------------------------------------------------------
+Verification_Status
+ALL_CHECKED_FIELDS_MATCH    14
+
+FIELD-LEVEL VERIFICATION
+------------------------------------------------------------------------------------------
+Match_Status
+MATCH    210
+
+GROUP CLASSIFICATION
+------------------------------------------------------------------------------------------
+Candidate_Group_ID     IMO      Vessel_Name Service_Codes  All_Source_Rows_Verified                                     Classification                     Resolution_Status
+         EXACT_001 9235531  MAERSK VIRGINIA     34A | E4X                      True SOURCE_VERIFIED_EXACT_MATCH_DIFFERENT_SERVICE_CODE PENDING_SERVICE_CODE_SEMANTICS_REVIEW
+         EXACT_002 9263320        SLS Topaz     308 | M03                      True SOURCE_VERIFIED_EXACT_MATCH_DIFFERENT_SERVICE_CODE PENDING_SERVICE_CODE_SEMANTICS_REVIEW
+         EXACT_003 9305300      MAERSK UTAH     34A | 409                      True SOURCE_VERIFIED_EXACT_MATCH_DIFFERENT_SERVICE_CODE PENDING_SERVICE_CODE_SEMANTICS_REVIEW
+         EXACT_004 9313917 Maersk Baltimore     34A | 599                      True SOURCE_VERIFIED_EXACT_MATCH_DIFFERENT_SERVICE_CODE PENDING_SERVICE_CODE_SEMANTICS_REVIEW
+         EXACT_005 9332975   MAERSK CHICAGO     599 | 600                      True SOURCE_VERIFIED_EXACT_MATCH_DIFFERENT_SERVICE_CODE PENDING_SERVICE_CODE_SEMANTICS_REVIEW
+         EXACT_006 9406960         GFS ROJA     35Q | Y99                      True SOURCE_VERIFIED_EXACT_MATCH_DIFFERENT_SERVICE_CODE PENDING_SERVICE_CODE_SEMANTICS_REVIEW
+         EXACT_007 9565338        GSL ROSSI     34B | M03                      True SOURCE_VERIFIED_EXACT_MATCH_DIFFERENT_SERVICE_CODE PENDING_SERVICE_CODE_SEMANTICS_REVIEW
+
+SERVICE-CODE INVESTIGATION
+------------------------------------------------------------------------------------------
+Candidate_Group_ID  Source_Row_Number Carrier_Code Carrier_Service_Code            Carrier_Service_Name  Global_Service_Code_Record_Count  Global_Unique_Service_Names  Global_Unique_Carrier_Codes
+         EXACT_001               1239         MAEU                  34A              KHOR FAKKAN FEEDER                                65                            1                            1
+         EXACT_001               1240         MAEU                  E4X             MED-WCA EXTRALOADER                                 4                            1                            1
+         EXACT_002               1100         MAEU                  308 FAR EAST- INDIAN SUBCONTINENT 2                                 1                            1                            1
+         EXACT_002               1101         MAEU                  M03                      SHUTTLE M3                                77                            1                            1
+         EXACT_003               1314         MAEU                  34A              KHOR FAKKAN FEEDER                                65                            1                            1
+         EXACT_003               1315         MAEU                  409                JED-EMED-SHUTTLE                                11                            1                            1
+         EXACT_004               1275         MAEU                  34A              KHOR FAKKAN FEEDER                                65                            1                            1
+         EXACT_004               1277         MAEU                  599               EXTRALOADER (WCA)                                38                            1                            1
+         EXACT_005                950         MAEU                  599               EXTRALOADER (WCA)                                38                            1                            1
+         EXACT_005                951         MAEU                  600                            MECL                               125                            1                            1
+         EXACT_006                 44         MAEU                  35Q        35Q GFS SLV - DJI FEEDER                                57                            1                            1
+         EXACT_006                 45         MAEU                  Y99          GFS KFK PQ1 FJR FEEDER                                12                            1                            1
+         EXACT_007               1107         MAEU                  34B                    SOHAR FEEDER                                91                            1                            1
+         EXACT_007               1108         MAEU                  M03                      SHUTTLE M3                                77                            1                            1
+
+METHODOLOGICAL NOTES
+------------------------------------------------------------------------------------------
+1. Source row verification uses the original Excel data-row position corresponding to Script 11 Source_Row_Number.
+2. This positional verification assumes that the integrated CSV preserved the original schedule row order.
+3. The Excel physical row number is the data-row position plus one, assuming a single header row.
+4. Timestamp values are normalized to UTC before comparison.
+5. Service-code statistics describe associations in the available schedule dataset. They do not establish the formal meaning of a service code.
+6. Exact matching records are not automatically treated as confirmed erroneous duplicates.
+7. No original records were deleted or modified.

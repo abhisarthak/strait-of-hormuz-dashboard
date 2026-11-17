@@ -1,0 +1,57 @@
+========================================================================================
+SCRIPT 61: SIMULATION NETWORK INTEGRATION READINESS AUDIT
+========================================================================================
+
+SOURCE FILE COUNTS
+- outputs/tables/21_port_network_metrics.csv: 19 rows, 11 columns
+- outputs/tables/21_port_connection_metrics.csv: 53 rows, 13 columns
+- data/simulation_inputs/19_observed_interport_transitions.csv: 271 rows, 72 columns
+- data/simulation_inputs/19_interport_time_parameters.csv: 53 rows, 11 columns
+- data/simulation_inputs/19_port_parameters.csv: 19 rows, 21 columns
+- data/simulation_inputs/19_port_service_parameters.csv: 19 rows, 11 columns
+- data/simulation_inputs/19_vessel_parameters.csv: 155 rows, 15 columns
+- data/simulation_inputs/19_historical_arrival_schedule.csv: 604 rows, 16 columns
+- outputs/tables/59_operational_network_eligibility_register_v2.csv: 19 rows, 88 columns
+
+NETWORK SNAPSHOT
+- Existing network nodes: 19
+- Existing directed edges: 53
+- Observed transition records: 271
+- Unique observed transition pairs: 53
+- Historical schedule records: 604
+- Unique vessels in schedule: 155
+
+SCRIPT 59 CROSSWALK
+- Eligibility-register locations: 19
+- Already present in observed network: 12
+- Not present in observed network: 7
+- Empirical baseline admissions: 0
+- Sensitivity model admissions: 0
+- Independently verified AIS Hormuz transit flags: 0
+
+LOCATIONS IN SCRIPT 59 NOT PRESENT IN THE OBSERVED NETWORK
+AERKT, INHZA, INIXY, INPPV, PKKIA, QAQAP, QAUMS
+
+VALIDATION CHECKS
+                                              Check Status                                          Observed                   Expected                                                              Interpretation
+                    Unique network node identifiers   PASS                                                19                         19             Each network node row should have a unique non-empty UN/LOCODE.
+     Network nodes match port parameter identifiers   PASS                                                19    19 matching identifiers                    Checks node inventory against Script 19 port parameters.
+       Network nodes match port service identifiers   PASS                                                19    19 matching identifiers            Checks node inventory against Script 19 port service parameters.
+    Historical schedule uses existing network nodes   PASS                                                 0                          0         Any schedule location outside the existing network requires review.
+     Network edges match inter-port parameter pairs   PASS                                                53 53 matching directed pairs                         Direction is preserved: Previous_Port to Next_Port.
+      Network edges match observed transition pairs   PASS                                                53 53 matching directed pairs         Pair presence does not mean every edge has equal evidence strength.
+                         Unique directed edge pairs   PASS                                                53                         53         No duplicate directed pairs should exist in the network edge table.
+    Observed transition endpoints are network nodes   PASS                                                 0                          0       All observed transition endpoints should map to the network node set.
+Schedule vessel identifiers match vessel parameters   PASS                                                 0                          0          Checks schedule IMOs against the Script 19 vessel parameter table.
+      Historical schedule record identifiers unique   PASS                                               604                        604         Each historical schedule record should have a unique simulation ID.
+           Historical schedule timestamp chronology   PASS negative durations=0; missing/unparseable pairs=0                       0; 0              This checks timestamp validity, not route or transit validity.
+        Stored stay hours reconcile with timestamps   PASS                                                 0                          0               Tolerance is 0.02 hours to allow rounding in stored duration.
+    Script 59 candidate register unique identifiers   PASS                                                19                         19                       Script 59 must contain one decision row per location.
+            Script 59 empirical baseline admissions   PASS                                                 0                          0 No candidate is admitted to the empirical baseline in the current register.
+                   Script 59 sensitivity admissions   PASS                                                 0                          0  No candidate is admitted to the sensitivity model in the current register.
+    Independently verified AIS Hormuz transit flags   PASS                                                 0                          0     No AIS-confirmed Hormuz transit is established by the current register.
+
+INTERPRETATION AND LIMITATIONS
+A PASS indicates structural consistency among the supplied files; it does not validate real-world sailing routes, berth capacity, physical feasibility, port coordinates, geopolitical accessibility, or actual Strait of Hormuz transit. Observed inter-port elapsed time is not pure sailing time. Script 59 currently admits no additional location to either the empirical baseline or sensitivity model. The integration manifests are review artifacts only and do not alter the existing network or simulation inputs.
+
+OVERALL STRUCTURAL AUDIT: PASS

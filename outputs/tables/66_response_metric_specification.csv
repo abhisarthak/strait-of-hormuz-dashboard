@@ -1,0 +1,12 @@
+Metric_ID_66,Metric_Name_66,Operational_Definition_66,Unit_66,Role_66,Interpretation_Guardrail_66
+M01,Call-level accumulated delay,Sum of delay across affected calls in the defined analysis window,Hours,Primary schedule-impact metric,Not unique-vessel delay; disclose call weighting.
+M02,Final vessel delay,Delay at the final observed/simulated call for each vessel,Hours,Vessel-level impact,"Report distribution across vessels, not only maximum."
+M03,Maximum vessel delay,"Maximum final or accumulated vessel delay, clearly specified",Hours,Tail-impact metric,Sensitive to late-window disruption onset.
+M04,Peak concurrent calls,Maximum simultaneous active calls in the defined network/window,Calls,Network activity indicator,Not berth occupancy or validated congestion.
+M05,Time above concurrency threshold,Duration network concurrency exceeds a predeclared threshold,Hours,Network activity persistence,Threshold must be justified and is not berth capacity.
+M06,Recovery completion time,Time from disruption onset until the selected recovery criterion is met,Hours,Recovery performance,Define criterion before running experiments.
+M07,Unrecovered calls/vessels,Count remaining outside the recovery criterion at the end of the window,Count,Residual impact,Define denominator and treatment of right-censoring.
+M08,Port-level delay distribution,Delay summarized by port using consistent aggregation,Hours,Spatial heterogeneity,Distinguish per-port mean from pooled network mean.
+M09,Scenario feasibility flags,Count of decisions violating explicitly modelled constraints,Count,Model feasibility,Only meaningful if constraints and operational evidence exist.
+M10,Economic impact,"Cost of delay, diversion, fuel or service disruption",Currency / unit,Optional future outcome,Not computable without defensible cost and route/fuel inputs.
+M11,Emissions impact,"Change in emissions from additional time, speed or rerouting",CO2e,Optional future sustainability outcome,"Not computable without vessel, fuel, speed and route data."

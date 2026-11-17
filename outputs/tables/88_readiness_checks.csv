@@ -1,0 +1,12 @@
+Check,Passed,Observed,Expected,Interpretation
+Primary mechanism exists exactly once,True,1,1,The selected mechanism must map to one Script68 mechanism row.
+Script68 edge register contains 53 directed edges,True,53,53,Structural coverage only; not exposure approval.
+Script68 port register contains 19 ports,True,19,19,Structural coverage only; not port exposure approval.
+All edge exposure approvals remain false,True,0,0,Script88 must not silently approve any edge.
+All port exposure approvals remain false,True,0,0,Port disruption is outside the selected primary mechanism.
+All Script68 experiment scopes remain unapproved,True,0,0,Mechanism selection is not execution authorization.
+No Script65 final edge parameter values selected,True,0,0,Observed quantiles remain descriptive references.
+Pilot Script75 scenario grid has 17 rows,True,17,17,Pilot design inventory check.
+Pilot Script76 scenario-policy grid has 85 rows,True,85,85,Pilot design inventory check.
+Pilot Script77 scenario-policy grid has 85 rows,True,85,85,Pilot design inventory check.
+All five recovery policies exist,True,5,5,"Policy identities are inherited from Script76, not validated operational capabilities."

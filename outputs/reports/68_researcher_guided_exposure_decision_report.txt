@@ -1,0 +1,50 @@
+================================================================================
+SCRIPT 68: RESEARCHER-GUIDED EXPOSURE DECISION AND SCENARIO SCOPE REGISTER
+================================================================================
+
+INPUT COUNTS
+Directed network edges: 53
+Ports: 19
+Mechanisms: 4
+Experiment templates: 5
+Script59 crosswalk records: 19
+
+OUTPUT REGISTER COUNTS
+Mechanism decision rows: 4
+Edge decision rows: 53
+Port decision rows: 19
+Experiment scope rows: 5
+
+READINESS CHECKS
+Passed: 15/15
+
+RESEARCHER DECISION DEFAULTS
+Edge decisions pending: 53
+Port decisions pending: 19
+Mechanism decisions pending: 4
+Experiment scope decisions pending: 5
+Edge exposure approvals: 0
+Port disruption approvals: 0
+Experiment scope approvals: 0
+
+CONSERVATIVE MECHANISM GUIDANCE
+- Transit elapsed-time shock: possible hypothetical sensitivity only after defining elapsed-time interpretation,
+  magnitude, unit and affected edge/vessel scope.
+- Network access restriction: blocked until a validated geographic route graph and feasible alternatives exist.
+- Port service disruption: requires definition of the disrupted service process; observed port stay is not
+  berth processing time and port/berth capacity evidence is unavailable.
+- Compound mechanism: deferred until each component is defined and separately assessed.
+
+INTERPRETATION
+This script creates researcher-editable decision registers. It does not make scientific, operational,
+geographic, geopolitical, or exposure approvals. A pending decision is not an approval.
+Historical consecutive port-call relationships are not validated physical sailing routes.
+Observed inter-port elapsed time is not pure sailing time. Observed port stay is not berth processing time.
+Descriptive baseline inclusion, operational eligibility, and hypothetical exposure approval are distinct gates.
+
+ACTUAL HORMUZ TRANSIT ESTABLISHED: NO
+AIS-CONFIRMED HORMUZ TRANSIT ESTABLISHED: NO
+HYPOTHETICAL EXPOSURE APPROVALS: NONE
+DISRUPTION MAGNITUDES SELECTED: NONE
+SOURCE FILES MODIFIED: NO
+SIMULATION INPUTS MODIFIED: NO

@@ -1,0 +1,69 @@
+﻿UN_LOCODE,Field,Original_Value,Batch1_Value,Batch5_Value,Merge_Status
+AEAUH,Source_Content_Review_Status,,IN_PROGRESS,,RESTORED_FROM_BATCH1
+AEAUH,Primary_Source_Content_Verified,,PARTIAL,,RESTORED_FROM_BATCH1
+AEAUH,Secondary_Source_Content_Verified,,NOT_AVAILABLE,,RESTORED_FROM_BATCH1
+AEAUH,Port_Identity_Claim_Verified,,PARTIAL,,RESTORED_FROM_BATCH1
+AEAUH,Facility_Identity_Claim_Verified,,PARTIAL,,RESTORED_FROM_BATCH1
+AEAUH,Geographic_Claim_Verified,,PARTIAL,,RESTORED_FROM_BATCH1
+AEAUH,Coordinate_Claim_Verified,,NO,,RESTORED_FROM_BATCH1
+AEAUH,Operational_Role_Claim_Verified,,PARTIAL,,RESTORED_FROM_BATCH1
+AEAUH,Verified_Claims,,"The official Abu Dhabi Ports Company Port Management Byelaws (January 2011), Schedule 1, lists separate controlled ports including Mina Khalifa, Mina Zayed and Mussafah and specifies their port limits. This supports the existence of multiple distinct port facilities within the Abu Dhabi port system.",,RESTORED_FROM_BATCH1
+AEAUH,Unsupported_or_Contradictory_Claims,,The sources reviewed do not identify which specific facility handled the 24 AEAUH source calls / 10 vessels in the register. The broad AEAUH record cannot be assigned a single facility coordinate from the byelaw. The byelaw is dated 2011 and should not alone be treated as proof of current facility configuration.,,RESTORED_FROM_BATCH1
+AEAUH,Source_Content_Review_Conclusion,,PARTIALLY_SUPPORTED,,RESTORED_FROM_BATCH1
+AEAUH,Source_Strength_Assessment,,HIGH_FOR_EXISTENCE_OF_MULTIPLE_ABU_DHABI_PORTS; INSUFFICIENT_FOR_AEAUH_FACILITY_ATTRIBUTION,,RESTORED_FROM_BATCH1
+AEAUH,Additional_Source_Required,,YES,,RESTORED_FROM_BATCH1
+AEAUH,Researcher_Review_Status,,AI_ASSISTED_REVIEW_PENDING_RESEARCHER_CONFIRMATION,,RESTORED_FROM_BATCH1
+AEAUH,Researcher_Reviewer,,,,BATCH1_UNCHANGED
+AEAUH,Researcher_Review_Date,,2026-11-15,,RESTORED_FROM_BATCH1
+AEAUH,Researcher_Review_Notes,,"Reviewed the official ADPC Port Management Byelaws, Schedule 1 (pp. 50-53 of printed pagination / PDF pages 55-58). It enumerates Mina Khalifa, Mina Zayed and Mussafah separately and defines port limits. This validates a multi-facility Abu Dhabi port system, not the facility represented by AEAUH calls. Do not approve a single AEAUH coordinate or create a facility-level node until call-to-facility mapping is established. Official source: https://www.adports.ae/ar/wp-content/uploads/sites/11/2026/02/20110512_Marine-Notice-No.-04-2011-ADPC-Port-Management-Byelaw.pdf",,RESTORED_FROM_BATCH1
+AEFJR,Source_Content_Review_Status,,IN_PROGRESS,,RESTORED_FROM_BATCH1
+AEFJR,Primary_Source_Content_Verified,,YES,,RESTORED_FROM_BATCH1
+AEFJR,Secondary_Source_Content_Verified,,NOT_AVAILABLE,,RESTORED_FROM_BATCH1
+AEFJR,Port_Identity_Claim_Verified,,YES,,RESTORED_FROM_BATCH1
+AEFJR,Facility_Identity_Claim_Verified,,PARTIAL,,RESTORED_FROM_BATCH1
+AEFJR,Geographic_Claim_Verified,,YES,,RESTORED_FROM_BATCH1
+AEFJR,Coordinate_Claim_Verified,,PARTIAL,,RESTORED_FROM_BATCH1
+AEFJR,Operational_Role_Claim_Verified,,PARTIAL,,RESTORED_FROM_BATCH1
+AEFJR,Verified_Claims,,"Fujairah Ports Authority's official Location page identifies the Port of Fujairah and publishes 25.161215 N, 56.3658 E. Its official Navigational Information page separately gives the Port of Fujairah reference 25°10.2′N, 56°21.6′E (25.170000 N, 56.360000 E). Both sources support the port identity and its geographic location.",,RESTORED_FROM_BATCH1
+AEFJR,Unsupported_or_Contradictory_Claims,,The two official coordinate references differ by approximately 1.1 km. The sources inspected do not establish that they refer to the same physical reference point or to a particular terminal. They must not be averaged or treated as interchangeable. The source-call terminal mapping remains unresolved; neither reference establishes a vessel's Strait transit.,,RESTORED_FROM_BATCH1
+AEFJR,Source_Content_Review_Conclusion,,PARTIALLY_SUPPORTED,,RESTORED_FROM_BATCH1
+AEFJR,Source_Strength_Assessment,,HIGH_FOR_PORT_IDENTITY_AND_GENERAL_LOCATION; COORDINATE_REFERENCE_REQUIRES_RECONCILIATION,,RESTORED_FROM_BATCH1
+AEFJR,Additional_Source_Required,,YES,,RESTORED_FROM_BATCH1
+AEFJR,Researcher_Review_Status,,AI_ASSISTED_REVIEW_PENDING_RESEARCHER_CONFIRMATION,,RESTORED_FROM_BATCH1
+AEFJR,Researcher_Reviewer,,,,BATCH1_UNCHANGED
+AEFJR,Researcher_Review_Date,,2026-11-15,,RESTORED_FROM_BATCH1
+AEFJR,Researcher_Review_Notes,,"Two official Fujairah Ports Authority pages were inspected. Location page: https://fujairahport.ae/port-overview/location/ (25.161215, 56.3658). Navigational Information: https://fujairahport.ae/marine-centre/navigational-information/ (25°10.2′N, 56°21.6′E). Converted second reference is 25.170000, 56.360000. Approximate separation is 1.1 km. Keep Coordinate_Validation_Status as PENDING_RECONCILIATION; do not choose or average coordinates until their reference-point definitions are confirmed.",,RESTORED_FROM_BATCH1
+AEKLF,Source_Content_Review_Status,,IN_PROGRESS,,RESTORED_FROM_BATCH1
+AEKLF,Primary_Source_Content_Verified,,YES,,RESTORED_FROM_BATCH1
+AEKLF,Secondary_Source_Content_Verified,,YES,,RESTORED_FROM_BATCH1
+AEKLF,Port_Identity_Claim_Verified,,YES,,RESTORED_FROM_BATCH1
+AEKLF,Facility_Identity_Claim_Verified,,PARTIAL,,RESTORED_FROM_BATCH1
+AEKLF,Geographic_Claim_Verified,,YES,,RESTORED_FROM_BATCH1
+AEKLF,Coordinate_Claim_Verified,,PARTIAL,,RESTORED_FROM_BATCH1
+AEKLF,Operational_Role_Claim_Verified,,PARTIAL,,RESTORED_FROM_BATCH1
+AEKLF,Verified_Claims,,"Sharjah Ports Authority identifies Port Khorfakkan as a container terminal on the UAE's east coast. The Maritime Database page identifies Khor Fakkan, names Sharjah Port Authority, lists UNCTAD code AEKLF and publishes 25°20.0′N, 056°21.0′E.",,RESTORED_FROM_BATCH1
+AEKLF,Unsupported_or_Contradictory_Claims,,"The coordinate is published by a secondary maritime database, not by the official Sharjah Ports Authority page inspected. The database does not clearly define whether the point is a port centroid, terminal point, or another reference. The source-call-to-terminal mapping is not established. The role as a regional approach port is a research classification, not proof of actual Hormuz transit.",,RESTORED_FROM_BATCH1
+AEKLF,Source_Content_Review_Conclusion,,PARTIALLY_SUPPORTED,,RESTORED_FROM_BATCH1
+AEKLF,Source_Strength_Assessment,,HIGH_FOR_PORT_IDENTITY_AND_EAST_COAST_LOCATION; MODERATE_FOR_CODE_AND_COORDINATE_CANDIDATE; COORDINATE_SCOPE_UNSPECIFIED,,RESTORED_FROM_BATCH1
+AEKLF,Additional_Source_Required,,YES,,RESTORED_FROM_BATCH1
+AEKLF,Researcher_Review_Status,,AI_ASSISTED_REVIEW_PENDING_RESEARCHER_CONFIRMATION,,RESTORED_FROM_BATCH1
+AEKLF,Researcher_Reviewer,,,,BATCH1_UNCHANGED
+AEKLF,Researcher_Review_Date,,2026-11-15,,RESTORED_FROM_BATCH1
+AEKLF,Researcher_Review_Notes,,"Official Sharjah Ports Authority page states that Port Khorfakkan is a container terminal on the UAE east coast: https://sharjahports.gov.ae/. Secondary Maritime Database page identifies UNCTAD AEKLF and gives 25°20.0′N, 056°21.0′E: https://maritime-database.com/ports/united-arab-emirates/khor-fakkan. Retain coordinate status PENDING. Seek an official port plan, nautical publication, or authority document defining the coordinate reference and confirm which facility the source calls represent.",,RESTORED_FROM_BATCH1
+AERKT,Source_Content_Review_Status,,IN_PROGRESS,,RESTORED_FROM_BATCH1
+AERKT,Primary_Source_Content_Verified,,YES,,RESTORED_FROM_BATCH1
+AERKT,Secondary_Source_Content_Verified,,NOT_AVAILABLE,,RESTORED_FROM_BATCH1
+AERKT,Port_Identity_Claim_Verified,,PARTIAL,,RESTORED_FROM_BATCH1
+AERKT,Facility_Identity_Claim_Verified,,NO,,RESTORED_FROM_BATCH1
+AERKT,Geographic_Claim_Verified,,PARTIAL,,RESTORED_FROM_BATCH1
+AERKT,Coordinate_Claim_Verified,,NO,,RESTORED_FROM_BATCH1
+AERKT,Operational_Role_Claim_Verified,,PARTIAL,,RESTORED_FROM_BATCH1
+AERKT,Verified_Claims,,"RAK Ports' official website identifies several distinct facilities, including Saqr Port, Ras Al Khaimah Port, Al Jazeera Port and Al Jeer Port. The RAK Ports vessel guide is explicitly titled for Saqr Port Deep-Water Bulk Terminal. It gives the terminal's approximate coordinates as 25°58.855′N, 056°02.784′E and separately identifies a pilot boarding ground at 26°01.803′N, 056°00.212′E.",,RESTORED_FROM_BATCH1
+AERKT,Unsupported_or_Contradictory_Claims,,"The evidence does not establish that AERKT represents Saqr Port or any other named RAK Ports facility. The Saqr terminal coordinate and pilot boarding ground cannot be assigned to the broad AERKT record. The AERKT record is not present in the Script 21 observed network, so its network role and operational inclusion remain unestablished.",,RESTORED_FROM_BATCH1
+AERKT,Source_Content_Review_Conclusion,,PARTIALLY_SUPPORTED,,RESTORED_FROM_BATCH1
+AERKT,Source_Strength_Assessment,,HIGH_FOR_MULTIPLE_RAK_PORTS_FACILITIES_AND_SAQR_TERMINAL_DETAILS; INSUFFICIENT_FOR_AERKT_FACILITY_ATTRIBUTION,,RESTORED_FROM_BATCH1
+AERKT,Additional_Source_Required,,YES,,RESTORED_FROM_BATCH1
+AERKT,Researcher_Review_Status,,AI_ASSISTED_REVIEW_PENDING_RESEARCHER_CONFIRMATION,,RESTORED_FROM_BATCH1
+AERKT,Researcher_Reviewer,,,,BATCH1_UNCHANGED
+AERKT,Researcher_Review_Date,,2026-11-15,,RESTORED_FROM_BATCH1
+AERKT,Researcher_Review_Notes,,"RAK Ports official website lists Al Jeer, Saqr, Ras Al Khaimah and Al Jazeera as distinct port locations: https://www.rakports.ae/. Its 2020 vessel guide explicitly applies to Saqr Port Deep-Water Bulk Terminal and reports terminal coordinates 25°58.855′N, 056°02.784′E; the pilot boarding ground is separately listed at 26°01.803′N, 056°00.212′E: https://www.rakports.ae/wp-content/uploads/2020/09/DWBT-Entry-and-Departure-Guide.pdf. These are not AERKT coordinates unless independent evidence maps AERKT to that specific facility. Keep operational inclusion and coordinate validation pending.",,RESTORED_FROM_BATCH1

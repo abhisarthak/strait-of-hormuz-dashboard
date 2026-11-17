@@ -1,0 +1,5 @@
+Dataset,Total_Records,Valid_Actual_Calls,Excluded_From_Actual_Analysis,Unique_Vessels,Unique_Ports,Unique_Services,Negative_Port_Stays,Same_Port_Transitions,Different_Port_Transitions,Negative_Inter_Port_Transitions,Zero_Inter_Port_Transitions,Positive_Inter_Port_Transitions,Mean_Port_Stay_Hours,Median_Port_Stay_Hours,P90_Port_Stay_Hours
+Schedule_Sequence_Ready,1887,611,1276,155,19,43,0,181,275,0,0,456,30.56126568466994,26.183333333333334,54.9
+Individual,617,424,193,33,68,20,0,32,359,0,0,391,29.623152515723273,26.041666666666664,51.90499999999999
+Schedule_Core,618,618,0,155,19,43,0,188,275,7,0,456,30.581445523193093,26.241666666666667,54.410000000000046
+Schedule_Conservative,604,604,0,155,19,42,0,178,271,0,0,449,30.540618101545252,26.083333333333332,54.935

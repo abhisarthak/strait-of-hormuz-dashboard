@@ -1,0 +1,14 @@
+Metric,Value
+Master row count,19
+Master column count,135
+Unique UN_LOCODE count,19
+Expected code coverage,19/19
+Missing expected codes,NONE
+Unexpected codes,NONE
+Records with high-priority flags,8
+Records with medium-priority flags,5
+Primary coordinate pairs present,13
+Primary coordinate pairs absent,6
+Secondary coordinate pairs present,18
+Coordinate validation still pending,19
+Coordinate confidence not assessed,19

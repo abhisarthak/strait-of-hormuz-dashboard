@@ -1,0 +1,12 @@
+Diagnostic,Value
+Sequence-ready Schedule input records,1887
+Valid actual port calls,611
+Unique vessels,155
+Unique ports,19
+Same-port transitions,181
+Different-port transitions,275
+Negative same-port transitions,0
+Negative different-port transitions,0
+Zero different-port transitions,0
+Positive different-port transitions,275
+Negative port stays,0

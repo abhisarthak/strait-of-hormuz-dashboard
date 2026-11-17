@@ -1,0 +1,8 @@
+VESSEL NAME NORMALIZATION VALIDATION
+============================================================
+Total active vessel records: 1847
+Unique IMO values: 1572
+IMOs with multiple normalized names: 0
+
+Genuine potential name conflicts:
+None detected.

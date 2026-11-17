@@ -1,0 +1,8 @@
+Check_ID,Description,Observed,Expected,Status
+C01,Canonical schedule contains 604 calls,604,604,PASS
+C02,Canonical schedule call IDs unique,604,604,PASS
+C03,Script80 provenance covers 449 intervals,449,449,PASS
+C04,Review queue IDs are unique,23,23,PASS
+C05,Data-directory file inventory includes at least canonical schedule,38,>=1,PASS
+C06,Every scanned file has a recorded scan status,38,38,PASS
+C07,Discovery process does not assign source verification,0,0,PASS

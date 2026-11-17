@@ -1,0 +1,63 @@
+SCRIPT 10: REPEATED CONSECUTIVE PORT CALL INVESTIGATION
+=====================================================================================
+Original schedule records: 1894
+Individual vessel records: 617
+
+REPEATED CONSECUTIVE CALL COUNTS
+ACTUAL: 188 repeated consecutive records
+ESTIMATED: 796 repeated consecutive records
+PLANNED: 799 repeated consecutive records
+
+CLASSIFICATION SUMMARY
+Investigation_Classification
+SAME_PORT_SAME_SERVICE_VOYAGE_CHANGE    1684
+SAME_LOCODE_DIFFERENT_SERVICE             78
+SAME_PORT_SAME_SERVICE_SAME_VOYAGE        21
+
+TOP PORTS WITH REPEATED CALL RECORDS
+Timestamp_Source Analysis_Port_Name Analysis_LOCODE  Repeated_Call_Records  Unique_Vessels
+       ESTIMATED            SALALAH           OMSLL                    528             107
+         PLANNED            SALALAH           OMSLL                    527             107
+       ESTIMATED             JEDDAH           SAJED                    160              38
+         PLANNED             JEDDAH           SAJED                    159              37
+          ACTUAL            SALALAH           OMSLL                    130              56
+       ESTIMATED        KHOR FAKKAN           AEKLF                     44              14
+         PLANNED        KHOR FAKKAN           AEKLF                     43              13
+         PLANNED KING ABDULLAH PORT           SAKAC                     28               9
+       ESTIMATED KING ABDULLAH PORT           SAKAC                     27               9
+          ACTUAL             JEDDAH           SAJED                     23               9
+         PLANNED          JEBEL ALI           AEJEA                     15              10
+          ACTUAL               DOHA           QADOH                     13               2
+       ESTIMATED          JEBEL ALI           AEJEA                     12               9
+         PLANNED               DOHA           QADOH                     11               2
+       ESTIMATED               DOHA           QADOH                     11               2
+
+TOP VESSELS WITH REPEATED CALL RECORDS
+Timestamp_Source Analysis_IMO Analysis_Vessel_Name  Repeated_Consecutive_Calls  Unique_Ports  Unique_LOCODES       First_Repeated_Call        Last_Repeated_Call
+       ESTIMATED      9164017               H ORCA                          30             1               1 2026-08-25 11:36:00+00:00 2027-04-25 14:00:00+00:00
+         PLANNED      9164017               H ORCA                          30             1               1 2026-08-15 13:00:00+00:00 2027-04-17 06:00:00+00:00
+         PLANNED      9333058           BSG BIMINI                          24             1               1 2026-08-22 22:00:00+00:00 2027-04-22 04:00:00+00:00
+         PLANNED      9263320            SLS TOPAZ                          24             1               1 2026-08-15 22:00:00+00:00 2027-04-15 04:00:00+00:00
+       ESTIMATED      9263320            SLS TOPAZ                          24             1               1 2026-08-15 20:00:00+00:00 2027-04-15 04:00:00+00:00
+       ESTIMATED      9333058           BSG BIMINI                          24             1               1 2026-08-22 22:00:00+00:00 2027-04-22 04:00:00+00:00
+         PLANNED      9333046         BSG BARBADOS                          21             1               1 2026-10-01 04:00:00+00:00 2027-04-29 04:00:00+00:00
+       ESTIMATED      9333046         BSG BARBADOS                          21             1               1 2026-10-01 12:30:00+00:00 2027-04-29 04:00:00+00:00
+       ESTIMATED      9385611            ARGOLIKOS                          19             1               1 2026-08-18 08:00:00+00:00 2027-04-26 20:15:00+00:00
+         PLANNED      9385611            ARGOLIKOS                          19             1               1 2026-08-17 22:00:00+00:00 2027-04-26 20:15:00+00:00
+         PLANNED      9450947          REN JIAN 26                          18             1               1 2026-08-24 22:00:00+00:00 2027-04-20 22:00:00+00:00
+         PLANNED      9231133         VOYAGER STAR                          18             1               1 2026-11-09 04:00:00+00:00 2027-03-08 04:00:00+00:00
+       ESTIMATED      9450947          REN JIAN 26                          18             1               1 2026-08-25 17:30:00+00:00 2027-04-20 22:00:00+00:00
+       ESTIMATED      9231133         VOYAGER STAR                          18             1               1 2026-11-09 04:00:00+00:00 2027-03-08 04:00:00+00:00
+       ESTIMATED      9230232           NOBLE STAR                          17             1               1 2026-09-17 10:00:00+00:00 2027-04-18 03:00:00+00:00
+
+EXACT REPRESENTATION CANDIDATES
+Candidate source rows: 32
+
+DATA GOVERNANCE
+1. All source records are retained.
+2. No automatic deletion or merging has been performed.
+3. Actual, estimated and planned sequences are analyzed separately.
+4. Same-port consecutive records are not automatically duplicates.
+5. Same LOCODE does not prove that two calls are the same event.
+6. Exact representation candidates require manual validation.
+7. Port-name and LOCODE differences require separate investigation.

@@ -1,0 +1,4 @@
+Dataset,Records,Unique_Vessels,Unique_Ports,Role
+Schedule Conservative,604,155,19,Primary historical baseline
+Schedule Core,618,155,19,Sensitivity comparison
+Individual Calls,424,33,68,Separate comparison population

@@ -1,0 +1,13 @@
+Check_ID,Description,Passed,Observed,Expected,Status
+CANONICAL_ROW_COUNT,Canonical baseline contains 604 calls,True,604,604,PASS
+UNIQUE_CALL_IDS,Canonical call IDs are unique,True,604,604,PASS
+UNIQUE_VESSELS,Canonical vessel count is 155,True,155,155,PASS
+TIMESTAMP_AVAILABILITY,All non-first links have both required timestamps,True,0,0,PASS
+ELAPSED_RECONCILIATION,Reconstructed elapsed intervals match Script77 within 0.02h,True,0,0,PASS
+NONNEGATIVE_ELAPSED,No negative reconstructed inter-call intervals,True,0,0,PASS
+SEQUENCE_LINK_COUNT,There are 449 non-first vessel sequence links,True,449,449,PASS
+SAME_PORT_LINK_COUNT,Same-port sequence links reconcile to 178,True,178,178,PASS
+DISTINCT_PORT_LINK_COUNT,Distinct-port transitions reconcile to 271,True,271,271,PASS
+FIRST_CALL_COUNT,There is one first call per vessel,True,155,155,PASS
+NO_SLACK_AUTOMATIC_APPROVAL,No interval is automatically approved as schedule slack,True,1,1,PASS
+NO_OPERATIONAL_RECOVERY_APPROVAL,No interval is automatically approved for operational recovery,True,1,1,PASS

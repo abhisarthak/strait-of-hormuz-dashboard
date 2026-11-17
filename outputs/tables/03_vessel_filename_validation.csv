@@ -1,0 +1,30 @@
+File,Filename_IMO,Internal_IMOs,Unique_Internal_IMOs,Rows,Filename_Matches_Internal,Validation_Status
+individual_vessels/9431692.csv,9431692,9431692,1,7,True,MATCH
+individual_vessels/9307011.csv,9307011,9222974; 9307011,2,31,True,MULTIPLE_IMOS_FILENAME_PRESENT
+individual_vessels/9224506.csv,9224506,9224506,1,6,True,MATCH
+individual_vessels/9732321.csv,9732321,9732321,1,19,True,MATCH
+individual_vessels/9948798.csv,9948798,9948798,1,29,True,MATCH
+individual_vessels/9525912.csv,9525912,9525912,1,21,True,MATCH
+individual_vessels/9708813.csv,9708813,9708813,1,12,True,MATCH
+individual_vessels/9233648.csv,9233648,9233648,1,20,True,MATCH
+individual_vessels/9732357.csv,9732357,9732357,1,11,True,MATCH
+individual_vessels/9260914.csv,9260914,9260914,1,36,True,MATCH
+individual_vessels/9253002.csv,9253002,9253002,1,14,True,MATCH
+individual_vessels/9315020.csv,9315020,9315020; 9491472,2,83,True,MULTIPLE_IMOS_FILENAME_PRESENT
+individual_vessels/9306079.csv,9306079,9301081; 9306079,2,39,True,MULTIPLE_IMOS_FILENAME_PRESENT
+individual_vessels/9708863.csv,9708863,9708863,1,16,True,MATCH
+individual_vessels/9525924.csv,9525924,9525924,1,21,True,MATCH
+individual_vessels/9732319.csv,9732319,9732319,1,15,True,MATCH
+individual_vessels/9349497.csv,9349497,9349497,1,33,True,MATCH
+individual_vessels/9708825.csv,9708825,9708825,1,15,True,MATCH
+individual_vessels/9732307.csv,9732307,9321483; 9732307,2,23,True,MULTIPLE_IMOS_FILENAME_PRESENT
+individual_vessels/9948803.csv,9948803,9948803; 9984572,2,38,True,MULTIPLE_IMOS_FILENAME_PRESENT
+individual_vessels/9708875.csv,9708875,9708875,1,7,True,MATCH
+individual_vessels/9634672.csv,9634672,9539482; 9634672,2,8,True,MULTIPLE_IMOS_FILENAME_PRESENT
+individual_vessels/9349538.csv,9349538,9349538,1,27,True,MATCH
+individual_vessels/9416006.csv,9416006,9416006,1,19,True,MATCH
+individual_vessels/9973004.csv,9973004,9973004,1,11,True,MATCH
+individual_vessels/9708837.csv,9708837,9708837,1,16,True,MATCH
+individual_vessels/9525869.csv,9525869,9525869,1,25,True,MATCH
+individual_vessels/9760598.csv,9760598,9760598,1,6,True,MATCH
+individual_vessels/9334167.csv,9334167,9334167,1,9,True,MATCH

@@ -1,0 +1,73 @@
+================================================================================
+SCRIPT 18D: GEOGRAPHIC VALIDATION REPORT
+================================================================================
+
+Input: 18C_coordinate_assessed_port_master.csv
+Total port master records: 467
+Unique LOCODEs: 464
+
+1. COORDINATE USABILITY
+--------------------------------------------------------------------------------
+                                              Metric  Value
+                           Total port master records    467
+                                      Unique LOCODEs    464
+          Records with identical release coordinates    270
+  Records with production-only candidate coordinates      0
+ Records with pre-release-only candidate coordinates      2
+       Accepted coordinates for geographic screening    270
+ Accepted coordinates within Hormuz screening region     19
+Candidate coordinates within Hormuz screening region      0
+                            Ambiguous LOCODE records      6
+                    Country-boundary screening flags      0
+                               Manual review records    201
+              Ports within 250 km of reference point      4
+
+2. GEOGRAPHIC ZONE CLASSIFICATION
+--------------------------------------------------------------------------------
+                Geographic_Zone  Record_Count  Percentage
+OUTSIDE_DEFINED_SCREENING_ZONES           251       53.75
+        COORDINATES_UNAVAILABLE           197       42.18
+         PERSIAN_GULF_SCREENING            10        2.14
+          ARABIAN_SEA_SCREENING             5        1.07
+      STRAIT_OF_HORMUZ_VICINITY             4        0.86
+
+3. FINAL PORT SCREENING STATUS
+--------------------------------------------------------------------------------
+                     Screening_Status  Record_Count  Percentage
+OUTSIDE_HORMUZ_STUDY_SCREENING_REGION           247       52.89
+       COORDINATE_VALIDATION_REQUIRED           195       41.76
+           PERSIAN_GULF_SCREENED_PORT            10        2.14
+   FACILITY_LEVEL_VALIDATION_REQUIRED             6        1.28
+            ARABIAN_SEA_SCREENED_PORT             5        1.07
+        STRAIT_VICINITY_SCREENED_PORT             4        0.86
+
+4. HORMUZ RELEVANT PORT REGISTER
+--------------------------------------------------------------------------------
+Records in register: 19
+This register includes accepted coordinates and candidate coordinates requiring review.
+
+5. METHODOLOGICAL LIMITATIONS
+--------------------------------------------------------------------------------
+1. Country coordinate checks use broad bounding boxes, not official national boundaries.
+2. Geographic zones use approximate rectangular screening areas, not authoritative maritime boundaries.
+3. Identical coordinates across releases are not independently verified geographic truth.
+4. Coordinates may represent a locality or port centroid, not an exact terminal or berth.
+5. The Strait reference point is a proximity proxy, not an official Strait boundary.
+6. Distance to the reference point is not sailing distance or distance to the Strait boundary.
+7. Port calls do not establish vessel transit through the Strait of Hormuz.
+8. AIS trajectories or other reliable movement evidence are required to confirm transit.
+
+6. REFERENCE POINT
+--------------------------------------------------------------------------------
+Latitude: 26.56
+Longitude: 56.25
+Description: Approximate Strait of Hormuz reference point; used for proximity screening only
+
+7. OUTPUT FILES
+--------------------------------------------------------------------------------
+/Users/abhishekkumar/Strait_of_Hormuz_Research/data/processed/18D_geographically_assessed_port_master.csv
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/18D_hormuz_relevant_port_register.csv
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/18D_coordinate_review_register.csv
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/18D_geographic_classification_summary.csv
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/18D_country_coordinate_screening.csv
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/reports/18D_geographic_validation_report.txt

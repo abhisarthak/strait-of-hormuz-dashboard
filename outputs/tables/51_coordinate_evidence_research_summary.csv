@@ -1,0 +1,6 @@
+﻿Summary_Type,Category,Port_Count,Interpretation
+RESEARCH_STATUS,SOURCE_METADATA_AVAILABLE_CONTENT_REVIEW_PENDING,19,Workflow tracking only; metadata availability is not content verification or coordinate approval.
+RESEARCH_PRIORITY,HIGH,10,Workflow tracking only; metadata availability is not content verification or coordinate approval.
+RESEARCH_PRIORITY,MEDIUM,9,Workflow tracking only; metadata availability is not content verification or coordinate approval.
+EVIDENCE_REVIEW_QA,SOURCE_METADATA_AVAILABLE_CONTENT_REVIEW_PENDING,19,Workflow tracking only; metadata availability is not content verification or coordinate approval.
+SOURCE_METADATA_AVAILABILITY,AVAILABLE_NOT_CONTENT_VERIFIED,19,Workflow tracking only; metadata availability is not content verification or coordinate approval.

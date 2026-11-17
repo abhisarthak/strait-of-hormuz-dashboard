@@ -1,0 +1,23 @@
+Check_ID,Passed,Observed,Expected,Interpretation
+Required upstream schemas are available,True,All required columns found,No required schema fields missing,Schema validation only; no decision or approval is inferred.
+Script88 factorial shock grid contains 16 candidate scenarios,True,rows=16; unique_scenarios=16,16 candidate shock scenarios,The existing no-disruption baseline is separate from this 4x4 candidate shock grid.
+Script88 candidate scenario-policy matrix contains 80 combinations,True,rows=80; unique_pairs=80,80 unique candidate scenario-policy combinations,This is the 16-scenario by five-policy shock grid; do not misstate it as 85.
+Five recovery policy definitions are retained,True,"5: ['R76-00-NONE', 'R76-01-FIXED-6H', 'R76-02-FIXED-12H', 'R76-03-PROP-25-CAP6', 'R76-04-PROP-50-CAP12']",5 distinct policies,"Policy identities are model rules, not verified operational capabilities."
+Nine response metrics reconcile between Script88 and Script90,True,Script88=9; Script90=9; ID_match=True,9 metrics with identical IDs,Register continuity does not constitute metric-definition approval.
+Four transition-scope levels are retained,True,Script89=4; Script90=4,4 scope levels,"Coverage shares are mathematical selection shares, not geographic exposure probabilities."
+Transition selection register retains 271 unique transition records,True,271,271,Observed schedule transition records; not validated physical routes.
+Twelve Script92 estimand/censoring decisions are retained,True,rows=12; unique=12,12 unique open decisions,"These are explicit research decisions, not choices for Script96 to make."
+Eight candidate estimands are retained,True,rows=8; unique=8,8 candidate estimands,"Candidate estimands remain proposals, not approved estimands."
+S88_CHECKS upstream readiness checks contain no failures,True,"{'rows': 11, 'passed': 11, 'failed': 0, 'status': 'ALL_PASS'}",All recorded checks passed,Inherited diagnostic result; Script96 does not replace the underlying audit.
+S89_CHECKS upstream readiness checks contain no failures,True,"{'rows': 14, 'passed': 14, 'failed': 0, 'status': 'ALL_PASS'}",All recorded checks passed,Inherited diagnostic result; Script96 does not replace the underlying audit.
+S90_CHECKS upstream readiness checks contain no failures,True,"{'rows': 17, 'passed': 17, 'failed': 0, 'status': 'ALL_PASS'}",All recorded checks passed,Inherited diagnostic result; Script96 does not replace the underlying audit.
+S91_CHECKS upstream readiness checks contain no failures,True,"{'rows': 14, 'passed': 14, 'failed': 0, 'status': 'ALL_PASS'}",All recorded checks passed,Inherited diagnostic result; Script96 does not replace the underlying audit.
+S92_CHECKS upstream readiness checks contain no failures,True,"{'rows': 13, 'passed': 13, 'failed': 0, 'status': 'ALL_PASS'}",All recorded checks passed,Inherited diagnostic result; Script96 does not replace the underlying audit.
+S93_CHECKS upstream readiness checks contain no failures,True,"{'rows': 14, 'passed': 14, 'failed': 0, 'status': 'ALL_PASS'}",All recorded checks passed,Inherited diagnostic result; Script96 does not replace the underlying audit.
+S94_CHECKS upstream readiness checks contain no failures,True,"{'rows': 16, 'passed': 16, 'failed': 0, 'status': 'ALL_PASS'}",All recorded checks passed,Inherited diagnostic result; Script96 does not replace the underlying audit.
+S95_CHECKS upstream readiness checks contain no failures,True,"{'rows': 15, 'passed': 15, 'failed': 0, 'status': 'ALL_PASS'}",All recorded checks passed,Inherited diagnostic result; Script96 does not replace the underlying audit.
+"Script95 reconciliation contains 51,340 unique matched records",True,rows=51340; unique_composite_keys=True,"51,340 rows and unique scenario-policy-vessel-call keys",This consolidates the completed Script95 record-level reconciliation.
+Script95 pre-delay fields are numeric and complete,True,complete_numeric=True; max_cross_model_pre_delay_difference=53.25,No missing/non-numeric values,Cross-model pre-delay differences are expected to be nonzero; Script95 validates separate recurrences.
+No researcher/supervisor approval is silently inferred,True,0,0,Script96 reads approval states only; it never grants approvals.
+No execution authorization is present in decision registers,True,0,0,Execution remains blocked; this script cannot authorize simulation.
+Script96 does not execute or modify upstream simulation inputs,True,Register consolidation only,No simulation; no upstream writes,Script96 writes only its own eight output artifacts.

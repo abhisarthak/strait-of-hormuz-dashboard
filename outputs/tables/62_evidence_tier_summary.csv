@@ -1,0 +1,5 @@
+Evidence_Strength_Tier_62,Directed_Edge_Count,Total_Valid_Transition_Records,Median_Distinct_Vessel_Count,Tier_Is_Automatic_Resampling_Approval,Tier_Is_Route_Validation
+LIMITED_MULTI_VESSEL_EVIDENCE,9,74,4.0,False,False
+RELATIVELY_STRONGER_EMPIRICAL_EVIDENCE,6,95,7.0,False,False
+SINGLE_OBSERVATION_ONLY,14,14,1.0,False,False
+SPARSE_EVIDENCE,24,88,2.0,False,False

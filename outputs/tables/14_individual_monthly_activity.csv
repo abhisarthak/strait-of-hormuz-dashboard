@@ -1,0 +1,7 @@
+Dataset,Arrival_Month,Port_Call_Count,Unique_Vessels,Unique_Ports,Mean_Port_Stay_Hours
+Individual,2026-05,7,3,7,43.01904761904762
+Individual,2026-06,22,7,16,42.11742424242424
+Individual,2026-07,68,25,36,33.65686274509804
+Individual,2026-08,109,29,47,26.962079510703365
+Individual,2026-09,114,28,51,29.696783625730994
+Individual,2026-10,104,26,41,26.149358974358975

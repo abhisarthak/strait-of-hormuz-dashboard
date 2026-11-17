@@ -1,0 +1,34 @@
+18F3 MANUAL EVIDENCE VALIDATION - PREPARATION REPORT
+==============================================================
+Input file: /Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/18F2_manual_source_review_queue.csv
+Input rows: 179
+Unique LOCODEs: 19
+Output source register: /Users/abhishekkumar/Strait_of_Hormuz_Research/data/processed/18F3_assessed_source_register.csv
+Output LOCODE register: /Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/18F3_locode_evidence_validation_register.csv
+Output priority review queue: /Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/18F3_priority_manual_review_queue.csv
+
+PROVISIONAL SOURCE-ROW DECISIONS
+- RETAIN_FOR_MANUAL_REVIEW: 152
+- LIKELY_IRRELEVANT_TO_SEAPORT_VALIDATION: 14
+- SPECIAL_FACILITY_IDENTITY_REVIEW: 8
+- POTENTIAL_LOCATION_MISMATCH_REVIEW: 4
+- POTENTIAL_LOCODE_MISMATCH_REVIEW: 1
+
+AUTOMATED REVIEW FLAGS
+- AIRPORT_OR_AVIATION_MATCH: 14
+- COORDINATE_TERMS_PRESENT_NOT_VERIFIED: 37
+- KARACHI_VS_PORT_QASIM_LOCATION_REVIEW: 4
+- LOCODE_CONFLICT_QAQAP_VS_QAUMS: 1
+- OTHER_UNLOCODE_IN_URL_REVIEW: 1
+- QATAR_INDUSTRIAL_OR_SPECIAL_FACILITY_IDENTITY_REVIEW: 9
+
+METHODOLOGICAL LIMITATIONS
+1. This script prepares a review workspace; it does not independently verify any source.
+2. Automated flags are screening prompts, not final rejection decisions.
+3. No coordinates are accepted or selected by this script.
+4. A source describing a port operator does not necessarily prove a particular LOCODE or facility identity.
+5. Coordinate meaning (port centroid, terminal, anchorage or city reference) must be recorded manually.
+6. Every LOCODE remains pending until a researcher records evidence and a final decision.
+
+NEXT ACTION
+Review 18F3_priority_manual_review_queue.csv first, then complete the location-level register.

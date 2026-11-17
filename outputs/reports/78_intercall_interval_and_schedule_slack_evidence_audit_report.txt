@@ -1,0 +1,52 @@
+SCRIPT 78 — OBSERVED INTER-CALL INTERVAL AND SCHEDULE-SLACK EVIDENCE AUDIT
+====================================================================================
+Project root: /Users/abhishekkumar/Strait_of_Hormuz_Research
+Input: outputs/tables/77_call_level_bounded_recovery_results.csv
+Canonical calls: 604
+Vessels: 155
+First calls: 155
+Same-port links: 178
+Distinct-port transitions: 271
+Valid non-first elapsed intervals: 449
+Missing interval values: 0
+Negative reconstructed intervals: 0
+Zero reconstructed intervals: 0
+Timestamp reconciliation mismatches (>0.02h): 0
+
+DISTRIBUTION-BASED FLAGS (DESCRIPTIVE ONLY)
+Q1: 50.783333 h
+Median: 183.300000 h
+Q3: 337.600000 h
+P90: 528.876667 h
+P95: 734.493333 h
+P99: 1599.723333 h
+Upper IQR fence (Q3 + 1.5 IQR): 767.825000 h
+Extreme IQR fence (Q3 + 3 IQR): 1198.050000 h
+Above P90: 45
+Above P95: 23
+Above P99: 5
+Upper IQR flags: 22
+Extreme IQR flags: 14
+
+CRITICAL INTERPRETATION
+- Inter-call elapsed time is the observed interval from previous call departure to current call arrival.
+- It may include sailing, anchorage, waiting, port operations and data gaps.
+- Distribution thresholds are descriptive flags, not evidence of available schedule slack.
+- No interval is approved as schedule slack or operationally recoverable time.
+- No interval is deleted or winsorized; all source records are retained.
+- This analysis does not establish physical routes or actual Strait of Hormuz transit.
+
+Validation checks passed: 12/12
+Validation checks failed: 0
+
+FAILED CHECKS
+None.
+
+OUTPUT FILES
+- outputs/tables/78_canonical_intercall_interval_register.csv
+- outputs/tables/78_intercall_interval_distribution_by_type.csv
+- outputs/tables/78_distinct_port_pair_interval_summary.csv
+- outputs/tables/78_vessel_intercall_interval_summary.csv
+- outputs/tables/78_interval_distribution_thresholds.csv
+- outputs/tables/78_validation_checks.csv
+- outputs/reports/78_intercall_interval_and_schedule_slack_evidence_audit_report.txt

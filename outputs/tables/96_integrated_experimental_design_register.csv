@@ -1,0 +1,11 @@
+Component_ID,Component,Current_Design_or_Evidence,Current_Status,Interpretation_and_Limitation
+DATA-BASELINE,Historical baseline,604 calls; 155 vessels; 19 ports; 271 distinct-port transitions,ESTABLISHED_BASELINE,Preserve original 604-call baseline; no change authorized.
+MECHANISM,Primary mechanism,TRANSIT_ELAPSED_TIME_SHOCK,RESEARCHER_CONFIRMED; SUPERVISOR_REVIEW_PENDING,Hypothetical additional observed inter-port elapsed-time shock; not pure sailing time.
+FACTOR-GRID,Candidate shock grid,"16 candidate scenarios; shocks=[6.0, 12.0, 24.0, 48.0]; shares=[0.1, 0.25, 0.5, 1.0]",PROVISIONAL_NOT_APPROVED,"Factor levels are sensitivity settings, not empirically calibrated disruption estimates."
+SCOPE,Transition selection,4 coverage levels; universe=271; selected counts=27;68;136;271,PROVISIONAL_NOT_APPROVED,"Mathematical coverage of observed transition records, not geographic exposure probability."
+POLICIES,Recovery policy set,5 policy definitions: R76-00-NONE; R76-01-FIXED-6H; R76-02-FIXED-12H; R76-03-PROP-25-CAP6; R76-04-PROP-50-CAP12,PROVISIONAL_NOT_APPROVED,Hypothetical recovery rules; no measured operational capabilities.
+METRICS,Response metrics,9 registered metrics,UNRESOLVED,"Operational definitions, denominators, estimands and censoring rules remain open."
+ESTIMANDS,Candidate estimands,8 candidate estimands,PROPOSED_NOT_APPROVED,Candidate quantities require researcher selection and supervisor review.
+REPLICATION,Replication design,RP88-01; RP88-02; RP88-03,NOT_SELECTED,Deterministic reproducibility is not statistical replication or inferential precision.
+POLICY-VALIDATION,Scripts94–95 technical audits,Script94: 16/16; Script95: 15/15 (see inherited audit summary),DIAGNOSTICALLY_VERIFIED,Mathematical consistency is not operational feasibility or empirical validation.
+EXECUTION,Simulation execution,Execution authorization remains false/blocked in Script90 and prior protocols,BLOCKED,Script96 cannot authorize or run the simulation.

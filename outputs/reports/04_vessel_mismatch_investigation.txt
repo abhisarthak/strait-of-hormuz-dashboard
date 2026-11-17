@@ -1,0 +1,77 @@
+
+==========================================================================================
+STRAIT OF HORMUZ - MISMATCH INVESTIGATION
+==========================================================================================
+
+==========================================================================================
+LOADING MASTER DATASETS
+==========================================================================================
+Schedule IMOs: 207
+Active vessel IMOs: 1572
+
+==========================================================================================
+INVESTIGATING SIX MULTI-IMO FILES
+==========================================================================================
+
+Inspecting: individual_vessels/9307011.csv
+Filename IMO: 9307011
+Internal IMOs: ['9222974', '9307011']
+Total records: 31
+
+Inspecting: individual_vessels/9315020.csv
+Filename IMO: 9315020
+Internal IMOs: ['9315020', '9491472']
+Total records: 83
+
+Inspecting: individual_vessels/9306079.csv
+Filename IMO: 9306079
+Internal IMOs: ['9301081', '9306079']
+Total records: 39
+
+Inspecting: individual_vessels/9732307.csv
+Filename IMO: 9732307
+Internal IMOs: ['9321483', '9732307']
+Total records: 23
+
+Inspecting: individual_vessels/9948803.csv
+Filename IMO: 9948803
+Internal IMOs: ['9948803', '9984572']
+Total records: 38
+
+Inspecting: individual_vessels/9634672.csv
+Filename IMO: 9634672
+Internal IMOs: ['9539482', '9634672']
+Total records: 8
+Saved: 04_affected_file_summary.csv
+Saved: 04_affected_imo_record_summary.csv
+
+==========================================================================================
+EXTRACTING DETAILED AFFECTED RECORDS
+==========================================================================================
+Saved: 04_six_affected_files_detailed_records.csv
+Total affected records: 222
+
+==========================================================================================
+TRANSPORT CALL REFERENCE INVESTIGATION
+==========================================================================================
+Total unique references: 222
+References linked to multiple IMOs: 0
+Saved: 04_affected_call_reference_mapping.csv
+Saved: 04_call_reference_imo_conflicts.csv
+
+==========================================================================================
+INVESTIGATING VESSEL NAME CONFLICTS
+==========================================================================================
+IMOs with multiple names: 0
+Saved: 04_vessel_name_conflicts_detailed.csv
+
+==========================================================================================
+INVESTIGATING DUPLICATE PORT CODES
+==========================================================================================
+Duplicate port code groups: 3
+Saved: 04_duplicate_port_codes_detailed.csv
+
+==========================================================================================
+INVESTIGATION COMPLETED
+==========================================================================================
+All diagnostic tables saved in: /Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables

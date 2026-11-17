@@ -1,0 +1,13 @@
+Test_ID,Expected_Next_Arrival_Delay_Hours,Observed_Next_Arrival_Delay_Hours,Passed,Expected_Error,Observed_Error,Purpose
+T01_BASELINE_ZERO,0.0,0.0,True,False,False,All delays remain zero.
+T02_TRANSITION_SHOCK_24H,24.0,24.0,True,False,False,A 24h transition shock reaches the next call.
+T03_INHERITED_DELAY,24.0,24.0,True,False,False,Existing delay carries forward once.
+T04_CUMULATIVE_TRANSITION_SHOCKS,36.0,36.0,True,False,False,A further 12h shock adds to inherited 24h delay.
+T05_PORT_SERVICE_SHOCK,6.0,6.0,True,False,False,A 6h port-service extension delays the next call.
+T06_PARTIAL_RECOVERY,16.0,16.0,True,False,False,8h recovery reduces 24h accumulated delay to 16h.
+T07_FULL_RECOVERY,0.0,0.0,True,False,False,Full recovery is allowed only when the elapsed-time opportunity is sufficient.
+T08_RECOVERY_EXCEEDS_AVAILABLE_DELAY,,,True,True,True,"Invalid input must be rejected, not clipped or silently repaired."
+T09_NEGATIVE_INTERCALL_GAP,,,True,True,True,"Invalid input must be rejected, not clipped or silently repaired."
+T10_NEGATIVE_TRANSITION_SHOCK,,,True,True,True,"Invalid input must be rejected, not clipped or silently repaired."
+T11_NEGATIVE_SERVICE_SHOCK,,,True,True,True,"Invalid input must be rejected, not clipped or silently repaired."
+T12_RECOVERY_EXCEEDS_ELAPSED_TIME_OPPORTUNITY,,,True,True,True,"Invalid input must be rejected, not clipped or silently repaired."

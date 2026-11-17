@@ -1,0 +1,33 @@
+HISTORICAL-ARRIVAL BASELINE QUEUE SIMULATION
+======================================================================
+
+Input records: 604
+Unique vessels: 155
+Ports: 19
+Capacity scenarios: [1, 2, 3]
+Simulation start: 2026-07-29 23:36:00+00:00
+
+CAPACITY SCENARIO COMPARISON
+----------------------------------------------------------------------
+ Assumed_Port_Capacity  Total_Port_Calls  Total_Queue_Wait_Hours  Mean_Queue_Wait_Hours  Median_Queue_Wait_Hours  P90_Queue_Wait_Hours  Maximum_Queue_Wait_Hours  Mean_Total_Port_Time_Hours  Total_Observed_Port_Stay_Hours  Simulation_Horizon_Hours
+                     1               604           731528.500000            1211.139901               367.441667           4096.340000               5287.650000                 1241.680519                    18446.533333               7576.450000
+                     2               604           194379.050000             321.819619                 0.000000           1219.503333               1560.250000                  352.360237                    18446.533333               3842.950000
+                     3               604            36459.416667              60.363273                 0.000000            258.468333                323.516667                   90.903891                    18446.533333               2612.316667
+
+METHODOLOGICAL ASSUMPTIONS
+----------------------------------------------------------------------
+1. Historical arrival timestamps are replayed as observed.
+2. Observed port stay is used as a provisional occupancy duration.
+3. Port capacities 1, 2 and 3 are experimental assumptions.
+4. Actual port berth capacities are not established by this model.
+5. Port stay is not confirmed berth-processing time.
+6. Queue waiting is simulated separately from the occupancy proxy.
+7. Historical inter-port elapsed times are not added again.
+8. No direct sailing routes are inferred.
+9. No actual Hormuz transit is confirmed.
+10. Results are conditional on the selected capacity assumptions.
+
+
+MODEL LIMITATIONS
+----------------------------------------------------------------------
+The historical port-call duration may already contain waiting, anchorage, operational and other time components. Therefore, adding simulated queue waiting can result in overlapping time components. The results must be interpreted as a provisional queueing experiment, not as validated estimates of actual port turnaround or berth utilisation.

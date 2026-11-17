@@ -1,0 +1,5 @@
+Mechanism,Readiness_Class,Requirements,Evidence_Limitation,Execution_Authorized
+TRANSIT_ELAPSED_TIME_SHOCK,CONCEPTUALLY_SPECIFIABLE,Can be represented as a hypothetical elapsed-time shock on an observed consecutive-call transition after researcher approval.,Elapsed time is not pure sailing time; edge evidence is sparse and vessel-concentrated.,NO
+NETWORK_ACCESS_RESTRICTION,BLOCKED,"Requires validated geographic route graph, route alternatives, and physical/regulatory feasibility evidence.",Observed port-call transitions are not verified physical sailing edges.,NO
+PORT_SERVICE_DISRUPTION,PARTIALLY_SPECIFIABLE,A separate added port-call duration may be represented for sensitivity analysis after scope approval.,Actual_Stay_Hours is not necessarily berth processing time; waiting/anchorage may be included.,NO
+COMPOUND_DISRUPTION,DEFERRED,Only after individual mechanisms are separately defined and validated.,No compound scope or magnitudes approved.,NO

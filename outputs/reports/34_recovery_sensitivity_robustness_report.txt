@@ -1,0 +1,349 @@
+SCRIPT 34: RECOVERY SENSITIVITY VISUALISATION AND ROBUSTNESS
+====================================================================================================
+
+INPUT AND EXPERIMENT COVERAGE
+----------------------------------------------------------------------------------------------------
+Replication rows: 170
+Scenarios: ['S0_BASELINE', 'S1_MILD', 'S2_MODERATE', 'S3_SEVERE']
+Seeds: [21, 42, 63, 84, 105]
+Recovery policies: 11
+
+DESCRIPTIVE 95% CONFIDENCE INTERVALS ACROSS SEEDS
+----------------------------------------------------------------------------------------------------
+   Scenario        Recovery_Policy            Metric  N_Seeds         Mean   CI95_Lower   CI95_Upper  SD_Across_Seeds
+S0_BASELINE            NO_RECOVERY Accumulated_Delay        5     0.000000     0.000000     0.000000         0.000000
+S0_BASELINE            NO_RECOVERY   Recovered_Hours        5     0.000000     0.000000     0.000000         0.000000
+S0_BASELINE            NO_RECOVERY Maximum_Port_Peak        5     6.000000     6.000000     6.000000         0.000000
+S0_BASELINE            NO_RECOVERY Average_Port_Peak        5     1.894737     1.894737     1.894737         0.000000
+    S1_MILD     FIXED_RECOVERY_12H Accumulated_Delay        5   484.800000   464.809595   504.790405        16.099689
+    S1_MILD     FIXED_RECOVERY_12H   Recovered_Hours        5   156.000000   121.056478   190.943522        28.142495
+    S1_MILD     FIXED_RECOVERY_12H Maximum_Port_Peak        5     6.400000     5.719913     7.080087         0.547723
+    S1_MILD     FIXED_RECOVERY_12H Average_Port_Peak        5     1.926316     1.890522     1.962110         0.028828
+    S1_MILD     FIXED_RECOVERY_18H Accumulated_Delay        5   434.400000   424.404798   444.395202         8.049845
+    S1_MILD     FIXED_RECOVERY_18H   Recovered_Hours        5   178.800000   143.304911   214.295089        28.586710
+    S1_MILD     FIXED_RECOVERY_18H Maximum_Port_Peak        5     6.400000     5.719913     7.080087         0.547723
+    S1_MILD     FIXED_RECOVERY_18H Average_Port_Peak        5     1.926316     1.890522     1.962110         0.028828
+    S1_MILD     FIXED_RECOVERY_24H Accumulated_Delay        5   384.000000   384.000000   384.000000         0.000000
+    S1_MILD     FIXED_RECOVERY_24H   Recovered_Hours        5   201.600000   161.619190   241.580810        32.199379
+    S1_MILD     FIXED_RECOVERY_24H Maximum_Port_Peak        5     6.400000     5.719913     7.080087         0.547723
+    S1_MILD     FIXED_RECOVERY_24H Average_Port_Peak        5     1.926316     1.890522     1.962110         0.028828
+    S1_MILD      FIXED_RECOVERY_6H Accumulated_Delay        5   603.600000   555.433678   651.766322        38.791752
+    S1_MILD      FIXED_RECOVERY_6H   Recovered_Hours        5    99.600000    69.064152   130.135848        24.592682
+    S1_MILD      FIXED_RECOVERY_6H Maximum_Port_Peak        5     6.400000     5.719913     7.080087         0.547723
+    S1_MILD      FIXED_RECOVERY_6H Average_Port_Peak        5     1.915789     1.879995     1.951584         0.028828
+    S1_MILD            NO_RECOVERY Accumulated_Delay        5   864.000000   687.701201  1040.298799       141.985915
+    S1_MILD            NO_RECOVERY   Recovered_Hours        5     0.000000     0.000000     0.000000         0.000000
+    S1_MILD            NO_RECOVERY Maximum_Port_Peak        5     6.800000     6.244711     7.355289         0.447214
+    S1_MILD            NO_RECOVERY Average_Port_Peak        5     1.947368     1.901158     1.993578         0.037216
+    S1_MILD PARTIAL_RECOVERY_10PCT Accumulated_Delay        5   754.543071   637.165290   871.920852        94.532644
+    S1_MILD PARTIAL_RECOVERY_10PCT   Recovered_Hours        5    41.171452    28.129477    54.213428        10.503627
+    S1_MILD PARTIAL_RECOVERY_10PCT Maximum_Port_Peak        5     6.800000     6.244711     7.355289         0.447214
+    S1_MILD PARTIAL_RECOVERY_10PCT Average_Port_Peak        5     1.947368     1.901158     1.993578         0.037216
+    S1_MILD PARTIAL_RECOVERY_20PCT Accumulated_Delay        5   674.553590   592.922327   756.184853        65.743440
+    S1_MILD PARTIAL_RECOVERY_20PCT   Recovered_Hours        5    72.638397    52.230582    93.046213        16.435860
+    S1_MILD PARTIAL_RECOVERY_20PCT Maximum_Port_Peak        5     6.600000     5.919913     7.280087         0.547723
+    S1_MILD PARTIAL_RECOVERY_20PCT Average_Port_Peak        5     1.936842     1.882166     1.991518         0.044035
+    S1_MILD PARTIAL_RECOVERY_25PCT Accumulated_Delay        5   641.950607   573.128115   710.773099        55.427630
+    S1_MILD PARTIAL_RECOVERY_25PCT   Recovered_Hours        5    85.983536    63.042705   108.924366        18.475877
+    S1_MILD PARTIAL_RECOVERY_25PCT Maximum_Port_Peak        5     6.400000     5.719913     7.080087         0.547723
+    S1_MILD PARTIAL_RECOVERY_25PCT Average_Port_Peak        5     1.926316     1.890522     1.962110         0.028828
+    S1_MILD PARTIAL_RECOVERY_30PCT Accumulated_Delay        5   612.989454   554.702990   671.275917        46.942219
+    S1_MILD PARTIAL_RECOVERY_30PCT   Recovered_Hours        5    98.138337    73.158424   123.118250        20.118094
+    S1_MILD PARTIAL_RECOVERY_30PCT Maximum_Port_Peak        5     6.400000     5.719913     7.080087         0.547723
+    S1_MILD PARTIAL_RECOVERY_30PCT Average_Port_Peak        5     1.926316     1.890522     1.962110         0.028828
+    S1_MILD PARTIAL_RECOVERY_40PCT Accumulated_Delay        5   563.427964   521.349299   605.506630        33.888931
+    S1_MILD PARTIAL_RECOVERY_40PCT   Recovered_Hours        5   119.618643    91.566199   147.671086        22.592620
+    S1_MILD PARTIAL_RECOVERY_40PCT Maximum_Port_Peak        5     6.400000     5.719913     7.080087         0.547723
+    S1_MILD PARTIAL_RECOVERY_40PCT Average_Port_Peak        5     1.915789     1.879995     1.951584         0.028828
+    S1_MILD PARTIAL_RECOVERY_50PCT Accumulated_Delay        5   522.121875   491.816457   552.427293        24.407101
+    S1_MILD PARTIAL_RECOVERY_50PCT   Recovered_Hours        5   138.121875   107.816457   168.427293        24.407101
+    S1_MILD PARTIAL_RECOVERY_50PCT Maximum_Port_Peak        5     6.400000     5.719913     7.080087         0.547723
+    S1_MILD PARTIAL_RECOVERY_50PCT Average_Port_Peak        5     1.915789     1.879995     1.951584         0.028828
+S2_MODERATE     FIXED_RECOVERY_12H Accumulated_Delay        5  5040.000000  4573.081503  5506.918497       376.042551
+S2_MODERATE     FIXED_RECOVERY_12H   Recovered_Hours        5   612.000000   442.114227   781.885773       136.821051
+S2_MODERATE     FIXED_RECOVERY_12H Maximum_Port_Peak        5     7.800000     7.244711     8.355289         0.447214
+S2_MODERATE     FIXED_RECOVERY_12H Average_Port_Peak        5     2.115789     2.061113     2.170466         0.044035
+S2_MODERATE     FIXED_RECOVERY_18H Accumulated_Delay        5  4489.200000  4216.109559  4762.290441       219.939082
+S2_MODERATE     FIXED_RECOVERY_18H   Recovered_Hours        5   799.200000   604.614176   993.785824       156.713752
+S2_MODERATE     FIXED_RECOVERY_18H Maximum_Port_Peak        5     7.800000     6.761149     8.838851         0.836660
+S2_MODERATE     FIXED_RECOVERY_18H Average_Port_Peak        5     2.094737     2.040060     2.149413         0.044035
+S2_MODERATE     FIXED_RECOVERY_24H Accumulated_Delay        5  4099.200000  3931.418157  4266.981843       135.126607
+S2_MODERATE     FIXED_RECOVERY_24H   Recovered_Hours        5   950.400000   749.830712  1150.969288       161.532659
+S2_MODERATE     FIXED_RECOVERY_24H Maximum_Port_Peak        5     7.600000     6.919913     8.280087         0.547723
+S2_MODERATE     FIXED_RECOVERY_24H Average_Port_Peak        5     2.115789     2.086564     2.145015         0.023538
+S2_MODERATE      FIXED_RECOVERY_6H Accumulated_Delay        5  5910.000000  5095.307547  6724.692453       656.129560
+S2_MODERATE      FIXED_RECOVERY_6H   Recovered_Hours        5   357.600000   250.335752   464.864248        86.387499
+S2_MODERATE      FIXED_RECOVERY_6H Maximum_Port_Peak        5     7.600000     6.919913     8.280087         0.547723
+S2_MODERATE      FIXED_RECOVERY_6H Average_Port_Peak        5     2.105263     2.025225     2.185301         0.064460
+S2_MODERATE            NO_RECOVERY Accumulated_Delay        5  7545.600000  5684.880927  9406.319073      1498.568917
+S2_MODERATE            NO_RECOVERY   Recovered_Hours        5     0.000000     0.000000     0.000000         0.000000
+S2_MODERATE            NO_RECOVERY Maximum_Port_Peak        5     7.800000     7.244711     8.355289         0.447214
+S2_MODERATE            NO_RECOVERY Average_Port_Peak        5     2.084211     2.009699     2.158722         0.060009
+S2_MODERATE PARTIAL_RECOVERY_10PCT Accumulated_Delay        5  6027.202357  5115.507931  6938.896782       734.252122
+S2_MODERATE PARTIAL_RECOVERY_10PCT   Recovered_Hours        5   357.689151   256.389770   458.988531        81.583569
+S2_MODERATE PARTIAL_RECOVERY_10PCT Maximum_Port_Peak        5     7.600000     6.919913     8.280087         0.547723
+S2_MODERATE PARTIAL_RECOVERY_10PCT Average_Port_Peak        5     2.105263     2.025225     2.185301         0.064460
+S2_MODERATE PARTIAL_RECOVERY_20PCT Accumulated_Delay        5  5196.405110  4627.466793  5765.343427       458.206341
+S2_MODERATE PARTIAL_RECOVERY_20PCT   Recovered_Hours        5   597.101277   454.866698   739.335857       114.551585
+S2_MODERATE PARTIAL_RECOVERY_20PCT Maximum_Port_Peak        5     7.800000     7.244711     8.355289         0.447214
+S2_MODERATE PARTIAL_RECOVERY_20PCT Average_Port_Peak        5     2.115789     2.061113     2.170466         0.044035
+S2_MODERATE PARTIAL_RECOVERY_25PCT Accumulated_Delay        5  4893.164319  4430.112897  5356.215740       372.928121
+S2_MODERATE PARTIAL_RECOVERY_25PCT   Recovered_Hours        5   695.054773   540.704299   849.405247       124.309374
+S2_MODERATE PARTIAL_RECOVERY_25PCT Maximum_Port_Peak        5     7.600000     6.919913     8.280087         0.547723
+S2_MODERATE PARTIAL_RECOVERY_25PCT Average_Port_Peak        5     2.094737     2.065511     2.123963         0.023538
+S2_MODERATE PARTIAL_RECOVERY_30PCT Accumulated_Delay        5  4635.318167  4255.866590  5014.769743       305.599242
+S2_MODERATE PARTIAL_RECOVERY_30PCT   Recovered_Hours        5   783.136357   620.514253   945.758461       130.971104
+S2_MODERATE PARTIAL_RECOVERY_30PCT Maximum_Port_Peak        5     7.600000     6.919913     8.280087         0.547723
+S2_MODERATE PARTIAL_RECOVERY_30PCT Average_Port_Peak        5     2.105263     2.105263     2.105263         0.000000
+S2_MODERATE PARTIAL_RECOVERY_40PCT Accumulated_Delay        5  4213.399243  3957.257348  4469.541138       206.289218
+S2_MODERATE PARTIAL_RECOVERY_40PCT   Recovered_Hours        5   936.932829   766.171565  1107.694092       137.526145
+S2_MODERATE PARTIAL_RECOVERY_40PCT Maximum_Port_Peak        5     7.800000     7.244711     8.355289         0.447214
+S2_MODERATE PARTIAL_RECOVERY_40PCT Average_Port_Peak        5     2.105263     2.059053     2.151473         0.037216
+S2_MODERATE PARTIAL_RECOVERY_50PCT Accumulated_Delay        5  3876.467157  3704.785507  4048.148807       138.267398
+S2_MODERATE PARTIAL_RECOVERY_50PCT   Recovered_Hours        5  1068.467157   896.785507  1240.148807       138.267398
+S2_MODERATE PARTIAL_RECOVERY_50PCT Maximum_Port_Peak        5     7.200000     6.644711     7.755289         0.447214
+S2_MODERATE PARTIAL_RECOVERY_50PCT Average_Port_Peak        5     2.052632     1.960212     2.145051         0.074432
+  S3_SEVERE     FIXED_RECOVERY_12H Accumulated_Delay        5 25483.200000 23393.865306 27572.534694      1682.689276
+  S3_SEVERE     FIXED_RECOVERY_12H   Recovered_Hours        5  1178.400000   951.842079  1404.957921       182.463147
+  S3_SEVERE     FIXED_RECOVERY_12H Maximum_Port_Peak        5     8.200000     7.161149     9.238851         0.836660
+  S3_SEVERE     FIXED_RECOVERY_12H Average_Port_Peak        5     2.189474     2.131022     2.247925         0.047075
+  S3_SEVERE     FIXED_RECOVERY_18H Accumulated_Delay        5 23691.600000 22080.157958 25303.042042      1297.808460
+  S3_SEVERE     FIXED_RECOVERY_18H   Recovered_Hours        5  1664.400000  1346.590284  1982.209716       255.954683
+  S3_SEVERE     FIXED_RECOVERY_18H Maximum_Port_Peak        5     8.000000     6.758336     9.241664         1.000000
+  S3_SEVERE     FIXED_RECOVERY_18H Average_Port_Peak        5     2.221053     2.095348     2.346757         0.101239
+  S3_SEVERE     FIXED_RECOVERY_24H Accumulated_Delay        5 22276.800000 20983.778066 23569.821934      1041.362185
+  S3_SEVERE     FIXED_RECOVERY_24H   Recovered_Hours        5  2068.800000  1724.227166  2413.372834       277.508919
+  S3_SEVERE     FIXED_RECOVERY_24H Maximum_Port_Peak        5     8.800000     7.761149     9.838851         0.836660
+  S3_SEVERE     FIXED_RECOVERY_24H Average_Port_Peak        5     2.273684     2.156781     2.390587         0.094150
+  S3_SEVERE      FIXED_RECOVERY_6H Accumulated_Delay        5 27927.600000 25066.347351 30788.852649      2304.369502
+  S3_SEVERE      FIXED_RECOVERY_6H   Recovered_Hours        5   639.600000   475.564954   803.635046       132.109046
+  S3_SEVERE      FIXED_RECOVERY_6H Maximum_Port_Peak        5     8.200000     7.644711     8.755289         0.447214
+  S3_SEVERE      FIXED_RECOVERY_6H Average_Port_Peak        5     2.178947     2.104436     2.253459         0.060009
+  S3_SEVERE            NO_RECOVERY Accumulated_Delay        5 31214.400000 26215.839363 36212.960637      4025.695070
+  S3_SEVERE            NO_RECOVERY   Recovered_Hours        5     0.000000     0.000000     0.000000         0.000000
+  S3_SEVERE            NO_RECOVERY Maximum_Port_Peak        5     8.000000     7.122011     8.877989         0.707107
+  S3_SEVERE            NO_RECOVERY Average_Port_Peak        5     2.200000     2.145324     2.254676         0.044035
+  S3_SEVERE PARTIAL_RECOVERY_10PCT Accumulated_Delay        5 25227.229259 23098.878320 27355.580198      1714.111823
+  S3_SEVERE PARTIAL_RECOVERY_10PCT   Recovered_Hours        5  1347.025473  1110.542036  1583.508911       190.456869
+  S3_SEVERE PARTIAL_RECOVERY_10PCT Maximum_Port_Peak        5     8.200000     7.161149     9.238851         0.836660
+  S3_SEVERE PARTIAL_RECOVERY_10PCT Average_Port_Peak        5     2.178947     2.120496     2.237399         0.047075
+  S3_SEVERE PARTIAL_RECOVERY_20PCT Accumulated_Delay        5 22093.728783 20690.892968 23496.564599      1129.803085
+  S3_SEVERE PARTIAL_RECOVERY_20PCT   Recovered_Hours        5  2247.432196  1896.723242  2598.141150       282.450771
+  S3_SEVERE PARTIAL_RECOVERY_20PCT Maximum_Port_Peak        5     8.600000     7.919913     9.280087         0.547723
+  S3_SEVERE PARTIAL_RECOVERY_20PCT Average_Port_Peak        5     2.284211     2.174858     2.393563         0.088069
+  S3_SEVERE PARTIAL_RECOVERY_25PCT Accumulated_Delay        5 20947.371724 19762.010906 22132.732542       954.655059
+  S3_SEVERE PARTIAL_RECOVERY_25PCT   Recovered_Hours        5  2614.457241  2219.336969  3009.577514       318.218353
+  S3_SEVERE PARTIAL_RECOVERY_25PCT Maximum_Port_Peak        5     8.800000     7.761149     9.838851         0.836660
+  S3_SEVERE PARTIAL_RECOVERY_25PCT Average_Port_Peak        5     2.284211     2.209699     2.358722         0.060009
+  S3_SEVERE PARTIAL_RECOVERY_30PCT Accumulated_Delay        5 19970.724629 18955.393352 20986.055905       817.718222
+  S3_SEVERE PARTIAL_RECOVERY_30PCT   Recovered_Hours        5  2942.881984  2507.740008  3378.023959       350.450666
+  S3_SEVERE PARTIAL_RECOVERY_30PCT Maximum_Port_Peak        5     9.200000     8.161149    10.238851         0.836660
+  S3_SEVERE PARTIAL_RECOVERY_30PCT Average_Port_Peak        5     2.294737     2.236285     2.353188         0.047075
+  S3_SEVERE PARTIAL_RECOVERY_40PCT Accumulated_Delay        5 18372.106596 17608.951880 19135.261313       614.622569
+  S3_SEVERE PARTIAL_RECOVERY_40PCT   Recovered_Hours        5  3512.071064  3003.301253  4020.840875       409.748379
+  S3_SEVERE PARTIAL_RECOVERY_40PCT Maximum_Port_Peak        5     9.000000     8.122011     9.877989         0.707107
+  S3_SEVERE PARTIAL_RECOVERY_40PCT Average_Port_Peak        5     2.284211     2.209699     2.358722         0.060009
+  S3_SEVERE PARTIAL_RECOVERY_50PCT Accumulated_Delay        5 17098.386581 16518.893951 17677.879211       466.706477
+  S3_SEVERE PARTIAL_RECOVERY_50PCT   Recovered_Hours        5  3994.386581  3414.893951  4573.879211       466.706477
+  S3_SEVERE PARTIAL_RECOVERY_50PCT Maximum_Port_Peak        5     8.400000     7.719913     9.080087         0.547723
+  S3_SEVERE PARTIAL_RECOVERY_50PCT Average_Port_Peak        5     2.210526     2.130488     2.290564         0.064460
+
+PAIRED COMPARISON AGAINST NO_RECOVERY
+----------------------------------------------------------------------------------------------------
+   Scenario        Recovery_Policy                   Metric  N_Paired_Seeds         Mean  CI95_Lower   CI95_Upper  SD_Across_Paired_Seeds
+S0_BASELINE            NO_RECOVERY        Delay_Saved_Hours               5     0.000000    0.000000     0.000000                0.000000
+S0_BASELINE            NO_RECOVERY  Delay_Reduction_Percent               5     0.000000    0.000000     0.000000                0.000000
+S0_BASELINE            NO_RECOVERY Maximum_Port_Peak_Change               5     0.000000    0.000000     0.000000                0.000000
+    S1_MILD     FIXED_RECOVERY_12H        Delay_Saved_Hours               5   379.200000  212.746616   545.653384              134.056704
+    S1_MILD     FIXED_RECOVERY_12H  Delay_Reduction_Percent               5    42.764270   31.659931    53.868609                8.943111
+    S1_MILD     FIXED_RECOVERY_12H Maximum_Port_Peak_Change               5    -0.400000   -1.080087     0.280087                0.547723
+    S1_MILD     FIXED_RECOVERY_18H        Delay_Saved_Hours               5   429.600000  258.444826   600.755174              137.843389
+    S1_MILD     FIXED_RECOVERY_18H  Delay_Reduction_Percent               5    48.670096   38.514665    58.825526                8.178888
+    S1_MILD     FIXED_RECOVERY_18H Maximum_Port_Peak_Change               5    -0.400000   -1.080087     0.280087                0.547723
+    S1_MILD     FIXED_RECOVERY_24H        Delay_Saved_Hours               5   480.000000  303.701201   656.298799              141.985915
+    S1_MILD     FIXED_RECOVERY_24H  Delay_Reduction_Percent               5    54.575922   45.273963    63.877880                7.491526
+    S1_MILD     FIXED_RECOVERY_24H Maximum_Port_Peak_Change               5    -0.400000   -1.080087     0.280087                0.547723
+    S1_MILD      FIXED_RECOVERY_6H        Delay_Saved_Hours               5   260.400000  120.665625   400.134375              112.537994
+    S1_MILD      FIXED_RECOVERY_6H  Delay_Reduction_Percent               5    29.062285   18.019079    40.105490                8.893876
+    S1_MILD      FIXED_RECOVERY_6H Maximum_Port_Peak_Change               5    -0.400000   -1.080087     0.280087                0.547723
+    S1_MILD            NO_RECOVERY        Delay_Saved_Hours               5     0.000000    0.000000     0.000000                0.000000
+    S1_MILD            NO_RECOVERY  Delay_Reduction_Percent               5     0.000000    0.000000     0.000000                0.000000
+    S1_MILD            NO_RECOVERY Maximum_Port_Peak_Change               5     0.000000    0.000000     0.000000                0.000000
+    S1_MILD PARTIAL_RECOVERY_10PCT        Delay_Saved_Hours               5   109.456929   45.806473   173.107385               51.262222
+    S1_MILD PARTIAL_RECOVERY_10PCT  Delay_Reduction_Percent               5    12.174732    6.805914    17.543550                4.323890
+    S1_MILD PARTIAL_RECOVERY_10PCT Maximum_Port_Peak_Change               5     0.000000    0.000000     0.000000                0.000000
+    S1_MILD PARTIAL_RECOVERY_20PCT        Delay_Saved_Hours               5   189.446410   87.892919   290.999901               81.788222
+    S1_MILD PARTIAL_RECOVERY_20PCT  Delay_Reduction_Percent               5    21.156241   13.066423    29.246058                6.515303
+    S1_MILD PARTIAL_RECOVERY_20PCT Maximum_Port_Peak_Change               5    -0.200000   -0.755289     0.355289                0.447214
+    S1_MILD PARTIAL_RECOVERY_25PCT        Delay_Saved_Hours               5   222.049393  107.307014   336.791772               92.410168
+    S1_MILD PARTIAL_RECOVERY_25PCT  Delay_Reduction_Percent               5    24.842360   15.960022    33.724698                7.153576
+    S1_MILD PARTIAL_RECOVERY_25PCT Maximum_Port_Peak_Change               5    -0.400000   -1.080087     0.280087                0.547723
+    S1_MILD PARTIAL_RECOVERY_30PCT        Delay_Saved_Hours               5   251.010546  125.658629   376.362464              100.954782
+    S1_MILD PARTIAL_RECOVERY_30PCT  Delay_Reduction_Percent               5    28.130248   18.698072    37.562424                7.596400
+    S1_MILD PARTIAL_RECOVERY_30PCT Maximum_Port_Peak_Change               5    -0.400000   -1.080087     0.280087                0.547723
+    S1_MILD PARTIAL_RECOVERY_40PCT        Delay_Saved_Hours               5   300.572036  159.414772   441.729299              113.683946
+    S1_MILD PARTIAL_RECOVERY_40PCT  Delay_Reduction_Percent               5    33.787315   23.738954    43.835676                8.092657
+    S1_MILD PARTIAL_RECOVERY_40PCT Maximum_Port_Peak_Change               5    -0.400000   -1.080087     0.280087                0.547723
+    S1_MILD PARTIAL_RECOVERY_50PCT        Delay_Saved_Hours               5   341.878125  189.699454   494.056796              122.560267
+    S1_MILD PARTIAL_RECOVERY_50PCT  Delay_Reduction_Percent               5    38.531343   28.263128    48.799558                8.269721
+    S1_MILD PARTIAL_RECOVERY_50PCT Maximum_Port_Peak_Change               5    -0.400000   -1.080087     0.280087                0.547723
+S2_MODERATE     FIXED_RECOVERY_12H        Delay_Saved_Hours               5  2505.600000 1104.432489  3906.767511             1128.459481
+S2_MODERATE     FIXED_RECOVERY_12H  Delay_Reduction_Percent               5    31.965038   22.052188    41.877889                7.983521
+S2_MODERATE     FIXED_RECOVERY_12H Maximum_Port_Peak_Change               5     0.000000   -0.877989     0.877989                0.707107
+S2_MODERATE     FIXED_RECOVERY_18H        Delay_Saved_Hours               5  3056.400000 1466.298692  4646.501308             1280.621255
+S2_MODERATE     FIXED_RECOVERY_18H  Delay_Reduction_Percent               5    39.188194   28.775640    49.600748                8.385967
+S2_MODERATE     FIXED_RECOVERY_18H Maximum_Port_Peak_Change               5     0.000000   -1.241664     1.241664                1.000000
+S2_MODERATE     FIXED_RECOVERY_24H        Delay_Saved_Hours               5  3446.400000 1750.341154  5142.458846             1365.956368
+S2_MODERATE     FIXED_RECOVERY_24H  Delay_Reduction_Percent               5    44.347985   33.919995    54.775975                8.398399
+S2_MODERATE     FIXED_RECOVERY_24H Maximum_Port_Peak_Change               5    -0.200000   -1.238851     0.838851                0.836660
+S2_MODERATE      FIXED_RECOVERY_6H        Delay_Saved_Hours               5  1635.600000  578.455410  2692.744590              851.393446
+S2_MODERATE      FIXED_RECOVERY_6H  Delay_Reduction_Percent               5    20.635612   12.182498    29.088727                6.807892
+S2_MODERATE      FIXED_RECOVERY_6H Maximum_Port_Peak_Change               5    -0.200000   -0.755289     0.355289                0.447214
+S2_MODERATE            NO_RECOVERY        Delay_Saved_Hours               5     0.000000    0.000000     0.000000                0.000000
+S2_MODERATE            NO_RECOVERY  Delay_Reduction_Percent               5     0.000000    0.000000     0.000000                0.000000
+S2_MODERATE            NO_RECOVERY Maximum_Port_Peak_Change               5     0.000000    0.000000     0.000000                0.000000
+S2_MODERATE PARTIAL_RECOVERY_10PCT        Delay_Saved_Hours               5  1518.397643  567.958392  2468.836895              765.456076
+S2_MODERATE PARTIAL_RECOVERY_10PCT  Delay_Reduction_Percent               5    19.211552   11.962528    26.460575                5.838152
+S2_MODERATE PARTIAL_RECOVERY_10PCT Maximum_Port_Peak_Change               5    -0.200000   -0.755289     0.355289                0.447214
+S2_MODERATE PARTIAL_RECOVERY_20PCT        Delay_Saved_Hours               5  2349.194890 1053.974231  3644.415549             1043.132974
+S2_MODERATE PARTIAL_RECOVERY_20PCT  Delay_Reduction_Percent               5    29.999742   20.970349    39.029136                7.272010
+S2_MODERATE PARTIAL_RECOVERY_20PCT Maximum_Port_Peak_Change               5     0.000000   -0.877989     0.877989                0.707107
+S2_MODERATE PARTIAL_RECOVERY_25PCT        Delay_Saved_Hours               5  2652.435681 1251.547230  4053.324133             1128.234735
+S2_MODERATE PARTIAL_RECOVERY_25PCT  Delay_Reduction_Percent               5    33.970777   24.579754    43.361800                7.563256
+S2_MODERATE PARTIAL_RECOVERY_25PCT Maximum_Port_Peak_Change               5    -0.200000   -1.238851     0.838851                0.836660
+S2_MODERATE PARTIAL_RECOVERY_30PCT        Delay_Saved_Hours               5  2910.281833 1426.409284  4394.154383             1195.067709
+S2_MODERATE PARTIAL_RECOVERY_30PCT  Delay_Reduction_Percent               5    37.358842   27.758485    46.959198                7.731847
+S2_MODERATE PARTIAL_RECOVERY_30PCT Maximum_Port_Peak_Change               5    -0.200000   -1.238851     0.838851                0.836660
+S2_MODERATE PARTIAL_RECOVERY_40PCT        Delay_Saved_Hours               5  3332.200757 1726.238360  4938.163155             1293.395315
+S2_MODERATE PARTIAL_RECOVERY_40PCT  Delay_Reduction_Percent               5    42.925239   33.163079    52.687400                7.862159
+S2_MODERATE PARTIAL_RECOVERY_40PCT Maximum_Port_Peak_Change               5     0.000000   -0.877989     0.877989                0.707107
+S2_MODERATE PARTIAL_RECOVERY_50PCT        Delay_Saved_Hours               5  3669.132843 1979.202134  5359.063552             1361.020945
+S2_MODERATE PARTIAL_RECOVERY_50PCT  Delay_Reduction_Percent               5    47.391723   37.663014    57.120431                7.835218
+S2_MODERATE PARTIAL_RECOVERY_50PCT Maximum_Port_Peak_Change               5    -0.600000   -1.710578     0.510578                0.894427
+  S3_SEVERE     FIXED_RECOVERY_12H        Delay_Saved_Hours               5  5731.200000 2047.025108  9415.374892             2967.127095
+  S3_SEVERE     FIXED_RECOVERY_12H  Delay_Reduction_Percent               5    17.734741    9.282236    26.187246                6.807401
+  S3_SEVERE     FIXED_RECOVERY_12H Maximum_Port_Peak_Change               5     0.200000   -0.355289     0.755289                0.447214
+  S3_SEVERE     FIXED_RECOVERY_18H        Delay_Saved_Hours               5  7522.800000 3549.473421 11496.126579             3200.001437
+  S3_SEVERE     FIXED_RECOVERY_18H  Delay_Reduction_Percent               5    23.443674   14.975162    31.912186                6.820293
+  S3_SEVERE     FIXED_RECOVERY_18H Maximum_Port_Peak_Change               5     0.000000   -0.877989     0.877989                0.707107
+  S3_SEVERE     FIXED_RECOVERY_24H        Delay_Saved_Hours               5  8937.600000 4750.915800 13124.284200             3371.833448
+  S3_SEVERE     FIXED_RECOVERY_24H  Delay_Reduction_Percent               5    27.964517   19.550833    36.378202                6.776136
+  S3_SEVERE     FIXED_RECOVERY_24H Maximum_Port_Peak_Change               5     0.800000   -0.238851     1.838851                0.836660
+  S3_SEVERE      FIXED_RECOVERY_6H        Delay_Saved_Hours               5  3286.800000  543.589843  6030.010157             2209.301519
+  S3_SEVERE      FIXED_RECOVERY_6H  Delay_Reduction_Percent               5    10.055105    3.361176    16.749033                5.391095
+  S3_SEVERE      FIXED_RECOVERY_6H Maximum_Port_Peak_Change               5     0.200000   -0.838851     1.238851                0.836660
+  S3_SEVERE            NO_RECOVERY        Delay_Saved_Hours               5     0.000000    0.000000     0.000000                0.000000
+  S3_SEVERE            NO_RECOVERY  Delay_Reduction_Percent               5     0.000000    0.000000     0.000000                0.000000
+  S3_SEVERE            NO_RECOVERY Maximum_Port_Peak_Change               5     0.000000    0.000000     0.000000                0.000000
+  S3_SEVERE PARTIAL_RECOVERY_10PCT        Delay_Saved_Hours               5  5987.170741 2611.333783  9363.007700             2718.800709
+  S3_SEVERE PARTIAL_RECOVERY_10PCT  Delay_Reduction_Percent               5    18.622928   11.243427    26.002428                5.943234
+  S3_SEVERE PARTIAL_RECOVERY_10PCT Maximum_Port_Peak_Change               5     0.200000   -0.355289     0.755289                0.447214
+  S3_SEVERE PARTIAL_RECOVERY_20PCT        Delay_Saved_Hours               5  9120.671217 5059.530490 13181.811943             3270.724393
+  S3_SEVERE PARTIAL_RECOVERY_20PCT  Delay_Reduction_Percent               5    28.592530   20.637606    36.547455                6.406664
+  S3_SEVERE PARTIAL_RECOVERY_20PCT Maximum_Port_Peak_Change               5     0.600000   -0.815715     2.015715                1.140175
+  S3_SEVERE PARTIAL_RECOVERY_25PCT        Delay_Saved_Hours               5 10267.028276 6039.946546 14494.110006             3404.368441
+  S3_SEVERE PARTIAL_RECOVERY_25PCT  Delay_Reduction_Percent               5    32.261432   24.362643    40.160221                6.361454
+  S3_SEVERE PARTIAL_RECOVERY_25PCT Maximum_Port_Peak_Change               5     0.800000   -0.818932     2.418932                1.303840
+  S3_SEVERE PARTIAL_RECOVERY_30PCT        Delay_Saved_Hours               5 11243.675371 6894.042315 15593.308428             3503.067708
+  S3_SEVERE PARTIAL_RECOVERY_30PCT  Delay_Reduction_Percent               5    35.392905   27.600757    43.185054                6.275570
+  S3_SEVERE PARTIAL_RECOVERY_30PCT Maximum_Port_Peak_Change               5     1.200000   -0.160175     2.560175                1.095445
+  S3_SEVERE PARTIAL_RECOVERY_40PCT        Delay_Saved_Hours               5 12842.293404 8317.737718 17366.849089             3643.945296
+  S3_SEVERE PARTIAL_RECOVERY_40PCT  Delay_Reduction_Percent               5    40.527098   32.987570    48.066625                6.072116
+  S3_SEVERE PARTIAL_RECOVERY_40PCT Maximum_Port_Peak_Change               5     1.000000   -0.241664     2.241664                1.000000
+  S3_SEVERE PARTIAL_RECOVERY_50PCT        Delay_Saved_Hours               5 14116.013419 9468.367704 18763.659135             3743.078419
+  S3_SEVERE PARTIAL_RECOVERY_50PCT  Delay_Reduction_Percent               5    44.623395   37.332643    51.914147                5.871759
+  S3_SEVERE PARTIAL_RECOVERY_50PCT Maximum_Port_Peak_Change               5     0.400000   -0.710578     1.510578                0.894427
+
+PER-SEED RANK STABILITY
+----------------------------------------------------------------------------------------------------
+   Scenario        Recovery_Policy  Mean_Rank_Sum  Rank_Sum_CI95_Lower  Rank_Sum_CI95_Upper  Rank_Sum_SD  Best_Rank_Count  N_Seeds  Seed_Win_Count
+    S1_MILD     FIXED_RECOVERY_12H            4.0             4.000000             4.000000     0.000000                5        5               0
+    S1_MILD     FIXED_RECOVERY_18H            3.0             3.000000             3.000000     0.000000                5        5               0
+    S1_MILD     FIXED_RECOVERY_24H            2.0             2.000000             2.000000     0.000000                5        5               5
+    S1_MILD      FIXED_RECOVERY_6H            7.2             6.644711             7.755289     0.447214                4        5               0
+    S1_MILD            NO_RECOVERY           15.4             9.602612            21.197388     4.669047                3        5               0
+    S1_MILD PARTIAL_RECOVERY_10PCT           14.4             8.602612            20.197388     4.669047                3        5               0
+    S1_MILD PARTIAL_RECOVERY_20PCT           11.6             7.157688            16.042312     3.577709                4        5               0
+    S1_MILD PARTIAL_RECOVERY_25PCT            9.0             9.000000             9.000000     0.000000                5        5               0
+    S1_MILD PARTIAL_RECOVERY_30PCT            7.8             7.244711             8.355289     0.447214                1        5               0
+    S1_MILD PARTIAL_RECOVERY_40PCT            6.0             6.000000             6.000000     0.000000                5        5               0
+    S1_MILD PARTIAL_RECOVERY_50PCT            5.0             5.000000             5.000000     0.000000                5        5               0
+S2_MODERATE     FIXED_RECOVERY_12H           10.2             7.235568            13.164432     2.387467                1        5               0
+S2_MODERATE     FIXED_RECOVERY_18H            7.8             2.576150            13.023850     4.207137                2        5               0
+S2_MODERATE     FIXED_RECOVERY_24H            4.0             2.479278             5.520722     1.224745                2        5               0
+S2_MODERATE      FIXED_RECOVERY_6H           11.8             8.835568            14.764432     2.387467                1        5               0
+S2_MODERATE            NO_RECOVERY           15.4            10.543205            20.256795     3.911521                1        5               0
+S2_MODERATE PARTIAL_RECOVERY_10PCT           12.4             9.045209            15.754791     2.701851                1        5               0
+S2_MODERATE PARTIAL_RECOVERY_20PCT           11.2             8.235568            14.164432     2.387467                1        5               0
+S2_MODERATE PARTIAL_RECOVERY_25PCT            8.0             6.479278             9.520722     1.224745                2        5               0
+S2_MODERATE PARTIAL_RECOVERY_30PCT            7.0             5.479278             8.520722     1.224745                2        5               0
+S2_MODERATE PARTIAL_RECOVERY_40PCT            6.8             2.288811            11.311189     3.633180                1        5               0
+S2_MODERATE PARTIAL_RECOVERY_50PCT            2.6             0.934133             4.265867     1.341641                4        5               5
+  S3_SEVERE     FIXED_RECOVERY_12H           11.0             9.036757            12.963243     1.581139                1        5               0
+  S3_SEVERE     FIXED_RECOVERY_18H            9.0             7.244022            10.755978     1.414214                3        5               0
+  S3_SEVERE     FIXED_RECOVERY_24H           11.6             7.813434            15.386566     3.049590                1        5               0
+  S3_SEVERE      FIXED_RECOVERY_6H           12.4            10.322299            14.477701     1.673320                2        5               0
+  S3_SEVERE            NO_RECOVERY           12.8            11.181068            14.418932     1.303840                3        5               0
+  S3_SEVERE PARTIAL_RECOVERY_10PCT           10.4             8.984285            11.815715     1.140175                1        5               0
+  S3_SEVERE PARTIAL_RECOVERY_20PCT            9.2             5.332859            13.067141     3.114482                1        5               0
+  S3_SEVERE PARTIAL_RECOVERY_25PCT            8.8             4.204166            13.395834     3.701351                1        5               0
+  S3_SEVERE PARTIAL_RECOVERY_30PCT            9.6             4.586998            14.613002     4.037326                1        5               0
+  S3_SEVERE PARTIAL_RECOVERY_40PCT            8.2             4.234443            12.165557     3.193744                1        5               1
+  S3_SEVERE PARTIAL_RECOVERY_50PCT            5.2             0.050461            10.349539     4.147288                2        5               4
+
+MEAN-LEVEL PARETO SCREENING
+----------------------------------------------------------------------------------------------------
+       Recovery_Policy  Mean_Accumulated_Delay_Hours  Mean_Maximum_Port_Peak  Mean_Average_Port_Peak  Pareto_Efficient    Scenario
+           NO_RECOVERY                      0.000000                     6.0                1.894737              True S0_BASELINE
+    FIXED_RECOVERY_12H                    484.800000                     6.4                1.926316             False     S1_MILD
+    FIXED_RECOVERY_18H                    434.400000                     6.4                1.926316             False     S1_MILD
+    FIXED_RECOVERY_24H                    384.000000                     6.4                1.926316              True     S1_MILD
+     FIXED_RECOVERY_6H                    603.600000                     6.4                1.915789             False     S1_MILD
+           NO_RECOVERY                    864.000000                     6.8                1.947368             False     S1_MILD
+PARTIAL_RECOVERY_10PCT                    754.543071                     6.8                1.947368             False     S1_MILD
+PARTIAL_RECOVERY_20PCT                    674.553590                     6.6                1.936842             False     S1_MILD
+PARTIAL_RECOVERY_25PCT                    641.950607                     6.4                1.926316             False     S1_MILD
+PARTIAL_RECOVERY_30PCT                    612.989454                     6.4                1.926316             False     S1_MILD
+PARTIAL_RECOVERY_40PCT                    563.427964                     6.4                1.915789             False     S1_MILD
+PARTIAL_RECOVERY_50PCT                    522.121875                     6.4                1.915789             False     S1_MILD
+    FIXED_RECOVERY_12H                   5040.000000                     7.8                2.115789             False S2_MODERATE
+    FIXED_RECOVERY_18H                   4489.200000                     7.8                2.094737             False S2_MODERATE
+    FIXED_RECOVERY_24H                   4099.200000                     7.6                2.115789             False S2_MODERATE
+     FIXED_RECOVERY_6H                   5910.000000                     7.6                2.105263             False S2_MODERATE
+           NO_RECOVERY                   7545.600000                     7.8                2.084211             False S2_MODERATE
+PARTIAL_RECOVERY_10PCT                   6027.202357                     7.6                2.105263             False S2_MODERATE
+PARTIAL_RECOVERY_20PCT                   5196.405110                     7.8                2.115789             False S2_MODERATE
+PARTIAL_RECOVERY_25PCT                   4893.164319                     7.6                2.094737             False S2_MODERATE
+PARTIAL_RECOVERY_30PCT                   4635.318167                     7.6                2.105263             False S2_MODERATE
+PARTIAL_RECOVERY_40PCT                   4213.399243                     7.8                2.105263             False S2_MODERATE
+PARTIAL_RECOVERY_50PCT                   3876.467157                     7.2                2.052632              True S2_MODERATE
+    FIXED_RECOVERY_12H                  25483.200000                     8.2                2.189474             False   S3_SEVERE
+    FIXED_RECOVERY_18H                  23691.600000                     8.0                2.221053              True   S3_SEVERE
+    FIXED_RECOVERY_24H                  22276.800000                     8.8                2.273684             False   S3_SEVERE
+     FIXED_RECOVERY_6H                  27927.600000                     8.2                2.178947             False   S3_SEVERE
+           NO_RECOVERY                  31214.400000                     8.0                2.200000             False   S3_SEVERE
+PARTIAL_RECOVERY_10PCT                  25227.229259                     8.2                2.178947             False   S3_SEVERE
+PARTIAL_RECOVERY_20PCT                  22093.728783                     8.6                2.284211             False   S3_SEVERE
+PARTIAL_RECOVERY_25PCT                  20947.371724                     8.8                2.284211             False   S3_SEVERE
+PARTIAL_RECOVERY_30PCT                  19970.724629                     9.2                2.294737             False   S3_SEVERE
+PARTIAL_RECOVERY_40PCT                  18372.106596                     9.0                2.284211             False   S3_SEVERE
+PARTIAL_RECOVERY_50PCT                  17098.386581                     8.4                2.210526              True   S3_SEVERE
+
+FIGURES GENERATED
+----------------------------------------------------------------------------------------------------
+outputs/figures/34_partial_recovery_sensitivity.png
+outputs/figures/34_fixed_recovery_sensitivity.png
+outputs/figures/34_delay_peak_tradeoff.png
+outputs/figures/34_seed_rank_stability.png
+
+
+INTERPRETATION AND LIMITATIONS
+----------------------------------------------------------------------------------------------------
+1. The confidence intervals are descriptive intervals across the five simulated seeds. They do not quantify uncertainty in real-world maritime performance.
+2. Five seeds are a small exploratory replication set. Conclusions about policy superiority should be treated cautiously.
+3. Paired comparisons use the same seed-specific vessel and disruption-onset selection as the NO_RECOVERY reference.
+4. Rank sums are descriptive summaries, not validated multi-objective utility functions.
+5. Pareto screening uses mean accumulated delay and mean maximum port-specific peak; it does not prove an operational optimum.
+6. Port-call concurrency is not berth occupancy, port capacity, or a direct congestion measure.
+7. Recovery percentages and fixed-hour limits remain hypothetical until supported by measured schedule slack or operational evidence.
+8. No AIS-confirmed Strait of Hormuz transit is inferred by this analysis.

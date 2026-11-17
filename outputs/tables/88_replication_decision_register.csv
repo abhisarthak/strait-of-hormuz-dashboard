@@ -1,0 +1,4 @@
+Option_ID,Option,Definition,Status,Required_Decision,Approved
+RP88-01,Deterministic reproducibility,One deterministic replay per fixed scenario/policy,PROPOSED_FIRST_STAGE,Confirm exact reproducibility and seed handling,False
+RP88-02,Stochastic replications,Only if stochastic components are introduced; count based on pilot variance and precision target,NOT_SELECTED,"Requires a declared estimand, precision target and variance pilot",False
+RP88-03,Paired/common random numbers,Matched streams across policies/scenarios only if stochastic streams exist and implementation is validated,CONDITIONAL_NOT_SELECTED,No stochastic streams currently established by the deterministic pilot,False

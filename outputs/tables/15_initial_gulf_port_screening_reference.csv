@@ -1,0 +1,14 @@
+LOCODE,Port_Name,Screening_Category,Inside_Persian_Gulf_Screening,AIS_Transit_Proof
+AEJEA,Jebel Ali,GULF_CORE,True,False
+AEKLF,Khor Fakkan,GULF_CORE,True,False
+AEFJR,Fujairah,GULF_CORE,True,False
+AEAUH,Abu Dhabi,GULF_CORE,True,False
+BHBAH,Bahrain,GULF_CORE,True,False
+KWKWI,Kuwait,GULF_CORE,True,False
+QAHMD,Hamad Port,GULF_CORE,True,False
+QARLF,Ras Laffan,GULF_CORE,True,False
+QAMES,Mesaieed,GULF_CORE,True,False
+IQUQR,Umm Qasr,GULF_CORE,True,False
+OMSOH,Sohar,GULF_CORE,True,False
+OMSLL,Salalah,STRAIT_APPROACH,False,False
+OMMCT,Muscat,STRAIT_APPROACH,False,False

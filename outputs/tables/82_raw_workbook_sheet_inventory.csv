@@ -1,0 +1,2 @@
+Workbook,Sheet_Name,Row_Count,Column_Count,Columns
+data/raw/Combined_Port_Schedules.xlsx,Sheet1,1894,20,Port | UN Location Code | Facility SMDG Code | Vessel Name | IMO Number | Call Sign | Flag | Dummy Vessel | Carrier Code | Carrier Service Name | Carrier Service Code | Import Voyage Number | Export Voyage Number | Planned Arrival | Estimated Arrival | Actual Arrival | Planned Departure | Estimated Departure | Actual Departure | Source_Port

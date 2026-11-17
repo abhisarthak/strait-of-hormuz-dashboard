@@ -1,0 +1,11 @@
+Check,Passed,Observed,Expected
+Script64 edge count,True,53,53
+Script19 edge count,True,53,53
+Script64 and Script19 pair sets match,True,53,53
+All Script19 parameters joined,True,53,53
+No source join gaps in Script64,True,53,53
+No empirical resampling approvals,True,0,0
+No parametric fitting approvals,True,0,0
+No selected values assigned,True,0,0
+No Script19 input modifications,True,0,0
+Decision log has one row per edge,True,53,53

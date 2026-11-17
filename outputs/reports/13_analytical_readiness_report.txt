@@ -1,0 +1,63 @@
+===========================================================================
+SCRIPT 13: ANALYTICAL READINESS REPORT
+===========================================================================
+
+Generated UTC: 2026-11-13T06:40:19.136325+00:00
+
+1. INPUT DATASET DIMENSIONS
+--------------------------------------------------
+Integrated schedule: (1894, 67)
+Individual vessel calls: (617, 55)
+
+2. DATASET READINESS SUMMARY
+--------------------------------------------------
+                Dataset  Total_Records  Unique_IMOs  Unique_LOCODEs  Missing_IMO  Missing_LOCODE  Actual_Complete_Pairs  Actual_Valid_Chronology  Actual_Negative_Stays  Estimated_Complete_Pairs  Planned_Complete_Pairs  Actual_Baseline_Eligible
+    Integrated Schedule           1894          207              20          117               0                    618                      618                      0                      1894                    1894                       618
+Individual Vessel Calls            617           35              75            0               1                    424                      424                      0                       617                     617                       424
+
+3. TIMESTAMP COVERAGE
+--------------------------------------------------
+                Dataset Timestamp_Source  Total_Records  Arrival_Available  Departure_Available  Complete_Pairs  Valid_Chronology  Negative_Stays
+    Integrated Schedule          Planned           1894               1894                 1894            1894              1894               0
+    Integrated Schedule        Estimated           1894               1894                 1894            1894              1892               2
+    Integrated Schedule           Actual           1894                631                  620             618               618               0
+Individual Vessel Calls          Planned            617                617                  617             617               617               0
+Individual Vessel Calls        Estimated            617                617                  617             617               616               1
+Individual Vessel Calls           Actual            617                428                  425             424               424               0
+
+4. SCHEDULE RECORD STATUS
+--------------------------------------------------
+                        Record_Status  Record_Count
+  ESTIMATED_ONLY_OR_INCOMPLETE_ACTUAL          1159
+                      ACTUAL_COMPLETE           604
+                          MISSING_IMO           117
+ACTUAL_COMPLETE_REVIEW_REPRESENTATION            14
+
+5. INDIVIDUAL CALL STATUS
+--------------------------------------------------
+                      Record_Status  Record_Count
+                    ACTUAL_COMPLETE           424
+ESTIMATED_ONLY_OR_INCOMPLETE_ACTUAL           192
+                     MISSING_LOCODE             1
+
+6. BASELINE DATASET SIZES
+--------------------------------------------------
+Schedule baseline - core: 618 records
+Schedule baseline - conservative: 604 records
+Individual actual baseline: 424 records
+Schedule representation candidates flagged: 14
+
+
+7. METHODOLOGICAL NOTES
+--------------------------------------------------
+- Planned, estimated and actual timestamps are kept separate.
+- Actual baseline eligibility requires a complete, non-negative actual port stay, IMO and LOCODE.
+- The core baseline retains representation candidates but flags them.
+- The conservative baseline excludes the 14 previously identified candidate source rows pending physical-call review.
+- No original records have been deleted.
+- Actual port calls do not establish the vessel's route through the Strait of Hormuz.
+- AIS trajectory or another reliable movement source is still required to confirm Strait transit.
+
+===========================================================================
+END OF REPORT
+===========================================================================

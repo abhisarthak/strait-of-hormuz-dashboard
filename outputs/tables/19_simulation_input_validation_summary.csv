@@ -1,0 +1,10 @@
+Metric,Value
+Historical schedule records,604
+Vessels in primary baseline,155
+Ports in primary baseline,19
+Port service observations,604
+Observed inter-port transitions,271
+Distinct inter-port pairs,53
+Negative inter-port elapsed times excluded,0
+Ports with no verified coordinates from this script,19
+Disruption scenarios created,5

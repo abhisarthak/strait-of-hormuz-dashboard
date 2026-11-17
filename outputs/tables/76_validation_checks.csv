@@ -1,0 +1,16 @@
+Check_ID,Description,Passed,Observed,Expected,Severity,Overall_Status
+SOURCE_SCENARIO_COUNT,Script 75 contains the expected 17 scenarios,True,17,17,ERROR,PASS
+SOURCE_CALL_COUNTS,Every source scenario contains 604 unique calls,True,604;604;604;604;604;604;604;604;604;604;604;604;604;604;604;604;604,604,ERROR,PASS
+SOURCE_VESSEL_COUNTS,Every source scenario contains 155 unique vessels,True,155;155;155;155;155;155;155;155;155;155;155;155;155;155;155;155;155,155,ERROR,PASS
+SOURCE_UNIQUE_SCENARIO_CALL_KEYS,Scenario/call keys are unique,True,0,0,ERROR,PASS
+SCRIPT75_BASELINE_ZERO,Script 75 baseline has zero shock and zero delay,True,0,0,ERROR,PASS
+RECURRENCE_RECONCILIATION,All call-level delays reconcile to prior delay + shock - bounded recovery,True,0,0,ERROR,PASS
+NONNEGATIVE_DELAY_AND_RECOVERY,No negative delay or recovery amount,True,0,0,ERROR,PASS
+RECOVERY_WITHIN_AVAILABLE_DELAY,Recovery never exceeds delay available before recovery,True,0,0,ERROR,PASS
+NO_FIRST_CALL_RECOVERY,No recovery is applied before a vessel's first call,True,0,0,ERROR,PASS
+NO_RECOVERY_POLICY_IDENTITY,No-recovery policy applies zero recovery on every call,True,0,0,ERROR,PASS
+OUTPUT_CALL_ROW_COUNT,Every source call is represented under every scenario and policy,True,51340,51340,ERROR,PASS
+OUTPUT_VESSEL_ROW_COUNT,Every source vessel is represented under every scenario and policy,True,13175,13175,ERROR,PASS
+SUMMARY_ROW_COUNT,Every scenario-policy combination has one summary row,True,85,85,ERROR,PASS
+NO_RECOVERY_SCRIPT75_REPRODUCTION,No-recovery policy exactly reproduces Script75 call-level delays,True,0,0,ERROR,PASS
+POLICY_DOMINANCE_MONOTONICITY,All mathematically comparable recovery-policy pairs obey call-level delay dominance,True,0,0,ERROR,PASS

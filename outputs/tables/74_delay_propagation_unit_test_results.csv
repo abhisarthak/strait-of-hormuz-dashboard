@@ -1,0 +1,11 @@
+Test_ID,Description,Passed,Observed,Error,Overall_Status
+T01,Zero-shock identity,True,All delays zero across three calls,,PASS
+T02,Single transit shock propagation,True,24 h transit shock at B2 persists through B3,,PASS
+T03,Port-call duration shock propagation,True,12 h port-call duration shock at C2 propagates to C3,,PASS
+T04,Multiple shocks accumulate across calls,True,"Arrival [0,10,22]; departure [0,15,22]",,PASS
+T05,Same-port sequence propagation,True,8 h delay persists across same-port and next-port links,,PASS
+T06,Vessel sequences are independent,True,18 h shock on VA leaves VB unaffected,,PASS
+T07,Recovery reduces propagated delay,True,24 h shock less 6 h recovery leaves 18 h,,PASS
+T08,Recovery cannot create negative delay,True,Recovery is capped at available delay; no negative delay,,PASS
+T09,Negative disruption input rejected,True,Negative shock rejected,,PASS
+T10,Negative recovery input rejected,True,Negative recovery rejected,,PASS

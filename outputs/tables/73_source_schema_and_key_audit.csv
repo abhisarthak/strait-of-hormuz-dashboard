@@ -1,0 +1,7 @@
+Source,Filename,Rows,Columns,Key_Columns,Key_Null_Rows,Duplicate_Key_Rows
+schedule,19_historical_arrival_schedule.csv,604,16,Simulation_Record_ID,0,0
+vessels,19_vessel_parameters.csv,155,15,IMO_Normalised,0,0
+ports,19_port_parameters.csv,19,21,UNLOCODE_Normalised,0,0
+port_service,19_port_service_parameters.csv,19,11,UNLOCODE_Normalised,0,0
+interport,19_interport_time_parameters.csv,53,11,Previous_Port;Next_Port,0,0
+transitions,19_observed_interport_transitions.csv,271,72,IMO_Normalised;Simulation_Record_ID,0,0

@@ -1,0 +1,9 @@
+Metric,Value
+Original Schedule records,1894
+Sequence-ready Schedule records,1887
+Verified representation groups,7
+Verified representation source records,14
+Negative transitions before,7
+Negative transitions after,0
+Negative transitions matching verified pairs,7
+Negative transitions not matching verified pairs,0

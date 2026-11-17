@@ -1,0 +1,10 @@
+Stronger_Recovery_Policy_ID,Weaker_Recovery_Policy_ID,Compared_Scenario_Call_Pairs,Monotonicity_Failures,Passed,Interpretation
+R76-01-FIXED-6H,R76-00-NONE,10268,0,True,Stronger policy must not produce greater call-level delay
+R76-02-FIXED-12H,R76-00-NONE,10268,0,True,Stronger policy must not produce greater call-level delay
+R76-03-PROP-25-CAP6,R76-00-NONE,10268,0,True,Stronger policy must not produce greater call-level delay
+R76-04-PROP-50-CAP12,R76-00-NONE,10268,0,True,Stronger policy must not produce greater call-level delay
+R76-01-FIXED-6H,R76-03-PROP-25-CAP6,10268,0,True,Stronger policy must not produce greater call-level delay
+R76-02-FIXED-12H,R76-01-FIXED-6H,10268,0,True,Stronger policy must not produce greater call-level delay
+R76-02-FIXED-12H,R76-03-PROP-25-CAP6,10268,0,True,Stronger policy must not produce greater call-level delay
+R76-02-FIXED-12H,R76-04-PROP-50-CAP12,10268,0,True,Stronger policy must not produce greater call-level delay
+R76-04-PROP-50-CAP12,R76-03-PROP-25-CAP6,10268,0,True,Stronger policy must not produce greater call-level delay

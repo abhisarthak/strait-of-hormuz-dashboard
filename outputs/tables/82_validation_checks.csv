@@ -1,0 +1,6 @@
+Check_ID,Description,Observed,Expected,Status
+C01,All 23 Script80 long-interval records processed,23,23,PASS
+C02,Every review vessel represented in boundary register,23,23,PASS
+C03,Boundary match flags are boolean and non-null,23,23,PASS
+C04,No source authenticity or operational approvals assigned,0,0,PASS
+C05,Intermediate event rows are strictly inside interval bounds,2,2,PASS

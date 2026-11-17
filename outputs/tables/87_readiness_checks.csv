@@ -1,0 +1,22 @@
+Check,Observed,Expected,Passed,Note
+Baseline record count,604,604,True,
+Unique simulation record IDs,604,604,True,
+Unique vessel count,155,155,True,
+Unique port count,19,19,True,
+Actual timestamps complete,0,0,True,
+Non-negative observed port-call intervals,0,0,True,
+Vessel parameter row count,155,155,True,
+Unique vessel parameter keys,155,155,True,
+All baseline vessels represented,0,0,True,
+Port parameter row count,19,19,True,
+Unique port parameter keys,19,19,True,
+All baseline ports represented,0,0,True,
+Port service parameter row count,19,19,True,
+All baseline ports have service parameters,0,0,True,
+Port service statistics reconcile,1,1,True,Recomputed from baseline actual arrival/departure timestamps.
+Observed transition row count,271,271,True,
+Reconstructed transition row count,271,271,True,
+Transition register reconciles to baseline,True,True,True,"Compared current call, previous port, next port, previous departure and elapsed time."
+Directed inter-port pair count,53,53,True,
+Inter-port parameter statistics reconcile,1,1,True,
+Design-register inventory generated,31,Inventory created,True,File presence is not equivalent to researcher approval.

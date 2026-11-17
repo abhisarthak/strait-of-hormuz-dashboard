@@ -1,0 +1,18 @@
+Check,Passed,Observed,Expected,Interpretation
+Primary mechanism is the agreed mechanism,True,TRANSIT_ELAPSED_TIME_SHOCK,TRANSIT_ELAPSED_TIME_SHOCK,Researcher choice does not authorize execution.
+Sixteen scenario factor rows retained,True,16 rows/16 IDs,16 rows/16 IDs,Script88 scenario factor register preserved.
+Eighty unique scenario-policy combinations retained,True,80 rows/80 IDs,80 rows/80 IDs,All proposed combinations preserved.
+Five distinct recovery policies retained,True,5,5,Policy identities and parameter values sourced from Script88.
+Nine response metrics retained,True,9 rows/9 IDs,9 rows/9 IDs,Metric definitions preserved exactly.
+Four scope levels retained,True,4 rows/4 IDs,4 rows/4 IDs,Scope values sourced from Script89.
+Selection register contains 271 unique transition records,True,271,271,Records repeat across four scope levels.
+Selection rank universe has 271 unique ranks,True,271,271,Selection ranks are shared across nested scope levels.
+All 53 directed edges remain unapproved,True,53 rows; approved=0,53 rows; 0 approved,No edge exposure approval inferred.
+No actual Hormuz exposure is established,True,0,0,No AIS-confirmed Hormuz exposure claim.
+No geographic route is marked validated,True,0,0,Observed schedule links are not validated physical routes.
+All four scope levels remain unapproved,True,0,0,Scope shares remain candidate sensitivity settings.
+No Script90 factor approval granted,True,0,0,Researcher decision fields start pending.
+No Script90 recovery policy approval granted,True,0,0,Policies remain hypothetical options.
+G01 researcher confirmation is carried into decision fields,True,CONFIRMED,CONFIRMED with selected mechanism,Mechanism choice is recorded without granting execution approval.
+G01 confirmation does not grant approval or execution,True,Approval=False; Execution=False,Approval=False; Execution=False,Researcher mechanism selection remains distinct from authorization.
+Execution gate remains blocked,True,BLOCKED,BLOCKED,Script90 does not authorize simulation.

@@ -1,0 +1,16 @@
+Check,Passed,Observed,Expected,Interpretation
+Scenario/policy/vessel/call keys available in both files,True,All four key groups found,All four key groups,Exact record pairing requires shared identifiers.
+Script76 composite keys unique,True,0,0,Duplicate keys prevent one-to-one record reconciliation.
+Script77 composite keys unique,True,0,0,Duplicate keys prevent one-to-one record reconciliation.
+"Recovery, sequence and recurrence fields identified",True,"['Recovery_Advance_Hours', 'Script77_Bounded_Recovery_Hours', 'Delay_Before_Recovery_Hours', 'Script77_Delay_Before_Recovery_Hours', 'Observed_Inter_Call_Elapsed_Cap_Hours', 'Script77_Departure_Delay_Hours', 'Simulated_Departure_Delay_Hours', 'Vessel_Call_Sequence_Number', 'Vessel_Call_Sequence_Number', 'Transit_Elapsed_Time_Shock_Hours', 'Transit_Elapsed_Time_Shock_Hours']",All required fields,Both model paths can be audited independently.
+Script76 and Script77 records pair one-to-one,True,missing_in_77=0; extra_in_77=0,0 missing; 0 extra,"Pairing uses scenario, policy, vessel and call identifiers."
+Script77 bounded recovery is nonnegative,True,0,0,Bounded recovery cannot be negative.
+Script77 bounded recovery never exceeds Script76 recovery,True,0,0,Bounded credit cannot exceed requested/applied Script76 credit.
+Script77 exported requested recovery matches Script76,True,0.0,<= 0.001 hours,Direct requested-credit reconciliation.
+Script77 recovery respects observed elapsed-time cap,True,0,0,Mathematical elapsed-time bound only; not established schedule slack.
+Script77 recovery does not exceed its pre-recovery delay,True,0,0,Recovery cannot exceed delay available before recovery.
+Script76 pre-recovery delay follows its own sequence recurrence,True,failures=0; max_abs_error=0.0; missing=[],0 recurrence failures,Pre-delay = previous call's post-recovery delay + current shock.
+Script76 post-recovery delay follows its own recovery arithmetic,True,failures=0; max_abs_error=0.0; missing=[],0 arithmetic failures,"Post-delay = max(0, pre-delay - recovery applied by that script)."
+Script77 pre-recovery delay follows its own sequence recurrence,True,failures=0; max_abs_error=0.0; missing=[],0 recurrence failures,Pre-delay = previous call's post-recovery delay + current shock.
+Script77 post-recovery delay follows its own recovery arithmetic,True,failures=0; max_abs_error=0.0; missing=[],0 arithmetic failures,"Post-delay = max(0, pre-delay - recovery applied by that script)."
+Cross-model pre-delay differences reconcile to prior post-delay differences,True,recurrence_failures=0; shock_mismatches=0,0 recurrence failures; 0 shock mismatches,The same current shock is added to each model's own previous post-recovery delay.

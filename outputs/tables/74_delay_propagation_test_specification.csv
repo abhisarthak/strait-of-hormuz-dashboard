@@ -1,0 +1,11 @@
+Test_ID,Test_Input,Expected_Result
+T01,All shocks/recovery zero,All call delays zero
+T02,24 h transit shock at call 2,Call 2 onward: 24 h
+T03,12 h port-call shock at call 2,Call 2 departure onward: 12 h
+T04,10 h transit + 5 h port-call at call 2; 7 h transit at call 3,"Arrival [0,10,22]; departure [0,15,22]"
+T05,8 h port-call shock at first of two same-port calls,"Departure delays [8,8,8]"
+T06,18 h shock on vessel A only,Vessel B remains at zero
+T07,24 h shock and 6 h recovery,Residual delay 18 h
+T08,Recovery requested with zero delay,Applied recovery zero
+T09,Negative shock,ValueError
+T10,Negative recovery,ValueError

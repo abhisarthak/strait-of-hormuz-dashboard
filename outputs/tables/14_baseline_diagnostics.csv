@@ -1,0 +1,3 @@
+Dataset,Total_Records,Valid_Actual_Records,Excluded_From_Actual_Analysis,Missing_IMO_In_Valid_Set,Missing_LOCODE_In_Valid_Set,Negative_Port_Stays,Same_LOCODE_Consecutive_Records,Negative_Inter_Port_Elapsed,Transition_Count
+Schedule,1894,618,1276,0,0,0,188,7,463
+Individual,617,424,193,0,0,0,32,0,391

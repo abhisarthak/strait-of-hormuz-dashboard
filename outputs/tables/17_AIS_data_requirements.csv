@@ -1,0 +1,10 @@
+Field,Required,Purpose
+IMO,YES,Identify vessel consistently
+Timestamp_UTC,YES,Order vessel positions chronologically
+Latitude,YES,Determine geographic position
+Longitude,YES,Determine geographic position
+SOG_Knots,RECOMMENDED,Assess vessel speed and movement
+COG_Degrees,RECOMMENDED,Assess direction of travel
+Heading_Degrees,OPTIONAL,Additional movement evidence
+Navigation_Status,OPTIONAL,Understand vessel operational state
+Source,YES,Maintain data provenance

@@ -1,0 +1,56 @@
+SCRIPT 89 — TRANSITION EXPOSURE AND SCENARIO SELECTION AUDIT
+==========================================================================
+
+RESEARCH SCOPE
+Primary study: general hypothetical inter-port elapsed-time shock experiment.
+Geopolitical motivation: potential disruption associated with the Strait of Hormuz.
+No claim is made that selected transitions are actual Hormuz-exposed routes or vessels.
+
+SOURCE INVENTORY
+Conservative historical calls: 604
+Observed distinct-port sequence transition records: 271
+Distinct directed port pairs: 53
+Script68 directed edge register rows: 53
+Script68 port register rows: 19
+
+SELECTION DESIGN
+Seed: 8801
+Selection unit: observed current-call transition record.
+Method: seeded random permutation with nested prefixes.
+Scope_Scenario_ID  Affected_Transition_Share  Transition_Universe_Count  Selected_Transition_Count  Unselected_Transition_Count  Selection_Seed                           Selection_Method  Selection_Is_Nested  Exposure_Approval  Execution_Authorized                                                                                                      Interpretation
+         S89-S010                       0.10                        271                         27                          244            8801 Seeded random permutation; nested prefixes                 True              False                 False Mathematical coverage level for a general hypothetical elapsed-time shock; not measured Hormuz exposure probability
+         S89-S025                       0.25                        271                         68                          203            8801 Seeded random permutation; nested prefixes                 True              False                 False Mathematical coverage level for a general hypothetical elapsed-time shock; not measured Hormuz exposure probability
+         S89-S050                       0.50                        271                        136                          135            8801 Seeded random permutation; nested prefixes                 True              False                 False Mathematical coverage level for a general hypothetical elapsed-time shock; not measured Hormuz exposure probability
+         S89-S100                       1.00                        271                        271                            0            8801 Seeded random permutation; nested prefixes                 True              False                 False Mathematical coverage level for a general hypothetical elapsed-time shock; not measured Hormuz exposure probability
+
+INTERPRETATION
+The 271 records are observed consecutive distinct-port schedule links.
+They are not validated physical sailing routes, AIS-confirmed Hormuz transits,
+or approved geographic exposure units. Scope shares are mathematical coverage
+levels for hypothetical sensitivity analysis, not exposure probabilities.
+
+APPROVAL STATUS
+Script68 edge exposure approvals: 0
+Script68 port disruption approvals: 0
+Actual Hormuz-exposed directed pairs established: 0
+Candidate transition selections approved: 0
+Execution authorized: NO
+Source inputs modified: NO
+Simulation executed: NO
+
+READINESS CHECKS
+14/14 passed; 0 failed.
+
+OUTPUTS
+- outputs/tables/89_transition_exposure_audit.csv
+- outputs/tables/89_edge_evidence_summary.csv
+- outputs/tables/89_port_context_register.csv
+- outputs/tables/89_transition_selection_register.csv
+- outputs/tables/89_scenario_scope_summary.csv
+- outputs/tables/89_readiness_checks.csv
+- outputs/reports/89_transition_exposure_and_selection_audit_report.txt
+
+DECISION
+Script89 is an audit and candidate-selection register only. It does not approve
+the proposed shock magnitudes, selected transition records, recovery policies,
+or simulation execution. Researcher and supervisor review remain necessary.

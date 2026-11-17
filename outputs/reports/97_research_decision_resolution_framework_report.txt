@@ -1,0 +1,32 @@
+SCRIPT 97 — RESEARCH DECISION RESOLUTION FRAMEWORK
+==============================================================================
+
+PURPOSE
+Generate editable decision registers for researcher and supervisor review.
+This script does not decide, approve, authorize or execute the experiment.
+
+Open estimand/censoring decisions imported: 12
+Response metrics imported: 9
+Recovery policies imported: 5
+Replication options imported: 3
+
+GOVERNANCE STATUS
+All researcher decisions remain PENDING.
+All supervisor reviews remain PENDING.
+All approval grants remain FALSE.
+All execution authorizations remain FALSE.
+
+IMPORTANT
+The advisory recommendations are not decisions. The researcher must select,
+justify and document values; supervisor review must be recorded separately.
+Do not infer approval from generated files or successful script execution.
+
+OUTPUTS
+- outputs/tables/97_research_decision_resolution_register.csv
+- outputs/tables/97_metric_operationalization_decision_register.csv
+- outputs/tables/97_recovery_policy_decision_register.csv
+- outputs/tables/97_replication_decision_register.csv
+
+NO UPSTREAM FILES MODIFIED.
+NO SIMULATION EXECUTED.
+EXECUTION AUTHORIZATION: NO.

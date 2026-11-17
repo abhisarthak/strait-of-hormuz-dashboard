@@ -1,0 +1,55 @@
+===========================================================================
+SCRIPT 18C: COORDINATE VALIDATION REPORT
+===========================================================================
+
+Input file: 18B_port_master_coordinate_matching.csv
+Total records: 467
+Unique LOCODEs: 464
+
+1. COORDINATE VALIDATION
+---------------------------------------------------------------------------
+
+Production validation:
+18C_Production_Validation_Status
+VALID      273
+MISSING    194
+
+Pre-release validation:
+18C_Prerelease_Validation_Status
+VALID      275
+MISSING    192
+
+2. RELEASE COMPARISON CLASSIFICATION
+---------------------------------------------------------------------------
+                      Category  Record_Count  Percentage
+         IDENTICAL_COORDINATES           270       57.82
+      MISSING_IN_BOTH_RELEASES           192       41.11
+INVALID_PRODUCTION_COORDINATES             2        0.43
+           HEMISPHERE_CONFLICT             1        0.21
+MATERIAL_COORDINATE_DIFFERENCE             1        0.21
+   MINOR_COORDINATE_DIFFERENCE             1        0.21
+
+3. MANUAL REVIEW
+---------------------------------------------------------------------------
+Records requiring manual review: 200
+Ambiguous LOCODE records: 6
+Hemisphere conflicts: 1
+Possible coordinate swaps: 0
+
+4. METHODOLOGICAL LIMITATIONS
+---------------------------------------------------------------------------
+1. Syntax validation does not establish geographic correctness.
+2. No country-boundary or independent geographic reference was used in this script.
+3. A UN/LOCODE coordinate may represent a port or locality reference, not an exact terminal location.
+4. Ambiguous LOCODE records require facility-level validation.
+5. Neither release is automatically treated as authoritative.
+6. No coordinate is automatically selected or corrected.
+7. No distance to the Strait of Hormuz is calculated in Script 18C.
+
+5. OUTPUT FILES
+---------------------------------------------------------------------------
+/Users/abhishekkumar/Strait_of_Hormuz_Research/data/processed/18C_coordinate_assessed_port_master.csv
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/18C_coordinate_release_comparison.csv
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/18C_coordinate_manual_review.csv
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/18C_coordinate_quality_summary.csv
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/reports/18C_coordinate_validation_report.txt

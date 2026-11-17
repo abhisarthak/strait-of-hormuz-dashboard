@@ -1,0 +1,42 @@
+SCRIPT 37 — PORT RELEVANCE AND VALIDATION AUDIT
+==========================================================
+Ports in preliminary evidence register: 19
+Ports matched to Script 21 network metrics: 12
+Ports without a Script 21 network match: 7
+
+RESEARCH RELEVANCE SCREEN (preliminary geographic labels only):
+- PERSIAN_GULF_PORT_CANDIDATE: 12
+- WIDER_REGIONAL_OR_ALTERNATIVE_PORT_CANDIDATE: 4
+- GULF_OF_OMAN_OUTSIDE_GULF_SCREENING: 2
+- ARABIAN_SEA_OUTSIDE_HORMUZ_SCREENING: 1
+
+IDENTITY EVIDENCE ASSESSMENT:
+- STRONG_IDENTITY_SUPPORT: 11
+- PARTIAL_IDENTITY_SUPPORT: 8
+
+COORDINATE ASSESSMENT:
+- FACILITY_MAPPING_REQUIRED: 4
+- COORDINATE_RECONCILIATION_REQUIRED: 2
+- PORT_COORDINATE_EVIDENCE_AVAILABLE: 2
+- UNLOCODE_REFERENCE_ONLY_PENDING_REVIEW: 2
+- COORDINATE_INVALID_OR_UNRESOLVED: 2
+- PENDING_FACILITY_MAPPING: 1
+- TERMINAL_COORDINATE_PENDING: 1
+- PORT_AND_TERMINAL_COORDINATES_SEPARATE: 1
+- PORT_VS_TERMINAL_COORDINATE_DISTINCTION: 1
+- PORT_BOUNDARY_EVIDENCE_AVAILABLE: 1
+- LOCODE_REFERENCE_REQUIRES_FACILITY_REVIEW: 1
+- FACILITY_COORDINATE_REVIEW_REQUIRED: 1
+
+CRITICAL INTERPRETATION:
+1. Geographic-role labels are preliminary screening categories, not validated routes.
+2. A Persian Gulf port call does not prove that a vessel crossed the Strait of Hormuz.
+3. No AIS transit is confirmed by this script; AIS/equivalent evidence remains required.
+4. Network call counts describe the analysed port-call dataset, not total port traffic.
+5. Coordinate evidence is not converted into accepted coordinates or treated as validated.
+6. This script does not remove ports, alter source records, or infer direct navigable legs.
+
+OUTPUTS:
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/37_port_relevance_validation_audit.csv
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/37_port_manual_validation_priority.csv
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/reports/37_port_relevance_validation_audit_report.txt

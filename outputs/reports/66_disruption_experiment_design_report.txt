@@ -1,0 +1,38 @@
+================================================================================================
+SCRIPT 66: DISRUPTION EXPERIMENT DESIGN REGISTER
+================================================================================================
+
+Script65 parameter-option edges: 53
+Script19 directed edges: 53
+Historical schedule calls: 604
+Observed network nodes: 19
+Disruption factors defined: 8
+Experiment families: 5
+Response metrics specified: 11
+Replication protocol elements: 7
+
+READINESS CHECKS
+                                            Check  Passed Observed Expected
+                              Script65 edge count    True       53       53
+                   Script19 inter-port edge count    True       53       53
+            Script65 and Script19 edge sets match    True       53       53
+                         Historical schedule rows    True      604      604
+                   Unique historical schedule IDs    True      604      604
+All schedule ports represented in port parameters    True        0        0
+All edge endpoints represented in port parameters    True        0        0
+                 Script65 decisions still pending    True       53       53
+               No final parameter values selected    True        0        0
+                          No resampling approvals    True        0        0
+                No disruption magnitudes assigned    True        0        0
+                       No affected scope approved    True        5        5
+                         Metrics have definitions    True       11       11
+      Replication protocol has no arbitrary count    True        0        0
+
+KEY INTERPRETATION
+Script66 creates a design framework only. It assigns no disruption magnitude, duration, probability, onset, affected edge/port, or recovery parameter. A network-access restriction experiment is blocked pending evidence for edge meaning and feasible alternatives. The observed 19-node network and 53 directed pairs are historical schedule relationships, not a validated geographic route network. Observed port stay is not berth processing time; capacity fields are unavailable. Concurrency is not berth occupancy. No actual Hormuz transit is established. Economic and emissions metrics require additional defensible inputs.
+
+SOURCE FILES MODIFIED: NO
+SIMULATION INPUTS MODIFIED: NO
+DISRUPTION MAGNITUDES SELECTED: NONE
+AFFECTED PORTS/EDGES APPROVED: NONE
+SIMULATION EXECUTED: NO

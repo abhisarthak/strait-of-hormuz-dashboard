@@ -1,0 +1,9 @@
+Boundary_ID,Model_Element,Evidence_Limit,Required_Reporting_Control
+B01,Observed inter-port elapsed time,Not pure sailing time,Do not label the shock as sailing-time delay.
+B02,Observed port-call sequence,Not a validated physical route,Do not infer actual route access or Hormuz transit.
+B03,Transition share,Not geographic exposure probability,Describe as fraction of observed transition records selected.
+B04,Recovery cap,Not established schedule slack,Do not claim operational recoverability from observed intervals.
+B05,Recovery policy,Not measured operational capability,Describe as hypothetical model policy.
+B06,Deterministic execution,Not statistical replication,Do not report confidence intervals or sampling precision from one deterministic run.
+B07,Simulation output,Not empirical validation,"Separate internal verification, calibration, and external validation."
+B08,End-of-window outcomes,Potential right-censoring,Define common observation horizon and treatment of unfinished vessel sequences.

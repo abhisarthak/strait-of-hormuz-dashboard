@@ -1,0 +1,9 @@
+Check_ID,Description,Passed,Observed,Expected,Status
+CANONICAL_LINK_COUNT,All 449 canonical sequence links are retained,True,449,449,PASS
+UNIQUE_CURRENT_CALLS,Current call IDs are unique,True,449,449,PASS
+TRANSITION_TYPE_COUNTS,Same-port and distinct-port links reconcile,True,same=178; distinct=271,same=178; distinct=271,PASS
+GLOBAL_FLAG_RECALCULATION,All five stored global statistical flags reproduce,True,0,0,PASS
+TIMESTAMP_INTERVAL_RECONCILIATION,Reconstructed interval values match observed values within 0.02h,True,0,0,PASS
+NO_CAUSE_AUTOMATION,No interval cause is automatically assigned,True,1,1,PASS
+NO_SLACK_APPROVAL,No schedule-slack approval is granted,True,1,1,PASS
+NO_OPERATIONAL_RECOVERY_APPROVAL,No operational recovery approval is granted,True,1,1,PASS

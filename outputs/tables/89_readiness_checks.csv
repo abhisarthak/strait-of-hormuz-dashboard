@@ -1,0 +1,15 @@
+Check,Passed,Observed,Expected,Interpretation
+Conservative historical schedule contains 604 calls,True,604,604,The approved historical baseline remains unchanged.
+Historical schedule call IDs are unique,True,604,604,Unique call identity is a structural check.
+Observed transition file contains 271 rows,True,271,271,Candidate universe is the observed distinct-port sequence transition file.
+Transition call IDs are unique,True,271,271,Each transition row should map to one current schedule call.
+All transition rows have previous and next port codes,True,271,271,Missing endpoint identifiers would make pair classification incomplete.
+All transition elapsed intervals are positive and finite,True,271,271,"Positive elapsed intervals are data checks, not sailing-time validation."
+Every transition current-call ID exists in the 604-call schedule,True,271,271,This confirms record linkage only; not physical voyage semantics.
+All 53 observed directed port pairs match Script68 edge register,True,53,53,Pair-level reconciliation does not establish route validity or exposure.
+No Script68 edge exposure approval is present,True,0,0,No transition can inherit an exposure approval.
+No Script68 port disruption approval is present,True,0,0,Port disruption is outside the primary experiment.
+No Script68 experiment scope is approved,True,0,0,The primary mechanism choice is not execution authorization.
+No observed edge establishes actual Hormuz exposure,True,0,0,AIS-confirmed Hormuz transit is not established.
+Nested candidate selections are internally consistent,True,True,True,Nested random prefixes are reproducible mathematical selections only.
+All candidate selections remain unapproved and unauthorized,True,0,0,Script89 cannot grant researcher or supervisor approval.

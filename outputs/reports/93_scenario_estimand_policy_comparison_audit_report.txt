@@ -1,0 +1,72 @@
+SCRIPT 93 — SCENARIO-LEVEL ESTIMAND AND POLICY COMPARISON AUDIT
+==============================================================================
+
+PURPOSE
+Audit scenario-policy pairing and define a candidate estimand/comparison
+framework using Script90 and Script92 registers. Diagnostic only.
+
+SOURCE INVENTORY
+Scenario-policy matrix rows: 80
+Distinct scenarios: 16
+Policy register rows: 5
+Distinct policies: 5
+Response metric rows: 9
+Metric decision rows: 9
+Open Script92 decisions: 12
+
+SCENARIO-POLICY STRUCTURE
+Unique scenario-policy pairs: 80
+Duplicate pairs: 0
+Expected complete pairs: 80
+Complete rectangular coverage: YES
+Policy IDs reconcile: YES
+Uniquely identified no-recovery policy: R76-00-NONE
+
+CANDIDATE COMPARISON LOGIC
+Each alternative recovery policy may be compared against the no-recovery
+policy within the same scenario, using matched vessel/call records and the
+same observation horizon. This is a conditional model-rule contrast, not a
+causal estimate of real-world operational effectiveness.
+A baseline comparison is only structurally identified if exactly one baseline
+policy is identified from the policy register.
+
+CANDIDATE ESTIMANDS
+Eight candidate estimands are listed in 93_candidate_estimand_register.csv.
+They are proposals for formalization, not selected or approved definitions.
+Call-level, vessel-level, upper-tail, recovery-credit and threshold-count
+quantities have distinct denominators and must not be conflated.
+
+CENSORING / COMPARABILITY REQUIREMENTS
+- Use a common observation horizon across all policies within each scenario.
+- Keep the same scenario transition selection and shock realization across policies.
+- Pair by stable call and vessel identifiers; disclose unmatched records.
+- Do not classify unfinished calls/vessels as recovered or zero-delay.
+- Report eligible and censored counts with every metric.
+- Do not compare totals when policy groups have different exposure/denominator sets
+  without explicit standardization or a clearly labelled descriptive interpretation.
+- Do not infer statistical significance, confidence intervals or population effects
+  from a deterministic single-run comparison.
+
+READINESS CHECKS
+14/14 passed; 0 failed.
+
+APPROVAL STATUS
+No estimand selected by this script.
+No policy approved by this script.
+No censoring rule approved by this script.
+No simulation execution authorized.
+No simulation run and no source registers modified.
+
+INTERPRETATION
+The design represents a general hypothetical inter-port elapsed-time shock
+experiment. Observed elapsed time is not pure sailing time; the 10/25/50/100%
+transition shares are mathematical coverage levels, not actual Hormuz exposure
+probabilities. No AIS-confirmed Hormuz transit, validated route, berth capacity,
+or operational recovery feasibility is established.
+
+OUTPUTS
+- outputs/tables/93_scenario_policy_coverage_audit.csv
+- outputs/tables/93_candidate_policy_contrasts.csv
+- outputs/tables/93_candidate_estimand_register.csv
+- outputs/tables/93_readiness_checks.csv
+- outputs/reports/93_scenario_estimand_policy_comparison_audit_report.txt

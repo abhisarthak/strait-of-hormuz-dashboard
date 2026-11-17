@@ -1,0 +1,3 @@
+Dataset,Total_Records,Unique_IMOs,Unique_LOCODEs,Missing_IMO,Missing_LOCODE,Actual_Complete_Pairs,Actual_Valid_Chronology,Actual_Negative_Stays,Estimated_Complete_Pairs,Planned_Complete_Pairs,Actual_Baseline_Eligible
+Integrated Schedule,1894,207,20,117,0,618,618,0,1894,1894,618
+Individual Vessel Calls,617,35,75,0,1,424,424,0,617,617,424

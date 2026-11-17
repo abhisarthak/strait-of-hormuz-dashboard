@@ -1,0 +1,5 @@
+Population,Interval_Count,Both_Schedule_Records_Found,Current_Source_Row_Present,Previous_Source_Row_Present,Schedule_Timestamps_Reconciled,Elapsed_Time_Reconciled,Current_ID_In_Transition_Register,Transition_Register_IMO_Matches,Transition_Register_Port_Matches,Original_Vendor_Source_Verified_Count,Temporal_Component_Attribution_Count,Schedule_Slack_Approval_Count,Operational_Recovery_Approval_Count
+ALL_CANONICAL_INTERVALS,449,449,449,449,449,449,271,271,271,0,0,0,0
+ABOVE_P95,23,23,23,23,23,23,11,11,11,0,0,0,0
+EXTREME_IQR,14,14,14,14,14,14,5,5,5,0,0,0,0
+ABOVE_P95_OR_EXTREME_IQR,23,23,23,23,23,23,11,11,11,0,0,0,0

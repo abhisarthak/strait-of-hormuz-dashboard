@@ -1,0 +1,13 @@
+Decision_ID,Topic,Decision_Required,Decision_Owner
+D01,Delay reference,Define the baseline/reference timestamp used for arrival and departure delay.,Researcher; supervisor review
+D02,Negative/early values,Decide whether early arrivals/departures remain negative or are truncated at zero.,Researcher; supervisor review
+D03,Call eligibility,Define which calls enter each call-level denominator.,Researcher; supervisor review
+D04,Vessel eligibility,Define eligible vessels and the meaning of final represented call.,Researcher; supervisor review
+D05,Accumulated delay,Define exactly what is accumulated for M03B and whether it is a sum across calls.,Researcher; supervisor review
+D06,P90 convention,Select and record the quantile algorithm and zero-delay reporting convention.,Researcher; supervisor review
+D07,Recovery credit,"Define matched no-recovery counterfactual, pairing keys and credit calculation.",Researcher; supervisor review
+D08,Unrecovered threshold,"Select threshold, time point and residual-delay rule for M07A/M07B.",Researcher; supervisor review
+D09,Observation horizon,Set one common simulation observation horizon and sequence-completion rule.,Researcher; supervisor review
+D10,Right-censoring,"Classify unfinished calls/vessels as censored, not recovered or zero-delay by default.",Researcher; supervisor review
+D11,Metric overlap,"Explain the distinct analytical role of M02, M03A, M03B, M04 and M05.",Researcher; supervisor review
+D12,Real-world claims,Keep outputs conditional on hypothetical model rules; no operational/real-world impact claim without validation.,Researcher; supervisor review

@@ -1,0 +1,57 @@
+SCRIPT 88 — FINAL EXPERIMENTAL DESIGN AND PROTOCOL FREEZE (DRAFT)
+==============================================================================
+
+STATUS
+Primary mechanism choice recorded: TRANSIT_ELAPSED_TIME_SHOCK
+Readiness checks: 11/11 passed; 0 failed
+Proposed disruption scenarios: 16
+Proposed scenario-policy combinations: 80
+Response metrics specified: 9
+
+RESEARCHER DECISION
+The researcher confirmed TRANSIT_ELAPSED_TIME_SHOCK as the sole primary
+disruption mechanism. This does not approve any particular edge, exposure scope,
+numerical magnitude, recovery policy, or execution.
+
+PROVISIONAL FACTOR LEVELS
+Shock magnitudes (hours): [6.0, 12.0, 24.0, 48.0]
+Affected transition shares: [0.1, 0.25, 0.5, 1.0]
+Proposed selection seed: 8801
+Transition universe: 271 observed distinct-port sequence transitions.
+Selection: seeded random permutation with nested prefixes across scope levels.
+
+RECOVERY POLICIES
+Five Script76 policies are retained as provisional hypothetical policy options.
+They are not measured operational capabilities. Script77's elapsed-time cap is
+not schedule slack and is not automatically selected as the final rule.
+
+REPLICATION
+First stage proposes deterministic reproducibility. No stochastic replication
+count is selected. Add replications only if stochastic model components are
+introduced and a precision-based design is justified.
+
+NON-NEGOTIABLE LIMITATIONS
+Observed inter-port elapsed time is not pure sailing time. Observed port-call
+sequences are not validated physical routes. No AIS-confirmed Hormuz transit is
+established. No edge/port exposure approvals exist. No network closure, port
+capacity or compound disruption is included in this primary experiment.
+
+APPROVAL STATUS
+Edge exposure approvals: 0
+Port exposure approvals: 0
+Numerical levels approved: NO
+Recovery policies approved: NO
+Supervisor review: PENDING
+Experiment execution authorized: NO
+Source inputs modified: NO
+Simulation executed: NO
+
+OUTPUTS
+- outputs/tables/88_protocol_register.csv
+- outputs/tables/88_scenario_factor_register.csv
+- outputs/tables/88_scenario_policy_matrix.csv
+- outputs/tables/88_response_metric_register.csv
+- outputs/tables/88_replication_decision_register.csv
+- outputs/tables/88_limitation_register.csv
+- outputs/tables/88_readiness_checks.csv
+- outputs/reports/88_final_experimental_design_protocol_freeze_report.txt

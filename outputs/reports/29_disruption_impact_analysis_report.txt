@@ -1,0 +1,80 @@
+SCRIPT 29: DISRUPTION IMPACT ANALYSIS
+===========================================================================
+
+COMMON OBSERVATION WINDOW
+---------------------------------------------------------------------------
+Start: 2026-07-29 23:36:00+00:00
+End: 2026-11-09 08:24:00+00:00
+Duration: 2456.800 hours
+
+SCENARIO IMPACT SUMMARY
+---------------------------------------------------------------------------
+   Scenario  Replications  Mean_Affected_Calls  Mean_Affected_Share_Percent  Mean_Total_Imposed_Delay_Hours  Mean_Affected_Call_Delay_Hours  Mean_Affected_Median_Delay_Hours  Mean_Affected_P90_Delay_Hours  Mean_Max_Port_Peak  Mean_Peak_Change  Ports_With_Increased_Peak_Mean  Mean_Concurrency_Common_Window  Mean_Concurrency_Change_Common_Window
+S0_BASELINE             5                  0.0                     0.000000                             0.0                             0.0                               0.0                            0.0            1.894737          0.000000                             0.0                        0.395177                           0.000000e+00
+    S1_MILD             5                 60.0                     9.933775                          1440.0                            24.0                              24.0                           24.0            1.989474          0.094737                             1.8                        0.395177                          -2.746341e-17
+S2_MODERATE             5                151.0                    25.000000                         10872.0                            72.0                              72.0                           72.0            2.126316          0.231579                             3.8                        0.395177                          -8.458146e-17
+  S3_SEVERE             5                302.0                    50.000000                         50736.0                           168.0                             168.0                          168.0            2.115789          0.221053                             3.6                        0.395177                           7.997988e-17
+
+AFFECTED-CALL DELAY METRICS
+---------------------------------------------------------------------------
+   Scenario  Replication_Seed  Total_Calls  Affected_Calls  Affected_Share_Percent  Total_Imposed_Delay_Hours  Affected_Mean_Delay_Hours  Affected_Median_Delay_Hours  Affected_P90_Delay_Hours  Affected_Max_Delay_Hours  Unaffected_Calls
+S0_BASELINE                21          604               0                0.000000                        0.0                        0.0                          0.0                       0.0                       0.0               604
+S0_BASELINE                42          604               0                0.000000                        0.0                        0.0                          0.0                       0.0                       0.0               604
+S0_BASELINE                63          604               0                0.000000                        0.0                        0.0                          0.0                       0.0                       0.0               604
+S0_BASELINE                84          604               0                0.000000                        0.0                        0.0                          0.0                       0.0                       0.0               604
+S0_BASELINE               105          604               0                0.000000                        0.0                        0.0                          0.0                       0.0                       0.0               604
+    S1_MILD                21          604              60                9.933775                     1440.0                       24.0                         24.0                      24.0                      24.0               544
+    S1_MILD                42          604              60                9.933775                     1440.0                       24.0                         24.0                      24.0                      24.0               544
+    S1_MILD                63          604              60                9.933775                     1440.0                       24.0                         24.0                      24.0                      24.0               544
+    S1_MILD                84          604              60                9.933775                     1440.0                       24.0                         24.0                      24.0                      24.0               544
+    S1_MILD               105          604              60                9.933775                     1440.0                       24.0                         24.0                      24.0                      24.0               544
+S2_MODERATE                21          604             151               25.000000                    10872.0                       72.0                         72.0                      72.0                      72.0               453
+S2_MODERATE                42          604             151               25.000000                    10872.0                       72.0                         72.0                      72.0                      72.0               453
+S2_MODERATE                63          604             151               25.000000                    10872.0                       72.0                         72.0                      72.0                      72.0               453
+S2_MODERATE                84          604             151               25.000000                    10872.0                       72.0                         72.0                      72.0                      72.0               453
+S2_MODERATE               105          604             151               25.000000                    10872.0                       72.0                         72.0                      72.0                      72.0               453
+  S3_SEVERE                21          604             302               50.000000                    50736.0                      168.0                        168.0                     168.0                     168.0               302
+  S3_SEVERE                42          604             302               50.000000                    50736.0                      168.0                        168.0                     168.0                     168.0               302
+  S3_SEVERE                63          604             302               50.000000                    50736.0                      168.0                        168.0                     168.0                     168.0               302
+  S3_SEVERE                84          604             302               50.000000                    50736.0                      168.0                        168.0                     168.0                     168.0               302
+  S3_SEVERE               105          604             302               50.000000                    50736.0                      168.0                        168.0                     168.0                     168.0               302
+
+REPLICATION VARIABILITY
+---------------------------------------------------------------------------
+   Scenario                        Metric         Mean  Standard_Deviation      Minimum      Maximum
+S0_BASELINE     Total_Imposed_Delay_Hours     0.000000        0.000000e+00     0.000000     0.000000
+S0_BASELINE     Affected_Mean_Delay_Hours     0.000000        0.000000e+00     0.000000     0.000000
+S0_BASELINE      Affected_P90_Delay_Hours     0.000000        0.000000e+00     0.000000     0.000000
+S0_BASELINE             Maximum_Port_Peak     6.000000        0.000000e+00     6.000000     6.000000
+S0_BASELINE             Average_Port_Peak     1.894737        0.000000e+00     1.894737     1.894737
+S0_BASELINE Average_Port_Mean_Concurrency     0.395177        0.000000e+00     0.395177     0.395177
+S0_BASELINE     Ports_With_Increased_Peak     0.000000        0.000000e+00     0.000000     0.000000
+    S1_MILD     Total_Imposed_Delay_Hours  1440.000000        0.000000e+00  1440.000000  1440.000000
+    S1_MILD     Affected_Mean_Delay_Hours    24.000000        0.000000e+00    24.000000    24.000000
+    S1_MILD      Affected_P90_Delay_Hours    24.000000        0.000000e+00    24.000000    24.000000
+    S1_MILD             Maximum_Port_Peak     7.000000        0.000000e+00     7.000000     7.000000
+    S1_MILD             Average_Port_Peak     1.989474        2.105263e-02     1.947368     2.000000
+    S1_MILD Average_Port_Mean_Concurrency     0.395177        5.551115e-17     0.395177     0.395177
+    S1_MILD     Ports_With_Increased_Peak     1.800000        4.000000e-01     1.000000     2.000000
+S2_MODERATE     Total_Imposed_Delay_Hours 10872.000000        0.000000e+00 10872.000000 10872.000000
+S2_MODERATE     Affected_Mean_Delay_Hours    72.000000        0.000000e+00    72.000000    72.000000
+S2_MODERATE      Affected_P90_Delay_Hours    72.000000        0.000000e+00    72.000000    72.000000
+S2_MODERATE             Maximum_Port_Peak     7.200000        7.483315e-01     6.000000     8.000000
+S2_MODERATE             Average_Port_Peak     2.126316        2.578410e-02     2.105263     2.157895
+S2_MODERATE Average_Port_Mean_Concurrency     0.395177        1.023575e-16     0.395177     0.395177
+S2_MODERATE     Ports_With_Increased_Peak     3.800000        7.483315e-01     3.000000     5.000000
+  S3_SEVERE     Total_Imposed_Delay_Hours 50736.000000        0.000000e+00 50736.000000 50736.000000
+  S3_SEVERE     Affected_Mean_Delay_Hours   168.000000        0.000000e+00   168.000000   168.000000
+  S3_SEVERE      Affected_P90_Delay_Hours   168.000000        0.000000e+00   168.000000   168.000000
+  S3_SEVERE             Maximum_Port_Peak     8.200000        4.000000e-01     8.000000     9.000000
+  S3_SEVERE             Average_Port_Peak     2.115789        5.156821e-02     2.052632     2.210526
+  S3_SEVERE Average_Port_Mean_Concurrency     0.395177        3.510833e-17     0.395177     0.395177
+  S3_SEVERE     Ports_With_Increased_Peak     3.600000        8.000000e-01     3.000000     5.000000
+
+METHODOLOGICAL LIMITATIONS
+---------------------------------------------------------------------------
+All disruption levels and delays are hypothetical assumptions.
+Affected calls are randomly selected and are not confirmed Hormuz transits.
+Concurrency uses historical port-call intervals as occupancy proxies, not actual berth occupancy.
+The common window is the same for every scenario and seed. It starts at the earliest historical arrival and ends at the latest scenario departure.
+The model does not yet include rerouting, vessel-level voyage propagation, or queueing.

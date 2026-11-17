@@ -1,0 +1,16 @@
+Metric,Value
+Total records assessed,19
+Records with valid primary coordinate pairs,13
+Records with valid secondary coordinate pairs,18
+Records with both coordinate pairs,13
+Records requiring facility/reference-object reconciliation,7
+Records requiring boundary/navigation reference review,1
+Records with no coordinate candidate,0
+Records eligible for two-source comparison review,9
+Records requiring primary-source-only review,0
+Records with secondary-source-only coordinates,2
+Records with potential organisational independence only,16
+Records with same authority/operator source pair,3
+Researcher validations completed by Script 57,0
+Coordinate approvals made by Script 57,0
+Operational inclusion decisions made by Script 57,0

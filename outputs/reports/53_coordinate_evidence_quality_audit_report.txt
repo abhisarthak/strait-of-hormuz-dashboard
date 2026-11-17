@@ -1,0 +1,62 @@
+SCRIPT 53 — COORDINATE EVIDENCE QUALITY AUDIT
+Generated: 2026-11-16T00:31:50
+Master input: outputs/tables/51_primary_source_coordinate_evidence_register.csv
+
+SCOPE AND LIMITATIONS
+- Read-only audit: the Script 51 master register was not modified.
+- Automated flags identify review needs; they do not validate or reject coordinates.
+- A source coordinate is not automatically a port coordinate; scope is assessed separately.
+- Matching coordinates do not prove source independence.
+- Final coordinate approval and operational inclusion remain researcher decisions.
+
+SUMMARY
+                             Metric Value
+                   Master row count    19
+                Master column count   135
+             Unique UN_LOCODE count    19
+             Expected code coverage 19/19
+             Missing expected codes  NONE
+                   Unexpected codes  NONE
+   Records with high-priority flags     8
+ Records with medium-priority flags     5
+   Primary coordinate pairs present    13
+    Primary coordinate pairs absent     6
+ Secondary coordinate pairs present    18
+Coordinate validation still pending    19
+ Coordinate confidence not assessed    19
+
+FLAGGED RECORDS
+AEAUH | Abu Dhabi | RESEARCHER_REVIEW_REQUIRED_HIGH | COORDINATE_OR_REFERENCE_SCOPE_DIFFERENCE_REQUIRES_REVIEW | UNLOCODE_MULTIMODAL_POINT_NOT_CONFIRMED_AS_PORT_FACILITY
+AEFJR | Fujairah | RESEARCHER_REVIEW_REQUIRED_MEDIUM | SOURCES_NOT_ORGANIZATIONALLY_INDEPENDENT
+AEKLF | Khor Fakkan | RESEARCHER_REVIEW_REQUIRED_MEDIUM | COORDINATE_OR_REFERENCE_SCOPE_DIFFERENCE_REQUIRES_REVIEW
+AERKT | Ras Al Khaimah | RESEARCHER_REVIEW_REQUIRED_HIGH | INDEPENDENT_COORDINATE_CORROBORATION_NOT_ESTABLISHED | COORDINATE_OR_REFERENCE_SCOPE_DIFFERENCE_REQUIRES_REVIEW | NAVIGATIONAL_OR_BOUNDARY_REFERENCE_NOT_GENERIC_PORT_COORDINATE | PORT_BOUNDARY_OR_POLYGON_NOT_A_SINGLE_PORT_POINT | SECONDARY_POINT_IS_A_DIFFERENT_PORT_NOT_CORROBORATION
+  Notes: Primary point is a legal main-breakwater reference for Ras Al Khaimah Port specifically.
+AESHJ | Sharjah | RESEARCHER_REVIEW_REQUIRED_HIGH | NAVIGATIONAL_OR_BOUNDARY_REFERENCE_NOT_GENERIC_PORT_COORDINATE | FACILITY_SPECIFIC_REFERENCE_REQUIRES_SOURCE_CALL_FACILITY_MAPPING
+  Notes: Primary coordinate is a fairway buoy; do not use as port or terminal coordinate.
+INIXY | Kandla | RESEARCHER_REVIEW_REQUIRED_MEDIUM | SOURCES_NOT_ORGANIZATIONALLY_INDEPENDENT | COORDINATE_OR_REFERENCE_SCOPE_DIFFERENCE_REQUIRES_REVIEW
+INPPV | Pipavav | RESEARCHER_REVIEW_REQUIRED_MEDIUM | SOURCES_NOT_ORGANIZATIONALLY_INDEPENDENT
+IQUQR | Umm Qasr | RESEARCHER_REVIEW_REQUIRED_HIGH | FACILITY_SPECIFIC_REFERENCE_REQUIRES_SOURCE_CALL_FACILITY_MAPPING
+  Notes: Primary and secondary coordinates refer to different Umm Qasr terminals.
+KWSAA | Shuaiba | RESEARCHER_REVIEW_REQUIRED_MEDIUM | INDEPENDENT_COORDINATE_CORROBORATION_NOT_ESTABLISHED
+  Notes: Reviewed Kuwait Ports Authority source establishes identity/function but not a coordinate.
+OMDQM | Duqm | RESEARCHER_REVIEW_REQUIRED_HIGH | NAVIGATIONAL_OR_BOUNDARY_REFERENCE_NOT_GENERIC_PORT_COORDINATE | PORT_BOUNDARY_OR_POLYGON_NOT_A_SINGLE_PORT_POINT
+  Notes: Official evidence is a port-limit polygon; no official single-point coordinate is established.
+QAQAP | Qapco | RESEARCHER_REVIEW_REQUIRED_HIGH | FACILITY_SPECIFIC_REFERENCE_REQUIRES_SOURCE_CALL_FACILITY_MAPPING
+  Notes: No primary geodetic coordinate established in reviewed evidence.
+QAQCH | Qchem | RESEARCHER_REVIEW_REQUIRED_HIGH | FACILITY_SPECIFIC_REFERENCE_REQUIRES_SOURCE_CALL_FACILITY_MAPPING
+  Notes: No primary geodetic coordinate established in reviewed evidence.
+QAUMS | Qatalum | RESEARCHER_REVIEW_REQUIRED_HIGH | PORT_BOUNDARY_OR_POLYGON_NOT_A_SINGLE_PORT_POINT | QAUMS_MASTER_NAME_QATALUM_VERSUS_MESAIEED_PORT_EVIDENCE_REQUIRES_FACILITY_RECONCILIATION
+  Notes: Master name is Qatalum; current evidence describes the wider Mesaieed port system. Establish the source-call facility before coordinate selection. Official evidence is a port-limit polygon; no official single-point coordinate is established.
+
+RECORDS WITHOUT AUTOMATED FLAGS
+BHKBS, INHZA, KWSWK, PKKIA, SADMM, SAJUB
+
+OUTPUTS
+outputs/tables/53_coordinate_evidence_quality_audit.csv
+outputs/tables/53_coordinate_evidence_summary.csv
+outputs/reports/53_coordinate_evidence_quality_audit_report.txt
+
+MASTER REGISTER INTEGRITY
+Rows read: 19
+Columns read: 135
+Master register modified: NO

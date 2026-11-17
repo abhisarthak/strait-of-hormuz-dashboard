@@ -1,0 +1,17 @@
+Check,Passed,Observed,Expected,Interpretation
+Five expected policy IDs present exactly once,True,"['R76-00-NONE', 'R76-01-FIXED-6H', 'R76-02-FIXED-12H', 'R76-03-PROP-25-CAP6', 'R76-04-PROP-50-CAP12']","['R76-00-NONE', 'R76-01-FIXED-6H', 'R76-02-FIXED-12H', 'R76-03-PROP-25-CAP6', 'R76-04-PROP-50-CAP12']",Policy identity and uniqueness only.
+All five policy rules have complete parameters,True,{'DEFINED': 5},All five DEFINED,A register-level rule check; does not yet verify call-level implementation.
+Call-level policy result keys are unique,True,0,0,Each scenario-policy-vessel-call record must be unique.
+No negative accumulated delay,True,0.0,>= 0,Negative delay would violate the nonnegative delay state.
+No negative applied recovery,True,0.0,>= 0,Recovery credit must be nonnegative.
+Departure delay reconciles to pre-delay minus recovery advance,True,0.0,<= 0.001 hours,Direct arithmetic check using the actual Script76 departure-delay field.
+Arrival delay reconciles to pre-delay minus recovery advance,True,0.0,<= 0.001 hours,Arrival and departure delays are checked independently.
+Only registered recovery policies appear in call-level results,True,[],No unregistered policy IDs,Register-to-results alignment.
+Every scenario has all five policies,True,17 scenarios x 5 policies,Rectangular scenario-policy coverage,Presence check; not proof of identical record exposure.
+Script76 result keys reconcile to Script75 scenario-call universe,True,missing=0; extra=0,0 missing; 0 extra,Policy replication should preserve the same scenario-call universe.
+Every policy has identical call IDs to no-recovery within scenario,True,0,0,Counterfactual pairing requires identical call populations.
+Recovery policies never increase delay relative to no-recovery,True,"[{'Recovery_Policy_ID': 'R76-01-FIXED-6H', 'Cases_Policy_Delay_Exceeds_No_Recovery': 0}, {'Recovery_Policy_ID': 'R76-02-FIXED-12H', 'Cases_Policy_Delay_Exceeds_No_Recovery': 0}, {'Recovery_Policy_ID': 'R76-03-PROP-25-CAP6', 'Cases_Policy_Delay_Exceeds_No_Recovery': 0}, {'Recovery_Policy_ID': 'R76-04-PROP-50-CAP12', 'Cases_Policy_Delay_Exceeds_No_Recovery': 0}]",0 cases for each of four alternatives,"A model-rule monotonicity property, conditional on matched shocks and records."
+Applied recovery matches policy-calculated requested recovery,True,0.0,<= 0.001 hours; all policy requests reconstructable,Requested credit is reconstructed from Delay_Before_Recovery_Hours and the registered fixed/proportional policy parameters; no unavailable source column is assumed.
+No recovery applied to first vessel call,True,first_call_rows=13175; max_recovery=0.0,All first-call recovery = 0,Recovery begins only at subsequent sequence links.
+Script77 bounded output contains nonnegative delay and recovery,True,min_delay=0.0; min_recovery=0.0,Both >= 0,Bounded recovery output arithmetic validity.
+Script77 bounded recovery never exceeds Script76 requested recovery universe,True,51340,Non-empty Script77 output,This is a presence check only; exact credit matching requires a shared request field/key.

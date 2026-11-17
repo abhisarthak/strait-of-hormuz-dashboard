@@ -1,0 +1,16 @@
+Check,Passed,Observed,Expected,Interpretation
+Unique directed edge pairs,True,53,53 unique pairs,Structural integrity only.
+Unique port identifiers,True,19,19 unique ports,Structural integrity only.
+Edge review log exact key match,True,53,53,Every edge has one review row.
+Port review log exact key match,True,19,19,Every port has one review row.
+Mechanism register retains all Script67 mechanisms,True,4,4,No mechanism omitted.
+Experiment matrix retains all Script66 templates,True,5,5,No experiment template omitted.
+All edge decisions pending,True,53,53,No edge is approved by code.
+All port decisions pending,True,19,19,No port is approved by code.
+No edge hypothetical exposure approvals,True,0,0,Researcher approval required.
+No port hypothetical disruption approvals,True,0,0,Researcher approval required.
+No experiment scope approvals,True,0,0,Experiment templates remain unapproved.
+No actual Hormuz exposure asserted on edges,True,0,0,No actual exposure inferred.
+No actual Hormuz exposure asserted on ports,True,0,0,No actual exposure inferred.
+No AIS-confirmed Hormuz transit on ports,True,0,0,No AIS transit claim inferred.
+No Script65 final parameter selections,True,0,0,No parameter values selected in this stage.

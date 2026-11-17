@@ -1,0 +1,43 @@
+=================================================================
+SCRIPT 39: PORT COORDINATE VALIDATION REPORT
+=================================================================
+
+Execution date: 2026-11-15
+Input records: 19
+Output records: 19
+Output columns: 36
+
+COORDINATE VALIDATION STATUS
+----------------------------------------
+PENDING: 19
+
+COORDINATE CONFIDENCE
+----------------------------------------
+NOT_ASSESSED: 19
+
+COORDINATE DATA COMPLETENESS
+----------------------------------------
+Ports with coordinate pairs: 0
+Terminals with coordinate pairs: 0
+
+QUALITY CONTROL
+----------------------------------------
+No coordinate-format or evidence-completeness issues detected.
+
+METHODOLOGICAL LIMITATIONS
+----------------------------------------
+1. This script creates a validation register; it does not independently verify coordinates.
+2. Blank coordinates are intentional and must be researched.
+3. Port and terminal coordinates must remain separate.
+4. A valid latitude/longitude range does not prove geographic accuracy.
+5. Coordinate validation does not establish AIS-confirmed Strait of Hormuz transit.
+6. Original Script 38 evidence is preserved in separate columns.
+
+OUTPUT FILES
+----------------------------------------
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/39_port_coordinate_validation_register.csv
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/reports/39_port_coordinate_validation_report.txt
+
+=================================================================
+END OF SCRIPT 39 REPORT
+=================================================================

@@ -1,0 +1,10 @@
+Metric,Value
+Total valid transition observations,271
+Potential IQR extreme observations,20
+Non-flagged observations,251
+Vessels with at least one flagged observation,15
+Port pairs with at least one flagged observation,16
+Unique vessels in all valid transitions,58
+Vessels with repeated transition observations,31
+Flagged records with matching timestamp calculation,20
+Automatically excluded observations,0

@@ -1,0 +1,6 @@
+Check_ID,Description,Observed,Expected,Status
+C01,Exactly one target interval investigated,1,1,PASS
+C02,All Script82 candidate rows represented in comparison,2,2,PASS
+C03,All Script82 candidate workbook row numbers resolve uniquely,2,2,PASS
+C04,Extract contains only target vessel IMO,4,4,PASS
+C05,No schedule modifications or approvals assigned,0,0,PASS

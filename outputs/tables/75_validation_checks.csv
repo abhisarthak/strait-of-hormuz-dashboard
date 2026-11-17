@@ -1,0 +1,16 @@
+Check_ID,Description,Passed,Observed,Expected,Severity,Overall_Status
+S73_SCHEDULE_KEY_RECONCILIATION,Script 19 schedule and Script 73 baseline reconcile by call/vessel identity,True,0,0,ERROR,PASS
+S73_SOURCE_TIMESTAMP_RECONCILIATION,Script 19 and Script 73 source timestamp strings match,True,0,0,ERROR,PASS
+S73_BASELINE_ARRIVAL_IDENTITY,Script 73 baseline simulated arrivals equal Script 19 observed arrivals,True,0,0,ERROR,PASS
+S73_BASELINE_DEPARTURE_IDENTITY,Script 73 baseline simulated departures equal Script 19 observed departures,True,0,0,ERROR,PASS
+SOURCE_DIMENSIONS,Historical schedule dimensions match established baseline,True,"(604, 155, 19)","(604, 155, 19)",ERROR,PASS
+SEQUENCE_LINK_COUNTS,"Vessel sequence, same-port and inter-port link counts reconcile",True,"(449, 178, 271)","(449, 178, 271)",ERROR,PASS
+NONNEGATIVE_OBSERVED_GAPS,All observed inter-call elapsed times are non-negative,True,0,0,ERROR,PASS
+SCENARIO_COUNT,One baseline plus sixteen hypothetical scenarios are generated,True,17,17,ERROR,PASS
+SCENARIO_CALL_ROW_COUNT,Every scenario contains all 604 calls,True,10268,10268,ERROR,PASS
+SCENARIO_VESSEL_ROW_COUNT,Every scenario contains all 155 vessel summaries,True,2635,2635,ERROR,PASS
+BASELINE_ZERO_DELAY,S75 baseline scenario has zero delay on all calls,True,0,0,ERROR,PASS
+NO_NEGATIVE_SIMULATED_DELAYS,No simulated arrival or departure delay is negative,True,0,0,ERROR,PASS
+NO_SHOCK_ON_SAME_PORT_LINKS,Hypothetical inter-port shocks are not assigned to same-port links,True,0,0,ERROR,PASS
+SCENARIO_MONOTONICITY,Aggregate vessel departure delay is non-decreasing with shock magnitude and scope,True,0,0,ERROR,PASS
+NESTED_AFFECTED_TRANSITION_SELECTION,Affected transition sets are nested as scope increases,True,True,True,ERROR,PASS

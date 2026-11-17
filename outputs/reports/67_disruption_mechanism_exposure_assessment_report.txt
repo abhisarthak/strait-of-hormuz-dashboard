@@ -1,0 +1,45 @@
+================================================================================================
+SCRIPT 67: DISRUPTION MECHANISM AND OPERATIONAL EXPOSURE ASSESSMENT
+================================================================================================
+
+Directed network edges: 53
+Ports: 19
+Observed transition records: 271
+Edges with observed transition records: 53
+Distinct vessel transitions summarized: 142 edge-vessel counts (not unique network vessels)
+Mechanisms mapped: 4
+Edge researcher review rows: 53
+Port researcher review rows: 19
+
+READINESS CHECKS
+                                                     Check  Passed Observed Expected
+                                       Script65 edge count    True       53       53
+                                       Script61 edge count    True       53       53
+                     Script65 and Script61 edge sets match    True       53       53
+                                  Observed transition rows    True      271      271
+            Transition pairs contained in observed network    True        0        0
+                       Port evidence register has 19 nodes    True       19       19
+Script59 crosswalk coverage matches 12 known network nodes    True       12       12
+                   No actual Hormuz edge exposure asserted    True        0        0
+                       No hypothetical edge scope approved    True        0        0
+                   No actual Hormuz port exposure asserted    True        0        0
+                       No hypothetical port scope approved    True        0        0
+                     All researcher edge decisions pending    True       53       53
+                     All researcher port decisions pending    True       19       19
+                  No selected parameter values in Script65    True        0        0
+
+MECHANISM STATUS
+                 Mechanism                         Disrupted_Concept                                                        Potential_Model_Variable               Available_Observed_Representation                                                             Evidence_Limitation                                 Current_Status
+TRANSIT_ELAPSED_TIME_SHOCK                   Inter-port elapsed time       Elapsed_Hours_Between_Calls / Script19 inter-port elapsed-time parameters Observed departure-to-next-arrival elapsed time     Includes sailing, waiting and unobserved operations; not pure sailing time.                    HYPOTHETICAL_MECHANISM_ONLY
+NETWORK_ACCESS_RESTRICTION         Edge availability / accessibility Requires explicit validated route/edge representation and feasible alternatives No validated geographic route graph established Do not delete or block observed schedule edges as if they were physical routes. BLOCKED_PENDING_ROUTE_AND_FEASIBILITY_EVIDENCE
+   PORT_SERVICE_DISRUPTION             Port service or stay duration                Actual_Stay_Hours / Script19 port service descriptive parameters     Observed arrival-to-departure stay duration                     Not berth processing time; port/berth capacity unavailable.                    HYPOTHETICAL_MECHANISM_ONLY
+        COMPOUND_MECHANISM Two or more separately defined mechanisms                                   Combination of separately specified variables                No combined mechanism calibrated                Define and assess each mechanism independently before combining.                                       DEFERRED
+
+INTERPRETATION AND LIMITATIONS
+Observed consecutive port-call records establish historical schedule relationships only. They do not establish actual sailing routes, route feasibility, geographic exposure to the Strait of Hormuz, or actual transit through the Strait. Port identity/coordinate review and Script59 operational eligibility are retained as separate evidence gates. No port or edge is approved for hypothetical disruption exposure by this script. Inter-port elapsed time includes sailing, waiting and unobserved operations. Port stay is not berth processing time; port and berth capacity are unavailable. A network-access restriction cannot be implemented as physical route closure without validated route and alternative-path evidence.
+
+SOURCE FILES MODIFIED: NO
+SIMULATION INPUTS MODIFIED: NO
+ACTUAL HORMUZ TRANSIT ESTABLISHED: NO
+HYPOTHETICAL EXPOSURE APPROVALS: NONE
+DISRUPTION MAGNITUDES SELECTED: NONE

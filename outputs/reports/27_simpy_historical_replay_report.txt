@@ -1,0 +1,47 @@
+SIMPY HISTORICAL SCHEDULE REPLAY AND VALIDATION
+===========================================================================
+
+Historical port calls: 604
+Unique vessels: 155
+Ports replayed: 19
+
+VALIDATION AGAINST SCRIPT 26
+---------------------------------------------------------------------------
+Peak concurrency matches: 19
+Call count matches: 19
+Mean concurrency matches: 19
+
+PORT-LEVEL REPLAY RESULTS
+---------------------------------------------------------------------------
+UNLOCODE  Port_Calls  Peak_Concurrent_Calls  Mean_Concurrent_Calls  Concurrency_Area_Hours  Final_Active_Calls
+   AEAJM          22                      1               0.159880              326.650000                   0
+   AEAUH          24                      2               0.164566              331.783333                   0
+   AEFJR          19                      2               0.489281             1060.100000                   0
+   AEJEA          60                      3               0.557029             1200.583333                   0
+   AEKLF          20                      2               0.649143             1291.566667                   0
+   AESHJ          10                      2               0.278072              550.883333                   0
+   BHKBS           5                      1               0.020116               35.333333                   0
+   IQUQR           5                      1               0.075407               79.383333                   0
+   KWSAA           1                      1               1.000000               13.000000                   0
+   KWSWK           5                      1               0.035516               60.783333                   0
+   OMDQM           3                      1               0.090725              106.566667                   0
+   OMSLL         261                      6               3.406303             7485.066667                   0
+   OMSOH          10                      1               0.347340              597.633333                   0
+   QADOH          30                      2               0.246781              535.700000                   0
+   QAQCH           4                      1               0.063463              105.616667                   0
+   SADMM          20                      2               0.295194              541.150000                   0
+   SAJED          88                      4               1.571484             3506.033333                   0
+   SAJUB           4                      1               0.127713               77.666667                   0
+   SAKAC          13                      2               0.280510              541.033333                   0
+
+METHODOLOGICAL LIMITATIONS
+---------------------------------------------------------------------------
+1. Historical arrival and departure timestamps are replayed.
+2. No artificial queue delay is introduced.
+3. No hypothetical port capacity is imposed.
+4. Concurrent port-call intervals are not verified berth occupancy.
+5. Observed port stay may include anchorage and waiting.
+6. Replay validation confirms arithmetic and event consistency,
+   not the physical accuracy of the original records.
+7. No actual Strait of Hormuz transit is confirmed.
+8. This replay is a descriptive baseline, not a forecast.

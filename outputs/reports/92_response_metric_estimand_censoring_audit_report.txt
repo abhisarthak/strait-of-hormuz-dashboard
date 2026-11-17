@@ -1,0 +1,75 @@
+SCRIPT 92 — RESPONSE METRIC DEFINITION, ESTIMAND AND CENSORING AUDIT
+==============================================================================
+
+PURPOSE
+Audit the original Script88 response metric register against the Script90
+decision register. Identify definition, estimand, denominator and censoring
+decisions required before execution. This is not metric approval or simulation.
+
+SOURCE INVENTORY
+Script88 metric rows: 9
+Script90 decision rows: 9
+Metric IDs in common: 9
+Metric IDs unmatched: 0
+
+REGISTER RECONCILIATION
+Base fields match across both registers: 9/9
+The original metric names, aggregation levels, units, priorities and caveats
+are preserved. No source register was modified.
+
+METRIC INVENTORY
+Metric_ID                                         Metric
+      M01                        Mean call arrival delay
+      M02                      Mean call departure delay
+     M03A           Maximum final vessel departure delay
+     M03B Maximum accumulated departure delay per vessel
+      M04              Mean final vessel departure delay
+      M05                       P90 call departure delay
+      M06                          Total recovery credit
+     M07A                         Unrecovered call count
+     M07B                       Unrecovered vessel count
+
+KEY AUDIT FINDINGS
+1. M01/M02 require an explicit reference timestamp, eligible denominator and
+   treatment of negative/early values.
+2. M03A is a maximum over vessel final represented calls; unfinished final
+   calls must not be treated as completed observations.
+3. M03B is distinct from M03A, but its accumulation operator must be explicit.
+4. M04 needs one eligible final-call value per vessel to avoid call-count weighting.
+5. M05 needs a quantile convention and explicit zero-delay reporting.
+6. M06 requires matched policy/no-recovery records; it remains modelled credit,
+   not observed operational recovery.
+7. M07A/M07B require a threshold, evaluation time and a distinct censored status.
+8. A common observation horizon and right-censoring rule are not yet approved.
+
+DECISION STATUS
+Researcher decisions pending for all metrics:
+{'PENDING': 9}
+Supervisor reviews pending for all metrics:
+{'PENDING': 9}
+Metric-definition approvals granted: 0
+Censoring-rule approvals granted: 0
+Simulation execution authorized: NO (per source decision register)
+
+READINESS CHECKS
+13/13 passed; 0 failed.
+
+INTERPRETATION
+This audit checks register integrity and exposes unresolved operational definitions.
+The proposed requirements in 92_metric_operationalization_review.csv are audit
+guidance only, not selected formulas or approved researcher decisions. No metric
+has been silently redefined. No empirical, physical-route, Hormuz-transit or
+real-world operational claim is supported by this audit.
+
+OUTPUTS
+- outputs/tables/92_register_reconciliation.csv
+- outputs/tables/92_metric_operationalization_review.csv
+- outputs/tables/92_metric_decision_status.csv
+- outputs/tables/92_open_estimand_and_censoring_decisions.csv
+- outputs/tables/92_readiness_checks.csv
+- outputs/reports/92_response_metric_estimand_censoring_audit_report.txt
+
+DECISION
+Script92 is a diagnostic audit only. Researcher and supervisor decisions are
+required for the listed estimands, denominators, thresholds and censoring rules.
+No simulation was run; no source inputs or prior registers were modified.

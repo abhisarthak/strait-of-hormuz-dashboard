@@ -1,0 +1,74 @@
+===========================================================================
+SCRIPT 15: TRANSITION AND HORMUZ RELEVANCE INVESTIGATION
+===========================================================================
+
+1. INPUT DATA
+---------------------------------------------------------------------------
+Schedule input shape: (1894, 67)
+Individual input shape: (617, 55)
+
+2. NEGATIVE SCHEDULE TRANSITIONS
+---------------------------------------------------------------------------
+Schedule transitions: 463
+Negative transitions: 7
+No timestamps were automatically corrected.
+No source records were deleted.
+
+3. TRANSITION CLASSIFICATION
+---------------------------------------------------------------------------
+   Dataset  Total_Transitions  Same_Port_Transitions  Different_Port_Transitions  Negative_Transitions
+  Schedule                463                    188                         275                     7
+Individual                391                     32                         359                     0
+
+4. GULF-REGION VESSEL INVESTIGATION
+---------------------------------------------------------------------------
+Candidate vessel count: 7
+Gulf-region call records: 23
+Full candidate sequence records: 125
+
+Initial Gulf-core port screening list:
+  AEJEA: Jebel Ali
+  AEKLF: Khor Fakkan
+  AEFJR: Fujairah
+  AEAUH: Abu Dhabi
+  BHBAH: Bahrain
+  KWKWI: Kuwait
+  QAHMD: Hamad Port
+  QARLF: Ras Laffan
+  QAMES: Mesaieed
+  IQUQR: Umm Qasr
+  OMSOH: Sohar
+
+Initial Strait-approach screening list:
+  OMSLL: Salalah
+  OMMCT: Muscat
+
+5. AIS VERIFICATION REGISTER
+---------------------------------------------------------------------------
+Movements flagged for AIS review: 23
+No Strait crossings have been confirmed by this script.
+
+6. METHODOLOGICAL LIMITATIONS
+---------------------------------------------------------------------------
+- A port call does not prove that a vessel crossed the Strait.
+- Port-to-port elapsed time is not necessarily sailing time.
+- AIS trajectory data is required to establish actual crossing.
+- The initial Gulf port list is curated and not exhaustive.
+- Same-LOCODE transitions are retained and not automatically deleted.
+- Negative transitions are flagged, not automatically corrected.
+- Schedule and Individual datasets are analyzed separately.
+
+7. OUTPUT FILES
+---------------------------------------------------------------------------
+- outputs/tables/15_negative_transition_investigation.csv
+- outputs/tables/15_schedule_same_port_transitions.csv
+- outputs/tables/15_schedule_different_port_transitions.csv
+- outputs/tables/15_individual_same_port_transitions.csv
+- outputs/tables/15_individual_different_port_transitions.csv
+- outputs/tables/15_transition_classification_summary.csv
+- outputs/tables/15_gulf_region_vessel_calls.csv
+- outputs/tables/15_gulf_candidate_vessel_sequences.csv
+- outputs/tables/15_gulf_candidate_vessel_summary.csv
+- outputs/tables/15_initial_gulf_port_screening_reference.csv
+- outputs/tables/15_AIS_trajectory_verification_register.csv
+- outputs/tables/15_overall_investigation_summary.csv

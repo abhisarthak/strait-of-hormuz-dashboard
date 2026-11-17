@@ -1,0 +1,12 @@
+Metric,Value
+Consolidated records,19
+Expected code coverage,19/19
+Records with verified code identity,19
+Records with validated port coordinates populated,0
+Records with validated terminal coordinates populated,0
+Coordinate validation approved,0
+Operational inclusion approved,0
+Records with confirmed AIS transit status,0
+Records pending researcher review,19
+QAUMS facility association unresolved,1
+Upstream files modified,NO

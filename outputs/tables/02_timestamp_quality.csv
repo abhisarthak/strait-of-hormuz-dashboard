@@ -1,0 +1,7 @@
+Dataset,Column,Total_Records,Missing,Invalid_Timestamps,Valid_Timestamps
+Port Schedules,Planned Arrival,1894,0,0,1894
+Port Schedules,Estimated Arrival,1894,0,0,1894
+Port Schedules,Actual Arrival,1894,1263,0,631
+Port Schedules,Planned Departure,1894,0,0,1894
+Port Schedules,Estimated Departure,1894,0,0,1894
+Port Schedules,Actual Departure,1894,1274,0,620

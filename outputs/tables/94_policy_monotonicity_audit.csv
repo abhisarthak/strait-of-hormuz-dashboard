@@ -1,0 +1,5 @@
+Recovery_Policy_ID,Compared_Calls,Cases_Policy_Delay_Exceeds_No_Recovery,Maximum_Excess_Delay_Hours,Mean_Delay_Reduction_Hours,Monotonicity_Passed
+R76-01-FIXED-6H,10268,0,0.0,12.842033502142579,True
+R76-02-FIXED-12H,10268,0,0.0,20.450720685625242,True
+R76-03-PROP-25-CAP6,10268,0,0.0,11.68557404224745,True
+R76-04-PROP-50-CAP12,10268,0,0.0,19.515062907538237,True

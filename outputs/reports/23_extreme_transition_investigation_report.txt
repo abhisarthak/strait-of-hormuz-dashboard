@@ -1,0 +1,75 @@
+EXTREME INTER-PORT TRANSITION INVESTIGATION
+=================================================================
+
+SUMMARY
+Total valid transition observations: 271
+Potential IQR extreme observations: 20
+Non-flagged observations: 251
+Vessels with at least one flagged observation: 15
+Port pairs with at least one flagged observation: 16
+Unique vessels in all valid transitions: 58
+Vessels with repeated transition observations: 31
+Flagged records with matching timestamp calculation: 20
+Automatically excluded observations: 0
+
+AVAILABLE SOURCE FIELDS
+Vessel_Name: Vessel Name
+Previous_Departure: Previous_Departure_UTC
+Next_Arrival: Actual_Arrival_UTC
+Current_Source_Row: Schedule_Source_Row
+Previous_Source_Row: NOT AVAILABLE
+Service_Code: Carrier Service Code
+Service_Name: Carrier Service Name
+Import_Voyage: Import Voyage Number
+Export_Voyage: Export Voyage Number
+
+TOP FLAGGED OBSERVATIONS
+Audit_Record_ID IMO_Normalised Previous_Port Next_Port  Elapsed_Hours_Between_Calls
+        TR_0002        9040120         AEAJM     AEAUH                    30.400000
+        TR_0009        9040120         AEJEA     AEAJM                   688.266667
+        TR_0013        9121871         AEAUH     AEAJM                   423.266667
+        TR_0019        9134139         AEAJM     AEAUH                    24.716667
+        TR_0038        9202259         AEAUH     AEJEA                   325.983333
+        TR_0078        9243198         AEAUH     AEJEA                   208.650000
+        TR_0088        9289180         OMSLL     AEKLF                  1100.466667
+        TR_0100        9289192         BHKBS     QADOH                    20.916667
+        TR_0116        9289192         QADOH     KWSWK                    50.783333
+        TR_0127        9305635         SAKAC     SAJED                   269.000000
+        TR_0155        9349045         AEJEA     AEAUH                   414.500000
+        TR_0157        9349045         AEJEA     AEAUH                   336.400000
+        TR_0164        9397585         OMSLL     OMSOH                   242.216667
+        TR_0167        9397585         OMSOH     OMSLL                   163.233333
+        TR_0178        9416006         QADOH     SADMM                   394.916667
+        TR_0192        9461623         AEJEA     QADOH                    54.950000
+        TR_0208        9461623         AESHJ     AEJEA                    91.633333
+        TR_0212        9509152         OMSLL     AEFJR                   881.766667
+        TR_0219        9539482         OMSOH     OMSLL                   162.966667
+        TR_0256        9632105         SAJED     OMSLL                   453.750000
+
+TOP VESSELS WITH FLAGGED OBSERVATIONS
+IMO_Normalised  Total_Transition_Observations  Extreme_Observations  Unique_Origin_Ports  Unique_Destination_Ports  Mean_Elapsed_Hours  Median_Elapsed_Hours  Extreme_Observation_Share  Has_Extreme_Observation
+       9289192                             32                     2                    8                         8           44.258333             40.125000                   0.062500                     True
+       9461623                             21                     2                    4                         5           62.230159             37.800000                   0.095238                     True
+       9397585                             11                     2                    3                         3          118.307576            112.550000                   0.181818                     True
+       9040120                             10                     2                    3                         3          116.530000             18.891667                   0.200000                     True
+       9349045                              4                     2                    2                         2          191.825000            173.400000                   0.500000                     True
+       9243198                             29                     1                    6                         6           37.778736             27.083333                   0.034483                     True
+       9134139                             18                     1                    3                         3           55.151852              9.300000                   0.055556                     True
+       9539482                             11                     1                    3                         3          148.830303            148.416667                   0.090909                     True
+       9416006                             10                     1                    4                         3          134.931667            115.358333                   0.100000                     True
+       9202259                              9                     1                    3                         3           50.812963              8.166667                   0.111111                     True
+       9121871                              4                     1                    3                         3          116.670833             19.350000                   0.250000                     True
+       9305635                              3                     1                    3                         2          463.627778            329.000000                   0.333333                     True
+       9289180                              1                     1                    1                         1         1100.466667           1100.466667                   1.000000                     True
+       9509152                              1                     1                    1                         1          881.766667            881.766667                   1.000000                     True
+       9632105                              1                     1                    1                         1          453.750000            453.750000                   1.000000                     True
+
+METHODOLOGICAL LIMITATIONS
+1. IQR flags identify statistical extremes, not data errors.
+2. No observations have been deleted or automatically excluded.
+3. Repeated observations from one vessel are not independent vessels.
+4. Timestamp consistency does not establish route validity.
+5. Long elapsed times may include waiting and unobserved calls.
+6. A port-call transition does not prove direct sailing.
+7. Manual source verification is needed before rejecting records.
+8. The analysis does not confirm Strait of Hormuz transit.

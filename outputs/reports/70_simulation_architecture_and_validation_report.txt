@@ -1,0 +1,45 @@
+================================================================================
+SCRIPT 70: SIMULATION IMPLEMENTATION ARCHITECTURE AND MODEL VALIDATION FRAMEWORK
+================================================================================
+
+SOURCE DISCOVERY
+Top-level Python files scanned: 104
+Files passing Python AST parse: 104
+Files with SimPy import signature: 4
+Files with Environment constructor signature: 3
+Files with Resource constructor signature: 1
+SimPy import files: 20_simulation_environment_check.py, 25_historical_arrival_baseline_simulation.py, 27_simpy_historical_schedule_replay.py, 28_controlled_disruption_experiment.py
+Environment files: 25_historical_arrival_baseline_simulation.py, 27_simpy_historical_schedule_replay.py, 28_controlled_disruption_experiment.py
+Resource files: 25_historical_arrival_baseline_simulation.py
+
+SCRIPT19 INPUT CONTRACT
+                   Dataset_Key                             File_Name  Exists  Observed_Rows  Expected_Rows_From_Established_Pipeline Read_Status
+           historical_schedule    19_historical_arrival_schedule.csv    True            604                                      604     READ_OK
+             vessel_parameters              19_vessel_parameters.csv    True            155                                      155     READ_OK
+               port_parameters                19_port_parameters.csv    True             19                                       19     READ_OK
+       port_service_parameters        19_port_service_parameters.csv    True             19                                       19     READ_OK
+     interport_time_parameters      19_interport_time_parameters.csv    True             53                                       53     READ_OK
+observed_interport_transitions 19_observed_interport_transitions.csv    True            271                                      271     READ_OK
+
+VALIDATION FRAMEWORK
+Validation requirements defined: 15
+Runtime/model validation status: NOT ASSESSED
+The requirements are future validation obligations, not passed tests.
+
+READINESS CHECKS
+Passed: 12/12
+
+IMPORTANT LIMITATIONS
+- Static source signatures do not establish runtime correctness.
+- Source scan covers top-level Python files in src only.
+- A missing signature does not prove a feature is absent if implemented indirectly.
+- Historical port-call relationships are not validated physical sailing routes.
+- Inter-port elapsed time is not pure sailing time.
+- Port stay is not berth processing time.
+- No actual Hormuz transit or geographic exposure is inferred.
+
+SIMULATION EXECUTED: NO
+MODEL VALIDATION CLAIMED: NO
+EXPERIMENT AUTHORIZED: NO
+SOURCE FILES MODIFIED: NO
+SIMULATION INPUTS MODIFIED: NO

@@ -1,0 +1,45 @@
+SCRIPT 75 — CONTROLLED INTER-PORT ELAPSED-TIME SHOCK EXPERIMENT
+========================================================================
+Project root: /Users/abhishekkumar/Strait_of_Hormuz_Research
+Historical calls: 604
+Vessels: 155
+Ports: 19
+Sequence links: 449
+Same-port links: 178
+Distinct-port transitions: 271
+Scenarios: 17 (1 baseline + 16 hypothetical)
+Call-level scenario records: 10268
+Vessel-level scenario records: 2635
+Shock selection seed: 7501
+Shock magnitudes (hours): [6.0, 12.0, 24.0, 48.0]
+Affected transition shares: [0.1, 0.25, 0.5, 1.0]
+
+BASELINE / EXPERIMENT DESIGN
+- Shock is applied to the next call's arrival after a selected distinct-port transition.
+- The same shock is carried into that call's departure delay; observed port-call duration is unchanged.
+- Delay then propagates through the vessel's subsequent calls, including same-port links.
+- No recovery policy is applied.
+- Selection is deterministic and nested across affected-transition shares.
+
+IMPORTANT INTERPRETATION
+- The shocked quantity is additional observed inter-port elapsed time.
+- Observed departure-to-next-arrival elapsed time is not pure sailing time.
+- Scenarios and shock magnitudes are hypothetical design assumptions, not empirical estimates.
+- The data do not establish physical routes or actual Strait of Hormuz transit.
+- No port capacity, berth occupancy, or operational feasibility is inferred.
+
+Validation checks passed: 15/15
+Validation checks failed: 0
+
+FAILED CHECKS
+None.
+
+OUTPUT FILES
+- outputs/tables/75_scenario_factor_register.csv
+- outputs/tables/75_call_level_disruption_results.csv
+- outputs/tables/75_vessel_level_disruption_results.csv
+- outputs/tables/75_scenario_comparison_summary.csv
+- outputs/tables/75_hypothetical_transition_shock_register.csv
+- outputs/tables/75_scenario_monotonicity_checks.csv
+- outputs/tables/75_validation_checks.csv
+- outputs/reports/75_controlled_interport_elapsed_time_shock_experiment_report.txt

@@ -1,0 +1,74 @@
+SCRIPT 40: SOURCE URL AND EVIDENCE AUDIT
+=================================================================
+Input file: outputs/tables/39_port_coordinate_validation_register.csv
+Total port records: 19
+Total columns in source register: 36
+
+1. METADATA COMPLETENESS
+-----------------------------------------------------------------
+Complete records: 19/19
+Incomplete records: 0
+
+2. URL ACCESSIBILITY
+-----------------------------------------------------------------
+Total URL references: 38
+Accessible URL checks: 22
+Unreachable/error URL checks: 16
+Invalid URL checks: 0
+URL_CHECKED: 10 ports
+URL_PARTIALLY_ACCESSIBLE: 5 ports
+URL_UNREACHABLE: 4 ports
+
+3. EVIDENCE AUDIT CLASSIFICATION
+-----------------------------------------------------------------
+MANUAL_CONTENT_VERIFICATION_REQUIRED: 10 ports
+PARTIAL_SOURCE_ACCESS_MANUAL_REVIEW: 5 ports
+SOURCE_ACCESS_MANUAL_REVIEW: 4 ports
+
+4. COORDINATE SAFEGUARDS
+-----------------------------------------------------------------
+Safeguard checks passed: 19/19
+Coordinates automatically approved: 0
+
+5. OPERATIONAL INCLUSION
+-----------------------------------------------------------------
+Pending decisions: 19/19
+
+6. MANUAL SOURCE CONTENT REVIEW
+-----------------------------------------------------------------
+Records requiring manual review: 19
+Source content automatically verified: 0
+
+7. DUPLICATE SOURCE URLS
+-----------------------------------------------------------------
+https://msi.nga.mil/api/publications/download?key=16694491%2FSFH00000%2FPub172bk.pdf | Occurrences: 2
+https://service.unece.org/trade/locode/qa.htm | Occurrences: 3
+https://service.unece.org/trade/locode/sa.htm | Occurrences: 2
+https://unlocode.unece.org/directory/locodes/?country=KW | Occurrences: 2
+
+8. PORT-WISE EXCEPTIONS
+-----------------------------------------------------------------
+BHKBS: URL_PARTIALLY_ACCESSIBLE
+INHZA: URL_PARTIALLY_ACCESSIBLE
+OMDQM: URL_PARTIALLY_ACCESSIBLE
+PKKIA: URL_UNREACHABLE
+QAQAP: URL_UNREACHABLE
+QAQCH: URL_PARTIALLY_ACCESSIBLE
+QAUMS: URL_UNREACHABLE
+SADMM: URL_UNREACHABLE
+SAJUB: URL_PARTIALLY_ACCESSIBLE
+
+9. METHODOLOGICAL LIMITATIONS
+-----------------------------------------------------------------
+1. HTTP accessibility does not establish source reliability.
+2. HTTP accessibility does not establish that the page supports the recorded claim.
+3. Source-content verification requires manual review.
+4. Port coordinates and terminal coordinates must be validated separately.
+5. URL failures may result from anti-bot protection, redirect restrictions, server downtime or network issues.
+6. No coordinates or operational inclusion decisions were modified by Script 40.
+
+10. OUTPUT FILES
+-----------------------------------------------------------------
+outputs/tables/40_source_evidence_audit.csv
+outputs/tables/40_source_evidence_summary.csv
+outputs/reports/40_source_evidence_audit_report.txt

@@ -1,0 +1,36 @@
+SCRIPT 79 — LONG INTERVAL RECORD-LEVEL INVESTIGATION
+==============================================================================
+Project root: /Users/abhishekkumar/Strait_of_Hormuz_Research
+Input: outputs/tables/78_canonical_intercall_interval_register.csv
+Canonical inter-call records: 449
+Distinct vessels represented: 109
+Distinct port pairs: 65
+Records above global P95: 23
+Upper IQR flags: 22
+Extreme IQR flags: 14
+Stored/recomputed flag mismatches: 0
+Previous call IDs found in interval-only register: 340
+Previous call IDs not found in interval-only register: 109
+
+INVESTIGATION PRINCIPLES
+- Every canonical interval is retained; no deletion or winsorization is performed.
+- P95 and IQR thresholds are statistical review flags, not causal classifications.
+- Port-pair and vessel recurrence are descriptive evidence only.
+- The current fields do not identify sailing, anchorage, waiting, operational, or data-gap components.
+- No schedule slack or operational recovery is approved.
+- No physical route or actual Strait of Hormuz transit is established.
+
+Validation checks passed: 8/8
+Validation checks failed: 0
+
+FAILED CHECKS
+None.
+
+OUTPUT FILES
+- outputs/tables/79_long_interval_record_investigation_register.csv
+- outputs/tables/79_long_interval_review_queue_above_p95.csv
+- outputs/tables/79_port_pair_long_interval_investigation.csv
+- outputs/tables/79_vessel_long_interval_investigation.csv
+- outputs/tables/79_transition_type_investigation_summary.csv
+- outputs/tables/79_validation_checks.csv
+- outputs/reports/79_long_interval_record_level_investigation_report.txt

@@ -1,0 +1,1206 @@
+UNLOCODE,Port_Name,Simulation_Time_Hours,Event_Arrivals,Event_Departures,Active_Port_Calls
+AEAJM,Ajman Port Terminal,182.28333333333333,1,0,1
+AEAJM,Ajman Port Terminal,217.6,0,1,0
+AEAJM,Ajman Port Terminal,363.6666666666667,1,0,1
+AEAJM,Ajman Port Terminal,403.45,0,1,0
+AEAJM,Ajman Port Terminal,492.93333333333334,1,0,1
+AEAJM,Ajman Port Terminal,501.51666666666665,0,1,0
+AEAJM,Ajman Port Terminal,590.4,1,0,1
+AEAJM,Ajman Port Terminal,606.4,0,1,0
+AEAJM,Ajman Port Terminal,715.6833333333333,1,0,1
+AEAJM,Ajman Port Terminal,726.1333333333333,0,1,0
+AEAJM,Ajman Port Terminal,850.4333333333333,1,0,1
+AEAJM,Ajman Port Terminal,860.0166666666667,0,1,0
+AEAJM,Ajman Port Terminal,915.25,1,0,1
+AEAJM,Ajman Port Terminal,919.8666666666667,0,1,0
+AEAJM,Ajman Port Terminal,951.4333333333333,1,0,1
+AEAJM,Ajman Port Terminal,961.95,0,1,0
+AEAJM,Ajman Port Terminal,1130.5833333333333,1,0,1
+AEAJM,Ajman Port Terminal,1145.0333333333333,0,1,0
+AEAJM,Ajman Port Terminal,1185.0166666666667,1,0,1
+AEAJM,Ajman Port Terminal,1190.95,0,1,0
+AEAJM,Ajman Port Terminal,1262.25,1,0,1
+AEAJM,Ajman Port Terminal,1270.9666666666667,0,1,0
+AEAJM,Ajman Port Terminal,1298.7,1,0,1
+AEAJM,Ajman Port Terminal,1319.7166666666667,0,1,0
+AEAJM,Ajman Port Terminal,1355.6833333333334,1,0,1
+AEAJM,Ajman Port Terminal,1369.5166666666667,0,1,0
+AEAJM,Ajman Port Terminal,1438.85,1,0,1
+AEAJM,Ajman Port Terminal,1452.6166666666666,0,1,0
+AEAJM,Ajman Port Terminal,1475.4666666666667,1,0,1
+AEAJM,Ajman Port Terminal,1498.3833333333334,0,1,0
+AEAJM,Ajman Port Terminal,1625.9,1,0,1
+AEAJM,Ajman Port Terminal,1638.9166666666667,0,1,0
+AEAJM,Ajman Port Terminal,1695.6166666666666,1,0,1
+AEAJM,Ajman Port Terminal,1712.6833333333334,0,1,0
+AEAJM,Ajman Port Terminal,1869.4833333333333,1,0,1
+AEAJM,Ajman Port Terminal,1880.85,0,1,0
+AEAJM,Ajman Port Terminal,1970.25,1,0,1
+AEAJM,Ajman Port Terminal,1982.0666666666666,0,1,0
+AEAJM,Ajman Port Terminal,2030.0166666666667,1,0,1
+AEAJM,Ajman Port Terminal,2043.7166666666667,0,1,0
+AEAJM,Ajman Port Terminal,2155.9166666666665,1,0,1
+AEAJM,Ajman Port Terminal,2174.766666666667,0,1,0
+AEAJM,Ajman Port Terminal,2220.0333333333333,1,0,1
+AEAJM,Ajman Port Terminal,2225.383333333333,0,1,0
+AEAUH,CSP Abu Dhabi Port Container Trml,112.03333333333333,1,0,1
+AEAUH,CSP Abu Dhabi Port Container Trml,119.3,0,1,0
+AEAUH,CSP Abu Dhabi Port Container Trml,302.26666666666665,1,0,1
+AEAUH,CSP Abu Dhabi Port Container Trml,319.3666666666667,0,1,0
+AEAUH,CSP Abu Dhabi Port Container Trml,433.85,1,0,1
+AEAUH,CSP Abu Dhabi Port Container Trml,449.28333333333336,0,1,0
+AEAUH,CSP Abu Dhabi Port Container Trml,540.9,1,0,1
+AEAUH,CSP Abu Dhabi Port Container Trml,548.9,0,1,0
+AEAUH,CSP Abu Dhabi Port Container Trml,631.1166666666667,1,0,1
+AEAUH,CSP Abu Dhabi Port Container Trml,642.6333333333333,0,1,0
+AEAUH,CSP Abu Dhabi Port Container Trml,754.3333333333334,1,0,1
+AEAUH,CSP Abu Dhabi Port Container Trml,774.4,0,1,0
+AEAUH,CSP Abu Dhabi Port Container Trml,925.3,1,0,1
+AEAUH,CSP Abu Dhabi Port Container Trml,929.7,0,1,0
+AEAUH,CSP Abu Dhabi Port Container Trml,968.75,1,0,1
+AEAUH,CSP Abu Dhabi Port Container Trml,978.2,0,1,0
+AEAUH,CSP Abu Dhabi Port Container Trml,990.4666666666667,1,0,1
+AEAUH,CSP Abu Dhabi Port Container Trml,1025.95,0,1,0
+AEAUH,CSP Abu Dhabi Port Container Trml,1151.75,1,0,1
+AEAUH,CSP Abu Dhabi Port Container Trml,1161.95,0,1,0
+AEAUH,CSP Abu Dhabi Port Container Trml,1197.95,1,0,1
+AEAUH,CSP Abu Dhabi Port Container Trml,1206.5666666666666,0,1,0
+AEAUH,CSP Abu Dhabi Port Container Trml,1237.3666666666666,1,0,1
+AEAUH,CSP Abu Dhabi Port Container Trml,1254.7833333333333,0,1,0
+AEAUH,CSP Abu Dhabi Port Container Trml,1277.85,1,0,1
+AEAUH,CSP Abu Dhabi Port Container Trml,1301.75,0,1,0
+AEAUH,CSP Abu Dhabi Port Container Trml,1379.6166666666666,1,0,1
+AEAUH,CSP Abu Dhabi Port Container Trml,1399.4,1,0,2
+AEAUH,CSP Abu Dhabi Port Container Trml,1402.25,0,1,1
+AEAUH,CSP Abu Dhabi Port Container Trml,1419.4,0,1,0
+AEAUH,CSP Abu Dhabi Port Container Trml,1492.55,1,0,1
+AEAUH,CSP Abu Dhabi Port Container Trml,1503.0166666666667,0,1,0
+AEAUH,CSP Abu Dhabi Port Container Trml,1505.6,1,0,1
+AEAUH,CSP Abu Dhabi Port Container Trml,1514.6166666666666,0,1,0
+AEAUH,CSP Abu Dhabi Port Container Trml,1646.3,1,0,1
+AEAUH,CSP Abu Dhabi Port Container Trml,1652.5,0,1,0
+AEAUH,CSP Abu Dhabi Port Container Trml,1722.0833333333333,1,0,1
+AEAUH,CSP Abu Dhabi Port Container Trml,1732.65,0,1,0
+AEAUH,CSP Abu Dhabi Port Container Trml,1744.6666666666667,1,0,1
+AEAUH,CSP Abu Dhabi Port Container Trml,1757.35,0,1,0
+AEAUH,CSP Abu Dhabi Port Container Trml,1814.6166666666666,1,0,1
+AEAUH,CSP Abu Dhabi Port Container Trml,1827.1166666666666,0,1,0
+AEAUH,CSP Abu Dhabi Port Container Trml,1889.0166666666667,1,0,1
+AEAUH,CSP Abu Dhabi Port Container Trml,1908.65,0,1,0
+AEAUH,CSP Abu Dhabi Port Container Trml,2051.266666666667,1,0,1
+AEAUH,CSP Abu Dhabi Port Container Trml,2056.616666666667,0,1,0
+AEAUH,CSP Abu Dhabi Port Container Trml,2114.266666666667,1,0,1
+AEAUH,CSP Abu Dhabi Port Container Trml,2128.15,0,1,0
+AEFJR,Fujairah Terminal,0.0,1,0,1
+AEFJR,Fujairah Terminal,48.31666666666667,0,1,0
+AEFJR,Fujairah Terminal,137.63333333333333,1,0,1
+AEFJR,Fujairah Terminal,196.03333333333333,1,0,2
+AEFJR,Fujairah Terminal,216.78333333333333,0,1,1
+AEFJR,Fujairah Terminal,256.95,0,1,0
+AEFJR,Fujairah Terminal,382.6666666666667,1,0,1
+AEFJR,Fujairah Terminal,420.8,0,1,0
+AEFJR,Fujairah Terminal,433.81666666666666,1,0,1
+AEFJR,Fujairah Terminal,475.45,0,1,0
+AEFJR,Fujairah Terminal,520.0333333333333,1,0,1
+AEFJR,Fujairah Terminal,565.0166666666667,0,1,0
+AEFJR,Fujairah Terminal,618.4,1,0,1
+AEFJR,Fujairah Terminal,675.65,0,1,0
+AEFJR,Fujairah Terminal,677.7833333333333,1,0,1
+AEFJR,Fujairah Terminal,739.7833333333333,0,1,0
+AEFJR,Fujairah Terminal,743.5333333333333,1,0,1
+AEFJR,Fujairah Terminal,806.6833333333333,0,1,0
+AEFJR,Fujairah Terminal,970.8833333333333,1,0,1
+AEFJR,Fujairah Terminal,998.1166666666667,0,1,0
+AEFJR,Fujairah Terminal,1244.95,1,0,1
+AEFJR,Fujairah Terminal,1298.65,0,1,0
+AEFJR,Fujairah Terminal,1352.3333333333333,1,0,1
+AEFJR,Fujairah Terminal,1391.1833333333334,1,0,2
+AEFJR,Fujairah Terminal,1419.3166666666666,0,1,1
+AEFJR,Fujairah Terminal,1452.5666666666666,0,1,0
+AEFJR,Fujairah Terminal,1536.4166666666667,1,0,1
+AEFJR,Fujairah Terminal,1537.8666666666666,1,0,2
+AEFJR,Fujairah Terminal,1599.8166666666666,0,1,1
+AEFJR,Fujairah Terminal,1640.9833333333333,0,1,0
+AEFJR,Fujairah Terminal,1778.25,1,0,1
+AEFJR,Fujairah Terminal,1827.9,0,1,0
+AEFJR,Fujairah Terminal,1935.9333333333334,1,0,1
+AEFJR,Fujairah Terminal,1982.65,0,1,0
+AEFJR,Fujairah Terminal,2117.05,1,0,1
+AEFJR,Fujairah Terminal,2122.9,1,0,2
+AEFJR,Fujairah Terminal,2165.6833333333334,0,1,1
+AEFJR,Fujairah Terminal,2166.65,0,1,0
+AEJEA,Jebel Ali Terminal 2,35.4,1,0,1
+AEJEA,Jebel Ali Terminal 2,49.4,0,1,0
+AEJEA,Jebel Ali Terminal 2,76.23333333333333,1,0,1
+AEJEA,Jebel Ali Terminal 2,88.7,0,1,0
+AEJEA,Jebel Ali Terminal 2,110.4,1,0,1
+AEJEA,Jebel Ali Terminal 2,126.4,0,1,0
+AEJEA,Jebel Ali Terminal 2,139.4,1,0,1
+AEJEA,Jebel Ali Terminal 2,148.31666666666666,1,0,2
+AEJEA,Jebel Ali Terminal 2,149.4,0,1,1
+AEJEA,Jebel Ali Terminal 2,182.55,0,1,0
+AEJEA,Jebel Ali Terminal 2,207.85,1,0,1
+AEJEA,Jebel Ali Terminal 2,220.68333333333334,0,1,0
+AEJEA,Jebel Ali Terminal 2,221.9,1,0,1
+AEJEA,Jebel Ali Terminal 2,222.68333333333334,1,0,2
+AEJEA,Jebel Ali Terminal 2,242.11666666666667,0,1,1
+AEJEA,Jebel Ali Terminal 2,279.1166666666667,1,0,2
+AEJEA,Jebel Ali Terminal 2,296.23333333333335,0,1,1
+AEJEA,Jebel Ali Terminal 2,326.1166666666667,0,1,0
+AEJEA,Jebel Ali Terminal 2,327.45,1,0,1
+AEJEA,Jebel Ali Terminal 2,327.5,1,0,2
+AEJEA,Jebel Ali Terminal 2,346.68333333333334,0,1,1
+AEJEA,Jebel Ali Terminal 2,352.0,0,1,0
+AEJEA,Jebel Ali Terminal 2,412.4166666666667,1,0,1
+AEJEA,Jebel Ali Terminal 2,425.28333333333336,0,1,0
+AEJEA,Jebel Ali Terminal 2,434.68333333333334,1,0,1
+AEJEA,Jebel Ali Terminal 2,451.98333333333335,0,1,0
+AEJEA,Jebel Ali Terminal 2,507.1166666666667,1,0,1
+AEJEA,Jebel Ali Terminal 2,516.0166666666667,0,1,0
+AEJEA,Jebel Ali Terminal 2,554.9,1,0,1
+AEJEA,Jebel Ali Terminal 2,555.3,1,0,2
+AEJEA,Jebel Ali Terminal 2,567.4,0,1,1
+AEJEA,Jebel Ali Terminal 2,588.9,0,1,0
+AEJEA,Jebel Ali Terminal 2,591.2666666666667,1,0,1
+AEJEA,Jebel Ali Terminal 2,607.35,0,1,0
+AEJEA,Jebel Ali Terminal 2,727.2333333333333,1,0,1
+AEJEA,Jebel Ali Terminal 2,731.0166666666667,1,0,2
+AEJEA,Jebel Ali Terminal 2,731.5333333333333,1,0,3
+AEJEA,Jebel Ali Terminal 2,732.5166666666667,0,1,2
+AEJEA,Jebel Ali Terminal 2,749.35,0,1,1
+AEJEA,Jebel Ali Terminal 2,762.1166666666667,0,1,0
+AEJEA,Jebel Ali Terminal 2,823.4,1,0,1
+AEJEA,Jebel Ali Terminal 2,823.4166666666666,0,1,0
+AEJEA,Jebel Ali Terminal 2,865.6166666666667,1,0,1
+AEJEA,Jebel Ali Terminal 2,875.45,0,1,0
+AEJEA,Jebel Ali Terminal 2,914.9,1,0,1
+AEJEA,Jebel Ali Terminal 2,925.6166666666667,1,0,2
+AEJEA,Jebel Ali Terminal 2,931.9,0,1,1
+AEJEA,Jebel Ali Terminal 2,937.6333333333333,0,1,0
+AEJEA,Jebel Ali Terminal 2,940.1,1,0,1
+AEJEA,Jebel Ali Terminal 2,974.4,0,1,0
+AEJEA,Jebel Ali Terminal 2,1031.6,1,0,1
+AEJEA,Jebel Ali Terminal 2,1035.9,1,0,2
+AEJEA,Jebel Ali Terminal 2,1047.6833333333334,1,0,3
+AEJEA,Jebel Ali Terminal 2,1052.3,0,1,2
+AEJEA,Jebel Ali Terminal 2,1057.8,0,1,1
+AEJEA,Jebel Ali Terminal 2,1061.0166666666667,0,1,0
+AEJEA,Jebel Ali Terminal 2,1107.5666666666666,1,0,1
+AEJEA,Jebel Ali Terminal 2,1126.1833333333334,0,1,0
+AEJEA,Jebel Ali Terminal 2,1215.4833333333333,1,0,1
+AEJEA,Jebel Ali Terminal 2,1226.9666666666667,1,0,2
+AEJEA,Jebel Ali Terminal 2,1227.3166666666666,0,1,1
+AEJEA,Jebel Ali Terminal 2,1246.6333333333334,0,1,0
+AEJEA,Jebel Ali Terminal 2,1249.2666666666667,1,0,1
+AEJEA,Jebel Ali Terminal 2,1259.9666666666667,0,1,0
+AEJEA,Jebel Ali Terminal 2,1263.5,1,0,1
+AEJEA,Jebel Ali Terminal 2,1276.0333333333333,1,0,2
+AEJEA,Jebel Ali Terminal 2,1279.4833333333333,0,1,1
+AEJEA,Jebel Ali Terminal 2,1293.95,0,1,0
+AEJEA,Jebel Ali Terminal 2,1299.8,1,0,1
+AEJEA,Jebel Ali Terminal 2,1300.2,1,0,2
+AEJEA,Jebel Ali Terminal 2,1313.7,0,1,1
+AEJEA,Jebel Ali Terminal 2,1338.1,0,1,0
+AEJEA,Jebel Ali Terminal 2,1363.4,1,0,1
+AEJEA,Jebel Ali Terminal 2,1363.4833333333333,1,0,2
+AEJEA,Jebel Ali Terminal 2,1366.75,0,1,1
+AEJEA,Jebel Ali Terminal 2,1375.5,1,0,2
+AEJEA,Jebel Ali Terminal 2,1392.4,0,1,1
+AEJEA,Jebel Ali Terminal 2,1399.7166666666667,0,1,0
+AEJEA,Jebel Ali Terminal 2,1400.4333333333334,1,0,1
+AEJEA,Jebel Ali Terminal 2,1406.0833333333333,1,0,2
+AEJEA,Jebel Ali Terminal 2,1412.5666666666666,0,1,1
+AEJEA,Jebel Ali Terminal 2,1430.35,0,1,0
+AEJEA,Jebel Ali Terminal 2,1454.85,1,0,1
+AEJEA,Jebel Ali Terminal 2,1469.65,0,1,0
+AEJEA,Jebel Ali Terminal 2,1656.9333333333334,1,0,1
+AEJEA,Jebel Ali Terminal 2,1657.6,1,0,2
+AEJEA,Jebel Ali Terminal 2,1658.15,1,0,3
+AEJEA,Jebel Ali Terminal 2,1664.25,0,1,2
+AEJEA,Jebel Ali Terminal 2,1681.6,0,1,1
+AEJEA,Jebel Ali Terminal 2,1685.95,0,1,0
+AEJEA,Jebel Ali Terminal 2,1711.6666666666667,1,0,1
+AEJEA,Jebel Ali Terminal 2,1739.1,0,1,0
+AEJEA,Jebel Ali Terminal 2,1755.3333333333333,1,0,1
+AEJEA,Jebel Ali Terminal 2,1762.8333333333333,0,1,0
+AEJEA,Jebel Ali Terminal 2,1779.1333333333334,1,0,1
+AEJEA,Jebel Ali Terminal 2,1798.4,0,1,0
+AEJEA,Jebel Ali Terminal 2,1804.2,1,0,1
+AEJEA,Jebel Ali Terminal 2,1804.85,1,0,2
+AEJEA,Jebel Ali Terminal 2,1829.7333333333333,0,1,1
+AEJEA,Jebel Ali Terminal 2,1832.2,0,1,0
+AEJEA,Jebel Ali Terminal 2,1840.6,1,0,1
+AEJEA,Jebel Ali Terminal 2,1843.4,1,0,2
+AEJEA,Jebel Ali Terminal 2,1851.9,1,0,3
+AEJEA,Jebel Ali Terminal 2,1857.95,0,1,2
+AEJEA,Jebel Ali Terminal 2,1869.6833333333334,0,1,1
+AEJEA,Jebel Ali Terminal 2,1895.4,0,1,0
+AEJEA,Jebel Ali Terminal 2,1959.4,1,0,1
+AEJEA,Jebel Ali Terminal 2,1979.5333333333333,0,1,0
+AEJEA,Jebel Ali Terminal 2,1983.1166666666666,1,0,1
+AEJEA,Jebel Ali Terminal 2,1987.2833333333333,1,0,2
+AEJEA,Jebel Ali Terminal 2,2002.2833333333333,0,1,1
+AEJEA,Jebel Ali Terminal 2,2005.7833333333333,0,1,0
+AEJEA,Jebel Ali Terminal 2,2079.7833333333333,1,0,1
+AEJEA,Jebel Ali Terminal 2,2095.4,1,0,2
+AEJEA,Jebel Ali Terminal 2,2101.4,0,1,1
+AEJEA,Jebel Ali Terminal 2,2109.65,0,1,0
+AEJEA,Jebel Ali Terminal 2,2139.4,1,0,1
+AEJEA,Jebel Ali Terminal 2,2158.95,0,1,0
+AEJEA,Jebel Ali Terminal 2,2179.483333333333,1,0,1
+AEJEA,Jebel Ali Terminal 2,2190.733333333333,0,1,0
+AEKLF,Khor Fakkan Terminal,214.25,1,0,1
+AEKLF,Khor Fakkan Terminal,243.9,1,0,2
+AEKLF,Khor Fakkan Terminal,284.1166666666667,0,1,1
+AEKLF,Khor Fakkan Terminal,308.9,0,1,0
+AEKLF,Khor Fakkan Terminal,354.76666666666665,1,0,1
+AEKLF,Khor Fakkan Terminal,441.15,0,1,0
+AEKLF,Khor Fakkan Terminal,484.2,1,0,1
+AEKLF,Khor Fakkan Terminal,518.15,1,0,2
+AEKLF,Khor Fakkan Terminal,530.15,0,1,1
+AEKLF,Khor Fakkan Terminal,611.0333333333333,0,1,0
+AEKLF,Khor Fakkan Terminal,720.1833333333333,1,0,1
+AEKLF,Khor Fakkan Terminal,795.1,0,1,0
+AEKLF,Khor Fakkan Terminal,930.7,1,0,1
+AEKLF,Khor Fakkan Terminal,983.8166666666667,0,1,0
+AEKLF,Khor Fakkan Terminal,1055.6166666666666,1,0,1
+AEKLF,Khor Fakkan Terminal,1097.6166666666666,0,1,0
+AEKLF,Khor Fakkan Terminal,1143.0166666666667,1,0,1
+AEKLF,Khor Fakkan Terminal,1167.6833333333334,0,1,0
+AEKLF,Khor Fakkan Terminal,1195.4,1,0,1
+AEKLF,Khor Fakkan Terminal,1260.4,0,1,0
+AEKLF,Khor Fakkan Terminal,1492.9833333333333,1,0,1
+AEKLF,Khor Fakkan Terminal,1549.8666666666666,0,1,0
+AEKLF,Khor Fakkan Terminal,1553.1833333333334,1,0,1
+AEKLF,Khor Fakkan Terminal,1647.8333333333333,0,1,0
+AEKLF,Khor Fakkan Terminal,1670.15,1,0,1
+AEKLF,Khor Fakkan Terminal,1687.8,1,0,2
+AEKLF,Khor Fakkan Terminal,1734.75,0,1,1
+AEKLF,Khor Fakkan Terminal,1736.35,0,1,0
+AEKLF,Khor Fakkan Terminal,1809.9166666666667,1,0,1
+AEKLF,Khor Fakkan Terminal,1835.5166666666667,0,1,0
+AEKLF,Khor Fakkan Terminal,1895.2166666666667,1,0,1
+AEKLF,Khor Fakkan Terminal,1929.1,1,0,2
+AEKLF,Khor Fakkan Terminal,1952.5166666666667,0,1,1
+AEKLF,Khor Fakkan Terminal,1998.4333333333334,1,0,2
+AEKLF,Khor Fakkan Terminal,2014.2833333333333,0,1,1
+AEKLF,Khor Fakkan Terminal,2044.25,1,0,2
+AEKLF,Khor Fakkan Terminal,2096.65,0,1,1
+AEKLF,Khor Fakkan Terminal,2125.65,0,1,0
+AEKLF,Khor Fakkan Terminal,2144.5,1,0,1
+AEKLF,Khor Fakkan Terminal,2203.9,0,1,0
+AESHJ,Sharjah Terminal,96.56666666666666,1,0,1
+AESHJ,Sharjah Terminal,197.28333333333333,0,1,0
+AESHJ,Sharjah Terminal,199.81666666666666,1,0,1
+AESHJ,Sharjah Terminal,237.61666666666667,0,1,0
+AESHJ,Sharjah Terminal,741.5666666666667,1,0,1
+AESHJ,Sharjah Terminal,824.6,0,1,0
+AESHJ,Sharjah Terminal,907.5666666666667,1,0,1
+AESHJ,Sharjah Terminal,949.6333333333333,0,1,0
+AESHJ,Sharjah Terminal,1078.8333333333333,1,0,1
+AESHJ,Sharjah Terminal,1098.4666666666667,0,1,0
+AESHJ,Sharjah Terminal,1148.1666666666667,1,0,1
+AESHJ,Sharjah Terminal,1219.2833333333333,0,1,0
+AESHJ,Sharjah Terminal,1567.6833333333334,1,0,1
+AESHJ,Sharjah Terminal,1602.7,1,0,2
+AESHJ,Sharjah Terminal,1635.1666666666667,0,1,1
+AESHJ,Sharjah Terminal,1642.15,0,1,0
+AESHJ,Sharjah Terminal,1855.25,1,0,1
+AESHJ,Sharjah Terminal,1891.4833333333333,0,1,0
+AESHJ,Sharjah Terminal,2024.3,1,0,1
+AESHJ,Sharjah Terminal,2077.65,0,1,0
+BHKBS,Bahrain Terminal,55.9,1,0,1
+BHKBS,Bahrain Terminal,66.65,0,1,0
+BHKBS,Bahrain Terminal,415.6166666666667,1,0,1
+BHKBS,Bahrain Terminal,421.06666666666666,0,1,0
+BHKBS,Bahrain Terminal,659.6,1,0,1
+BHKBS,Bahrain Terminal,663.7333333333333,0,1,0
+BHKBS,Bahrain Terminal,1155.4,1,0,1
+BHKBS,Bahrain Terminal,1162.4,0,1,0
+BHKBS,Bahrain Terminal,1804.4,1,0,1
+BHKBS,Bahrain Terminal,1812.4,0,1,0
+IQUQR,Umm Qasr Port BGT Terminal,870.2833333333333,1,0,1
+IQUQR,Umm Qasr Port BGT Terminal,876.75,0,1,0
+IQUQR,Umm Qasr Port BGT Terminal,1102.35,1,0,1
+IQUQR,Umm Qasr Port BGT Terminal,1114.6833333333334,0,1,0
+IQUQR,Umm Qasr Port BGT Terminal,1667.9333333333334,1,0,1
+IQUQR,Umm Qasr Port BGT Terminal,1668.4666666666667,0,1,0
+IQUQR,Umm Qasr Port BGT Terminal,1693.9666666666667,1,0,1
+IQUQR,Umm Qasr Port BGT Terminal,1736.7333333333333,0,1,0
+IQUQR,Umm Qasr Port BGT Terminal,1905.7333333333333,1,0,1
+IQUQR,Umm Qasr Port BGT Terminal,1923.0166666666667,0,1,0
+KWSAA,Shuaiba Port Terminal,138.4,1,0,1
+KWSAA,Shuaiba Port Terminal,151.4,0,1,0
+KWSWK,Shuwaikh Terminal,183.65,1,0,1
+KWSWK,Shuwaikh Terminal,184.58333333333334,0,1,0
+KWSWK,Shuwaikh Terminal,492.15,1,0,1
+KWSWK,Shuwaikh Terminal,510.8666666666667,0,1,0
+KWSWK,Shuwaikh Terminal,739.4,1,0,1
+KWSWK,Shuwaikh Terminal,752.4,0,1,0
+KWSWK,Shuwaikh Terminal,1237.7333333333333,1,0,1
+KWSWK,Shuwaikh Terminal,1255.9,0,1,0
+KWSWK,Shuwaikh Terminal,1885.1,1,0,1
+KWSWK,Shuwaikh Terminal,1895.0666666666666,0,1,0
+OMDQM,Early Operations Container Terminal,959.4,1,0,1
+OMDQM,Early Operations Container Terminal,985.4,0,1,0
+OMDQM,Early Operations Container Terminal,1262.4,1,0,1
+OMDQM,Early Operations Container Terminal,1329.35,0,1,0
+OMDQM,Early Operations Container Terminal,2120.4,1,0,1
+OMDQM,Early Operations Container Terminal,2134.016666666667,0,1,0
+OMSLL,Salalah Terminal,91.38333333333334,1,0,1
+OMSLL,Salalah Terminal,95.48333333333333,1,0,2
+OMSLL,Salalah Terminal,112.88333333333334,1,0,3
+OMSLL,Salalah Terminal,113.73333333333333,1,0,4
+OMSLL,Salalah Terminal,117.28333333333333,0,1,3
+OMSLL,Salalah Terminal,121.43333333333334,0,1,2
+OMSLL,Salalah Terminal,123.28333333333333,1,0,3
+OMSLL,Salalah Terminal,124.38333333333334,1,0,4
+OMSLL,Salalah Terminal,136.2,0,1,3
+OMSLL,Salalah Terminal,140.18333333333334,0,1,2
+OMSLL,Salalah Terminal,150.25,1,0,3
+OMSLL,Salalah Terminal,150.9,1,0,4
+OMSLL,Salalah Terminal,154.03333333333333,0,1,3
+OMSLL,Salalah Terminal,159.9,0,1,2
+OMSLL,Salalah Terminal,160.96666666666667,1,0,3
+OMSLL,Salalah Terminal,164.6,1,0,4
+OMSLL,Salalah Terminal,165.76666666666668,0,1,3
+OMSLL,Salalah Terminal,170.45,0,1,2
+OMSLL,Salalah Terminal,172.2,1,0,3
+OMSLL,Salalah Terminal,179.68333333333334,1,0,4
+OMSLL,Salalah Terminal,180.2,0,1,3
+OMSLL,Salalah Terminal,183.01666666666668,0,1,2
+OMSLL,Salalah Terminal,186.9,1,0,3
+OMSLL,Salalah Terminal,196.01666666666668,0,1,2
+OMSLL,Salalah Terminal,196.73333333333332,1,0,3
+OMSLL,Salalah Terminal,196.95,0,1,2
+OMSLL,Salalah Terminal,199.06666666666666,1,0,3
+OMSLL,Salalah Terminal,207.43333333333334,0,1,2
+OMSLL,Salalah Terminal,212.21666666666667,1,0,3
+OMSLL,Salalah Terminal,214.45,1,0,4
+OMSLL,Salalah Terminal,222.11666666666667,0,1,3
+OMSLL,Salalah Terminal,226.65,0,1,2
+OMSLL,Salalah Terminal,228.23333333333332,1,0,3
+OMSLL,Salalah Terminal,228.83333333333334,1,0,4
+OMSLL,Salalah Terminal,236.85,0,1,3
+OMSLL,Salalah Terminal,237.91666666666666,0,1,2
+OMSLL,Salalah Terminal,239.16666666666666,1,0,3
+OMSLL,Salalah Terminal,249.91666666666666,1,0,4
+OMSLL,Salalah Terminal,252.65,0,1,3
+OMSLL,Salalah Terminal,252.76666666666668,1,0,4
+OMSLL,Salalah Terminal,252.93333333333334,0,1,3
+OMSLL,Salalah Terminal,262.8666666666667,1,0,4
+OMSLL,Salalah Terminal,285.45,1,0,5
+OMSLL,Salalah Terminal,286.1666666666667,0,1,4
+OMSLL,Salalah Terminal,288.28333333333336,0,1,3
+OMSLL,Salalah Terminal,291.1666666666667,1,0,4
+OMSLL,Salalah Terminal,300.1166666666667,0,1,3
+OMSLL,Salalah Terminal,301.93333333333334,1,0,4
+OMSLL,Salalah Terminal,305.78333333333336,1,0,5
+OMSLL,Salalah Terminal,308.05,0,1,4
+OMSLL,Salalah Terminal,313.1166666666667,0,1,3
+OMSLL,Salalah Terminal,314.53333333333336,1,0,4
+OMSLL,Salalah Terminal,317.96666666666664,1,0,5
+OMSLL,Salalah Terminal,331.76666666666665,0,1,4
+OMSLL,Salalah Terminal,333.0,1,0,5
+OMSLL,Salalah Terminal,336.0833333333333,0,1,4
+OMSLL,Salalah Terminal,336.8833333333333,0,1,3
+OMSLL,Salalah Terminal,338.85,0,1,2
+OMSLL,Salalah Terminal,338.93333333333334,1,0,3
+OMSLL,Salalah Terminal,340.68333333333334,1,0,4
+OMSLL,Salalah Terminal,343.51666666666665,1,0,5
+OMSLL,Salalah Terminal,345.4,0,1,4
+OMSLL,Salalah Terminal,358.93333333333334,1,0,5
+OMSLL,Salalah Terminal,359.45,0,1,4
+OMSLL,Salalah Terminal,366.01666666666665,0,1,3
+OMSLL,Salalah Terminal,368.73333333333335,1,0,4
+OMSLL,Salalah Terminal,375.5833333333333,0,1,3
+OMSLL,Salalah Terminal,376.9166666666667,1,0,4
+OMSLL,Salalah Terminal,380.18333333333334,0,1,3
+OMSLL,Salalah Terminal,384.43333333333334,0,1,2
+OMSLL,Salalah Terminal,388.4166666666667,1,0,3
+OMSLL,Salalah Terminal,392.1166666666667,0,1,2
+OMSLL,Salalah Terminal,393.6166666666667,1,0,3
+OMSLL,Salalah Terminal,395.56666666666666,0,1,2
+OMSLL,Salalah Terminal,406.1333333333333,1,0,3
+OMSLL,Salalah Terminal,408.1666666666667,1,0,4
+OMSLL,Salalah Terminal,411.78333333333336,0,1,3
+OMSLL,Salalah Terminal,414.56666666666666,0,1,2
+OMSLL,Salalah Terminal,436.6,1,0,3
+OMSLL,Salalah Terminal,439.1333333333333,0,1,2
+OMSLL,Salalah Terminal,440.6666666666667,1,0,3
+OMSLL,Salalah Terminal,448.0,0,1,2
+OMSLL,Salalah Terminal,449.75,1,0,3
+OMSLL,Salalah Terminal,462.78333333333336,0,1,2
+OMSLL,Salalah Terminal,464.78333333333336,1,0,3
+OMSLL,Salalah Terminal,465.85,0,1,2
+OMSLL,Salalah Terminal,468.3666666666667,1,0,3
+OMSLL,Salalah Terminal,475.46666666666664,1,0,4
+OMSLL,Salalah Terminal,478.35,0,1,3
+OMSLL,Salalah Terminal,484.46666666666664,1,0,4
+OMSLL,Salalah Terminal,485.46666666666664,0,1,3
+OMSLL,Salalah Terminal,486.73333333333335,1,0,4
+OMSLL,Salalah Terminal,495.15,0,1,3
+OMSLL,Salalah Terminal,496.8666666666667,1,0,4
+OMSLL,Salalah Terminal,499.1166666666667,0,1,3
+OMSLL,Salalah Terminal,502.35,1,1,3
+OMSLL,Salalah Terminal,511.28333333333336,1,0,4
+OMSLL,Salalah Terminal,517.6833333333333,0,1,3
+OMSLL,Salalah Terminal,526.5666666666667,1,0,4
+OMSLL,Salalah Terminal,528.2333333333333,1,0,5
+OMSLL,Salalah Terminal,529.35,0,1,4
+OMSLL,Salalah Terminal,534.6166666666667,0,1,3
+OMSLL,Salalah Terminal,538.8166666666667,0,1,2
+OMSLL,Salalah Terminal,544.4333333333333,1,0,3
+OMSLL,Salalah Terminal,552.4,1,0,4
+OMSLL,Salalah Terminal,552.7,0,1,3
+OMSLL,Salalah Terminal,558.2833333333333,1,0,4
+OMSLL,Salalah Terminal,560.7666666666667,0,1,3
+OMSLL,Salalah Terminal,562.2166666666667,1,0,4
+OMSLL,Salalah Terminal,569.4833333333333,0,1,3
+OMSLL,Salalah Terminal,570.8666666666667,1,0,4
+OMSLL,Salalah Terminal,572.1333333333333,0,1,3
+OMSLL,Salalah Terminal,574.5,1,0,4
+OMSLL,Salalah Terminal,585.85,0,1,3
+OMSLL,Salalah Terminal,588.1166666666667,0,1,2
+OMSLL,Salalah Terminal,592.2833333333333,1,0,3
+OMSLL,Salalah Terminal,593.8833333333333,0,1,2
+OMSLL,Salalah Terminal,599.7666666666667,1,0,3
+OMSLL,Salalah Terminal,606.0666666666667,0,1,2
+OMSLL,Salalah Terminal,610.75,1,0,3
+OMSLL,Salalah Terminal,612.6,0,1,2
+OMSLL,Salalah Terminal,614.7833333333333,0,1,1
+OMSLL,Salalah Terminal,629.7166666666667,1,0,2
+OMSLL,Salalah Terminal,636.4166666666666,0,1,1
+OMSLL,Salalah Terminal,641.0833333333334,1,0,2
+OMSLL,Salalah Terminal,642.25,1,0,3
+OMSLL,Salalah Terminal,645.75,0,1,2
+OMSLL,Salalah Terminal,654.7833333333333,1,0,3
+OMSLL,Salalah Terminal,660.2166666666667,0,2,1
+OMSLL,Salalah Terminal,664.4333333333333,1,0,2
+OMSLL,Salalah Terminal,670.1833333333333,1,0,3
+OMSLL,Salalah Terminal,674.35,1,0,4
+OMSLL,Salalah Terminal,676.45,1,0,5
+OMSLL,Salalah Terminal,679.4,0,1,4
+OMSLL,Salalah Terminal,681.0166666666667,1,0,5
+OMSLL,Salalah Terminal,684.0333333333333,0,1,4
+OMSLL,Salalah Terminal,689.1,0,1,3
+OMSLL,Salalah Terminal,692.5166666666667,1,0,4
+OMSLL,Salalah Terminal,695.9,0,1,3
+OMSLL,Salalah Terminal,701.8333333333334,1,0,4
+OMSLL,Salalah Terminal,702.9166666666666,0,1,3
+OMSLL,Salalah Terminal,717.8,1,0,4
+OMSLL,Salalah Terminal,718.5333333333333,1,0,5
+OMSLL,Salalah Terminal,720.5666666666667,0,1,4
+OMSLL,Salalah Terminal,721.3,0,1,3
+OMSLL,Salalah Terminal,724.1,1,0,4
+OMSLL,Salalah Terminal,724.6833333333333,0,1,3
+OMSLL,Salalah Terminal,726.5666666666667,1,0,4
+OMSLL,Salalah Terminal,746.0833333333334,0,1,3
+OMSLL,Salalah Terminal,748.5666666666667,1,0,4
+OMSLL,Salalah Terminal,750.2833333333333,1,0,5
+OMSLL,Salalah Terminal,753.05,0,1,4
+OMSLL,Salalah Terminal,754.3166666666667,0,1,3
+OMSLL,Salalah Terminal,755.75,1,0,4
+OMSLL,Salalah Terminal,756.3333333333334,0,1,3
+OMSLL,Salalah Terminal,764.9,1,0,4
+OMSLL,Salalah Terminal,770.95,0,1,3
+OMSLL,Salalah Terminal,774.8,1,0,4
+OMSLL,Salalah Terminal,776.7166666666667,0,1,3
+OMSLL,Salalah Terminal,779.1333333333333,1,0,4
+OMSLL,Salalah Terminal,780.5833333333334,1,0,5
+OMSLL,Salalah Terminal,782.15,0,1,4
+OMSLL,Salalah Terminal,784.6,0,1,3
+OMSLL,Salalah Terminal,790.5333333333333,1,0,4
+OMSLL,Salalah Terminal,797.0166666666667,0,1,3
+OMSLL,Salalah Terminal,799.0,1,0,4
+OMSLL,Salalah Terminal,804.1833333333333,0,1,3
+OMSLL,Salalah Terminal,808.0166666666667,0,1,2
+OMSLL,Salalah Terminal,808.4333333333333,1,0,3
+OMSLL,Salalah Terminal,810.0833333333334,1,0,4
+OMSLL,Salalah Terminal,819.0166666666667,0,1,3
+OMSLL,Salalah Terminal,821.45,0,1,2
+OMSLL,Salalah Terminal,829.45,1,0,3
+OMSLL,Salalah Terminal,831.0166666666667,0,1,2
+OMSLL,Salalah Terminal,833.1666666666666,1,0,3
+OMSLL,Salalah Terminal,834.1166666666667,0,1,2
+OMSLL,Salalah Terminal,842.2666666666667,0,1,1
+OMSLL,Salalah Terminal,844.7666666666667,1,0,2
+OMSLL,Salalah Terminal,856.65,1,0,3
+OMSLL,Salalah Terminal,866.3833333333333,1,0,4
+OMSLL,Salalah Terminal,868.8166666666667,0,1,3
+OMSLL,Salalah Terminal,868.9833333333333,1,0,4
+OMSLL,Salalah Terminal,872.3833333333333,0,1,3
+OMSLL,Salalah Terminal,875.3,1,0,4
+OMSLL,Salalah Terminal,880.6166666666667,0,1,3
+OMSLL,Salalah Terminal,888.3833333333333,1,0,4
+OMSLL,Salalah Terminal,894.0333333333333,1,0,5
+OMSLL,Salalah Terminal,895.7,1,0,6
+OMSLL,Salalah Terminal,896.15,0,1,5
+OMSLL,Salalah Terminal,896.25,0,1,4
+OMSLL,Salalah Terminal,897.9666666666667,0,1,3
+OMSLL,Salalah Terminal,898.1666666666666,1,0,4
+OMSLL,Salalah Terminal,900.3666666666667,1,0,5
+OMSLL,Salalah Terminal,912.1666666666666,1,0,6
+OMSLL,Salalah Terminal,915.0833333333334,0,1,5
+OMSLL,Salalah Terminal,915.9166666666666,0,1,4
+OMSLL,Salalah Terminal,919.5333333333333,1,0,5
+OMSLL,Salalah Terminal,921.8666666666667,0,1,4
+OMSLL,Salalah Terminal,922.0333333333333,0,1,3
+OMSLL,Salalah Terminal,925.2166666666667,1,0,4
+OMSLL,Salalah Terminal,928.2333333333333,0,1,3
+OMSLL,Salalah Terminal,935.5333333333333,0,1,2
+OMSLL,Salalah Terminal,938.4,0,1,1
+OMSLL,Salalah Terminal,938.85,1,0,2
+OMSLL,Salalah Terminal,941.3666666666667,1,0,3
+OMSLL,Salalah Terminal,943.0333333333333,1,0,4
+OMSLL,Salalah Terminal,951.15,0,1,3
+OMSLL,Salalah Terminal,961.4166666666666,1,0,4
+OMSLL,Salalah Terminal,968.0166666666667,0,1,3
+OMSLL,Salalah Terminal,979.1,0,1,2
+OMSLL,Salalah Terminal,980.85,1,0,3
+OMSLL,Salalah Terminal,987.5666666666667,0,1,2
+OMSLL,Salalah Terminal,989.2166666666667,1,0,3
+OMSLL,Salalah Terminal,992.65,1,0,4
+OMSLL,Salalah Terminal,996.25,1,1,4
+OMSLL,Salalah Terminal,1004.0666666666667,0,1,3
+OMSLL,Salalah Terminal,1006.4666666666667,1,0,4
+OMSLL,Salalah Terminal,1009.4166666666666,0,1,3
+OMSLL,Salalah Terminal,1024.9,1,0,4
+OMSLL,Salalah Terminal,1029.5,0,1,3
+OMSLL,Salalah Terminal,1045.65,1,0,4
+OMSLL,Salalah Terminal,1046.3,0,1,3
+OMSLL,Salalah Terminal,1048.35,1,0,4
+OMSLL,Salalah Terminal,1053.75,1,0,5
+OMSLL,Salalah Terminal,1054.1666666666667,0,1,4
+OMSLL,Salalah Terminal,1057.9,0,1,3
+OMSLL,Salalah Terminal,1060.3166666666666,1,0,4
+OMSLL,Salalah Terminal,1063.1,1,0,5
+OMSLL,Salalah Terminal,1064.75,0,1,4
+OMSLL,Salalah Terminal,1072.6,1,0,5
+OMSLL,Salalah Terminal,1075.65,0,1,4
+OMSLL,Salalah Terminal,1076.45,0,1,3
+OMSLL,Salalah Terminal,1079.8666666666666,1,0,4
+OMSLL,Salalah Terminal,1081.0833333333333,1,0,5
+OMSLL,Salalah Terminal,1084.3166666666666,0,1,4
+OMSLL,Salalah Terminal,1093.2,1,0,5
+OMSLL,Salalah Terminal,1093.2833333333333,0,1,4
+OMSLL,Salalah Terminal,1096.65,1,0,5
+OMSLL,Salalah Terminal,1099.9666666666667,0,1,4
+OMSLL,Salalah Terminal,1109.85,1,0,5
+OMSLL,Salalah Terminal,1112.2833333333333,0,1,4
+OMSLL,Salalah Terminal,1116.1166666666666,1,0,5
+OMSLL,Salalah Terminal,1118.5833333333333,0,1,4
+OMSLL,Salalah Terminal,1120.4,1,0,5
+OMSLL,Salalah Terminal,1122.1166666666666,0,1,4
+OMSLL,Salalah Terminal,1133.5333333333333,0,1,3
+OMSLL,Salalah Terminal,1135.7333333333333,1,0,4
+OMSLL,Salalah Terminal,1139.95,0,1,3
+OMSLL,Salalah Terminal,1144.5833333333333,1,0,4
+OMSLL,Salalah Terminal,1151.65,0,1,3
+OMSLL,Salalah Terminal,1160.15,0,1,2
+OMSLL,Salalah Terminal,1160.9,1,0,3
+OMSLL,Salalah Terminal,1163.9333333333334,1,0,4
+OMSLL,Salalah Terminal,1171.7,1,0,5
+OMSLL,Salalah Terminal,1173.2833333333333,0,1,4
+OMSLL,Salalah Terminal,1175.0833333333333,1,0,5
+OMSLL,Salalah Terminal,1176.7666666666667,0,1,4
+OMSLL,Salalah Terminal,1188.0833333333333,0,1,3
+OMSLL,Salalah Terminal,1189.7833333333333,1,0,4
+OMSLL,Salalah Terminal,1190.1166666666666,0,1,3
+OMSLL,Salalah Terminal,1191.8833333333334,1,0,4
+OMSLL,Salalah Terminal,1207.7166666666667,0,1,3
+OMSLL,Salalah Terminal,1210.1333333333334,1,0,4
+OMSLL,Salalah Terminal,1213.45,1,0,5
+OMSLL,Salalah Terminal,1214.6333333333334,0,1,4
+OMSLL,Salalah Terminal,1215.9666666666667,0,1,3
+OMSLL,Salalah Terminal,1218.3,1,0,4
+OMSLL,Salalah Terminal,1221.6,0,1,3
+OMSLL,Salalah Terminal,1226.95,1,0,4
+OMSLL,Salalah Terminal,1234.7,0,1,3
+OMSLL,Salalah Terminal,1236.85,1,0,4
+OMSLL,Salalah Terminal,1254.4833333333333,0,1,3
+OMSLL,Salalah Terminal,1255.95,1,0,4
+OMSLL,Salalah Terminal,1256.6833333333334,0,1,3
+OMSLL,Salalah Terminal,1257.2666666666667,1,0,4
+OMSLL,Salalah Terminal,1257.9,1,0,5
+OMSLL,Salalah Terminal,1259.4666666666667,0,1,4
+OMSLL,Salalah Terminal,1260.9666666666667,1,0,5
+OMSLL,Salalah Terminal,1261.4833333333333,0,1,4
+OMSLL,Salalah Terminal,1279.5666666666666,1,0,5
+OMSLL,Salalah Terminal,1284.4166666666667,1,0,6
+OMSLL,Salalah Terminal,1285.9166666666667,0,1,5
+OMSLL,Salalah Terminal,1287.6,0,1,4
+OMSLL,Salalah Terminal,1289.2,1,0,5
+OMSLL,Salalah Terminal,1290.9666666666667,0,1,4
+OMSLL,Salalah Terminal,1291.35,0,1,3
+OMSLL,Salalah Terminal,1293.05,1,0,4
+OMSLL,Salalah Terminal,1305.9166666666667,0,1,3
+OMSLL,Salalah Terminal,1308.1,1,0,4
+OMSLL,Salalah Terminal,1315.0666666666666,1,0,5
+OMSLL,Salalah Terminal,1319.4,0,1,4
+OMSLL,Salalah Terminal,1321.1166666666666,1,0,5
+OMSLL,Salalah Terminal,1322.6333333333334,0,1,4
+OMSLL,Salalah Terminal,1330.6333333333334,0,1,3
+OMSLL,Salalah Terminal,1332.3,0,1,2
+OMSLL,Salalah Terminal,1333.9,1,0,3
+OMSLL,Salalah Terminal,1337.9,1,0,4
+OMSLL,Salalah Terminal,1344.2833333333333,1,0,5
+OMSLL,Salalah Terminal,1347.45,0,1,4
+OMSLL,Salalah Terminal,1349.25,1,0,5
+OMSLL,Salalah Terminal,1350.7166666666667,0,1,4
+OMSLL,Salalah Terminal,1365.1833333333334,0,1,3
+OMSLL,Salalah Terminal,1366.8,1,0,4
+OMSLL,Salalah Terminal,1371.4,0,1,3
+OMSLL,Salalah Terminal,1373.3833333333334,1,0,4
+OMSLL,Salalah Terminal,1377.25,0,1,3
+OMSLL,Salalah Terminal,1384.2666666666667,1,0,4
+OMSLL,Salalah Terminal,1388.5,1,0,5
+OMSLL,Salalah Terminal,1391.7666666666667,0,1,4
+OMSLL,Salalah Terminal,1393.8166666666666,1,0,5
+OMSLL,Salalah Terminal,1393.9,0,1,4
+OMSLL,Salalah Terminal,1396.8166666666666,1,0,5
+OMSLL,Salalah Terminal,1397.9333333333334,0,1,4
+OMSLL,Salalah Terminal,1413.25,1,0,5
+OMSLL,Salalah Terminal,1414.6833333333334,0,1,4
+OMSLL,Salalah Terminal,1416.0666666666666,1,0,5
+OMSLL,Salalah Terminal,1417.7333333333333,0,1,4
+OMSLL,Salalah Terminal,1417.9,0,1,3
+OMSLL,Salalah Terminal,1419.4,1,0,4
+OMSLL,Salalah Terminal,1421.8666666666666,0,1,3
+OMSLL,Salalah Terminal,1432.0,0,1,2
+OMSLL,Salalah Terminal,1432.85,1,0,3
+OMSLL,Salalah Terminal,1437.2166666666667,1,0,4
+OMSLL,Salalah Terminal,1444.4166666666667,1,0,5
+OMSLL,Salalah Terminal,1445.25,0,1,4
+OMSLL,Salalah Terminal,1446.75,1,0,5
+OMSLL,Salalah Terminal,1451.6833333333334,0,1,4
+OMSLL,Salalah Terminal,1456.6833333333334,0,1,3
+OMSLL,Salalah Terminal,1457.3166666666666,0,1,2
+OMSLL,Salalah Terminal,1458.1,1,0,3
+OMSLL,Salalah Terminal,1461.2833333333333,1,0,4
+OMSLL,Salalah Terminal,1468.45,1,0,5
+OMSLL,Salalah Terminal,1468.6833333333334,0,1,4
+OMSLL,Salalah Terminal,1472.6166666666666,1,0,5
+OMSLL,Salalah Terminal,1479.2833333333333,0,1,4
+OMSLL,Salalah Terminal,1484.3833333333334,1,0,5
+OMSLL,Salalah Terminal,1492.4166666666667,1,0,6
+OMSLL,Salalah Terminal,1493.05,0,1,5
+OMSLL,Salalah Terminal,1495.2833333333333,0,1,4
+OMSLL,Salalah Terminal,1498.75,0,1,3
+OMSLL,Salalah Terminal,1500.4833333333333,1,0,4
+OMSLL,Salalah Terminal,1503.4,0,1,3
+OMSLL,Salalah Terminal,1504.8166666666666,0,1,2
+OMSLL,Salalah Terminal,1507.9833333333333,1,0,3
+OMSLL,Salalah Terminal,1516.9833333333333,1,0,4
+OMSLL,Salalah Terminal,1523.3166666666666,0,1,3
+OMSLL,Salalah Terminal,1525.6833333333334,1,0,4
+OMSLL,Salalah Terminal,1539.2166666666667,0,1,3
+OMSLL,Salalah Terminal,1549.7166666666667,0,1,2
+OMSLL,Salalah Terminal,1555.15,0,1,1
+OMSLL,Salalah Terminal,1561.2,0,1,0
+OMSLL,Salalah Terminal,1564.1833333333334,1,0,1
+OMSLL,Salalah Terminal,1567.15,1,0,2
+OMSLL,Salalah Terminal,1569.2166666666667,1,0,3
+OMSLL,Salalah Terminal,1578.35,1,0,4
+OMSLL,Salalah Terminal,1588.45,1,0,5
+OMSLL,Salalah Terminal,1590.1666666666667,0,1,4
+OMSLL,Salalah Terminal,1599.5666666666666,0,1,3
+OMSLL,Salalah Terminal,1602.2333333333333,1,0,4
+OMSLL,Salalah Terminal,1605.4166666666667,0,1,3
+OMSLL,Salalah Terminal,1607.65,1,0,4
+OMSLL,Salalah Terminal,1609.4,0,1,3
+OMSLL,Salalah Terminal,1614.5833333333333,1,0,4
+OMSLL,Salalah Terminal,1618.6833333333334,1,0,5
+OMSLL,Salalah Terminal,1625.0166666666667,0,1,4
+OMSLL,Salalah Terminal,1630.6666666666667,1,0,5
+OMSLL,Salalah Terminal,1631.7,0,1,4
+OMSLL,Salalah Terminal,1637.9166666666667,0,1,3
+OMSLL,Salalah Terminal,1641.4666666666667,1,0,4
+OMSLL,Salalah Terminal,1651.2666666666667,0,1,3
+OMSLL,Salalah Terminal,1652.9333333333334,1,0,4
+OMSLL,Salalah Terminal,1653.5833333333333,1,0,5
+OMSLL,Salalah Terminal,1656.9333333333334,0,1,4
+OMSLL,Salalah Terminal,1662.0666666666666,0,1,3
+OMSLL,Salalah Terminal,1666.8666666666666,0,1,2
+OMSLL,Salalah Terminal,1668.5333333333333,1,0,3
+OMSLL,Salalah Terminal,1672.35,1,0,4
+OMSLL,Salalah Terminal,1680.2333333333333,0,1,3
+OMSLL,Salalah Terminal,1680.3833333333334,0,1,2
+OMSLL,Salalah Terminal,1682.0666666666666,1,0,3
+OMSLL,Salalah Terminal,1682.5,1,0,4
+OMSLL,Salalah Terminal,1695.0333333333333,0,1,3
+OMSLL,Salalah Terminal,1696.6666666666667,1,0,4
+OMSLL,Salalah Terminal,1700.3833333333334,1,0,5
+OMSLL,Salalah Terminal,1702.85,1,0,6
+OMSLL,Salalah Terminal,1703.4166666666667,0,1,5
+OMSLL,Salalah Terminal,1705.6333333333334,0,1,4
+OMSLL,Salalah Terminal,1720.4166666666667,1,0,5
+OMSLL,Salalah Terminal,1724.2666666666667,1,0,6
+OMSLL,Salalah Terminal,1726.8,0,1,5
+OMSLL,Salalah Terminal,1726.95,0,1,4
+OMSLL,Salalah Terminal,1727.8666666666666,0,1,3
+OMSLL,Salalah Terminal,1732.2666666666667,1,0,4
+OMSLL,Salalah Terminal,1746.65,1,0,5
+OMSLL,Salalah Terminal,1747.5166666666667,0,1,4
+OMSLL,Salalah Terminal,1748.25,0,1,3
+OMSLL,Salalah Terminal,1751.2,1,0,4
+OMSLL,Salalah Terminal,1756.0166666666667,0,1,3
+OMSLL,Salalah Terminal,1756.2333333333333,1,0,4
+OMSLL,Salalah Terminal,1757.5833333333333,1,0,5
+OMSLL,Salalah Terminal,1758.85,0,1,4
+OMSLL,Salalah Terminal,1771.85,0,1,3
+OMSLL,Salalah Terminal,1774.3333333333333,1,0,4
+OMSLL,Salalah Terminal,1778.9166666666667,0,1,3
+OMSLL,Salalah Terminal,1779.0166666666667,0,1,2
+OMSLL,Salalah Terminal,1779.95,0,1,1
+OMSLL,Salalah Terminal,1780.55,1,0,2
+OMSLL,Salalah Terminal,1788.8666666666666,1,0,3
+OMSLL,Salalah Terminal,1797.95,0,1,2
+OMSLL,Salalah Terminal,1805.6166666666666,1,0,3
+OMSLL,Salalah Terminal,1809.0666666666666,1,0,4
+OMSLL,Salalah Terminal,1810.0833333333333,0,1,3
+OMSLL,Salalah Terminal,1810.7666666666667,0,1,2
+OMSLL,Salalah Terminal,1828.2666666666667,1,0,3
+OMSLL,Salalah Terminal,1832.8166666666666,0,1,2
+OMSLL,Salalah Terminal,1834.6,0,1,1
+OMSLL,Salalah Terminal,1836.35,1,0,2
+OMSLL,Salalah Terminal,1845.9166666666667,0,1,1
+OMSLL,Salalah Terminal,1848.4,1,0,2
+OMSLL,Salalah Terminal,1852.2833333333333,1,0,3
+OMSLL,Salalah Terminal,1860.7833333333333,0,1,2
+OMSLL,Salalah Terminal,1864.0833333333333,1,0,3
+OMSLL,Salalah Terminal,1864.4,1,0,4
+OMSLL,Salalah Terminal,1880.6166666666666,0,1,3
+OMSLL,Salalah Terminal,1881.65,0,1,2
+OMSLL,Salalah Terminal,1883.4166666666667,1,0,3
+OMSLL,Salalah Terminal,1896.3833333333334,1,0,4
+OMSLL,Salalah Terminal,1899.4666666666667,0,1,3
+OMSLL,Salalah Terminal,1906.3333333333333,0,1,2
+OMSLL,Salalah Terminal,1908.7333333333333,1,0,3
+OMSLL,Salalah Terminal,1912.5833333333333,1,0,4
+OMSLL,Salalah Terminal,1913.75,0,1,3
+OMSLL,Salalah Terminal,1922.65,0,1,2
+OMSLL,Salalah Terminal,1924.0333333333333,1,0,3
+OMSLL,Salalah Terminal,1927.1166666666666,1,0,4
+OMSLL,Salalah Terminal,1938.3166666666666,0,1,3
+OMSLL,Salalah Terminal,1939.8166666666666,1,0,4
+OMSLL,Salalah Terminal,1941.9833333333333,1,0,5
+OMSLL,Salalah Terminal,1948.15,0,1,4
+OMSLL,Salalah Terminal,1948.4833333333333,0,1,3
+OMSLL,Salalah Terminal,1949.8,1,0,4
+OMSLL,Salalah Terminal,1954.0833333333333,0,1,3
+OMSLL,Salalah Terminal,1955.4666666666667,1,0,4
+OMSLL,Salalah Terminal,1958.7333333333333,0,1,3
+OMSLL,Salalah Terminal,1960.4166666666667,1,0,4
+OMSLL,Salalah Terminal,1971.3166666666666,0,1,3
+OMSLL,Salalah Terminal,1979.4333333333334,1,0,4
+OMSLL,Salalah Terminal,1980.3333333333333,0,1,3
+OMSLL,Salalah Terminal,1981.6166666666666,0,1,2
+OMSLL,Salalah Terminal,1983.9,0,1,1
+OMSLL,Salalah Terminal,1985.6833333333334,1,0,2
+OMSLL,Salalah Terminal,2005.1,1,0,3
+OMSLL,Salalah Terminal,2008.3,0,1,2
+OMSLL,Salalah Terminal,2008.8,1,0,3
+OMSLL,Salalah Terminal,2009.85,1,0,4
+OMSLL,Salalah Terminal,2010.8666666666666,1,0,5
+OMSLL,Salalah Terminal,2014.8333333333333,0,1,4
+OMSLL,Salalah Terminal,2022.0833333333333,0,1,3
+OMSLL,Salalah Terminal,2026.1833333333334,1,0,4
+OMSLL,Salalah Terminal,2029.0,0,1,3
+OMSLL,Salalah Terminal,2037.15,1,0,4
+OMSLL,Salalah Terminal,2037.65,0,1,3
+OMSLL,Salalah Terminal,2040.3333333333333,0,1,2
+OMSLL,Salalah Terminal,2044.8166666666666,1,0,3
+OMSLL,Salalah Terminal,2049.6666666666665,0,1,2
+OMSLL,Salalah Terminal,2051.883333333333,1,0,3
+OMSLL,Salalah Terminal,2052.883333333333,1,0,4
+OMSLL,Salalah Terminal,2064.5666666666666,0,1,3
+OMSLL,Salalah Terminal,2073.75,1,0,4
+OMSLL,Salalah Terminal,2076.016666666667,0,1,3
+OMSLL,Salalah Terminal,2083.983333333333,0,1,2
+OMSLL,Salalah Terminal,2085.8,1,0,3
+OMSLL,Salalah Terminal,2086.483333333333,1,0,4
+OMSLL,Salalah Terminal,2087.0,1,0,5
+OMSLL,Salalah Terminal,2088.8333333333335,0,1,4
+OMSLL,Salalah Terminal,2099.233333333333,1,0,5
+OMSLL,Salalah Terminal,2099.766666666667,0,1,4
+OMSLL,Salalah Terminal,2110.15,1,0,5
+OMSLL,Salalah Terminal,2110.9166666666665,0,1,4
+OMSLL,Salalah Terminal,2116.75,0,1,3
+OMSLL,Salalah Terminal,2118.6,1,0,4
+OMSLL,Salalah Terminal,2122.733333333333,0,1,3
+OMSLL,Salalah Terminal,2126.1666666666665,1,0,4
+OMSLL,Salalah Terminal,2127.0,0,1,3
+OMSLL,Salalah Terminal,2142.5666666666666,1,0,4
+OMSLL,Salalah Terminal,2145.633333333333,1,0,5
+OMSLL,Salalah Terminal,2147.266666666667,0,1,4
+OMSLL,Salalah Terminal,2152.4166666666665,0,1,3
+OMSLL,Salalah Terminal,2154.3333333333335,1,0,4
+OMSLL,Salalah Terminal,2156.3166666666666,0,1,3
+OMSLL,Salalah Terminal,2164.483333333333,1,0,4
+OMSLL,Salalah Terminal,2165.0666666666666,0,1,3
+OMSLL,Salalah Terminal,2166.6,1,0,4
+OMSLL,Salalah Terminal,2169.516666666667,1,0,5
+OMSLL,Salalah Terminal,2172.2,0,1,4
+OMSLL,Salalah Terminal,2180.45,1,0,5
+OMSLL,Salalah Terminal,2181.483333333333,0,1,4
+OMSLL,Salalah Terminal,2185.733333333333,0,1,3
+OMSLL,Salalah Terminal,2188.5833333333335,0,1,2
+OMSLL,Salalah Terminal,2190.0666666666666,1,0,3
+OMSLL,Salalah Terminal,2195.3333333333335,0,1,2
+OMSLL,Salalah Terminal,2196.65,1,0,3
+OMSLL,Salalah Terminal,2214.483333333333,1,0,4
+OMSLL,Salalah Terminal,2217.5666666666666,0,1,3
+OMSLL,Salalah Terminal,2219.25,1,0,4
+OMSLL,Salalah Terminal,2220.35,0,1,3
+OMSLL,Salalah Terminal,2224.483333333333,1,0,4
+OMSLL,Salalah Terminal,2227.766666666667,0,1,3
+OMSLL,Salalah Terminal,2236.85,1,0,4
+OMSLL,Salalah Terminal,2248.3,1,0,5
+OMSLL,Salalah Terminal,2249.6833333333334,0,1,4
+OMSLL,Salalah Terminal,2250.0666666666666,1,0,5
+OMSLL,Salalah Terminal,2257.9333333333334,0,1,4
+OMSLL,Salalah Terminal,2258.0833333333335,0,1,3
+OMSLL,Salalah Terminal,2259.1833333333334,1,0,4
+OMSLL,Salalah Terminal,2268.733333333333,0,1,3
+OMSLL,Salalah Terminal,2277.866666666667,0,1,2
+OMSLL,Salalah Terminal,2280.516666666667,0,1,1
+OMSLL,Salalah Terminal,2288.8,0,1,0
+OMSOH,Oman International Cont. Terminal,149.5,1,0,1
+OMSOH,Oman International Cont. Terminal,196.68333333333334,0,1,0
+OMSOH,Oman International Cont. Terminal,302.21666666666664,1,0,1
+OMSOH,Oman International Cont. Terminal,348.43333333333334,0,1,0
+OMSOH,Oman International Cont. Terminal,377.78333333333336,1,0,1
+OMSOH,Oman International Cont. Terminal,415.26666666666665,0,1,0
+OMSOH,Oman International Cont. Terminal,602.2666666666667,1,0,1
+OMSOH,Oman International Cont. Terminal,661.7833333333333,0,1,0
+OMSOH,Oman International Cont. Terminal,708.0666666666667,1,0,1
+OMSOH,Oman International Cont. Terminal,781.4833333333333,0,1,0
+OMSOH,Oman International Cont. Terminal,1012.2833333333333,1,0,1
+OMSOH,Oman International Cont. Terminal,1094.6666666666667,0,1,0
+OMSOH,Oman International Cont. Terminal,1097.15,1,0,1
+OMSOH,Oman International Cont. Terminal,1152.1,0,1,0
+OMSOH,Oman International Cont. Terminal,1415.3833333333334,1,0,1
+OMSOH,Oman International Cont. Terminal,1488.1833333333334,0,1,0
+OMSOH,Oman International Cont. Terminal,1715.75,1,0,1
+OMSOH,Oman International Cont. Terminal,1741.4833333333333,0,1,0
+OMSOH,Oman International Cont. Terminal,1772.15,1,0,1
+OMSOH,Oman International Cont. Terminal,1870.1,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,38.9,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,50.0,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,82.48333333333333,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,96.48333333333333,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,195.3,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,256.4,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,275.6333333333333,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,336.51666666666665,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,437.3,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,444.9,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,494.1166666666667,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,508.28333333333336,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,583.5166666666667,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,604.2333333333333,1,0,2
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,604.4666666666667,0,1,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,609.3666666666667,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,684.65,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,692.4833333333333,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,773.4,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,788.7833333333333,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,845.4,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,857.4,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,904.3666666666667,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,931.5,1,0,2
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,937.1166666666667,0,1,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,954.1166666666667,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,998.4,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,1010.4,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,1061.4,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,1073.4,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,1133.4,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,1145.4,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,1178.8166666666666,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,1190.65,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,1282.9166666666667,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,1305.6833333333334,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,1469.5,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,1482.0166666666667,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,1662.6,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,1672.1,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,1699.0833333333333,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,1723.6166666666666,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,1830.4833333333333,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,1834.3166666666666,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,1871.0,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,1881.0166666666667,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,1899.0666666666666,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,1925.6333333333334,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,1970.9,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,1989.0166666666667,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,2027.35,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,2057.7833333333333,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,2095.4,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,2115.3333333333335,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,2122.3166666666666,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,2134.0666666666666,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,2174.7166666666667,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,2184.133333333333,0,1,0
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,2206.6833333333334,1,0,1
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,2209.65,0,1,0
+QAQCH,Qchem Berth,577.2666666666667,1,0,1
+QAQCH,Qchem Berth,601.1,0,1,0
+QAQCH,Qchem Berth,2054.2833333333333,1,0,1
+QAQCH,Qchem Berth,2078.05,0,1,0
+QAQCH,Qchem Berth,2138.7,1,0,1
+QAQCH,Qchem Berth,2167.8166666666666,0,1,0
+QAQCH,Qchem Berth,2212.6,1,0,1
+QAQCH,Qchem Berth,2241.5,0,1,0
+SADMM,Dammam Terminal,366.0833333333333,1,0,1
+SADMM,Dammam Terminal,378.18333333333334,0,1,0
+SADMM,Dammam Terminal,380.1,1,0,1
+SADMM,Dammam Terminal,398.53333333333336,0,1,0
+SADMM,Dammam Terminal,617.8,1,0,1
+SADMM,Dammam Terminal,644.7833333333333,1,0,2
+SADMM,Dammam Terminal,647.9,0,1,1
+SADMM,Dammam Terminal,701.65,0,1,0
+SADMM,Dammam Terminal,974.9166666666666,1,0,1
+SADMM,Dammam Terminal,1004.2833333333333,1,0,2
+SADMM,Dammam Terminal,1014.6666666666666,0,1,1
+SADMM,Dammam Terminal,1026.4166666666667,0,1,0
+SADMM,Dammam Terminal,1103.4,1,0,1
+SADMM,Dammam Terminal,1140.4,0,1,0
+SADMM,Dammam Terminal,1160.5,1,0,1
+SADMM,Dammam Terminal,1188.2333333333333,0,1,0
+SADMM,Dammam Terminal,1257.9166666666667,1,0,1
+SADMM,Dammam Terminal,1280.6666666666667,0,1,0
+SADMM,Dammam Terminal,1306.4,1,0,1
+SADMM,Dammam Terminal,1345.6166666666666,1,0,2
+SADMM,Dammam Terminal,1348.4333333333334,0,1,1
+SADMM,Dammam Terminal,1360.7666666666667,0,1,0
+SADMM,Dammam Terminal,1427.0166666666667,1,0,1
+SADMM,Dammam Terminal,1465.95,0,1,0
+SADMM,Dammam Terminal,1569.5,1,0,1
+SADMM,Dammam Terminal,1588.5333333333333,0,1,0
+SADMM,Dammam Terminal,1666.9,1,0,1
+SADMM,Dammam Terminal,1674.4,0,1,0
+SADMM,Dammam Terminal,1767.5,1,0,1
+SADMM,Dammam Terminal,1791.5,0,1,0
+SADMM,Dammam Terminal,1842.4,1,0,1
+SADMM,Dammam Terminal,1858.7,0,1,0
+SADMM,Dammam Terminal,1956.0833333333333,1,0,1
+SADMM,Dammam Terminal,1995.1166666666666,0,1,0
+SADMM,Dammam Terminal,2078.4333333333334,1,0,1
+SADMM,Dammam Terminal,2089.9,0,1,0
+SADMM,Dammam Terminal,2142.4166666666665,1,0,1
+SADMM,Dammam Terminal,2173.9,1,0,2
+SADMM,Dammam Terminal,2177.866666666667,0,1,1
+SADMM,Dammam Terminal,2199.2833333333333,0,1,0
+SAJED,DPA TERMINAL,56.86666666666667,1,0,1
+SAJED,DPA TERMINAL,89.5,1,0,2
+SAJED,DPA TERMINAL,120.21666666666667,0,1,1
+SAJED,DPA TERMINAL,122.8,1,0,2
+SAJED,DPA TERMINAL,142.0,0,1,1
+SAJED,DPA TERMINAL,156.15,1,0,2
+SAJED,DPA TERMINAL,160.98333333333332,1,0,3
+SAJED,DPA TERMINAL,162.4,1,0,4
+SAJED,DPA TERMINAL,167.4,0,1,3
+SAJED,DPA TERMINAL,187.4,0,1,2
+SAJED,DPA TERMINAL,197.9,0,1,1
+SAJED,DPA TERMINAL,201.4,0,1,0
+SAJED,DPA TERMINAL,247.08333333333334,1,0,1
+SAJED,DPA TERMINAL,292.7,1,0,2
+SAJED,DPA TERMINAL,301.0,0,1,1
+SAJED,DPA TERMINAL,326.6,1,0,2
+SAJED,DPA TERMINAL,331.48333333333335,0,1,1
+SAJED,DPA TERMINAL,352.25,0,1,0
+SAJED,DPA TERMINAL,365.25,1,0,1
+SAJED,DPA TERMINAL,383.95,0,1,0
+SAJED,DPA TERMINAL,390.4,1,0,1
+SAJED,DPA TERMINAL,417.28333333333336,1,0,2
+SAJED,DPA TERMINAL,450.4,1,0,3
+SAJED,DPA TERMINAL,455.15,0,1,2
+SAJED,DPA TERMINAL,461.56666666666666,1,0,3
+SAJED,DPA TERMINAL,474.8833333333333,0,1,2
+SAJED,DPA TERMINAL,496.9,0,1,1
+SAJED,DPA TERMINAL,509.15,1,0,2
+SAJED,DPA TERMINAL,511.03333333333336,1,0,3
+SAJED,DPA TERMINAL,514.2333333333333,0,1,2
+SAJED,DPA TERMINAL,529.4,1,0,3
+SAJED,DPA TERMINAL,558.4,0,1,2
+SAJED,DPA TERMINAL,561.65,1,0,3
+SAJED,DPA TERMINAL,567.9,0,1,2
+SAJED,DPA TERMINAL,577.4,0,1,1
+SAJED,DPA TERMINAL,593.15,0,1,0
+SAJED,DPA TERMINAL,604.4,1,0,1
+SAJED,DPA TERMINAL,610.9,1,0,2
+SAJED,DPA TERMINAL,633.9,0,1,1
+SAJED,DPA TERMINAL,636.0,1,0,2
+SAJED,DPA TERMINAL,674.1,0,1,1
+SAJED,DPA TERMINAL,684.9,1,0,2
+SAJED,DPA TERMINAL,689.15,1,0,3
+SAJED,DPA TERMINAL,694.5666666666667,0,1,2
+SAJED,DPA TERMINAL,698.3666666666667,0,1,1
+SAJED,DPA TERMINAL,700.65,1,0,2
+SAJED,DPA TERMINAL,716.4,0,1,1
+SAJED,DPA TERMINAL,743.3166666666667,0,1,0
+SAJED,DPA TERMINAL,749.6166666666667,1,0,1
+SAJED,DPA TERMINAL,811.5,1,0,2
+SAJED,DPA TERMINAL,819.05,0,1,1
+SAJED,DPA TERMINAL,840.4,1,0,2
+SAJED,DPA TERMINAL,843.9,0,1,1
+SAJED,DPA TERMINAL,855.9666666666667,1,0,2
+SAJED,DPA TERMINAL,857.4,1,0,3
+SAJED,DPA TERMINAL,863.1333333333333,0,1,2
+SAJED,DPA TERMINAL,867.15,1,0,3
+SAJED,DPA TERMINAL,879.9,1,0,4
+SAJED,DPA TERMINAL,882.2,0,1,3
+SAJED,DPA TERMINAL,886.15,0,1,2
+SAJED,DPA TERMINAL,888.4,0,1,1
+SAJED,DPA TERMINAL,901.7,0,1,0
+SAJED,DPA TERMINAL,942.5,1,0,1
+SAJED,DPA TERMINAL,966.9,1,0,2
+SAJED,DPA TERMINAL,983.4666666666667,0,1,1
+SAJED,DPA TERMINAL,989.2333333333333,0,1,0
+SAJED,DPA TERMINAL,992.9,1,0,1
+SAJED,DPA TERMINAL,995.75,1,0,2
+SAJED,DPA TERMINAL,1023.3,1,0,3
+SAJED,DPA TERMINAL,1031.15,0,1,2
+SAJED,DPA TERMINAL,1034.4,0,1,1
+SAJED,DPA TERMINAL,1100.7,1,0,2
+SAJED,DPA TERMINAL,1101.5,0,1,1
+SAJED,DPA TERMINAL,1103.7333333333333,1,0,2
+SAJED,DPA TERMINAL,1155.6,0,1,1
+SAJED,DPA TERMINAL,1157.9,1,0,2
+SAJED,DPA TERMINAL,1175.4,1,0,3
+SAJED,DPA TERMINAL,1203.4,0,1,2
+SAJED,DPA TERMINAL,1205.9,1,0,3
+SAJED,DPA TERMINAL,1217.8,0,1,2
+SAJED,DPA TERMINAL,1221.6,1,0,3
+SAJED,DPA TERMINAL,1225.9,0,1,2
+SAJED,DPA TERMINAL,1229.9,0,1,1
+SAJED,DPA TERMINAL,1232.6166666666666,1,0,2
+SAJED,DPA TERMINAL,1248.5,0,1,1
+SAJED,DPA TERMINAL,1255.4,1,0,2
+SAJED,DPA TERMINAL,1267.1166666666666,1,0,3
+SAJED,DPA TERMINAL,1270.7166666666667,0,1,2
+SAJED,DPA TERMINAL,1273.15,1,0,3
+SAJED,DPA TERMINAL,1284.4,0,1,2
+SAJED,DPA TERMINAL,1305.4,1,0,3
+SAJED,DPA TERMINAL,1319.8166666666666,0,1,2
+SAJED,DPA TERMINAL,1334.9833333333333,0,1,1
+SAJED,DPA TERMINAL,1359.6,0,1,0
+SAJED,DPA TERMINAL,1360.0,1,0,1
+SAJED,DPA TERMINAL,1399.7166666666667,0,1,0
+SAJED,DPA TERMINAL,1419.1166666666666,1,0,1
+SAJED,DPA TERMINAL,1422.4,1,0,2
+SAJED,DPA TERMINAL,1442.3666666666666,0,1,1
+SAJED,DPA TERMINAL,1443.4,1,0,2
+SAJED,DPA TERMINAL,1452.7833333333333,1,0,3
+SAJED,DPA TERMINAL,1461.15,0,1,2
+SAJED,DPA TERMINAL,1472.9,0,1,1
+SAJED,DPA TERMINAL,1477.4,0,1,0
+SAJED,DPA TERMINAL,1479.15,1,0,1
+SAJED,DPA TERMINAL,1506.4,1,0,2
+SAJED,DPA TERMINAL,1532.5,1,0,3
+SAJED,DPA TERMINAL,1536.4,0,1,2
+SAJED,DPA TERMINAL,1538.85,0,1,1
+SAJED,DPA TERMINAL,1570.4,1,0,2
+SAJED,DPA TERMINAL,1583.2333333333333,0,1,1
+SAJED,DPA TERMINAL,1584.9,0,1,0
+SAJED,DPA TERMINAL,1586.15,1,0,1
+SAJED,DPA TERMINAL,1594.4,1,0,2
+SAJED,DPA TERMINAL,1600.4,1,0,3
+SAJED,DPA TERMINAL,1604.9,0,1,2
+SAJED,DPA TERMINAL,1606.1666666666667,1,0,3
+SAJED,DPA TERMINAL,1638.4,1,0,4
+SAJED,DPA TERMINAL,1642.8166666666666,0,1,3
+SAJED,DPA TERMINAL,1651.3166666666666,1,0,4
+SAJED,DPA TERMINAL,1658.4,0,1,3
+SAJED,DPA TERMINAL,1689.4833333333333,0,1,2
+SAJED,DPA TERMINAL,1692.15,1,0,3
+SAJED,DPA TERMINAL,1700.4,1,0,4
+SAJED,DPA TERMINAL,1701.4,0,1,3
+SAJED,DPA TERMINAL,1706.9,0,1,2
+SAJED,DPA TERMINAL,1711.9,0,1,1
+SAJED,DPA TERMINAL,1714.4,1,0,2
+SAJED,DPA TERMINAL,1714.9,0,1,1
+SAJED,DPA TERMINAL,1717.4,1,0,2
+SAJED,DPA TERMINAL,1722.9,1,0,3
+SAJED,DPA TERMINAL,1726.9,0,1,2
+SAJED,DPA TERMINAL,1748.7333333333333,0,1,1
+SAJED,DPA TERMINAL,1760.75,0,1,0
+SAJED,DPA TERMINAL,1771.1,1,0,1
+SAJED,DPA TERMINAL,1804.5,1,0,2
+SAJED,DPA TERMINAL,1823.4,1,0,3
+SAJED,DPA TERMINAL,1825.9,0,1,2
+SAJED,DPA TERMINAL,1837.9,0,1,1
+SAJED,DPA TERMINAL,1857.4,0,1,0
+SAJED,DPA TERMINAL,1863.1833333333334,1,0,1
+SAJED,DPA TERMINAL,1877.15,1,0,2
+SAJED,DPA TERMINAL,1884.15,1,0,3
+SAJED,DPA TERMINAL,1893.5666666666666,0,1,2
+SAJED,DPA TERMINAL,1917.9833333333333,0,1,1
+SAJED,DPA TERMINAL,1922.0,1,0,2
+SAJED,DPA TERMINAL,1932.4,0,1,1
+SAJED,DPA TERMINAL,1943.9,0,1,0
+SAJED,DPA TERMINAL,1948.9,1,0,1
+SAJED,DPA TERMINAL,1972.15,1,0,2
+SAJED,DPA TERMINAL,1976.0333333333333,0,1,1
+SAJED,DPA TERMINAL,1978.4,1,0,2
+SAJED,DPA TERMINAL,1982.65,0,1,1
+SAJED,DPA TERMINAL,2004.9,1,0,2
+SAJED,DPA TERMINAL,2011.6666666666667,0,1,1
+SAJED,DPA TERMINAL,2021.4,1,0,2
+SAJED,DPA TERMINAL,2029.9,0,1,1
+SAJED,DPA TERMINAL,2032.8833333333334,1,0,2
+SAJED,DPA TERMINAL,2043.7166666666667,0,1,1
+SAJED,DPA TERMINAL,2052.05,1,0,2
+SAJED,DPA TERMINAL,2075.266666666667,0,1,1
+SAJED,DPA TERMINAL,2087.3,1,0,2
+SAJED,DPA TERMINAL,2092.133333333333,0,1,1
+SAJED,DPA TERMINAL,2114.233333333333,0,1,0
+SAJED,DPA TERMINAL,2121.016666666667,1,0,1
+SAJED,DPA TERMINAL,2134.2,1,0,2
+SAJED,DPA TERMINAL,2139.9166666666665,0,1,1
+SAJED,DPA TERMINAL,2143.0,1,0,2
+SAJED,DPA TERMINAL,2163.65,0,1,1
+SAJED,DPA TERMINAL,2172.2,0,1,0
+SAJED,DPA TERMINAL,2181.6666666666665,1,0,1
+SAJED,DPA TERMINAL,2193.2,1,0,2
+SAJED,DPA TERMINAL,2210.15,0,1,1
+SAJED,DPA TERMINAL,2223.2,1,0,2
+SAJED,DPA TERMINAL,2244.4,0,1,1
+SAJED,DPA TERMINAL,2287.9,0,1,0
+SAJUB,Jubail Terminal,376.26666666666665,1,0,1
+SAJUB,Jubail Terminal,399.6166666666667,0,1,0
+SAJUB,Jubail Terminal,483.6666666666667,1,0,1
+SAJUB,Jubail Terminal,510.31666666666666,0,1,0
+SAJUB,Jubail Terminal,868.4,1,0,1
+SAJUB,Jubail Terminal,881.9,0,1,0
+SAJUB,Jubail Terminal,970.2333333333333,1,0,1
+SAJUB,Jubail Terminal,984.4,0,1,0
+SAKAC,King Abdullah Economic City Port,157.15,1,0,1
+SAKAC,King Abdullah Economic City Port,177.4,0,1,0
+SAKAC,King Abdullah Economic City Port,283.76666666666665,1,0,1
+SAKAC,King Abdullah Economic City Port,309.6166666666667,0,1,0
+SAKAC,King Abdullah Economic City Port,597.4,1,0,1
+SAKAC,King Abdullah Economic City Port,640.0666666666667,0,1,0
+SAKAC,King Abdullah Economic City Port,642.6666666666666,1,0,1
+SAKAC,King Abdullah Economic City Port,664.35,0,1,0
+SAKAC,King Abdullah Economic City Port,843.5166666666667,1,0,1
+SAKAC,King Abdullah Economic City Port,867.1,0,1,0
+SAKAC,King Abdullah Economic City Port,940.4,1,0,1
+SAKAC,King Abdullah Economic City Port,1010.4,0,1,0
+SAKAC,King Abdullah Economic City Port,1357.9,1,0,1
+SAKAC,King Abdullah Economic City Port,1445.4,0,1,0
+SAKAC,King Abdullah Economic City Port,1447.4,1,0,1
+SAKAC,King Abdullah Economic City Port,1496.4,0,1,0
+SAKAC,King Abdullah Economic City Port,1530.4,1,0,1
+SAKAC,King Abdullah Economic City Port,1555.4,0,1,0
+SAKAC,King Abdullah Economic City Port,1861.4,1,0,1
+SAKAC,King Abdullah Economic City Port,1875.9,0,1,0
+SAKAC,King Abdullah Economic City Port,1878.4,1,0,1
+SAKAC,King Abdullah Economic City Port,1936.4,1,0,2
+SAKAC,King Abdullah Economic City Port,1969.4,0,1,1
+SAKAC,King Abdullah Economic City Port,1976.4,0,1,0
+SAKAC,King Abdullah Economic City Port,2055.9,1,0,1
+SAKAC,King Abdullah Economic City Port,2085.9,0,1,0

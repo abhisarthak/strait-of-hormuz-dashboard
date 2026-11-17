@@ -1,0 +1,6 @@
+Scenario_ID,Scenario_Name,Capacity_Reduction_Percent,Disruption_Duration_Hours,Scenario_Status,Parameter_Provenance,Affected_Corridor
+BASELINE,Normal operation,0,0,REFERENCE,No disruption imposed,To be specified after corridor and network definition
+DISRUPTION_25,25 percent capacity reduction,25,72,HYPOTHETICAL,Experimental assumption,To be specified after corridor and network definition
+DISRUPTION_50,50 percent capacity reduction,50,72,HYPOTHETICAL,Experimental assumption,To be specified after corridor and network definition
+DISRUPTION_75,75 percent capacity reduction,75,72,HYPOTHETICAL,Experimental assumption,To be specified after corridor and network definition
+FULL_CLOSURE,Complete closure,100,72,HYPOTHETICAL,Experimental assumption,To be specified after corridor and network definition

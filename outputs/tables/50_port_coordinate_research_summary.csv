@@ -1,0 +1,6 @@
+﻿Summary_Type,Category,Port_Count,Interpretation
+EXISTING_COORDINATE_VALIDATION_STATUS,PENDING,19,Descriptive workflow status; no coordinate is automatically approved.
+RESEARCHER_COORDINATE_DECISION,PENDING,19,Descriptive workflow status; no coordinate is automatically approved.
+RESEARCH_PRIORITY,HIGH,10,Descriptive workflow status; no coordinate is automatically approved.
+RESEARCH_PRIORITY,MEDIUM,9,Descriptive workflow status; no coordinate is automatically approved.
+COORDINATE_DATA_QUALITY,NO_VALIDATED_COORDINATE_PAIR_CURRENTLY_POPULATED,19,Descriptive workflow status; no coordinate is automatically approved.

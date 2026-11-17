@@ -1,0 +1,39 @@
+Check_ID,Description,Passed,Observed,Expected,Severity,Overall_Status
+SCHEDULE_KEY_NULLS,schedule key fields have no null rows,True,0,0,ERROR,PASS
+SCHEDULE_KEY_UNIQUENESS,schedule key is unique,True,0,0,ERROR,PASS
+VESSELS_KEY_NULLS,vessels key fields have no null rows,True,0,0,ERROR,PASS
+VESSELS_KEY_UNIQUENESS,vessels key is unique,True,0,0,ERROR,PASS
+PORTS_KEY_NULLS,ports key fields have no null rows,True,0,0,ERROR,PASS
+PORTS_KEY_UNIQUENESS,ports key is unique,True,0,0,ERROR,PASS
+PORT_SERVICE_KEY_NULLS,port_service key fields have no null rows,True,0,0,ERROR,PASS
+PORT_SERVICE_KEY_UNIQUENESS,port_service key is unique,True,0,0,ERROR,PASS
+INTERPORT_KEY_NULLS,interport key fields have no null rows,True,0,0,ERROR,PASS
+INTERPORT_KEY_UNIQUENESS,interport key is unique,True,0,0,ERROR,PASS
+TRANSITIONS_KEY_NULLS,transitions key fields have no null rows,True,0,0,ERROR,PASS
+TRANSITIONS_KEY_UNIQUENESS,transitions key is unique,True,0,0,ERROR,PASS
+SCHEDULE_ROW_COUNT,schedule row count matches established Script 19 baseline,True,604,604,WARNING,PASS
+VESSELS_ROW_COUNT,vessels row count matches established Script 19 baseline,True,155,155,WARNING,PASS
+PORTS_ROW_COUNT,ports row count matches established Script 19 baseline,True,19,19,WARNING,PASS
+PORT_SERVICE_ROW_COUNT,port_service row count matches established Script 19 baseline,True,19,19,WARNING,PASS
+INTERPORT_ROW_COUNT,interport row count matches established Script 19 baseline,True,53,53,WARNING,PASS
+TRANSITIONS_ROW_COUNT,transitions row count matches established Script 19 baseline,True,271,271,WARNING,PASS
+VALID_UTC_TIMESTAMPS,All arrival/departure timestamps parse as UTC,True,0,0,ERROR,PASS
+COMPLETE_CALL_IDENTITY,"Every schedule row has call, vessel and port identity",True,0,0,ERROR,PASS
+POSITIVE_CALL_INTERVALS,Every departure is later than its arrival,True,0,0,ERROR,PASS
+STAY_DURATION_RECONCILIATION,Timestamp-derived duration matches Actual_Stay_Hours within 0.02 h,True,0,0,ERROR,PASS
+VESSELS_PARAMETER_COVERAGE,vessels source covers all schedule keys,True,0,0,ERROR,PASS
+PORTS_PARAMETER_COVERAGE,ports source covers all schedule keys,True,0,0,ERROR,PASS
+PORT_SERVICE_PARAMETER_COVERAGE,port_service source covers all schedule keys,True,0,0,ERROR,PASS
+NEGATIVE_SEQUENCE_GAPS,No next arrival precedes the previous departure,True,0,0,ERROR,PASS
+SEQUENCE_LINK_COUNT,Vessel sequence links match established count,True,449,449,WARNING,PASS
+SAME_PORT_LINK_COUNT,Same-port links match established count,True,178,178,WARNING,PASS
+INTERPORT_TRANSITION_COUNT,Distinct-port transitions match established count,True,271,271,WARNING,PASS
+SCRIPT19_TRANSITION_IDENTITY_MATCH,Derived inter-port transition identities match Script 19,True,0,0,ERROR,PASS
+SCRIPT19_TRANSITION_PAIR_MATCH,Derived Previous_Port/Next_Port pairs match Script 19,True,0,0,ERROR,PASS
+EXACT_ARRIVAL_REPRODUCTION,All simulated arrivals exactly reproduce historical arrivals,True,0,0,ERROR,PASS
+EXACT_DEPARTURE_REPRODUCTION,All simulated departures exactly reproduce historical departures,True,0,0,ERROR,PASS
+ALL_DELAYS_ZERO,All call-level arrival/departure delays remain exactly zero,True,0,0,ERROR,PASS
+ALL_VESSELS_PASS,Every vessel sequence passes the no-disruption baseline,True,0,0,ERROR,PASS
+VESSEL_COUNT,Unique vessel count matches established baseline,True,155,155,WARNING,PASS
+ONE_TERMINAL_CALL_PER_VESSEL,Each vessel has exactly one final call,True,155,155,ERROR,PASS
+DETERMINISTIC_REPRODUCIBILITY,Second baseline pass produces identical delay outputs,True,0,0,ERROR,PASS

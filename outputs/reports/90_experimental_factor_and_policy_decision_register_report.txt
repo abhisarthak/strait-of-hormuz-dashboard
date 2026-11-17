@@ -1,0 +1,53 @@
+SCRIPT 90 — EXPERIMENTAL FACTOR AND POLICY DECISION REGISTER
+============================================================================
+
+PURPOSE
+Consolidate audited Script88/89 design choices into researcher and supervisor
+decision registers. This is not a simulation runner or approval mechanism.
+
+RESEARCH SCOPE
+Primary mechanism: TRANSIT_ELAPSED_TIME_SHOCK
+Study framing: general hypothetical inter-port elapsed-time shock experiment,
+motivated by potential geopolitical disruption associated with the Strait of Hormuz.
+No actual Hormuz route exposure, physical sailing route, or AIS-confirmed transit
+is established by this design.
+
+REGISTER INVENTORY
+Factor scenario rows: 16
+Distinct recovery policies: 5
+Scenario-policy combinations: 80
+Response metrics: 9
+Affected-transition scope levels: 4
+Transition selection rows: 1084
+Replication options: 3
+Limitations: 10
+Approval gates: 9
+
+APPROVAL STATUS
+Factor levels approved: 0
+Recovery policies approved: 0
+Scope levels approved: 0
+Supervisor review: PENDING
+Simulation execution authorized: NO
+Source inputs modified: NO
+Simulation executed: NO
+
+READINESS CHECKS
+17/17 passed; 0 failed.
+
+OUTPUTS
+- outputs/tables/90_factor_decision_register.csv
+- outputs/tables/90_recovery_policy_decision_register.csv
+- outputs/tables/90_scenario_policy_decision_matrix.csv
+- outputs/tables/90_response_metric_decision_register.csv
+- outputs/tables/90_scope_decision_register.csv
+- outputs/tables/90_replication_decision_register.csv
+- outputs/tables/90_limitation_acknowledgement_register.csv
+- outputs/tables/90_approval_gate_register.csv
+- outputs/tables/90_readiness_checks.csv
+- outputs/reports/90_experimental_factor_and_policy_decision_register_report.txt
+
+DECISION
+All numerical levels, transition scope settings, recovery policies, response
+metric definitions, replication choices and execution gates remain subject to
+explicit researcher and supervisor review. No approval is granted by Script90.

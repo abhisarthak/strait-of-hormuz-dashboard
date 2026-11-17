@@ -1,0 +1,25 @@
+========================================================================================
+SCRIPT 64: EVIDENCE-BASED SIMULATION PARAMETER ASSIGNMENT
+========================================================================================
+
+Script 24 class column detected: Recommended_Method
+Script 24 rows: 53
+Script 62 rows: 53
+Script 63 rows: 53
+Integrated directed pairs: 53
+Complete three-source joins: 53
+
+ASSIGNMENT CLASSIFICATIONS
+                             Assignment_Classification_64  Directed_Edge_Count  Median_Valid_Observation_Count  Median_Distinct_Vessel_Count  Empirical_Resampling_Approved  Parametric_Distribution_Approved
+    ASSUMPTION_REQUIRED_NO_EMPIRICAL_PARAMETER_ASSIGNMENT                   22                             1.0                           1.0                          False                             False
+            DESCRIPTIVE_ONLY_NOT_FOR_EMPIRICAL_RESAMPLING                   14                             4.0                           1.5                          False                             False
+EMPIRICAL_DISTRIBUTION_CANDIDATE_WITH_CLUSTER_UNCERTAINTY                    1                            10.0                           5.0                          False                             False
+        EMPIRICAL_TAIL_OR_ROBUST_REPRESENTATION_CANDIDATE                    7                            11.0                           6.0                          False                             False
+          LIMITED_EMPIRICAL_SUMMARY_WITH_SENSITIVITY_ONLY                    9                             8.0                           3.0                          False                             False
+
+GUARDRAILS
+Script 24 is retained as the primary parameter-method suitability gate. Scripts 62 and 63 can downgrade or qualify its use but cannot silently upgrade a descriptive-only or assumption-required edge. These assignments are recommendations for researcher review, not approvals. No empirical resampling, parametric fitting, simulation input modification, coordinate approval, operational inclusion or route validation is granted. Inter-port elapsed time is not pure sailing time.
+
+SOURCE FILES MODIFIED: NO
+SIMULATION INPUTS MODIFIED: NO
+AUTOMATIC RESAMPLING APPROVALS: NONE

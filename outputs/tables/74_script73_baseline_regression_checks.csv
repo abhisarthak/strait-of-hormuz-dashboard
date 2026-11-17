@@ -1,0 +1,7 @@
+Check_ID,Description,Passed,Observed,Expected,Overall_Status
+S73_CALL_COUNT,Script 73 has 604 call rows,True,604,604,PASS
+S73_UNIQUE_CALL_IDS,Call IDs are unique,True,604,604,PASS
+S73_ZERO_SIMULATED_ARRIVAL_DELAY_HOURS,Simulated_Arrival_Delay_Hours are all exactly zero,True,0,0,PASS
+S73_ZERO_SIMULATED_DEPARTURE_DELAY_HOURS,Simulated_Departure_Delay_Hours are all exactly zero,True,0,0,PASS
+S73_ARRIVAL_TIMESTAMP_MATCH,Arrival_Timestamp_Match is true for all calls,True,604,604,PASS
+S73_DEPARTURE_TIMESTAMP_MATCH,Departure_Timestamp_Match is true for all calls,True,604,604,PASS

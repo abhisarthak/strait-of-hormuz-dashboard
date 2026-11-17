@@ -1,0 +1,42 @@
+=====================================================================================
+SCRIPT 18B: UN/LOCODE EXTRACTION AND MATCHING REPORT
+=====================================================================================
+
+SOURCE DATASETS
+-------------------------------------------------------------------------------------
+Production records: 116232
+Pre-release records: 116476
+Production unique UN/LOCODEs: 116086
+Pre-release unique UN/LOCODEs: 116330
+
+COORDINATE QUALITY
+-------------------------------------------------------------------------------------
+Coordinate_Status
+VALID_COORDINATES            92892
+MISSING_COORDINATES          23062
+INVALID_COORDINATE_FORMAT      278
+
+PORT MASTER MATCHING
+-------------------------------------------------------------------------------------
+Master records: 467
+Production coordinate matches: 273
+Matched without coordinates: 194
+Unmatched master records: 0
+Ambiguous master records: 6
+
+PRODUCTION / PRE-RELEASE COORDINATE COMPARISON
+-------------------------------------------------------------------------------------
+Coordinate changes: 275
+Codes only in production: 0
+Codes only in pre-release: 244
+
+
+METHODOLOGICAL NOTES
+-------------------------------------------------------------------------------------
+1. Original ZIP archives were not modified.
+2. The UN/LOCODE CSV files were read without headers.
+3. Coordinates were converted from degrees/minutes to decimal degrees.
+4. Duplicate UN/LOCODE records were preserved in the full extracted datasets.
+5. The one-row matching summary uses the first UN/LOCODE occurrence. It is not a facility-level resolution for ambiguous codes.
+6. UN/LOCODE coordinates may represent localities, not exact port terminals.
+7. Coordinate presence does not prove vessel transit through the Strait of Hormuz.

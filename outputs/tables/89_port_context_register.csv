@@ -1,0 +1,20 @@
+UNLOCODE_Normalised,observed_port_name,observed_call_count,observed_vessel_count,Script68_Port_Approved,Port_Exposure_Review_Status_67,Actual_Hormuz_Exposure_Established_67,Interpretation
+AEAJM,Ajman Port Terminal,22,4,False,PENDING_RESEARCHER_REVIEW,False,Descriptive port-call context only; not route or disruption exposure evidence
+AEAUH,Abu Dhabi Terminal - Khalifa Port,24,10,False,PENDING_RESEARCHER_REVIEW,False,Descriptive port-call context only; not route or disruption exposure evidence
+AEFJR,Fujairah Terminal,19,9,False,PENDING_RESEARCHER_REVIEW,False,Descriptive port-call context only; not route or disruption exposure evidence
+AEJEA,Jebel Ali Terminal 2,60,17,False,PENDING_RESEARCHER_REVIEW,False,Descriptive port-call context only; not route or disruption exposure evidence
+AEKLF,Khor Fakkan Terminal,20,12,False,PENDING_RESEARCHER_REVIEW,False,Descriptive port-call context only; not route or disruption exposure evidence
+AESHJ,Sharjah Terminal,10,3,False,PENDING_RESEARCHER_REVIEW,False,Descriptive port-call context only; not route or disruption exposure evidence
+BHKBS,Bahrain Terminal,5,1,False,PENDING_RESEARCHER_REVIEW,False,Descriptive port-call context only; not route or disruption exposure evidence
+IQUQR,Umm Qasr Port BGT Terminal,5,2,False,PENDING_RESEARCHER_REVIEW,False,Descriptive port-call context only; not route or disruption exposure evidence
+KWSAA,Shuaiba Port Terminal,1,1,False,PENDING_RESEARCHER_REVIEW,False,Descriptive port-call context only; not route or disruption exposure evidence
+KWSWK,Shuwaikh Terminal,5,1,False,PENDING_RESEARCHER_REVIEW,False,Descriptive port-call context only; not route or disruption exposure evidence
+OMDQM,Early Operations Container Terminal,3,3,False,PENDING_RESEARCHER_REVIEW,False,Descriptive port-call context only; not route or disruption exposure evidence
+OMSLL,Salalah Terminal,261,105,False,PENDING_RESEARCHER_REVIEW,False,Descriptive port-call context only; not route or disruption exposure evidence
+OMSOH,Oman International Cont. Terminal,10,4,False,PENDING_RESEARCHER_REVIEW,False,Descriptive port-call context only; not route or disruption exposure evidence
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,30,6,False,PENDING_RESEARCHER_REVIEW,False,Descriptive port-call context only; not route or disruption exposure evidence
+QAQCH,Qchem Berth,4,2,False,PENDING_RESEARCHER_REVIEW,False,Descriptive port-call context only; not route or disruption exposure evidence
+SADMM,Dammam Terminal,20,4,False,PENDING_RESEARCHER_REVIEW,False,Descriptive port-call context only; not route or disruption exposure evidence
+SAJED,DPA TERMINAL,88,51,False,PENDING_RESEARCHER_REVIEW,False,Descriptive port-call context only; not route or disruption exposure evidence
+SAJUB,Jubail Terminal,4,2,False,PENDING_RESEARCHER_REVIEW,False,Descriptive port-call context only; not route or disruption exposure evidence
+SAKAC,King Abdullah Economic City Port,13,7,False,PENDING_RESEARCHER_REVIEW,False,Descriptive port-call context only; not route or disruption exposure evidence

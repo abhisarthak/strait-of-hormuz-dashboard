@@ -1,0 +1,28 @@
+Metric,Category,Port_Count
+Total ports,All records,19
+Preliminary geographic role,PERSIAN_GULF,12
+Preliminary geographic role,ARABIAN_SEA,3
+Preliminary geographic role,GULF_OF_OMAN,2
+Preliminary geographic role,GULF_OF_KUTCH,1
+Preliminary geographic role,ARABIAN_SEA_OUTSIDE_HORMUZ,1
+Identity evidence assessment,STRONG_IDENTITY_SUPPORT,11
+Identity evidence assessment,PARTIAL_IDENTITY_SUPPORT,8
+Coordinate assessment,FACILITY_MAPPING_REQUIRED,4
+Coordinate assessment,COORDINATE_RECONCILIATION_REQUIRED,2
+Coordinate assessment,PORT_COORDINATE_EVIDENCE_AVAILABLE,2
+Coordinate assessment,UNLOCODE_REFERENCE_ONLY_PENDING_REVIEW,2
+Coordinate assessment,COORDINATE_INVALID_OR_UNRESOLVED,2
+Coordinate assessment,PENDING_FACILITY_MAPPING,1
+Coordinate assessment,TERMINAL_COORDINATE_PENDING,1
+Coordinate assessment,PORT_AND_TERMINAL_COORDINATES_SEPARATE,1
+Coordinate assessment,PORT_VS_TERMINAL_COORDINATE_DISTINCTION,1
+Coordinate assessment,PORT_BOUNDARY_EVIDENCE_AVAILABLE,1
+Coordinate assessment,LOCODE_REFERENCE_REQUIRES_FACILITY_REVIEW,1
+Coordinate assessment,FACILITY_COORDINATE_REVIEW_REQUIRED,1
+Network match status,PRESENT_IN_SCRIPT21_NETWORK,12
+Network match status,NOT_PRESENT_IN_SCRIPT21_NETWORK,7
+Manual review priority,HIGH,16
+Manual review priority,MEDIUM,3
+Researcher operational role,PENDING_RESEARCHER_DECISION,19
+Researcher inclusion decision,PENDING,19
+Researcher review status,NOT_STARTED,19

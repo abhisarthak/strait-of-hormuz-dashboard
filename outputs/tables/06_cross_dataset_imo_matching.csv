@@ -1,0 +1,4 @@
+﻿Comparison,Left_Unique_IMOs,Right_Unique_IMOs,Matching_IMOs,Left_Only_IMOs,Right_Only_IMOs
+Schedule vs Vessel Master,207,1572,207,0,1365
+Schedule vs Individual Files,207,35,12,195,23
+Vessel Master vs Individual Files,1572,35,35,1537,0

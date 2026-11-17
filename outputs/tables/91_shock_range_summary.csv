@@ -1,0 +1,2 @@
+Factor,Minimum_Hours,Maximum_Hours,Range_Hours,Maximum_To_Minimum_Ratio,Number_Of_Levels,Equal_Additive_Spacing,Log_Spacing_Equal,Scientific_Adequacy_Conclusion
+Elapsed-time shock,6.0,48.0,42.0,8.0,4,False,True,"NOT_ESTABLISHED — four ordered levels permit sensitivity comparisons, but no empirical calibration or operational validity is demonstrated"

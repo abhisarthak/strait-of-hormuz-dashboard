@@ -1,0 +1,49 @@
+========================================================================
+SCRIPT 47: CONSOLIDATION REPORT
+========================================================================
+Generated: 2026-11-15T23:14:32
+
+INPUTS
+------------------------------------------------------------------------
+outputs/tables/41_manual_source_content_verification_register.csv
+outputs/tables/41_manual_source_content_verification_register_batch1_reviewed.csv
+outputs/tables/41_manual_source_content_verification_register_batch5_preliminary_review.csv
+
+CONSOLIDATION METHOD
+------------------------------------------------------------------------
+Batch 5 used as the base register.
+Only the 17 manual-review fields were considered.
+Only four UAE records were eligible for restoration.
+Batch 1 values were copied only where Batch 5 retained the original value.
+No conflicting values were detected.
+
+MERGE SUMMARY
+------------------------------------------------------------------------
+Fields restored from Batch 1: 64
+Fields already present in Batch 5: 0
+Fields unchanged in Batch 1: 4
+Conflicts: 0
+
+RECORDS RESTORED
+------------------------------------------------------------------------
+AEAUH
+AEFJR
+AEKLF
+AERKT
+
+VALIDATION
+------------------------------------------------------------------------
+Records: 19
+Columns: 57
+Operational inclusion: PENDING
+Coordinate approvals: NONE
+Other 15 records: unchanged from Batch 5
+Read-after-write verification: PASSED
+
+OUTPUT FILES
+------------------------------------------------------------------------
+outputs/tables/41_manual_source_content_verification_register_consolidated.csv
+outputs/tables/47_consolidation_merge_log.csv
+
+Original and Batch 1-5 checkpoint files were not modified.
+========================================================================

@@ -1,0 +1,52 @@
+========================================================================
+SCRIPT 41: MANUAL SOURCE-CONTENT VERIFICATION REPORT
+========================================================================
+
+Generation date: 2026-11-15
+Total records: 19
+Output columns: 57
+
+INPUT FILES
+------------------------------------------------------------------------
+Script 38: /Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/38_port_evidence_validation_register.csv
+Script 39: /Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/39_port_coordinate_validation_register.csv
+Script 40: /Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/40_source_evidence_audit.csv
+
+SOURCE-CONTENT REVIEW STATUS
+------------------------------------------------------------------------
+NOT_REVIEWED: 19
+
+IDENTITY VALIDATION STATUS
+------------------------------------------------------------------------
+PARTIAL: 9
+VERIFIED_CODE_IDENTITY: 2
+VERIFIED_PORT_IDENTITY: 8
+
+COORDINATE VALIDATION STATUS
+------------------------------------------------------------------------
+PENDING: 18
+PENDING_RECONCILIATION: 1
+
+OPERATIONAL INCLUSION STATUS
+------------------------------------------------------------------------
+PENDING: 19
+
+IMPORTANT RESEARCH SAFEGUARDS
+------------------------------------------------------------------------
+1. URL accessibility is not equivalent to content verification.
+2. Source metadata completeness does not establish claim validity.
+3. No source-content claim has been automatically verified.
+4. No coordinates have been approved by Script 41.
+5. Operational inclusion decisions have not been changed.
+6. Port identity and facility identity must be assessed separately.
+7. Port coordinates and terminal coordinates must be distinguished.
+8. Port calls do not independently establish Strait of Hormuz transit.
+
+OUTPUT
+------------------------------------------------------------------------
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/41_manual_source_content_verification_register.csv
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/reports/41_manual_source_content_verification_report.txt
+
+========================================================================
+SCRIPT 41 COMPLETED SUCCESSFULLY
+========================================================================

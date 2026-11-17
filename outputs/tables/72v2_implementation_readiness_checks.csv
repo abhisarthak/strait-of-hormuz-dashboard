@@ -1,0 +1,25 @@
+Check,Passed,Observed,Expected,Interpretation
+Historical schedule has 604 rows,True,604,604,Accepted primary baseline.
+Simulation_Record_ID unique,True,0,0,Call identity.
+All call identities complete,True,0,0,Required call/vessel/port identities.
+All port-call intervals positive,True,0,0,Observed call duration.
+Actual_Stay_Hours reconciles within 0.02h,True,0,0,Do not silently replace source stay field.
+155 unique vessels,True,155,155,Baseline coverage.
+19 unique ports,True,19,19,Baseline coverage.
+vessel_parameters has expected Script19 row count,True,155,155,Accepted Script19 simulation-input population.
+port_parameters has expected Script19 row count,True,19,19,Accepted Script19 simulation-input population.
+port_service_parameters has expected Script19 row count,True,19,19,Accepted Script19 simulation-input population.
+interport_parameters has expected Script19 row count,True,53,53,Accepted Script19 simulation-input population.
+observed_transitions has expected Script19 row count,True,271,271,Accepted Script19 simulation-input population.
+vessel_parameters actual join key and uniqueness valid,True,155,Unique non-null keys,"{""ok"": true, ""keys"": [""IMO_Normalised""], ""rows"": 155, ""null_rows"": 0, ""duplicate_rows"": 0, ""unique_keys"": 155, ""expected_coverage"": 155, ""matched"": 155, ""unmatched"": 0, ""unexpected"": 0}"
+port_parameters actual join key and uniqueness valid,True,19,Unique non-null keys,"{""ok"": true, ""keys"": [""UNLOCODE_Normalised""], ""rows"": 19, ""null_rows"": 0, ""duplicate_rows"": 0, ""unique_keys"": 19, ""expected_coverage"": 19, ""matched"": 19, ""unmatched"": 0, ""unexpected"": 0}"
+port_service_parameters actual join key and uniqueness valid,True,19,Unique non-null keys,"{""ok"": true, ""keys"": [""UNLOCODE_Normalised""], ""rows"": 19, ""null_rows"": 0, ""duplicate_rows"": 0, ""unique_keys"": 19, ""expected_coverage"": 19, ""matched"": 19, ""unmatched"": 0, ""unexpected"": 0}"
+interport_parameters actual join key and uniqueness valid,True,53,Unique non-null keys,"{""ok"": true, ""keys"": [""Previous_Port"", ""Next_Port""], ""rows"": 53, ""null_rows"": 0, ""duplicate_rows"": 0, ""unique_keys"": 53, ""expected_coverage"": NaN, ""matched"": NaN, ""unmatched"": NaN, ""unexpected"": NaN}"
+observed_transitions actual join key and uniqueness valid,True,271,Unique non-null keys,"{""ok"": true, ""keys"": [""IMO_Normalised"", ""Simulation_Record_ID""], ""rows"": 271, ""null_rows"": 0, ""duplicate_rows"": 0, ""unique_keys"": 271, ""expected_coverage"": NaN, ""matched"": NaN, ""unmatched"": NaN, ""unexpected"": NaN}"
+Inter-port parameter pairs reconcile with observed transition pairs,True,53,53,"{""ok"": true, ""parameter_pairs"": 53, ""observed_pairs"": 53, ""uncovered_observed_pairs"": 0, ""unused_parameter_pairs"": 0, ""parameter_pair_null_rows"": 0, ""observed_pair_null_rows"": 0}"
+Derived vessel transitions match Script19 observed transition rows,True,271,271,"{""derived_rows"": 271, ""observed_rows"": 271, ""matched_record_rows"": 271, ""outer_join_only_rows"": 0, ""pair_mismatches_among_matches"": 0, ""elapsed_time_mismatches_among_matches"": 0, ""ok"": true}"
+Delay propagation unit tests pass,True,12,12,Pure equation tests; no experiment execution.
+Negative inter-call gaps are blocked and not treated as eligible transitions,True,0,All negative links explicitly blocked,Negative gaps are not clipped or passed to the delay recurrence.
+No experiment executed,True,NO,NO,Specification only.
+No upstream files modified,True,NO,NO,Read-only audit.
+No disruption/recovery policy approved,True,NO,NO,Researcher approval remains separate.

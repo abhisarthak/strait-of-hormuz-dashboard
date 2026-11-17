@@ -1,0 +1,5 @@
+Option_ID,Replication_Option,Definition,Potential_Purpose,Selection_Status,Researcher_Selected,Replication_Count,Seed_Range_or_List,Pairing_Key,Statistical_Analysis_Plan,Researcher_Rationale,Reviewer,Review_Date
+R1,Deterministic replay,Single deterministic replay where model and inputs are deterministic.,Baseline consistency/reference only.,Not selected; confirm model determinism.,False,,,,,,,
+R2,Independent random seeds,Independent replications with predeclared distinct seeds.,Estimate stochastic outcome variability.,Replication count and seed list not selected.,False,,,,,,,
+R3,Common random numbers,Use matched random streams across policies/scenarios where technically valid.,Improve paired comparison precision by reducing simulation noise.,Requires implementation validation; not selected.,False,,,,,,,
+R4,Paired scenario replications,Compare policies/scenarios under matched replication seeds.,Supports paired statistical contrasts.,Requires common seed design and predeclared estimand.,False,,,,,,,

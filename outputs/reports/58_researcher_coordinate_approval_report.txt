@@ -1,0 +1,55 @@
+========================================================================================
+SCRIPT 58: RESEARCHER COORDINATE APPROVAL AND OPERATIONAL ELIGIBILITY REGISTER
+========================================================================================
+
+PURPOSE
+Create a researcher-facing register that separates coordinate approval, operational inclusion, and AIS transit evidence. All researcher decisions are initialized as PENDING.
+
+INPUT
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/57_independent_coordinate_validation_register_v2.csv
+
+SUMMARY
+                                                 Metric  Value
+                   Total records in researcher register     19
+                           Coordinate decisions pending     19
+                          Operational decisions pending     19
+            Records with valid primary coordinate pairs     13
+          Records with valid secondary coordinate pairs     18
+                     Records with both coordinate pairs     13
+              Records with hold/reconciliation guidance     15
+    Records with source-verification candidate guidance      4
+                Coordinate approvals made automatically      0
+     Operational inclusion decisions made automatically      0
+AIS-confirmed Hormuz transits established automatically      0
+
+REVIEW GUIDANCE COUNTS
+Researcher_Review_Guidance_Class
+CANDIDATE_FOR_RESEARCHER_SOURCE_VERIFICATION          4
+HOLD_FACILITY_IDENTITY_RECONCILIATION                 1
+HOLD_SAME_AUTHORITY_REFERENCE_POINT_RECONCILIATION    1
+HOLD_REFERENCE_POINT_AND_SCOPE_REVIEW                 1
+HOLD_DIFFERENT_PORT_IDENTITY                          1
+HOLD_NAVIGATIONAL_OBJECT_MISMATCH                     1
+HOLD_SAME_AUTHORITY_POSITION_RECONCILIATION           1
+HOLD_SAME_OPERATOR_SOURCE_LIMITATION                  1
+HOLD_TERMINAL_SPECIFIC_IDENTITY                       1
+HOLD_PRIMARY_COORDINATE_MISSING                       1
+HOLD_BOUNDARY_VERSUS_POINT_MISMATCH                   1
+HOLD_REFERENCE_OBJECT_MISMATCH                        1
+HOLD_BERTH_VERSUS_PLANT_MISMATCH                      1
+HOLD_NO_GEODETIC_BERTH_COORDINATE                     1
+HOLD_PORT_POLYGON_NOT_POINT                           1
+HOLD_PRIMARY_COORDINATE_AND_SECONDARY_CONFLICT        1
+
+RESEARCHER DECISION RULES
+- Do not approve a coordinate merely because a numeric pair exists.
+- Do not approve coordinates when the source reference object is unresolved.
+- Do not treat same-authority/operator sources as independent corroboration.
+- Do not treat distinct terminals as duplicate points for one facility.
+- Do not substitute a buoy, berth identity, industrial plant, pilot station, boundary polygon or polygon centroid for a port point.
+- Operational inclusion is a separate decision from coordinate approval.
+- Regional/sensitivity eligibility from Script 49 remains a recommendation pending researcher approval, not an automatic inclusion decision.
+- No AIS-confirmed Strait of Hormuz transit is established by Script 58.
+
+REQUIRED MANUAL FIELDS
+Researcher_Coordinate_Decision; Approved_Latitude; Approved_Longitude; Approved_Coordinate_Reference_Object; Approved_Coordinate_Scope; Approved_Datum_or_CRS; Coordinate_Approval_Evidence_URL; Coordinate_Approval_Rationale; Coordinate_Reviewer; Coordinate_Review_Date; Researcher_Operational_Decision; Operational_Inclusion_Rationale; Operational_Eligibility_Evidence_URL; Operational_Reviewer; Operational_Review_Date; AIS_Transit_Evidence_Status; AIS_Evidence_Source_URL.

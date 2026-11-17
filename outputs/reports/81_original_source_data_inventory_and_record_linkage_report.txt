@@ -1,0 +1,40 @@
+SCRIPT 81 — ORIGINAL SOURCE DATA INVENTORY AND RECORD-LINKAGE DISCOVERY
+==============================================================================
+Project root: /Users/abhishekkumar/Strait_of_Hormuz_Research
+Files discovered under data/: 38
+Files successfully scanned: 37
+Files skipped for size: 0
+Files with read errors: 1
+Canonical schedule records: 604
+Long-interval review records: 23
+Candidate datasets assessed: 37
+Higher linkage candidates (heuristic): 1
+Record-level discovery hits: 359
+
+INTERPRETATION
+- File discovery and identifier overlap do not establish source authenticity or provenance.
+- Processed simulation inputs are distinguished from possible upstream source files.
+- DataFrame row indices and source-row fields are reported as clues, not verified lineage.
+- Candidate files require human confirmation of provider, extraction date, data dictionary, and transformation history.
+- No missing events are inferred solely from gaps between observed calls.
+- No interval is shortened, deleted, winsorized, or causally classified.
+- No schedule slack, operational recovery, empirical distribution, physical route, or Hormuz transit is approved.
+
+Validation checks passed: 7/7
+Validation checks failed: 0
+
+CHECK RESULTS
+C01 [PASS] Canonical schedule contains 604 calls — observed=604, expected=604
+C02 [PASS] Canonical schedule call IDs unique — observed=604, expected=604
+C03 [PASS] Script80 provenance covers 449 intervals — observed=449, expected=449
+C04 [PASS] Review queue IDs are unique — observed=23, expected=23
+C05 [PASS] Data-directory file inventory includes at least canonical schedule — observed=38, expected=>=1
+C06 [PASS] Every scanned file has a recorded scan status — observed=38, expected=38
+C07 [PASS] Discovery process does not assign source verification — observed=0, expected=0
+
+OUTPUT FILES
+- outputs/tables/81_source_file_inventory.csv
+- outputs/tables/81_source_candidate_assessment.csv
+- outputs/tables/81_long_interval_record_linkage_candidates.csv
+- outputs/tables/81_source_discovery_checks.csv
+- outputs/reports/81_original_source_data_inventory_and_record_linkage_report.txt

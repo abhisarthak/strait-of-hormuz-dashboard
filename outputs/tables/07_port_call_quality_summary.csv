@@ -1,0 +1,3 @@
+﻿Dataset,Total_Records,Records_With_IMO,Records_With_Arrival,Unique_Vessels,Records_Without_Arrival,Records_With_Missing_IMO,Records_With_Missing_Departure,Negative_Port_Stays,Negative_Inter_Port_Gaps,Same_Consecutive_Port_Records,Anomaly_Records
+Individual Vessel Port Calls,617,617,617,35,0,0,0,1,0,39,1
+Combined Port Schedules,1894,1777,1777,207,0,117,0,2,32,796,34

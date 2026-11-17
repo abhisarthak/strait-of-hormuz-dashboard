@@ -1,0 +1,3 @@
+Baseline,Records,Unique_Vessels,Unique_Ports,Unique_Services,Mean_Port_Stay_Hours,Median_Port_Stay_Hours,P90_Port_Stay_Hours
+Schedule_Core,618,155,19,43,30.581445523193093,26.241666666666667,54.410000000000046
+Schedule_Conservative,604,155,19,42,30.540618101545252,26.083333333333332,54.935

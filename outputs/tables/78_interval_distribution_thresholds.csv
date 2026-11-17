@@ -1,0 +1,10 @@
+Statistic,Value,Unit,Interpretation
+Valid non-first intervals,449.0,records,Observed elapsed intervals; not verified slack
+Q1,50.78333333333333,hours,Distribution descriptor only
+Median,183.3,hours,Distribution descriptor only
+Q3,337.6,hours,Distribution descriptor only
+P90,528.8766666666666,hours,Distribution descriptor only
+P95,734.493333333333,hours,Distribution descriptor only
+P99,1599.7233333333334,hours,Distribution descriptor only
+IQR upper fence (Q3 + 1.5 IQR),767.825,hours,Statistical flag only; not a removal threshold
+IQR extreme fence (Q3 + 3 IQR),1198.0500000000002,hours,Statistical flag only; not a removal threshold

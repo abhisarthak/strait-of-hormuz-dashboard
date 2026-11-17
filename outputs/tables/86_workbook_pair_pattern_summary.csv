@@ -1,0 +1,12 @@
+Metric,Value
+Workbook_Raw_Record_Count,1894
+Distinct_IMO_Count,207
+Rows_With_Complete_Composite_Voyage_Key,1777
+Distinct_IMO_Voyage_Keys,1476
+Keys_With_Multiple_Rows,244
+Keys_With_Exactly_Two_Distinct_Ports,195
+Two_Port_Keys_With_Exactly_Two_Rows,191
+Two_Port_Keys_With_One_Row_Per_Port,191
+Target_Vessel_Voyage_Keys,21
+Target_Vessel_Two_Port_Keys,11
+Target_Vessel_652W_653W_655W_Paired,3

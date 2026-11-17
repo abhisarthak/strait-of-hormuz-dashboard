@@ -1,0 +1,53 @@
+SCRIPT 18F2: SOURCE QUALITY AND EVIDENCE ASSESSMENT
+========================================================================
+Input rows: 448
+Unique LOCODEs: 19
+Unique URLs globally: 448
+Unique domains globally: 182
+
+PAGE ACCESS
+Content_Access_Status
+PAGE_TEXT_AVAILABLE           334
+FETCH_FAILED                   65
+NO_USABLE_PAGE_TEXT            46
+PDF_REQUIRES_MANUAL_REVIEW      3
+
+AUTOMATED SOURCE TYPE SCREEN
+Automated_Source_Type
+SECONDARY_OR_UNCLASSIFIED                  242
+PORT_AUTHORITY_OR_OPERATOR_CANDIDATE        62
+TERMINAL_OR_FACILITY_OPERATOR_CANDIDATE     49
+MARITIME_OR_PORT_DATABASE                   39
+GOVERNMENT_OR_INTERGOVERNMENT               33
+GENERAL_REFERENCE                           20
+SEARCH_AD_OR_REDIRECT                        3
+
+AUTOMATED RELEVANCE SCREEN
+Automated_Relevance
+PORT_OR_MARITIME_RELEVANT_CANDIDATE    429
+RELEVANCE_UNCLEAR                       19
+
+REVIEW PRIORITY
+Automated_Review_Priority
+LOW       269
+HIGH       93
+MEDIUM     86
+
+Repeated LOCODE-URL groups: 0
+Rows in manual review queue: 179
+
+METHODOLOGICAL LIMITATIONS
+1. Classification is heuristic and based on domains, titles, snippets, and extracted page text.
+2. Official-domain classification is only a candidate source-type label; it does not prove page authority for a particular port.
+3. Keyword presence does not prove that a coordinate refers to the UN/LOCODE location, port boundary, terminal, or berth.
+4. Search results can be irrelevant, stale, duplicated, redirected, or refer to a different facility with a similar name.
+5. No coordinates are selected and no port/facility is marked verified.
+6. All 19 target locations require researcher review against primary sources and explicit facility identity.
+
+OUTPUTS
+data/processed/18F2_assessed_source_register.csv
+outputs/tables/18F2_locode_source_quality_summary.csv
+outputs/tables/18F2_domain_source_summary.csv
+outputs/tables/18F2_manual_source_review_queue.csv
+outputs/tables/18F2_duplicate_url_audit.csv
+outputs/reports/18F2_source_quality_assessment_report.txt

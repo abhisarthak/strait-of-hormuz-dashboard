@@ -1,0 +1,9 @@
+Monotonicity_Check,Passed,Observed_Values,Expected
+SHOCK_MAGNITUDE_10PCT,True,1644.000000;3288.000000;6576.000000;13152.000000,non-decreasing with shock magnitude
+SHOCK_MAGNITUDE_25PCT,True,3306.000000;6612.000000;13224.000000;26448.000000,non-decreasing with shock magnitude
+SHOCK_MAGNITUDE_50PCT,True,6210.000000;12420.000000;24840.000000;49680.000000,non-decreasing with shock magnitude
+SHOCK_MAGNITUDE_100PCT,True,12576.000000;25152.000000;50304.000000;100608.000000,non-decreasing with shock magnitude
+AFFECTED_SHARE_6H,True,1644.000000;3306.000000;6210.000000;12576.000000,non-decreasing with affected transition share
+AFFECTED_SHARE_12H,True,3288.000000;6612.000000;12420.000000;25152.000000,non-decreasing with affected transition share
+AFFECTED_SHARE_24H,True,6576.000000;13224.000000;24840.000000;50304.000000,non-decreasing with affected transition share
+AFFECTED_SHARE_48H,True,13152.000000;26448.000000;49680.000000;100608.000000,non-decreasing with affected transition share

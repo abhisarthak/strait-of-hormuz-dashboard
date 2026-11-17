@@ -1,0 +1,60 @@
+===============================================================================
+SCRIPT 18E: INDEPENDENT PORT AND FACILITY VALIDATION
+===============================================================================
+
+INPUT DATA
+-------------------------------------------------------------------------------
+18C master records: 467
+18D shortlist records: 19
+Merged records: 19
+
+VALIDATION REGISTER
+-------------------------------------------------------------------------------
+Shortlist_records: 19
+Validation_register_records: 19
+Unique_LOCODES_in_register: 19
+Unmatched_master_rows: 0
+Identical_coordinate_records: 19
+Different_coordinate_records: 0
+Production_only_valid_records: 0
+Prerelease_only_valid_records: 0
+No_valid_coordinate_alternative: 0
+Ambiguous_master_LOCODE_records: 0
+High_priority_records: 14
+Medium_priority_records: 5
+Records_pending_manual_review: 19
+
+COORDINATE COMPARISON
+-------------------------------------------------------------------------------
+Coordinate_Comparison
+IDENTICAL    19
+
+VALIDATION PRIORITY
+-------------------------------------------------------------------------------
+Validation_Priority
+HIGH      14
+MEDIUM     5
+
+FACILITY REVIEW CATEGORY
+-------------------------------------------------------------------------------
+Facility_Review_Category
+PORT_IDENTITY_REVIEW                   16
+INDUSTRIAL_FACILITY_IDENTITY_REVIEW     3
+
+IMPORTANT METHODOLOGICAL LIMITATIONS
+-------------------------------------------------------------------------------
+1. Numeric coordinate validity does not establish geographic accuracy.
+2. Production and pre-release coordinates are retained separately.
+3. No coordinate release is automatically declared authoritative.
+4. Independent source evidence must be manually documented.
+5. Facility-level identities require separate verification.
+6. Distance from a reference point is not distance to the Strait boundary.
+7. Port calls do not establish vessel transit through the Strait of Hormuz.
+
+OUTPUT FILES
+-------------------------------------------------------------------------------
+/Users/abhishekkumar/Strait_of_Hormuz_Research/data/processed/18E_independent_port_validation_register.csv
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/18E_port_facility_validation_register.csv
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/18E_coordinate_alternative_register.csv
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/tables/18E_validation_priority_summary.csv
+/Users/abhishekkumar/Strait_of_Hormuz_Research/outputs/reports/18E_independent_port_facility_validation_report.txt

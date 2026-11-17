@@ -1,0 +1,13 @@
+Equation_ID,Quantity,Equation,Class,Interpretation_and_Constraint
+E01,Baseline call duration,S_k = D^0_k - A^0_k,Observed,Actual departure minus actual arrival; retain source values.
+E02,Baseline inter-call elapsed time,G_k = A^0_(k+1) - D^0_k,Observed,Negative G_k blocks propagation and requires review; do not clip to zero.
+E03,Simulated arrival timestamp,A^sim_k = A^0_k + d^A_k,Derived,Store separately; never overwrite historical arrival.
+E04,Simulated departure delay,d^D_k = d^A_k + s_k,Derived,s_k is added port-service duration only; zero for pure schedule displacement.
+E05,Simulated departure timestamp,D^sim_k = D^0_k + d^D_k,Derived,Historical port-call duration remains unchanged unless a separate service shock is applied.
+E06,Delay before recovery,q_k = d^D_k + x_k,Derived,x_k is a separately specified transition elapsed-time shock.
+E07,Recovery bounds,"0 <= r_k <= min(q_k, G_k + x_k)",Decision constraint,Recovery cannot exceed accumulated delay or reduce the simulated inter-call interval below zero; operational feasibility still needs separate evidence.
+E08,Next-call arrival delay,d^A_(k+1) = q_k - r_k,Derived,Carries inherited delay once and adds new transition shock once.
+E09,Next-call arrival timestamp,A^sim_(k+1) = A^0_(k+1) + d^A_(k+1),Derived,Equivalent to D^sim_k + G_k + x_k - r_k when G_k is valid.
+E10,Next-call departure delay,d^D_(k+1) = d^A_(k+1) + s_(k+1),Derived,"Port-service shock at the next call is applied at that call, not in the previous transition."
+E11,No-shock baseline,s_k = x_k = r_k = 0; d^A_1 = 0,Invariant,Every simulated timestamp must equal its observed baseline timestamp.
+E12,Invalid transition/recovery handling,G_k < 0 => BLOCK_SEQUENCE_LINK; r_k > G_k + x_k => INVALID_RECOVERY,Validation rule,Do not clip negative elapsed time or permit a negative simulated inter-call interval.

@@ -1,0 +1,8 @@
+Protocol_ID_66,Protocol_Element_66,Specification_66,Status_66,Caveat_66
+R01,Paired scenario comparisons,Use identical seed identifiers and aligned random streams across policies/scenarios where stochastic components are shared.,RECOMMENDED,Must verify random-stream alignment in implementation.
+R02,Replication count,Choose based on pilot variance and Monte Carlo precision; report standard errors or confidence intervals.,NOT_SET,Do not assume prior 30-replication design is automatically adequate.
+R03,Seed register,"Store every seed and map it to scenario, policy and replication.",REQUIRED,Reproducibility requirement.
+R04,Warm-up and observation window,Use a common declared analysis window; justify any warm-up or truncation.,REQUIRED,Historical schedule spans a finite observed window.
+R05,Uncertainty reporting,Report means plus dispersion/intervals and paired differences where applicable.,REQUIRED,Separate Monte Carlo uncertainty from data/model uncertainty.
+R06,Sensitivity design,Vary one factor at a time initially; use factorial/interaction design only after factor levels are justified.,RECOMMENDED,"Avoid confounding disruption mechanism, scope and recovery policy."
+R07,Model validation,"Document conceptual, input, implementation and output validation separately.",REQUIRED,Replication does not validate structural assumptions.

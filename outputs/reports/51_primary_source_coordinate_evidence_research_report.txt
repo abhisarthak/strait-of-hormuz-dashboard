@@ -1,0 +1,39 @@
+SCRIPT 51 (REPAIRED): PRIMARY-SOURCE COORDINATE EVIDENCE RESEARCH REGISTER
+==============================================================================
+Generated: 2026-11-16T00:04:46
+Script 50 input records: 19
+Script 51 output records: 19
+Output columns: 135
+Existing Script 51 records matched by UN_LOCODE: 19
+Malformed headers detected and migrated to legacy fields: 0
+
+SOURCE METADATA AVAILABILITY
+AVAILABLE_NOT_CONTENT_VERIFIED: 19
+
+RESEARCH STATUS COUNTS
+SOURCE_METADATA_AVAILABLE_CONTENT_REVIEW_PENDING: 19
+
+RESEARCH PRIORITY COUNTS
+HIGH: 10
+MEDIUM: 9
+
+EVIDENCE QA COUNTS
+SOURCE_METADATA_AVAILABLE_CONTENT_REVIEW_PENDING: 19
+
+MIGRATION AND METHODOLOGICAL NOTES
+1. Known malformed concatenated headers are moved to Legacy_Malformed_* fields.
+2. Legacy combined cell contents are retained verbatim and are not guessed or split.
+3. Existing candidate source metadata is surfaced separately from researcher-reviewed evidence.
+4. Candidate URLs and titles do not count as source-content verification.
+5. Properly named researcher-entered review fields are preserved by UN_LOCODE.
+6. No coordinates are inferred, copied into validated fields, or approved.
+7. Search prompts are not web research; this script does not browse or geocode.
+8. Coordinate range checks do not establish geographic correctness.
+9. Port-call records do not establish vessel transit through the Strait of Hormuz.
+
+INPUT: outputs/tables/50_port_coordinate_research_register.csv
+BACKUP: outputs/tables/51_primary_source_coordinate_evidence_register_pre_repair.csv
+OUTPUTS:
+outputs/tables/51_primary_source_coordinate_evidence_register.csv
+outputs/tables/51_coordinate_evidence_research_summary.csv
+outputs/reports/51_primary_source_coordinate_evidence_research_report.txt

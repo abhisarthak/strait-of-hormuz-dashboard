@@ -1,0 +1,9 @@
+Scenario,Recovery_Policy,Delay_Rank,Maximum_Port_Peak_Rank,Ports_Increased_Peak_Rank,Interpretation
+S0_BASELINE,PARTIAL_RECOVERY_25,1.0,1.0,1.0,Separate objective rankings; no combined winner assigned.
+S0_BASELINE,FIXED_RECOVERY_12H,1.0,1.0,1.0,Separate objective rankings; no combined winner assigned.
+S1_MILD,PARTIAL_RECOVERY_25,2.0,1.0,1.0,Separate objective rankings; no combined winner assigned.
+S1_MILD,FIXED_RECOVERY_12H,1.0,1.0,2.0,Separate objective rankings; no combined winner assigned.
+S2_MODERATE,PARTIAL_RECOVERY_25,1.0,1.0,1.0,Separate objective rankings; no combined winner assigned.
+S2_MODERATE,FIXED_RECOVERY_12H,2.0,2.0,1.0,Separate objective rankings; no combined winner assigned.
+S3_SEVERE,PARTIAL_RECOVERY_25,1.0,2.0,2.0,Separate objective rankings; no combined winner assigned.
+S3_SEVERE,FIXED_RECOVERY_12H,2.0,1.0,1.0,Separate objective rankings; no combined winner assigned.

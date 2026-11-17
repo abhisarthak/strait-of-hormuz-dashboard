@@ -1,0 +1,51 @@
+SCRIPT 80 — LONG-INTERVAL SOURCE PROVENANCE AND TEMPORAL COVERAGE AUDIT
+==============================================================================
+Project root: /Users/abhishekkumar/Strait_of_Hormuz_Research
+Canonical Script78 intervals: 449
+Script19 historical schedule records: 604
+Script19 observed-transition records: 271
+Distinct vessels represented: 109
+Intervals above P95: 23
+Extreme IQR intervals: 14
+
+PROVENANCE AND TEMPORAL RECONCILIATION
+Current call records found in Script19 schedule: 449/449
+Previous call records found in Script19 schedule: 449/449
+Both schedule records found: 449/449
+Current source-row references present: 449/449
+Previous source-row references present: 449/449
+Arrival/departure timestamps reconciled: 449/449
+Elapsed intervals reconciled: 449/449
+Current call IDs in observed-transition register: 271/449
+
+RESEARCH INTERPRETATION
+- Script19 files are processed registers, not the original vendor source extract.
+- Schedule_Source_Row is an internal lineage pointer; it does not independently verify original-source completeness.
+- A timestamp-reconciled interval remains an observed inter-call elapsed interval.
+- Available processed fields do not decompose the interval into sailing, anchorage, waiting, operations, or observation gaps.
+- No causal classification, schedule-slack approval, recovery approval, or empirical-distribution approval is made.
+- No physical route or actual Strait of Hormuz transit is established.
+
+Validation checks passed: 11/11
+Validation checks failed: 0
+
+CHECK RESULTS
+C01 [PASS] All Script78 canonical intervals represented — observed=449, expected=449
+C02 [PASS] Current call IDs unique in provenance register — observed=449, expected=449
+C03 [PASS] Every current interval call found in Script19 schedule — observed=449, expected=449
+C04 [PASS] Every previous call found in Script19 schedule — observed=449, expected=449
+C05 [PASS] Current and previous IMO identities match interval register — observed=449, expected=449
+C06 [PASS] Current and previous port identities match interval register — observed=449, expected=449
+C07 [PASS] Arrival and previous-departure timestamps reconcile — observed=449, expected=449
+C08 [PASS] Reconstructed elapsed intervals reconcile — observed=449, expected=449
+C09 [PASS] No duplicate current call IDs in transition source — observed=0, expected=0
+C10 [PASS] No approvals or causal attribution introduced — observed=0, expected=0
+C11 [PASS] All source provenance outputs retain original-vendor verification boundary — observed=449, expected=449
+
+OUTPUT FILES
+- outputs/tables/80_interval_source_provenance_register.csv
+- outputs/tables/80_long_interval_source_review_queue.csv
+- outputs/tables/80_source_row_coverage_summary.csv
+- outputs/tables/80_temporal_coverage_diagnostics.csv
+- outputs/tables/80_validation_checks.csv
+- outputs/reports/80_long_interval_source_provenance_and_temporal_coverage_report.txt

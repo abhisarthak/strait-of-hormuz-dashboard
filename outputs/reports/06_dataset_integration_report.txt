@@ -1,0 +1,47 @@
+======================================================================
+STRAIT OF HORMUZ - DATASET INTEGRATION REPORT
+======================================================================
+
+1. RAW DATASET DIMENSIONS
+Combined schedules: (1894, 23)
+Active vessels: (1847, 8)
+Active ports: (467, 9)
+
+2. VESSEL MASTER
+Total vessel master records: 1847
+Valid IMO records: 1739
+Unique IMO lookup records: 1572
+
+3. PORT MASTER
+Total port master records: 467
+Unique LOCODEs: 461
+Ambiguous LOCODEs: 3
+
+4. INTEGRATED SCHEDULE
+Integrated schedule rows: 1894
+Integrated schedule columns: 38
+
+Vessel match status:
+Vessel_Match_Status
+MATCHED                   1777
+NO_VESSEL_MASTER_MATCH     117
+
+Port match status:
+Port_Match_Status
+MATCHED    1894
+
+5. CROSS-DATASET IMO MATCHING
+                       Comparison  Left_Unique_IMOs  Right_Unique_IMOs  Matching_IMOs  Left_Only_IMOs  Right_Only_IMOs
+        Schedule vs Vessel Master               207               1572            207               0             1365
+     Schedule vs Individual Files               207                 35             12             195               23
+Vessel Master vs Individual Files              1572                 35             35            1537                0
+
+6. DATA HANDLING DECISIONS
+- Original raw datasets were not modified.
+- Original source columns were retained.
+- Normalized identifiers were added as separate columns.
+- Repeated vessel master IMO records were aggregated for joining.
+- Ambiguous port LOCODEs were not automatically matched.
+- Individual vessel port-call records were kept separate.
+- Planned, estimated and actual timestamps were not overwritten.
+- No actual vessel route through the Strait of Hormuz is inferred.

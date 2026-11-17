@@ -1,0 +1,7 @@
+Source_Column,Timestamp_Field_Class,Target_Vessel_NonNull_Count,Target_Vessel_Null_Count,QADOH_NonNull_Count,QAQCH_NonNull_Count,Distinct_NonNull_Values
+Planned Arrival,PLANNED_OR_SCHEDULED,32,0,21,11,32
+Estimated Arrival,ESTIMATED_OR_ETA_ETD,32,0,21,11,32
+Actual Arrival,ACTUAL,15,17,10,5,15
+Planned Departure,PLANNED_OR_SCHEDULED,32,0,21,11,32
+Estimated Departure,ESTIMATED_OR_ETA_ETD,32,0,21,11,32
+Actual Departure,ACTUAL,14,18,10,4,14

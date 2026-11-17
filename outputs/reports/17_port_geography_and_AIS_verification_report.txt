@@ -1,0 +1,65 @@
+================================================================================
+SCRIPT 17: PORT GEOGRAPHY AND AIS VERIFICATION
+================================================================================
+
+1. INPUT DATA
+--------------------------------------------------------------------------------
+Port master records: 467
+Schedule sequence records: 611
+Individual sequence records: 424
+
+2. PORT MASTER VALIDATION
+--------------------------------------------------------------------------------
+Unique LOCODEs: 464
+Ambiguous LOCODEs: 3
+
+3. GEOGRAPHIC SCREENING
+--------------------------------------------------------------------------------
+                 Geographic_Category        Geographic_Confidence  Port_Master_Records  Unique_LOCODES  Unique_Countries
+                    ARABIAN_SEA_PORT   NOT_A_HORMUZ_APPROACH_PORT                    1               1                 1
+GULF_OF_OMAN_OR_EAST_COAST_SCREENING POTENTIAL_APPROACH_RELEVANCE                    3               3                 2
+ GULF_REGION_COUNTRY_UNVERIFIED_PORT     MANUAL_GEOGRAPHIC_REVIEW                   12              12                 6
+          PERSIAN_GULF_SCREENED_PORT    HIGH_GEOGRAPHIC_RELEVANCE                    6               6                 3
+
+4. GULF-REGION VESSEL CALLS
+--------------------------------------------------------------------------------
+Screened calls: 360
+Unique candidate vessels: 90
+
+5. AIS REVIEW REGISTER
+--------------------------------------------------------------------------------
+Records requiring AIS review: 242
+Unique vessels requiring AIS review: 40
+
+6. COVERAGE SUMMARY
+--------------------------------------------------------------------------------
+                Dataset  Total_Sequence_Records  Unique_Vessels  Screened_Gulf_Calls  AIS_Review_Records
+Schedule_Sequence_Ready                     611             155                  345                 229
+             Individual                     424              33                   15                  13
+
+7. METHODOLOGICAL LIMITATIONS
+--------------------------------------------------------------------------------
+- Geographic classifications are screening categories, not precise port-coordinate validation.
+- Some LOCODEs may represent multiple facilities or ports.
+- Country-level classifications require manual port-level review.
+- Salalah is treated separately as an Arabian Sea port.
+- A port call does not establish that a vessel crossed Hormuz.
+- A port sequence does not establish a direct sailing route.
+- No AIS latitude/longitude trajectory was supplied to this script.
+- AIS transit verification must use timestamped vessel positions and a validated Strait geographic boundary.
+- A final transit conclusion must preserve AIS source and data-quality limitations.
+
+8. OUTPUT FILES
+--------------------------------------------------------------------------------
+data/processed/17_port_geographic_screening.csv
+data/processed/17_AIS_trajectory_input_template.csv
+outputs/tables/17_ambiguous_port_locodes.csv
+outputs/tables/17_gulf_and_approach_port_screening.csv
+outputs/tables/17_gulf_region_vessel_calls.csv
+outputs/tables/17_gulf_candidate_vessel_summary.csv
+outputs/tables/17_gulf_candidate_full_port_sequences.csv
+outputs/tables/17_AIS_priority_verification_register.csv
+outputs/tables/17_unique_vessel_AIS_verification_register.csv
+outputs/tables/17_AIS_data_requirements.csv
+outputs/tables/17_port_geographic_category_summary.csv
+outputs/tables/17_geographic_AIS_coverage_summary.csv

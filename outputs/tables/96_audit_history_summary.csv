@@ -1,0 +1,9 @@
+Audit,Source_File,rows,passed,failed,status
+S88_CHECKS,88_readiness_checks.csv,11,11,0,ALL_PASS
+S89_CHECKS,89_readiness_checks.csv,14,14,0,ALL_PASS
+S90_CHECKS,90_readiness_checks.csv,17,17,0,ALL_PASS
+S91_CHECKS,91_readiness_checks.csv,14,14,0,ALL_PASS
+S92_CHECKS,92_readiness_checks.csv,13,13,0,ALL_PASS
+S93_CHECKS,93_readiness_checks.csv,14,14,0,ALL_PASS
+S94_CHECKS,94_readiness_checks.csv,16,16,0,ALL_PASS
+S95_CHECKS,95_readiness_checks.csv,15,15,0,ALL_PASS

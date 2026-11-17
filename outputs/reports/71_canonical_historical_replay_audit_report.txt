@@ -1,0 +1,90 @@
+================================================================================
+SCRIPT 71: CANONICAL HISTORICAL REPLAY ENGINE AUDIT AND VALIDATION
+================================================================================
+
+INPUT
+Source file: 19_historical_arrival_schedule.csv
+Source records: 604
+Records retained for replay: 604
+Records requiring review: 0
+Unique vessels: 155
+Ports replayed: 19
+
+EVENT REPLAY
+Replay runs: 2
+Raw events: 1208
+Exact event timestamp grouping: integer UTC nanoseconds
+Port concurrency area: sum of observed arrival-to-departure intervals
+Negative intermediate states: 0
+Nonzero final active-call states: 0
+Port area reconciliation failures: 0
+Exported event timeline rows: 1205
+Expected grouped event timestamps: 1205
+Ports represented in event timeline: 19
+
+REPRODUCIBILITY
+Peak matches: 19/19
+Mean matches: 19/19
+Area matches: 19/19
+Final-state matches: 19/19
+
+SCRIPT26 COMPARISON
+Available and schema-valid: True
+UNLOCODE  Port_Matched  Call_Count_Match  Peak_Match  Mean_Match
+   AEAJM          True              True        True        True
+   AEAUH          True              True        True        True
+   AEFJR          True              True        True        True
+   AEJEA          True              True        True        True
+   AEKLF          True              True        True        True
+   AESHJ          True              True        True        True
+   BHKBS          True              True        True        True
+   IQUQR          True              True        True        True
+   KWSAA          True              True        True        True
+   KWSWK          True              True        True        True
+   OMDQM          True              True        True        True
+   OMSLL          True              True        True        True
+   OMSOH          True              True        True        True
+   QADOH          True              True        True        True
+   QAQCH          True              True        True        True
+   SADMM          True              True        True        True
+   SAJED          True              True        True        True
+   SAJUB          True              True        True        True
+   SAKAC          True              True        True        True
+
+READINESS / VALIDATION CHECKS
+Passed: 21/21
+                                                     Check  Passed Observed       Expected
+All source records pass identity/timestamp/stay validation    True      604            604
+                              Simulation record IDs unique    True        0              0
+                       Every retained interval is positive    True        0              0
+       Two independent replay runs produce same port peaks    True       19             19
+       Two independent replay runs produce same port means    True       19             19
+             Two independent replay runs produce same area    True       19             19
+     Two independent replay runs produce same final states    True       19             19
+      Concurrency area reconciles to observed interval sum    True       19             19
+         All port replay final active-call counts are zero    True       19             19
+               No negative intermediate active-call states    True       19             19
+                         Two events per retained port call    True       19             19
+  Exported event timeline contains every grouped timestamp    True     1205           1205
+         Exported event timeline covers all replayed ports    True       19             19
+   Per-port timeline row counts match grouped event counts    True       19             19
+Exported timeline ends at zero active calls for every port    True       19             19
+                             Script26 comparison available    True     True Optional input
+                            Script26 port coverage matches    True       19             19
+                                Script26 call counts match    True       19             19
+                         Script26 peak concurrency matches    True       19             19
+                         Script26 mean concurrency matches    True       19             19
+         No simulation parameters or source files modified    True       NO             NO
+
+LIMITATIONS
+- Port-call concurrency is not verified berth occupancy.
+- The replay validates event arithmetic, not source-record physical accuracy.
+- Historical port-call intervals may include anchorage, waiting, and operations.
+- Inter-port elapsed time is not pure sailing time.
+- No physical route or actual Strait of Hormuz transit is inferred.
+- This script does not validate disruption, recovery, or predictive behaviour.
+
+SIMULATION EXPERIMENTS EXECUTED: NO
+DISRUPTION MAGNITUDES SELECTED: NO
+SOURCE FILES MODIFIED: NO
+SCRIPT19 INPUTS MODIFIED: NO

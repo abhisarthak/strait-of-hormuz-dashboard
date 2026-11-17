@@ -1,0 +1,17 @@
+Invariant_ID,Invariant,Acceptance_Rule,Status,Scope
+B01,Baseline source immutability,Observed source timestamps and identifiers remain unchanged.,MUST_PASS,Data integrity
+B02,Call identity,Each Simulation_Record_ID is unique.,MUST_PASS,Identity
+B03,Positive observed interval,Actual_Departure_UTC is later than Actual_Arrival_UTC.,MUST_PASS,Temporal validity
+B04,Vessel identity,Every modeled call has a non-missing IMO_Normalised.,MUST_PASS,Sequence integrity
+B05,Port identity,Every modeled call has a non-missing UNLOCODE_Normalised.,MUST_PASS,Network integrity
+B06,Call duration reconciliation,Timestamp-derived interval is reconciled with Actual_Stay_Hours; discrepancies remain visible.,MUST_PASS,Source consistency
+B07,Event balance,Every included call creates one arrival and one departure event.,MUST_PASS,Replay accounting
+B08,Non-negative active calls,Active-call state never becomes negative.,MUST_PASS,Replay accounting
+B09,Final active calls,All included calls have departed by the end of replay.,MUST_PASS,Replay accounting
+B10,Concurrency area identity,Area under port concurrency equals the sum of included observed call intervals.,MUST_PASS,Accounting identity only
+B11,Deterministic baseline,Repeated baseline replay yields identical metrics.,MUST_PASS,Reproducibility
+B12,No route overclaim,Consecutive port calls are not described as verified physical sailing routes.,MUST_PASS,Interpretation
+B13,No berth overclaim,Port-call concurrency is not labelled actual berth occupancy/capacity.,MUST_PASS,Interpretation
+B14,No Hormuz transit overclaim,No actual Hormuz transit is asserted without independent AIS/transit evidence.,MUST_PASS,Geographic evidence
+B15,Vessel-level delay accounting,Future experiments report per-vessel accumulated and final delay separately.,FUTURE_MODEL_REQUIREMENT,Outcome definition
+B16,Censoring treatment,Unrecovered and right-censored calls/vessels are separately identified.,FUTURE_MODEL_REQUIREMENT,Outcome definition

@@ -1,0 +1,30 @@
+File,Column_Count,Missing_Columns,Missing_Column_Names
+individual_vessels/9431692.csv,27,0,
+individual_vessels/9307011.csv,26,1,cutoff_DGC
+individual_vessels/9224506.csv,24,3,ARRI_ACT; DEPA_ACT; cutoff_DGC
+individual_vessels/9732321.csv,27,0,
+individual_vessels/9948798.csv,27,0,
+individual_vessels/9525912.csv,27,0,
+individual_vessels/9708813.csv,27,0,
+individual_vessels/9233648.csv,26,1,cutoff_DGC
+individual_vessels/9732357.csv,27,0,
+individual_vessels/9260914.csv,27,0,
+individual_vessels/9253002.csv,25,2,cutoff_DGC; cutoff_ECP
+individual_vessels/9315020.csv,27,0,
+individual_vessels/9306079.csv,26,1,cutoff_DGC
+individual_vessels/9708863.csv,27,0,
+individual_vessels/9525924.csv,27,0,
+individual_vessels/9732319.csv,27,0,
+individual_vessels/9349497.csv,27,0,
+individual_vessels/9708825.csv,27,0,
+individual_vessels/9732307.csv,27,0,
+individual_vessels/9948803.csv,27,0,
+individual_vessels/9708875.csv,27,0,
+individual_vessels/9634672.csv,26,1,cutoff_DGC
+individual_vessels/9349538.csv,27,0,
+individual_vessels/9416006.csv,23,4,cutoff_DGC; cutoff_ECP; cutoff_FCO; cutoff_VCO
+individual_vessels/9973004.csv,26,1,cutoff_ECP
+individual_vessels/9708837.csv,27,0,
+individual_vessels/9525869.csv,27,0,
+individual_vessels/9760598.csv,27,0,
+individual_vessels/9334167.csv,26,1,cutoff_DGC

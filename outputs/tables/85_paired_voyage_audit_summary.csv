@@ -1,0 +1,13 @@
+Metric,Value
+Target_IMO,9813840
+Raw_Target_Vessel_Records,32
+Distinct_Import_Export_Voyage_Pairs,21
+Voyage_Pairs_With_Two_Records,11
+Voyage_Pairs_With_QADOH_And_QAQCH,11
+Voyage_Field_Mismatch_Records,0
+Timestamp_Like_Source_Columns,6
+Actual_Timestamp_Columns,2
+Planned_Scheduled_Timestamp_Columns,2
+Estimated_ETA_ETD_Timestamp_Columns,2
+Records_With_Any_Actual_Arrival,15
+Records_With_Any_Actual_Departure,14

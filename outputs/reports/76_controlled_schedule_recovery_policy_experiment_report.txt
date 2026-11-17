@@ -1,0 +1,42 @@
+SCRIPT 76 — CONTROLLED SCHEDULE-RECOVERY POLICY EXPERIMENT
+============================================================================
+Project root: /Users/abhishekkumar/Strait_of_Hormuz_Research
+Source: outputs/tables/75_call_level_disruption_results.csv
+Source scenarios: 17
+Recovery policies: 5
+Scenario-policy combinations: 85
+Call-level recovery records: 51340
+Vessel-level recovery records: 13175
+
+RECOVERY POLICY DESIGN
+- No recovery.
+- Fixed recovery credit of up to 6 hours per subsequent vessel sequence link.
+- Fixed recovery credit of up to 12 hours per subsequent vessel sequence link.
+- Proportional recovery of 25% of delay available after the current shock, capped at 6 hours per link.
+- Proportional recovery of 50% of delay available after the current shock, capped at 12 hours per link.
+- Recovery is applied only after the first call, at each subsequent sequence link, including same-port links.
+- Recovery cannot exceed delay available before recovery and cannot create negative delay.
+- Fixed-6h and proportional-50%-capped-at-12h policies are not globally ranked against each other.
+
+CRITICAL INTERPRETATION
+- Recovery credits are hypothetical schedule-recovery allowances, not measured operational capabilities.
+- The model does not identify whether recovery comes from sailing speed, port operations, schedule buffers, or other mechanisms.
+- No fuel, emissions, safety, cost, capacity, berth, or operational feasibility model is included.
+- The source disruption shocks are hypothetical additional observed inter-port elapsed time, not pure sailing-time shocks.
+- The data do not establish physical routes or actual Strait of Hormuz transit.
+
+Validation checks passed: 15/15
+Validation checks failed: 0
+
+FAILED CHECKS
+None.
+
+OUTPUT FILES
+- outputs/tables/76_recovery_policy_register.csv
+- outputs/tables/76_scenario_policy_factor_register.csv
+- outputs/tables/76_call_level_recovery_results.csv
+- outputs/tables/76_vessel_level_recovery_results.csv
+- outputs/tables/76_scenario_recovery_comparison_summary.csv
+- outputs/tables/76_policy_monotonicity_checks.csv
+- outputs/tables/76_validation_checks.csv
+- outputs/reports/76_controlled_schedule_recovery_policy_experiment_report.txt

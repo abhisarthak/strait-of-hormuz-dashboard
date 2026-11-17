@@ -1,0 +1,4 @@
+Parameter_Source,Join_Key,Required_Unique_Keys,Matched_Unique_Keys,Missing_Keys_Count,Missing_Keys,Coverage_Pct,Values_Applied_In_Script73
+vessels,IMO_Normalised,155,155,0,,100.0,False
+ports,UNLOCODE_Normalised,19,19,0,,100.0,False
+port_service,UNLOCODE_Normalised,19,19,0,,100.0,False

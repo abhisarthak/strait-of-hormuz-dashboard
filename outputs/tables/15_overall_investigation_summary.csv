@@ -1,0 +1,14 @@
+Metric,Value
+Schedule valid actual calls,618
+Schedule transitions,463
+Negative Schedule transitions,7
+Schedule same-port transitions,188
+Schedule different-port transitions,275
+Individual valid actual calls,424
+Individual transitions,391
+Individual same-port transitions,32
+Individual different-port transitions,359
+Gulf candidate vessels,7
+Gulf-region call records,23
+Full candidate vessel sequence records,125
+AIS movements requiring review,23

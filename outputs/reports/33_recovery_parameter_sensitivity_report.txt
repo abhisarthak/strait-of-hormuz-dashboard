@@ -1,0 +1,132 @@
+SCRIPT 33: RECOVERY PARAMETER SENSITIVITY ANALYSIS
+========================================================================================
+
+Common observation window: 2026-07-29 23:36:00+00:00 to 2026-11-09 08:24:00+00:00
+Seeds: [21, 42, 63, 84, 105]
+Partial recovery rates: [0.1, 0.2, 0.25, 0.3, 0.4, 0.5]
+Fixed recovery hours: [6, 12, 18, 24]
+
+SCENARIO SUMMARY
+----------------------------------------------------------------------------------------
+   Scenario        Recovery_Policy  Mean_Selected_Vessels  Mean_Vessels_With_Disrupted_Calls  Mean_Disrupted_Calls  Mean_Disrupted_Call_Share_Percent  Mean_Total_Accumulated_Delay_Hours  Mean_Mean_Delay_Per_Disrupted_Call  Mean_Maximum_Accumulated_Delay_Hours  Mean_Total_Recovered_Hours  Mean_Maximum_Port_Peak  Mean_Average_Port_Peak  Mean_Average_Port_Concurrency  Replications
+S0_BASELINE            NO_RECOVERY                    0.0                                0.0                   0.0                           0.000000                            0.000000                            0.000000                                   0.0                    0.000000                     6.0                1.894737                       0.395177             5
+    S1_MILD     FIXED_RECOVERY_12H                   16.0                               16.0                  36.0                           5.960265                          484.800000                           13.736575                                  24.0                  156.000000                     6.4                1.926316                       0.395177             5
+    S1_MILD     FIXED_RECOVERY_18H                   16.0                               16.0                  36.0                           5.960265                          434.400000                           12.319177                                  24.0                  178.800000                     6.4                1.926316                       0.395177             5
+    S1_MILD     FIXED_RECOVERY_24H                   16.0                               16.0                  36.0                           5.960265                          384.000000                           10.901779                                  24.0                  201.600000                     6.4                1.926316                       0.395177             5
+    S1_MILD      FIXED_RECOVERY_6H                   16.0                               16.0                  36.0                           5.960265                          603.600000                           17.025052                                  24.0                   99.600000                     6.4                1.915789                       0.395177             5
+    S1_MILD            NO_RECOVERY                   16.0                               16.0                  36.0                           5.960265                          864.000000                           24.000000                                  24.0                    0.000000                     6.8                1.947368                       0.395177             5
+    S1_MILD PARTIAL_RECOVERY_10PCT                   16.0                               16.0                  36.0                           5.960265                          754.543071                           21.078064                                  24.0                   41.171452                     6.8                1.947368                       0.395177             5
+    S1_MILD PARTIAL_RECOVERY_20PCT                   16.0                               16.0                  36.0                           5.960265                          674.553590                           18.922502                                  24.0                   72.638397                     6.6                1.936842                       0.395177             5
+    S1_MILD PARTIAL_RECOVERY_25PCT                   16.0                               16.0                  36.0                           5.960265                          641.950607                           18.037834                                  24.0                   85.983536                     6.4                1.926316                       0.395177             5
+    S1_MILD PARTIAL_RECOVERY_30PCT                   16.0                               16.0                  36.0                           5.960265                          612.989454                           17.248740                                  24.0                   98.138337                     6.4                1.926316                       0.395177             5
+    S1_MILD PARTIAL_RECOVERY_40PCT                   16.0                               16.0                  36.0                           5.960265                          563.427964                           15.891044                                  24.0                  119.618643                     6.4                1.915789                       0.395177             5
+    S1_MILD PARTIAL_RECOVERY_50PCT                   16.0                               16.0                  36.0                           5.960265                          522.121875                           14.752478                                  24.0                  138.121875                     6.4                1.915789                       0.395177             5
+S2_MODERATE     FIXED_RECOVERY_12H                   39.0                               39.0                 104.8                          17.350993                         5040.000000                           48.985172                                  72.0                  612.000000                     7.8                2.115789                       0.395177             5
+S2_MODERATE     FIXED_RECOVERY_18H                   39.0                               39.0                 104.8                          17.350993                         4489.200000                           43.784500                                  72.0                  799.200000                     7.8                2.094737                       0.395177             5
+S2_MODERATE     FIXED_RECOVERY_24H                   39.0                               39.0                 104.8                          17.350993                         4099.200000                           40.069451                                  72.0                  950.400000                     7.6                2.115789                       0.395177             5
+S2_MODERATE      FIXED_RECOVERY_6H                   39.0                               39.0                 104.8                          17.350993                         5910.000000                           57.142359                                  72.0                  357.600000                     7.6                2.105263                       0.395177             5
+S2_MODERATE            NO_RECOVERY                   39.0                               39.0                 104.8                          17.350993                         7545.600000                           72.000000                                  72.0                    0.000000                     7.8                2.084211                       0.395177             5
+S2_MODERATE PARTIAL_RECOVERY_10PCT                   39.0                               39.0                 104.8                          17.350993                         6027.202357                           58.167683                                  72.0                  357.689151                     7.6                2.105263                       0.395177             5
+S2_MODERATE PARTIAL_RECOVERY_20PCT                   39.0                               39.0                 104.8                          17.350993                         5196.405110                           50.400186                                  72.0                  597.101277                     7.8                2.115789                       0.395177             5
+S2_MODERATE PARTIAL_RECOVERY_25PCT                   39.0                               39.0                 104.8                          17.350993                         4893.164319                           47.541041                                  72.0                  695.054773                     7.6                2.094737                       0.395177             5
+S2_MODERATE PARTIAL_RECOVERY_30PCT                   39.0                               39.0                 104.8                          17.350993                         4635.318167                           45.101634                                  72.0                  783.136357                     7.6                2.105263                       0.395177             5
+S2_MODERATE PARTIAL_RECOVERY_40PCT                   39.0                               39.0                 104.8                          17.350993                         4213.399243                           41.093828                                  72.0                  936.932829                     7.8                2.105263                       0.395177             5
+S2_MODERATE PARTIAL_RECOVERY_50PCT                   39.0                               39.0                 104.8                          17.350993                         3876.467157                           37.877960                                  72.0                 1068.467157                     7.2                2.052632                       0.395177             5
+  S3_SEVERE     FIXED_RECOVERY_12H                   78.0                               78.0                 185.8                          30.761589                        25483.200000                          138.205635                                 168.0                 1178.400000                     8.2                2.189474                       0.395177             5
+  S3_SEVERE     FIXED_RECOVERY_18H                   78.0                               78.0                 185.8                          30.761589                        23691.600000                          128.614627                                 168.0                 1664.400000                     8.0                2.221053                       0.395177             5
+  S3_SEVERE     FIXED_RECOVERY_24H                   78.0                               78.0                 185.8                          30.761589                        22276.800000                          121.019611                                 168.0                 2068.800000                     8.8                2.273684                       0.395177             5
+  S3_SEVERE      FIXED_RECOVERY_6H                   78.0                               78.0                 185.8                          30.761589                        27927.600000                          151.107424                                 168.0                  639.600000                     8.2                2.178947                       0.395177             5
+  S3_SEVERE            NO_RECOVERY                   78.0                               78.0                 185.8                          30.761589                        31214.400000                          168.000000                                 168.0                    0.000000                     8.0                2.200000                       0.395177             5
+  S3_SEVERE PARTIAL_RECOVERY_10PCT                   78.0                               78.0                 185.8                          30.761589                        25227.229259                          136.713482                                 168.0                 1347.025473                     8.2                2.178947                       0.395177             5
+  S3_SEVERE PARTIAL_RECOVERY_20PCT                   78.0                               78.0                 185.8                          30.761589                        22093.728783                          119.964549                                 168.0                 2247.432196                     8.6                2.284211                       0.395177             5
+  S3_SEVERE PARTIAL_RECOVERY_25PCT                   78.0                               78.0                 185.8                          30.761589                        20947.371724                          113.800794                                 168.0                 2614.457241                     8.8                2.284211                       0.395177             5
+  S3_SEVERE PARTIAL_RECOVERY_30PCT                   78.0                               78.0                 185.8                          30.761589                        19970.724629                          108.539919                                 168.0                 2942.881984                     9.2                2.294737                       0.395177             5
+  S3_SEVERE PARTIAL_RECOVERY_40PCT                   78.0                               78.0                 185.8                          30.761589                        18372.106596                           99.914476                                 168.0                 3512.071064                     9.0                2.284211                       0.395177             5
+  S3_SEVERE PARTIAL_RECOVERY_50PCT                   78.0                               78.0                 185.8                          30.761589                        17098.386581                           93.032696                                 168.0                 3994.386581                     8.4                2.210526                       0.395177             5
+
+PAIRED COMPARISON AGAINST NO RECOVERY
+----------------------------------------------------------------------------------------
+   Scenario        Recovery_Policy  Mean_Delay_Saved_Hours  Mean_Delay_Reduction_Percent  Mean_Maximum_Port_Peak_Change
+S0_BASELINE            NO_RECOVERY                0.000000                      0.000000                            0.0
+    S1_MILD     FIXED_RECOVERY_12H              379.200000                     42.764270                           -0.4
+    S1_MILD     FIXED_RECOVERY_18H              429.600000                     48.670096                           -0.4
+    S1_MILD     FIXED_RECOVERY_24H              480.000000                     54.575922                           -0.4
+    S1_MILD      FIXED_RECOVERY_6H              260.400000                     29.062285                           -0.4
+    S1_MILD            NO_RECOVERY                0.000000                      0.000000                            0.0
+    S1_MILD PARTIAL_RECOVERY_10PCT              109.456929                     12.174732                            0.0
+    S1_MILD PARTIAL_RECOVERY_20PCT              189.446410                     21.156241                           -0.2
+    S1_MILD PARTIAL_RECOVERY_25PCT              222.049393                     24.842360                           -0.4
+    S1_MILD PARTIAL_RECOVERY_30PCT              251.010546                     28.130248                           -0.4
+    S1_MILD PARTIAL_RECOVERY_40PCT              300.572036                     33.787315                           -0.4
+    S1_MILD PARTIAL_RECOVERY_50PCT              341.878125                     38.531343                           -0.4
+S2_MODERATE     FIXED_RECOVERY_12H             2505.600000                     31.965038                            0.0
+S2_MODERATE     FIXED_RECOVERY_18H             3056.400000                     39.188194                            0.0
+S2_MODERATE     FIXED_RECOVERY_24H             3446.400000                     44.347985                           -0.2
+S2_MODERATE      FIXED_RECOVERY_6H             1635.600000                     20.635612                           -0.2
+S2_MODERATE            NO_RECOVERY                0.000000                      0.000000                            0.0
+S2_MODERATE PARTIAL_RECOVERY_10PCT             1518.397643                     19.211552                           -0.2
+S2_MODERATE PARTIAL_RECOVERY_20PCT             2349.194890                     29.999742                            0.0
+S2_MODERATE PARTIAL_RECOVERY_25PCT             2652.435681                     33.970777                           -0.2
+S2_MODERATE PARTIAL_RECOVERY_30PCT             2910.281833                     37.358842                           -0.2
+S2_MODERATE PARTIAL_RECOVERY_40PCT             3332.200757                     42.925239                            0.0
+S2_MODERATE PARTIAL_RECOVERY_50PCT             3669.132843                     47.391723                           -0.6
+  S3_SEVERE     FIXED_RECOVERY_12H             5731.200000                     17.734741                            0.2
+  S3_SEVERE     FIXED_RECOVERY_18H             7522.800000                     23.443674                            0.0
+  S3_SEVERE     FIXED_RECOVERY_24H             8937.600000                     27.964517                            0.8
+  S3_SEVERE      FIXED_RECOVERY_6H             3286.800000                     10.055105                            0.2
+  S3_SEVERE            NO_RECOVERY                0.000000                      0.000000                            0.0
+  S3_SEVERE PARTIAL_RECOVERY_10PCT             5987.170741                     18.622928                            0.2
+  S3_SEVERE PARTIAL_RECOVERY_20PCT             9120.671217                     28.592530                            0.6
+  S3_SEVERE PARTIAL_RECOVERY_25PCT            10267.028276                     32.261432                            0.8
+  S3_SEVERE PARTIAL_RECOVERY_30PCT            11243.675371                     35.392905                            1.2
+  S3_SEVERE PARTIAL_RECOVERY_40PCT            12842.293404                     40.527098                            1.0
+  S3_SEVERE PARTIAL_RECOVERY_50PCT            14116.013419                     44.623395                            0.4
+
+PARETO AND DESCRIPTIVE RANKING
+----------------------------------------------------------------------------------------
+   Scenario        Recovery_Policy  Mean_Total_Accumulated_Delay_Hours  Mean_Maximum_Port_Peak  Pareto_Efficient  Descriptive_Combined_Rank
+S0_BASELINE            NO_RECOVERY                            0.000000                     6.0              True                        1.0
+    S1_MILD     FIXED_RECOVERY_12H                          484.800000                     6.4             False                        3.0
+    S1_MILD     FIXED_RECOVERY_18H                          434.400000                     6.4             False                        2.0
+    S1_MILD     FIXED_RECOVERY_24H                          384.000000                     6.4              True                        1.0
+    S1_MILD      FIXED_RECOVERY_6H                          603.600000                     6.4             False                        6.0
+    S1_MILD            NO_RECOVERY                          864.000000                     6.8             False                       11.0
+    S1_MILD PARTIAL_RECOVERY_10PCT                          754.543071                     6.8             False                       10.0
+    S1_MILD PARTIAL_RECOVERY_20PCT                          674.553590                     6.6             False                        9.0
+    S1_MILD PARTIAL_RECOVERY_25PCT                          641.950607                     6.4             False                        8.0
+    S1_MILD PARTIAL_RECOVERY_30PCT                          612.989454                     6.4             False                        7.0
+    S1_MILD PARTIAL_RECOVERY_40PCT                          563.427964                     6.4             False                        5.0
+    S1_MILD PARTIAL_RECOVERY_50PCT                          522.121875                     6.4             False                        4.0
+S2_MODERATE     FIXED_RECOVERY_12H                         5040.000000                     7.8             False                        9.0
+S2_MODERATE     FIXED_RECOVERY_18H                         4489.200000                     7.8             False                        6.0
+S2_MODERATE     FIXED_RECOVERY_24H                         4099.200000                     7.6             False                        2.0
+S2_MODERATE      FIXED_RECOVERY_6H                         5910.000000                     7.6             False                        6.0
+S2_MODERATE            NO_RECOVERY                         7545.600000                     7.8             False                       11.0
+S2_MODERATE PARTIAL_RECOVERY_10PCT                         6027.202357                     7.6             False                        8.0
+S2_MODERATE PARTIAL_RECOVERY_20PCT                         5196.405110                     7.8             False                       10.0
+S2_MODERATE PARTIAL_RECOVERY_25PCT                         4893.164319                     7.6             False                        4.0
+S2_MODERATE PARTIAL_RECOVERY_30PCT                         4635.318167                     7.6             False                        3.0
+S2_MODERATE PARTIAL_RECOVERY_40PCT                         4213.399243                     7.8             False                        5.0
+S2_MODERATE PARTIAL_RECOVERY_50PCT                         3876.467157                     7.2              True                        1.0
+  S3_SEVERE     FIXED_RECOVERY_12H                        25483.200000                     8.2             False                        4.0
+  S3_SEVERE     FIXED_RECOVERY_18H                        23691.600000                     8.0              True                        2.0
+  S3_SEVERE     FIXED_RECOVERY_24H                        22276.800000                     8.8             False                       10.0
+  S3_SEVERE      FIXED_RECOVERY_6H                        27927.600000                     8.2             False                        9.0
+  S3_SEVERE            NO_RECOVERY                        31214.400000                     8.0             False                        4.0
+  S3_SEVERE PARTIAL_RECOVERY_10PCT                        25227.229259                     8.2             False                        3.0
+  S3_SEVERE PARTIAL_RECOVERY_20PCT                        22093.728783                     8.6             False                        4.0
+  S3_SEVERE PARTIAL_RECOVERY_25PCT                        20947.371724                     8.8             False                        4.0
+  S3_SEVERE PARTIAL_RECOVERY_30PCT                        19970.724629                     9.2             False                       10.0
+  S3_SEVERE PARTIAL_RECOVERY_40PCT                        18372.106596                     9.0             False                        4.0
+  S3_SEVERE PARTIAL_RECOVERY_50PCT                        17098.386581                     8.4              True                        1.0
+
+METHODOLOGICAL LIMITATIONS
+----------------------------------------------------------------------------------------
+1. Recovery fractions and fixed-hour limits are hypothetical sensitivity parameters.
+2. No measured schedule slack or verified recoverable sailing buffer is available.
+3. Inter-port elapsed times are not pure sailing times.
+4. Sorted port-call sequences do not establish one continuous voyage.
+5. No AIS-confirmed Strait of Hormuz transit is assumed.
+6. Port-call concurrency is not berth occupancy, verified capacity, or a direct congestion measure.
+7. Lower accumulated delay can coincide with a higher port-specific concurrency peak.
+8. Rank sums are descriptive only; Pareto results are trade-off screening.

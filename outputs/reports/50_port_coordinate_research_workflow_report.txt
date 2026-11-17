@@ -1,0 +1,37 @@
+SCRIPT 50: PORT COORDINATE RESEARCH AND VALIDATION WORKFLOW
+==============================================================================
+Generated: 2026-11-15T23:56:16
+Ports in coordinate register: 19
+Output columns: 79
+Existing Script 50 records preserved by UN_LOCODE: 0
+
+EXISTING COORDINATE VALIDATION STATUS
+PENDING: 19
+
+RESEARCH PRIORITY
+HIGH: 10
+MEDIUM: 9
+
+COORDINATE DATA QUALITY FLAGS
+NO_VALIDATED_COORDINATE_PAIR_CURRENTLY_POPULATED: 19
+
+METHODOLOGICAL SAFEGUARDS
+1. No coordinates are geocoded, inferred, or automatically approved.
+2. Port coordinates and terminal coordinates remain separate.
+3. A port/city centroid must not be substituted for a terminal coordinate.
+4. Existing source URLs are leads; source content must be reviewed.
+5. Coordinate scope, datum/CRS, reference point and source date must be recorded.
+6. Conflicting or implausible coordinates must be documented, not silently averaged.
+7. Coordinate approval does not establish operational inclusion or AIS-confirmed transit.
+8. All input registers were read-only.
+
+INPUT FILES
+coordinates: outputs/tables/39_port_coordinate_validation_register.csv
+identity: outputs/tables/38_port_evidence_validation_register.csv
+source_review: outputs/tables/41_manual_source_content_verification_register_consolidated.csv
+eligibility: outputs/tables/49_port_eligibility_assessment.csv
+
+OUTPUT FILES
+outputs/tables/50_port_coordinate_research_register.csv
+outputs/tables/50_port_coordinate_research_summary.csv
+outputs/reports/50_port_coordinate_research_workflow_report.txt

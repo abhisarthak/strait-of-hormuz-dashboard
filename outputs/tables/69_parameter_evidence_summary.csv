@@ -1,0 +1,6 @@
+Assignment_Classification_64,Parameter_Treatment_65,Directed_Edge_Count,Edges_With_Median_Reference,Edges_With_P90_Reference,Edges_With_Max_Reference,Edges_With_Final_Selected_Value,Edges_With_Resampling_Approval,Edges_With_Parametric_Approval,Interpretation
+ASSUMPTION_REQUIRED_NO_EMPIRICAL_PARAMETER_ASSIGNMENT,EXPLICIT_ASSUMPTION_REQUIRED,22,22,22,22,0,0,0,Evidence classification only; descriptive reference quantiles are not selected disruption parameters.
+DESCRIPTIVE_ONLY_NOT_FOR_EMPIRICAL_RESAMPLING,DESCRIPTIVE_REFERENCE_ONLY,14,14,14,14,0,0,0,Evidence classification only; descriptive reference quantiles are not selected disruption parameters.
+EMPIRICAL_DISTRIBUTION_CANDIDATE_WITH_CLUSTER_UNCERTAINTY,CLUSTER_UNCERTAINTY_SCENARIO_CANDIDATE,1,1,1,1,0,0,0,Evidence classification only; descriptive reference quantiles are not selected disruption parameters.
+EMPIRICAL_TAIL_OR_ROBUST_REPRESENTATION_CANDIDATE,TAIL_STRESS_SCENARIO_CANDIDATE,7,7,7,7,0,0,0,Evidence classification only; descriptive reference quantiles are not selected disruption parameters.
+LIMITED_EMPIRICAL_SUMMARY_WITH_SENSITIVITY_ONLY,SUMMARY_BASED_SENSITIVITY_CANDIDATE,9,9,9,9,0,0,0,Evidence classification only; descriptive reference quantiles are not selected disruption parameters.

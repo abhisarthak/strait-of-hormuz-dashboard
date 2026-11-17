@@ -1,0 +1,37 @@
+SCRIPT 49: FINAL PORT EVIDENCE AND OPERATIONAL ELIGIBILITY ASSESSMENT
+============================================================================
+Generated: 2026-11-15T23:50:26
+Ports assessed: 19
+Script 48 structural audit clean: YES
+
+ELIGIBILITY CLASSIFICATION COUNTS
+DESCRIPTIVE_REFERENCE_ONLY_NOT_IN_OBSERVED_NETWORK: 3
+DESCRIPTIVE_REFERENCE_ONLY_PENDING_IDENTITY_REVIEW: 6
+REGIONAL_OR_SENSITIVITY_CANDIDATE_PENDING_APPROVAL: 10
+
+RECOMMENDED USE COUNTS
+CONTEXT_ONLY_UNLESS_NEW_MOVEMENT_EVIDENCE: 3
+DESCRIPTIVE_NETWORK_CONTEXT_ONLY: 6
+REGIONAL_OR_SENSITIVITY_ANALYSIS_ONLY: 10
+
+IMPORTANT INTERPRETATION
+This assessment is a conservative, rule-based recommendation.
+It does not approve ports for operational inclusion.
+Pending coordinates and pending operational decisions remain blockers.
+Port-call records do not prove Strait of Hormuz transit.
+No AIS-confirmed transit is inferred by this script.
+Regional/sensitivity candidates must remain distinct from core
+Persian Gulf nodes until the research boundary and evidence support inclusion.
+
+INPUT FILES
+identity: outputs/tables/38_port_evidence_validation_register.csv
+coordinates: outputs/tables/39_port_coordinate_validation_register.csv
+source_review: outputs/tables/41_manual_source_content_verification_register_consolidated.csv
+network: outputs/tables/21_port_network_metrics.csv
+audit: outputs/tables/48_consolidated_register_quality_audit.csv
+record_summary: outputs/tables/48_consolidated_register_record_summary.csv
+
+OUTPUT FILES
+outputs/tables/49_port_eligibility_assessment.csv
+outputs/tables/49_port_eligibility_summary.csv
+outputs/reports/49_port_eligibility_assessment_report.txt

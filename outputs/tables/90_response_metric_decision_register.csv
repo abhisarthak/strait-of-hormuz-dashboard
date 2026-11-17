@@ -1,0 +1,10 @@
+Metric_ID,Metric,Aggregation_Level,Unit,Priority,Definition_or_Caveat,Decision_Type,Researcher_Decision,Researcher_Selected_Value,Researcher_Justification,Supervisor_Review_Status,Supervisor_Comments,Approval_Granted,Approval_Date,Execution_Authorized,Metric_Definition_Approval,Censoring_Rule_Approval,Real_World_Impact_Claim
+M01,Mean call arrival delay,Call,Hours,Secondary,Across all 604 calls; state observation-window censoring,RESPONSE_METRIC,PENDING,,,PENDING,,False,,False,PENDING,PENDING,False
+M02,Mean call departure delay,Call,Hours,Secondary,Across all 604 calls; state observation-window censoring,RESPONSE_METRIC,PENDING,,,PENDING,,False,,False,PENDING,PENDING,False
+M03A,Maximum final vessel departure delay,Vessel,Hours,Primary candidate,Maximum across 155 vessels at their final represented call,RESPONSE_METRIC,PENDING,,,PENDING,,False,,False,PENDING,PENDING,False
+M03B,Maximum accumulated departure delay per vessel,Vessel,Hours,Secondary,Keep distinct from maximum final vessel delay,RESPONSE_METRIC,PENDING,,,PENDING,,False,,False,PENDING,PENDING,False
+M04,Mean final vessel departure delay,Vessel,Hours,Secondary,Across represented vessels,RESPONSE_METRIC,PENDING,,,PENDING,,False,,False,PENDING,PENDING,False
+M05,P90 call departure delay,Call,Hours,Secondary,Report quantile definition and zero-delay calls,RESPONSE_METRIC,PENDING,,,PENDING,,False,,False,PENDING,PENDING,False
+M06,Total recovery credit,Call/Vessel,Hours,Secondary,"Modelled credit, not observed operational recovery",RESPONSE_METRIC,PENDING,,,PENDING,,False,,False,PENDING,PENDING,False
+M07A,Unrecovered call count,Call,Count,Secondary,Define threshold for unrecovered before final run,RESPONSE_METRIC,PENDING,,,PENDING,,False,,False,PENDING,PENDING,False
+M07B,Unrecovered vessel count,Vessel,Count,Secondary,Define threshold and end-window censoring,RESPONSE_METRIC,PENDING,,,PENDING,,False,,False,PENDING,PENDING,False

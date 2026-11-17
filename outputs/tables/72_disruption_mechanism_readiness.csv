@@ -1,0 +1,5 @@
+Mechanism,Evidence_Basis,Readiness_Class,Requirements,Evidence_Limitation,Execution_Authorized
+TRANSIT_ELAPSED_TIME_SHOCK,Observed departure-to-next-arrival elapsed time,CONCEPTUALLY_SPECIFIABLE,Can be modeled as an elapsed-time shock only with explicit scope and magnitude approval.,Not pure sailing time; observed transitions are sparse and vessel-concentrated on many edges.,NO
+NETWORK_ACCESS_RESTRICTION,Validated physical route/network access and feasible alternatives,BLOCKED,"Requires a validated geographic route graph, route alternatives and feasibility evidence.",Observed consecutive port calls are not verified physical sailing edges.,NO
+PORT_SERVICE_DISRUPTION,Observed port-call interval / service assumptions,PARTIALLY_SPECIFIABLE,"A separate service-duration mechanism may be defined, but service time and berth capacity are not established by port-call stay alone.",Potential double counting if waiting/anchorage is already inside observed stay.,NO
+COMPOUND_DISRUPTION,Combination of individually defined mechanisms,DEFERRED,Define and validate single mechanisms before combining them.,No compound magnitudes or scope approved.,NO

@@ -1,0 +1,11 @@
+Limitation_ID,Topic,Required_Qualification,Researcher_Acknowledgement,Supervisor_Acknowledgement,Limitation_Waiver_Allowed
+L01,Observed elapsed time,"Includes sailing, waiting, anchorage, unobserved operations and data gaps; not pure sailing time.",PENDING,PENDING,False
+L02,Route semantics,Observed consecutive port-call links are not validated physical sailing routes.,PENDING,PENDING,False
+L03,Hormuz transit,No AIS-confirmed Strait of Hormuz transit established in this dataset.,PENDING,PENDING,False
+L04,Exposure,No individual edge or geographic exposure scope is approved by selecting the mechanism.,PENDING,PENDING,False
+L05,Shock levels,"6/12/24/48 hours are inherited exploratory assumptions, not empirical estimates.",PENDING,PENDING,False
+L06,Scope shares,"10/25/50/100 percent are experimental coverage levels, not measured exposure probabilities.",PENDING,PENDING,False
+L07,Recovery,"Recovery credits are hypothetical allowances; no physical capability, safety, fuel, cost or emissions model.",PENDING,PENDING,False
+L08,Bounded recovery,Observed inter-call elapsed time is not established schedule slack.,PENDING,PENDING,False
+L09,Port processes,Observed port stay is not berth processing time; capacity and berth occupancy unavailable.,PENDING,PENDING,False
+L10,Validation,Code consistency and synthetic checks do not constitute physical or operational validation.,PENDING,PENDING,False

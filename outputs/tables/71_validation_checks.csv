@@ -1,0 +1,22 @@
+Check,Passed,Observed,Expected,Interpretation
+All source records pass identity/timestamp/stay validation,True,604,604,Records with unresolved source-level issues are not silently repaired.
+Simulation record IDs unique,True,0,0,Record identity check.
+Every retained interval is positive,True,0,0,Timestamp ordering.
+Two independent replay runs produce same port peaks,True,19,19,Deterministic replay.
+Two independent replay runs produce same port means,True,19,19,Deterministic replay.
+Two independent replay runs produce same area,True,19,19,Deterministic replay.
+Two independent replay runs produce same final states,True,19,19,Deterministic replay.
+Concurrency area reconciles to observed interval sum,True,19,19,"Area identity is an accounting check, not berth occupancy validation."
+All port replay final active-call counts are zero,True,19,19,Event balance.
+No negative intermediate active-call states,True,19,19,Event-state validity.
+Two events per retained port call,True,19,19,Arrival/departure event accounting.
+Exported event timeline contains every grouped timestamp,True,1205,1205,One row is expected for every distinct exact timestamp within each port.
+Exported event timeline covers all replayed ports,True,19,19,Every port in the replay must appear in the exported timeline.
+Per-port timeline row counts match grouped event counts,True,19,19,Checks timeline completeness separately for each port.
+Exported timeline ends at zero active calls for every port,True,19,19,Final event state in the exported timeline must be zero for every port.
+Script26 comparison available,True,True,Optional input,"If unavailable, cross-script comparison is not assessed."
+Script26 port coverage matches,True,19,19,Cross-script comparison.
+Script26 call counts match,True,19,19,Cross-script comparison.
+Script26 peak concurrency matches,True,19,19,Cross-script comparison.
+Script26 mean concurrency matches,True,19,19,Cross-script comparison.
+No simulation parameters or source files modified,True,NO,NO,Script71 is an independent read-only audit.

@@ -1,0 +1,20 @@
+UNLOCODE,Port_Name,Observed_Call_Count,Observed_Vessel_Count,In_Degree,Out_Degree,Total_Degree,Incoming_Transition_Count,Outgoing_Transition_Count,Betweenness_Centrality,Is_Isolated
+OMSLL,Salalah Terminal,261,105,5,6,11,56,48,0.3714596949891068,False
+SAJED,DPA TERMINAL,88,51,3,2,5,23,36,0.21840958605664493,False
+AEJEA,Jebel Ali Terminal 2,60,17,11,8,19,47,45,0.613289760348584,False
+QADOH,HAMAD PORT - CONTAINER TERMINAL 01,30,6,5,5,10,15,16,0.2581699346405229,False
+AEAUH,Abu Dhabi Terminal - Khalifa Port,24,10,4,4,8,23,21,0.15413943355119825,False
+AEAJM,Ajman Port Terminal,22,4,2,2,4,19,19,0.0,False
+SADMM,Dammam Terminal,20,4,4,5,9,19,16,0.10947712418300654,False
+AEKLF,Khor Fakkan Terminal,20,12,1,2,3,15,11,0.0,False
+AEFJR,Fujairah Terminal,19,9,1,4,5,9,11,0.004357298474945533,False
+SAKAC,King Abdullah Economic City Port,13,7,3,3,6,7,8,0.09749455337690632,False
+AESHJ,Sharjah Terminal,10,3,2,3,5,7,9,0.00980392156862745,False
+OMSOH,Oman International Cont. Terminal,10,4,3,1,4,9,9,0.0,False
+KWSWK,Shuwaikh Terminal,5,1,2,1,3,5,5,0.05555555555555556,False
+BHKBS,Bahrain Terminal,5,1,1,1,2,4,5,0.0,False
+IQUQR,Umm Qasr Port BGT Terminal,5,2,2,2,4,4,4,0.0,False
+QAQCH,Qchem Berth,4,2,1,1,2,2,2,0.0,False
+SAJUB,Jubail Terminal,4,2,1,1,2,4,4,0.0,False
+OMDQM,Early Operations Container Terminal,3,3,1,1,2,2,1,0.0,False
+KWSAA,Shuaiba Port Terminal,1,1,1,1,2,1,1,0.0,False

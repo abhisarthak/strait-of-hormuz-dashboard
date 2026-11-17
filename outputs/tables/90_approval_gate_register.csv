@@ -1,0 +1,10 @@
+Gate_ID,Decision_Area,Current_Proposal,Current_Status,Decision_Note,Decision_Type,Researcher_Decision,Researcher_Selected_Value,Researcher_Justification,Supervisor_Review_Status,Supervisor_Comments,Approval_Granted,Approval_Date,Execution_Authorized
+G01,Primary mechanism,TRANSIT_ELAPSED_TIME_SHOCK,RESEARCHER_CONFIRMED,Mechanism choice only; not exposure or execution approval.,APPROVAL_GATE,CONFIRMED,TRANSIT_ELAPSED_TIME_SHOCK,"Researcher confirmed TRANSIT_ELAPSED_TIME_SHOCK as the sole primary mechanism; this does not approve shock magnitudes, transition exposure, recovery policies, or simulation execution.",PENDING,,False,,False
+G02,Shock magnitudes,"6, 12, 24, 48 hours",PENDING,Provisional hypothetical increments.,APPROVAL_GATE,PENDING,,,PENDING,,False,,False
+G03,Affected transition shares,"10%, 25%, 50%, 100%",PENDING,Mathematical coverage levels over 271 observed transition records.,APPROVAL_GATE,PENDING,,,PENDING,,False,,False
+G04,Transition selection,Seed 8801; nested random prefixes,PENDING,Candidate selection only; no geographic exposure approval.,APPROVAL_GATE,PENDING,,,PENDING,,False,,False
+G05,Recovery policies,Five Script76 policies,PENDING,Hypothetical rules; operational feasibility not established.,APPROVAL_GATE,PENDING,,,PENDING,,False,,False
+G06,Response metrics,Nine Script88 metrics,PENDING,Definitions and observation-window censoring require review.,APPROVAL_GATE,PENDING,,,PENDING,,False,,False
+G07,Replication,Deterministic first stage,PENDING,No stochastic replication count selected.,APPROVAL_GATE,PENDING,,,PENDING,,False,,False
+G08,Supervisor review,Required,PENDING,Supervisor review remains outstanding.,APPROVAL_GATE,PENDING,,,PENDING,,False,,False
+G09,Simulation execution,Not authorized,BLOCKED,Execution remains blocked pending explicit approvals.,APPROVAL_GATE,PENDING,,,PENDING,,False,,False

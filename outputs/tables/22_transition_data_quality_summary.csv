@@ -1,0 +1,14 @@
+Metric,Value
+Total transition records,271
+Valid transition records,271
+Invalid transition records,0
+Unique directed port pairs,53
+Unique undirected port pairs,35
+Unique vessels in valid transitions,58
+Potential IQR extreme observations,20
+Pairs with fewer than 3 observations,22
+Pairs with fewer than 6 observations,36
+Pairs with at least 10 observations,8
+Pairs with very high variability,8
+Pairs with both directions observed,18
+Pairs with only one direction observed,17

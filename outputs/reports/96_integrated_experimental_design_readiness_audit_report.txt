@@ -1,0 +1,133 @@
+SCRIPT 96 — INTEGRATED EXPERIMENTAL DESIGN AND EXECUTION READINESS AUDIT
+==================================================================================
+
+PURPOSE
+Consolidate Scripts88–95 into one auditable design, decision, approval and
+execution-blocker register. Diagnostic and governance consolidation only.
+
+SOURCE INVENTORY
+Required upstream files inspected: 35
+Missing required inputs: 0
+      Source_Stage                                   Source_File  Rows  Columns Schema_Status
+      S88_PROTOCOL                      88_protocol_register.csv     1       23          PASS
+       S88_FACTORS               88_scenario_factor_register.csv    16       11          PASS
+        S88_MATRIX                 88_scenario_policy_matrix.csv    80       20          PASS
+       S88_METRICS               88_response_metric_register.csv     9        6          PASS
+   S88_REPLICATION          88_replication_decision_register.csv     3        6          PASS
+   S88_LIMITATIONS                    88_limitation_register.csv    10        3          PASS
+        S88_CHECKS                       88_readiness_checks.csv    11        5          PASS
+         S89_SCOPE                 89_scenario_scope_summary.csv     4       11          PASS
+     S89_SELECTION          89_transition_selection_register.csv  1084       20          PASS
+        S89_CHECKS                       89_readiness_checks.csv    14        5          PASS
+         S90_GATES                 90_approval_gate_register.csv     9       14          PASS
+       S90_FACTORS               90_factor_decision_register.csv    16       23          PASS
+      S90_POLICIES      90_recovery_policy_decision_register.csv     5       20          PASS
+       S90_METRICS      90_response_metric_decision_register.csv     9       18          PASS
+   S90_REPLICATION          90_replication_decision_register.csv     3       17          PASS
+         S90_SCOPE                90_scope_decision_register.csv     4       22          PASS
+        S90_CHECKS                       90_readiness_checks.csv    17        5          PASS
+ S91_FACTOR_RANGES               91_factor_range_diagnostics.csv     8        7          PASS
+   S91_REPLICATION            91_replication_adequacy_review.csv     3       21          PASS
+       S91_METRICS                 91_response_metric_review.csv     9       10          PASS
+      S91_COVERAGE               91_scenario_policy_coverage.csv    80        5          PASS
+      S91_VALIDITY         91_scientific_validity_boundaries.csv     8        4          PASS
+        S91_CHECKS                       91_readiness_checks.csv    14        5          PASS
+ S92_METRIC_STATUS                 92_metric_decision_status.csv     9       10          PASS
+ S92_METRIC_REVIEW       92_metric_operationalization_review.csv     9        6          PASS
+          S92_OPEN  92_open_estimand_and_censoring_decisions.csv    12        4          PASS
+        S92_CHECKS                       92_readiness_checks.csv    13        5          PASS
+     S93_ESTIMANDS            93_candidate_estimand_register.csv     8        7          PASS
+     S93_CONTRASTS             93_candidate_policy_contrasts.csv     4        5          PASS
+      S93_COVERAGE         93_scenario_policy_coverage_audit.csv    16        4          PASS
+        S93_CHECKS                       93_readiness_checks.csv    14        5          PASS
+     S94_SEMANTICS 94_policy_mathematical_semantics_register.csv     5       10          PASS
+        S94_CHECKS                       94_readiness_checks.csv    16        5          PASS
+S95_RECONCILIATION 95_bounded_recovery_record_reconciliation.csv 51340       16          PASS
+        S95_CHECKS                       95_readiness_checks.csv    15        5          PASS
+
+DESIGN STRUCTURE
+Primary mechanism recorded: TRANSIT_ELAPSED_TIME_SHOCK
+Candidate shock scenarios in Script88 factor grid: 16
+Scenario-policy combinations in Script88 matrix: 80
+Transition scope levels: 4
+Unique observed transition records in Script89 selection register: 271
+Recovery policies: 5
+Response metrics: 9
+Open Script92 estimand/censoring decisions: 12
+Candidate Script93 estimands: 8
+
+IMPORTANT COUNT DISTINCTION
+The Script88 candidate factorial grid contains 16 shock scenarios and 80
+scenario-policy combinations (16 x 5). The no-disruption baseline is a
+separate baseline in the earlier Script75/76 experiment outputs. Do not
+incorrectly label the Script88 candidate matrix as 17 scenarios or 85 rows.
+
+UPSTREAM AUDIT HISTORY
+     Audit             Source_File  rows  passed  failed   status
+S88_CHECKS 88_readiness_checks.csv    11      11       0 ALL_PASS
+S89_CHECKS 89_readiness_checks.csv    14      14       0 ALL_PASS
+S90_CHECKS 90_readiness_checks.csv    17      17       0 ALL_PASS
+S91_CHECKS 91_readiness_checks.csv    14      14       0 ALL_PASS
+S92_CHECKS 92_readiness_checks.csv    13      13       0 ALL_PASS
+S93_CHECKS 93_readiness_checks.csv    14      14       0 ALL_PASS
+S94_CHECKS 94_readiness_checks.csv    16      16       0 ALL_PASS
+S95_CHECKS 95_readiness_checks.csv    15      15       0 ALL_PASS
+
+APPROVAL AND EXECUTION STATUS
+Approval grants recorded across decision registers: 0
+Execution authorizations recorded across decision registers: 0
+Researcher decisions pending/open/not recorded in consolidated queue: 57
+Supervisor reviews pending/open/not recorded in consolidated queue: 58
+Open execution blockers: 59
+Supervisor approval register rows: 58
+Simulation executed by Script96: NO
+Execution authorized by Script96: NO
+
+KEY INTERPRETATION
+- The primary mechanism TRANSIT_ELAPSED_TIME_SHOCK is researcher-confirmed,
+  but this does not approve factor levels, transition exposure, recovery
+  policies, response metrics, replication design or execution.
+- The 6/12/24/48-hour shock levels are provisional hypothetical increments,
+  not empirically calibrated disruption durations.
+- The 10/25/50/100 percent levels are mathematical coverage shares over
+  observed transition records, not geographic exposure probabilities.
+- Inter-port elapsed time is not pure sailing time.
+- Observed port-call links are not validated physical routes.
+- No AIS-confirmed Strait of Hormuz transit is established.
+- Observed inter-call elapsed time is not established schedule slack.
+- Recovery policies are hypothetical mathematical rules, not measured
+  operational capabilities.
+- Deterministic reproducibility does not establish statistical replication,
+  sampling uncertainty, confidence intervals or power.
+- End-of-window censoring, denominators, thresholds, estimands and metric
+  operational definitions remain researcher/supervisor decisions.
+- Passing historical diagnostic checks does not establish physical or
+  operational validity.
+
+READINESS CHECKS
+22/22 passed; 0 failed.
+
+DECISION
+Script96 is an integrated design and governance audit, not a simulation.
+It does not select missing values, approve policies, approve exposure, approve
+estimands, settle censoring, or authorize execution.
+
+The next work is to resolve the explicit researcher decisions, obtain
+supervisor review, finalize estimands/censoring/replication, and then prepare
+a frozen simulation specification. Execution remains NO-GO until separately
+authorized.
+
+OUTPUTS
+- outputs/tables/96_source_inventory.csv
+- outputs/tables/96_audit_history_summary.csv
+- outputs/tables/96_integrated_experimental_design_register.csv
+- outputs/tables/96_integrated_decision_register.csv
+- outputs/tables/96_unresolved_research_decisions.csv
+- outputs/tables/96_supervisor_approval_register.csv
+- outputs/tables/96_execution_blockers.csv
+- outputs/tables/96_integrated_readiness_checks.csv
+- outputs/reports/96_integrated_experimental_design_readiness_audit_report.txt
+
+NO UPSTREAM FILES MODIFIED.
+NO SIMULATION EXECUTED.
+EXECUTION AUTHORIZATION: NO.

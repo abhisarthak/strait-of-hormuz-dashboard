@@ -1,0 +1,7 @@
+Dataset,Timestamp_Source,Total_Records,Arrival_Available,Departure_Available,Complete_Pairs,Valid_Chronology,Negative_Stays
+Integrated Schedule,Planned,1894,1894,1894,1894,1894,0
+Integrated Schedule,Estimated,1894,1894,1894,1894,1892,2
+Integrated Schedule,Actual,1894,631,620,618,618,0
+Individual Vessel Calls,Planned,617,617,617,617,617,0
+Individual Vessel Calls,Estimated,617,617,617,617,616,1
+Individual Vessel Calls,Actual,617,428,425,424,424,0
