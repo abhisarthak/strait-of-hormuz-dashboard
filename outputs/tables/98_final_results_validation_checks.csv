@@ -1,0 +1,11 @@
+Check,Passed,Observed,Expected
+No missing required timestamps or outcome values,True,0,0
+604 calls per scenario-policy cell,True,[604],[604]
+155 vessels per scenario-policy cell,True,[155],[155]
+Unique scenario-policy-call keys,True,0,0
+Unique baseline call identities,True,604,604
+All scenario calls matched to baseline,True,0,0
+Common horizon covers every represented simulated departure,True,0,0
+All 604 represented call departures completed by common horizon,True,0,0
+Exactly 16 shock scenarios and 80 scenario-policy cells,True,"{'scenarios': 16, 'cells': 80}","{'scenarios': 16, 'cells': 80}"
+All delays and recovery benefits reconcile numerically,True,finite,finite

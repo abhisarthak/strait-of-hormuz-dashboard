@@ -1,0 +1,9 @@
+{
+  "status": "UNVERIFIED",
+  "updated_at": "2026-11-17",
+  "source_name": "UKMTO Advisory 003-26 — 28 February 2026",
+  "source_url": "https://www.ukmto.org/-/media/ukmto/products/20260228-ukmto_advisory_003-26.pdf?rev=710b60f8f5e84104ac02facdc95305f9",
+  "disruption_start_date": "2026-02-28",
+  "closure_start_date": null,
+  "summary": "Maritime security disruption reference date: 28 February 2026, when UKMTO reported significant military activity affecting the Strait of Hormuz and surrounding waters. This date is used to calculate elapsed disruption days; it does not represent a formally declared legal closure. Current operational status remains unverified in this dashboard configuration."
+}
